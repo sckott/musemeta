@@ -63,6 +63,29 @@ lapply(c(479283, 228901, 436876), muse_get)
 ```
 
 
+### Use the scrapi API
+
+This is again, for The Metropolitan Museum of Art only 
+
+Get a random object, limit to a few fields for brevity
+
+```{r}
+scrapi_random(fields=c('medium','whoList'))
+```
+
+Get a specific object
+
+```{r}
+scrapi_info(123, fields=c('title','primaryArtistNameOnly','medium'))
+```
+
+Search for objects
+
+```{r}
+scrapi_search(query='mirror')
+```
+
+
 ### Meta
 
 * Please report any issues or bugs](https://github.com/ropensci/musemeta/issues).
