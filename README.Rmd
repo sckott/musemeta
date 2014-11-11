@@ -1,0 +1,63 @@
+musemeta
+=======
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  collapse = TRUE,
+  warning = FALSE, 
+  message = FALSE
+)
+```
+
+[![Build Status](https://api.travis-ci.org/ropensci/musemeta.png)](https://travis-ci.org/ropensci/musemeta)
+[![Build status](https://ci.appveyor.com/api/projects/status/ytgtb62gsgf5hddi/branch/master)](https://ci.appveyor.com/project/sckott/musemeta/branch/master)
+
+**R client for museum metadata**
+
+## Quick start
+
+### Install
+
+Install musemeta
+
+```{r eval=FALSE}
+install.packages("devtools")
+devtools::install_github("ropensci/musemeta")
+```
+
+```{r}
+library("musemeta")
+```
+
+### Get metadata
+
+Data for a single object
+
+```{r}
+muse_get(559490)
+```
+
+Or index to name of object, or values in the description
+
+```{r}
+muse_get(559490)$name
+```
+
+```{r}
+muse_get(559490)$values
+```
+
+A different object
+
+```{r}
+muse_get(246562)
+```
+
+### Meta
+
+* Please report any issues or bugs](https://github.com/ropensci/musemeta/issues).
+* License: MIT
+* Get citation information for `musemeta` in R doing `citation(package = 'musemeta')`
+
+[![](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
