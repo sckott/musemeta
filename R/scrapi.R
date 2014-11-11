@@ -5,6 +5,7 @@
 #' @param query (character) Query terms
 #' @param fields (character) One or more fields to return in a vector
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
+#' @references \url{http://scrapi.org/} \url{https://github.com/jedahan/collections-api}
 #' @examples \donttest{
 #' # Get a random object
 #' scrapi_random()

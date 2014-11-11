@@ -40,4 +40,7 @@ scrapi_search(query='mirror')
 scrapi_search(query='siphon nozzle')
 }
 }
+\references{
+\url{http://scrapi.org/} \url{https://github.com/jedahan/collections-api}
+}
 
