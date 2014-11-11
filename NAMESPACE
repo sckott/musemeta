@@ -2,6 +2,9 @@
 
 S3method(print,muse)
 export(muse_get)
+export(scrapi_info)
+export(scrapi_random)
+export(scrapi_search)
 importFrom(XML,htmlParse)
 importFrom(XML,xmlValue)
 importFrom(XML,xpathApply)
