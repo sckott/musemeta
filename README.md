@@ -8,6 +8,8 @@ musemeta
 
 **R client for museum metadata**
 
+Currently only getting data for [The Metropolitan Museum of Art](http://www.metmuseum.org/)
+
 ## Quick start
 
 ### Install
@@ -53,7 +55,7 @@ muse_get(559490)$name
 
 
 ```r
-muse_get(559490)$values
+muse_get(559490)$values[1:2]
 #> [[1]]
 #> [[1]]$name
 #> [1] "Period"
@@ -68,54 +70,6 @@ muse_get(559490)$values
 #> 
 #> [[2]]$value
 #> [1] "Dynasty 19–20"
-#> 
-#> 
-#> [[3]]
-#> [[3]]$name
-#> [1] "Date"
-#> 
-#> [[3]]$value
-#> [1] "ca. 1295–1070 B.C."
-#> 
-#> 
-#> [[4]]
-#> [[4]]$name
-#> [1] "Geography"
-#> 
-#> [[4]]$value
-#> [1] "From Egypt, Memphite Region, Lisht North, Cemetery, MMA 1913–1914"
-#> 
-#> 
-#> [[5]]
-#> [[5]]$name
-#> [1] "Medium"
-#> 
-#> [[5]]$value
-#> [1] "Bronze"
-#> 
-#> 
-#> [[6]]
-#> [[6]]$name
-#> [1] "Dimensions"
-#> 
-#> [[6]]$value
-#> [1] "l. 5.4 cm (2 1/8 in)"
-#> 
-#> 
-#> [[7]]
-#> [[7]]$name
-#> [1] "Credit Line"
-#> 
-#> [[7]]$value
-#> [1] "Rogers Fund and Edward S. Harkness Gift, 1922"
-#> 
-#> 
-#> [[8]]
-#> [[8]]$name
-#> [1] "Accession Number"
-#> 
-#> [[8]]$value
-#> [1] "22.1.962"
 ```
 
 A different object
@@ -133,6 +87,40 @@ muse_get(246562)
 #>   Credit Line: Purchase by subscription, 1896
 #>   Accession Number: 96.18.35
 ```
+
+Get many objects
+
+
+```r
+lapply(c(479283, 228901, 436876), muse_get)
+#> [[1]]
+#> <Museum metadata> Papyri Fragments
+#>   Date: 7th century
+#>   Geography: Made in Thebes, Byzantine Egypt
+#>   Culture: Coptic
+#>   Medium: Papyrus and ink
+#>   Dimensions: Framed: 11 1/4 x 15 in. (28.5 x 38.1 cm)
+#>   Classification: Papyrus
+#>   Accession Number: 14.1.616
+#> 
+#> [[2]]
+#> <Museum metadata> Piece
+#>   Date: 19th century
+#>   Culture: German
+#>   Dimensions: 1 1/4 x 6 1/4in. (3.2 x 15.9cm)
+#>   Classification: Textiles-Laces
+#>   Accession Number: 63.80.18
+#> 
+#> [[3]]
+#> <Museum metadata> Marion Lenbach (1892–1947), the Artist's Daughter
+#>   Date: 1900
+#>   Medium: Oil on canvas
+#>   Dimensions: 58 7/8 x 41 1/2 in. (149.5 x 105.4 cm)
+#>   Classification: Paintings
+#>   Credit Line: Bequest of Collis P. Huntington, 1900
+#>   Accession Number: 25.110.46
+```
+
 
 ### Meta
 

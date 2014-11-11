@@ -7,11 +7,13 @@
 #'
 #' @param id An object id
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
+#' @details This function currently only gets data for The Metropolitan Museum of Art
 #' @examples \donttest{
 #' muse_get(559490)
 #' muse_get(559490)$name
 #' muse_get(559490)$values
 #' muse_get(246562)
+#' lapply(c(479283, 228901, 436876, 444244), muse_get)
 #' }
 muse_get <- function(id, ...){
   out <- musemeta_GET(paste0(mmbase(), id), ...)

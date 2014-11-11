@@ -15,6 +15,8 @@ knitr::opts_chunk$set(
 
 **R client for museum metadata**
 
+Currently only getting data for [The Metropolitan Museum of Art](http://www.metmuseum.org/)
+
 ## Quick start
 
 ### Install
@@ -45,7 +47,7 @@ muse_get(559490)$name
 ```
 
 ```{r}
-muse_get(559490)$values
+muse_get(559490)$values[1:2]
 ```
 
 A different object
@@ -53,6 +55,13 @@ A different object
 ```{r}
 muse_get(246562)
 ```
+
+Get many objects
+
+```{r}
+lapply(c(479283, 228901, 436876), muse_get)
+```
+
 
 ### Meta
 
