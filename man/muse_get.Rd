@@ -13,12 +13,16 @@ muse_get(id, ...)
 \description{
 Get metadata for an object id.
 }
+\details{
+This function currently only gets data for The Metropolitan Museum of Art
+}
 \examples{
 \donttest{
-muse_get(559490)
-muse_get(559490)$name
-muse_get(559490)$values
+out <- muse_get(559490)
+out$name
+out$values
 muse_get(246562)
+lapply(c(479283, 228901, 436876, 444244), muse_get)
 }
 }
 
