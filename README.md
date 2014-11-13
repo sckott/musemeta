@@ -8,7 +8,12 @@ musemeta
 
 **R client for museum metadata**
 
-Currently only getting data for [The Metropolitan Museum of Art](http://www.metmuseum.org/)
+Currently `musemeta` only gets data for [The Metropolitan Museum of Art](http://www.metmuseum.org/) via 
+
+* scraping the MET website (see function `muse_get()`)
+* http://scrapi.org/ (see functions `scrapi_()`)
+
+Other sources of museum metadata will be added...check back later.
 
 ## Quick start
 
@@ -34,15 +39,7 @@ Data for a single object
 
 ```r
 muse_get(559490)
-#> <Museum metadata> Siphon nozzle
-#>   Period: New Kingdom, Ramesside
-#>   Dynasty: Dynasty 19–20
-#>   Date: ca. 1295–1070 B.C.
-#>   Geography: From Egypt, Memphite Region, Lisht North, Cemetery, MMA 1913–1914
-#>   Medium: Bronze
-#>   Dimensions: l. 5.4 cm (2 1/8 in)
-#>   Credit Line: Rogers Fund and Edward S. Harkness Gift, 1922
-#>   Accession Number: 22.1.962
+#> Error in function (type, msg, asError = TRUE) : easy handled already used in multi handle
 ```
 
 Or index to name of object, or values in the description
@@ -50,26 +47,13 @@ Or index to name of object, or values in the description
 
 ```r
 muse_get(559490)$name
-#> [1] "Siphon nozzle"
+#> Error in function (type, msg, asError = TRUE) : easy handled already used in multi handle
 ```
 
 
 ```r
 muse_get(559490)$values[1:2]
-#> [[1]]
-#> [[1]]$name
-#> [1] "Period"
-#> 
-#> [[1]]$value
-#> [1] "New Kingdom, Ramesside"
-#> 
-#> 
-#> [[2]]
-#> [[2]]$name
-#> [1] "Dynasty"
-#> 
-#> [[2]]$value
-#> [1] "Dynasty 19–20"
+#> Error in function (type, msg, asError = TRUE) : easy handled already used in multi handle
 ```
 
 A different object
@@ -77,15 +61,7 @@ A different object
 
 ```r
 muse_get(246562)
-#> <Museum metadata> Terracotta guttus (flask with handle and spout)
-#>   Period: Classical
-#>   Date: 4th century B.C.
-#>   Culture: Greek, South Italian, Campanian
-#>   Medium: Terracotta; black-glaze
-#>   Dimensions: 2 7/8in. (7.3cm)
-#>   Classification: Vases
-#>   Credit Line: Purchase by subscription, 1896
-#>   Accession Number: 96.18.35
+#> Error in function (type, msg, asError = TRUE) : easy handled already used in multi handle
 ```
 
 Get many objects
@@ -93,32 +69,7 @@ Get many objects
 
 ```r
 lapply(c(479283, 228901, 436876), muse_get)
-#> [[1]]
-#> <Museum metadata> Papyri Fragments
-#>   Date: 7th century
-#>   Geography: Made in Thebes, Byzantine Egypt
-#>   Culture: Coptic
-#>   Medium: Papyrus and ink
-#>   Dimensions: Framed: 11 1/4 x 15 in. (28.5 x 38.1 cm)
-#>   Classification: Papyrus
-#>   Accession Number: 14.1.616
-#> 
-#> [[2]]
-#> <Museum metadata> Piece
-#>   Date: 19th century
-#>   Culture: German
-#>   Dimensions: 1 1/4 x 6 1/4in. (3.2 x 15.9cm)
-#>   Classification: Textiles-Laces
-#>   Accession Number: 63.80.18
-#> 
-#> [[3]]
-#> <Museum metadata> Marion Lenbach (1892–1947), the Artist's Daughter
-#>   Date: 1900
-#>   Medium: Oil on canvas
-#>   Dimensions: 58 7/8 x 41 1/2 in. (149.5 x 105.4 cm)
-#>   Classification: Paintings
-#>   Credit Line: Bequest of Collis P. Huntington, 1900
-#>   Accession Number: 25.110.46
+#> Error in function (type, msg, asError = TRUE) : easy handled already used in multi handle
 ```
 
 
@@ -132,24 +83,7 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Etching and Drypoint"
-#> 
-#> $whoList
-#> $whoList[[1]]
-#> $whoList[[1]]$name
-#> [1] "Rosa, Salvator$Salvator Rosa"
-#> 
-#> $whoList[[1]]$count
-#> [1] 167
-#> 
-#> $whoList[[1]]$orderId
-#> [1] 0
-#> 
-#> $whoList[[1]]$isCurrent
-#> [1] FALSE
-#> 
-#> $whoList[[1]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Rosa%2c+Salvator%24Salvator+Rosa"
+#> [1] "Tin, iron"
 ```
 
 Get a specific object

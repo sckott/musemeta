@@ -15,7 +15,12 @@ knitr::opts_chunk$set(
 
 **R client for museum metadata**
 
-Currently only getting data for [The Metropolitan Museum of Art](http://www.metmuseum.org/)
+Currently `musemeta` only gets data for [The Metropolitan Museum of Art](http://www.metmuseum.org/) via 
+
+* scraping the MET website (see function `muse_get()`)
+* http://scrapi.org/ (see functions `scrapi_()`)
+
+Other sources of museum metadata will be added...check back later.
 
 ## Quick start
 
