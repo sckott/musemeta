@@ -4,7 +4,7 @@ musemeta
 
 
 [![Build Status](https://api.travis-ci.org/ropensci/musemeta.png)](https://travis-ci.org/ropensci/musemeta)
-[![Build status](https://ci.appveyor.com/api/projects/status/ytgtb62gsgf5hddi/branch/master)](https://ci.appveyor.com/project/sckott/musemeta/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/y3tefs9xb6pmql36/branch/master?svg=true)](https://ci.appveyor.com/project/sckott/musemeta/branch/master)
 
 **R client for museum metadata**
 
@@ -132,15 +132,15 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Lithograph; second state of two (Delteil)"
+#> [1] "Etching and Drypoint"
 #> 
 #> $whoList
 #> $whoList[[1]]
 #> $whoList[[1]]$name
-#> [1] "Aubert et Cie$Aubert et Cie"
+#> [1] "Rosa, Salvator$Salvator Rosa"
 #> 
 #> $whoList[[1]]$count
-#> [1] 1249
+#> [1] 167
 #> 
 #> $whoList[[1]]$orderId
 #> [1] 0
@@ -149,41 +149,7 @@ scrapi_random(fields=c('medium','whoList'))
 #> [1] FALSE
 #> 
 #> $whoList[[1]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Aubert+et+Cie%24Aubert+et+Cie"
-#> 
-#> 
-#> $whoList[[2]]
-#> $whoList[[2]]$name
-#> [1] "Daumier, Honoré$Honoré Daumier"
-#> 
-#> $whoList[[2]]$count
-#> [1] 1078
-#> 
-#> $whoList[[2]]$orderId
-#> [1] 0
-#> 
-#> $whoList[[2]]$isCurrent
-#> [1] FALSE
-#> 
-#> $whoList[[2]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Daumier%2c+Honor%c3%a9%24Honor%c3%a9+Daumier"
-#> 
-#> 
-#> $whoList[[3]]
-#> $whoList[[3]]$name
-#> [1] "Bauger et Cie$Bauger et Cie"
-#> 
-#> $whoList[[3]]$count
-#> [1] 377
-#> 
-#> $whoList[[3]]$orderId
-#> [1] 0
-#> 
-#> $whoList[[3]]$isCurrent
-#> [1] FALSE
-#> 
-#> $whoList[[3]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Bauger+et+Cie%24Bauger+et+Cie"
+#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Rosa%2c+Salvator%24Salvator+Rosa"
 ```
 
 Get a specific object
