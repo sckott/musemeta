@@ -15,16 +15,16 @@ knitr::opts_chunk$set(
 
 **R client for museum metadata**
 
-Currently `musemeta` only gets data for [The Metropolitan Museum of Art](http://www.metmuseum.org/) via 
+Currently `musemeta` can get data from:
 
-* scraping the MET website (see function `muse_get()`)
-* http://scrapi.org/ (see functions `scrapi_()`)
+* [The Metropolitan Museum of Art](http://www.metmuseum.org/) via 
+    * scraping the MET website (see function `muse_get()`)
+    * http://scrapi.org/ (see functions `scrapi_()`)
+* The Canadian Science & Technology Museum Corporation (CSTMC) (see functions `cstmc_()`)
 
 Other sources of museum metadata will be added...check back later.
 
-## Quick start
-
-### Install
+## Install
 
 Get `ckanr` first, not on CRAN yet (I'll get `ckanr` up to CRAN before this is on CRAN)
 
@@ -42,7 +42,9 @@ devtools::install_github("ropensci/musemeta")
 library("musemeta")
 ```
 
-### Get metadata
+## MET data
+
+### Scraping site directly
 
 Data for a single object
 
@@ -72,8 +74,7 @@ Get many objects
 lapply(c(479283, 228901, 436876), muse_get)
 ```
 
-
-### Use the scrapi API
+### Using the scrapi API
 
 This is again, for The Metropolitan Museum of Art only 
 
@@ -95,8 +96,28 @@ Search for objects
 scrapi_search(query='mirror')
 ```
 
+## CSTMC data
 
-### Meta
+List changes
+
+```{r}
+cstmc_changes(limit = 1)
+```
+
+List datasets
+
+```{r}
+cstmc_datasets(as = "table")
+```
+
+Search for packages
+
+```{r}
+out <- cstmc_package_search(q = '*:*', rows = 2, as='table')
+lapply(out$results$resources, function(x) x[,1:3])
+```
+
+## Meta
 
 * Please report any issues or bugs](https://github.com/ropensci/musemeta/issues).
 * License: MIT
