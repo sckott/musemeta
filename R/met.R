@@ -2,7 +2,8 @@
 #'
 #' @importFrom httr GET content stop_for_status
 #' @importFrom jsonlite fromJSON
-#' @importFrom XML xpathApply xpathSApply xmlValue htmlParse xmlChildren xmlGetAttr
+#' @importFrom XML xpathApply xpathSApply xmlValue htmlParse xmlChildren xmlGetAttr readHTMLTable
+#' xmlToList
 #' @name met
 #'
 #' @param id An object id

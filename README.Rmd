@@ -22,6 +22,7 @@ Currently `musemeta` can get data from:
     * http://scrapi.org/ (see functions `scrapi_()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
+* The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 
 Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
 
@@ -146,6 +147,20 @@ Get metadata for many objects
 
 ```{r}
 lapply(c(143679,27773,28487), nga)
+```
+
+## Getty Museum
+
+Get metadata for a single object
+
+```{r}
+getty(id=140725)
+```
+
+Get metadata for many objects
+
+```{r}
+lapply(c(140725,8197), getty)
 ```
 
 ## Meta

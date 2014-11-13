@@ -15,6 +15,7 @@ Currently `musemeta` can get data from:
     * http://scrapi.org/ (see functions `scrapi_()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
+* The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 
 Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
 
@@ -147,7 +148,7 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Faience"
+#> [1] "Glass"
 ```
 
 Get a specific object
@@ -526,6 +527,93 @@ lapply(c(143679,27773,28487), nga)
 #>           p. 67, no. 127.
 #>      1970: Hornung, Clarence P., Treasury of American Design. New York, 1970:
 #>           83, pl. 265.
+```
+
+## Getty Museum
+
+Get metadata for a single object
+
+
+```r
+getty(id=140725)
+#> <Getty metadata> A Young Herdsman Leaning on his "Houlette"
+#>   Artist: Herman Saftleven the Younger [Dutch, 1609 - 1685]
+#>   Provenance
+#>      : Gustav Nebehay [Vienna, Austria]
+#>      - 1941: Franz W. Koenigs [Haarlem, Netherlands], by inheritance to his heirs.
+#>      - 2001: Private Collection (sold, Sotheby's New York, January 23, 2001, lot 20, to Bob Haboldt.)
+#>      2001: Bob P. Haboldt, sold to the J. Paul Getty Museum, 2001.
+#>   Description:
+#>      Artist/Maker(s): Herman Saftleven the Younger [Dutch, 1609 - 1685]
+#>      Date: about 1650
+#>      Medium: Black chalk and brown wash
+#>      Dimensions: 27.5 x 18.6 cm (10 13/16 x 7 5/16 in.)
+#>      Object Number: 2001.40
+#>      Department: Drawings
+#>      Culture: Dutch
+#>      Previous number: L.2001.12
+#>      Classification/Object Type: Drawings / Drawing
+#>   Exhibition history:
+#>      Dutch Drawings of the Golden Age (May 28 to August 25, 2002): The J. Paul Getty Museum at the Getty Center (Los Angeles), May 28,
+#>           2002 - August 25, 2002
+#>      Visions of Grandeur: Drawing in the Baroque Age (June 1 to September 12, 2004): The J. Paul Getty Museum at the Getty Center (Los Angeles), June 1,
+#>           2004 - September 12, 2004
+#>      Paper Art: Finished Drawings in Holland 1590-1800 (September 6 to November 20, 2005): The J. Paul Getty Museum at the Getty Center (Los Angeles), September
+#>           6, 2005 - November 20, 2005
+#>      Drawing Life: The Dutch Visual Tradition (November 24, 2009 to February 28, 2010): The J. Paul Getty Museum at the Getty Center (Los Angeles), November
+#>           24, 2009 - February 28, 2010
+```
+
+Get metadata for many objects
+
+
+```r
+lapply(c(140725,8197), getty)
+#> [[1]]
+#> <Getty metadata> A Young Herdsman Leaning on his "Houlette"
+#>   Artist: Herman Saftleven the Younger [Dutch, 1609 - 1685]
+#>   Provenance
+#>      : Gustav Nebehay [Vienna, Austria]
+#>      - 1941: Franz W. Koenigs [Haarlem, Netherlands], by inheritance to his heirs.
+#>      - 2001: Private Collection (sold, Sotheby's New York, January 23, 2001, lot 20, to Bob Haboldt.)
+#>      2001: Bob P. Haboldt, sold to the J. Paul Getty Museum, 2001.
+#>   Description:
+#>      Artist/Maker(s): Herman Saftleven the Younger [Dutch, 1609 - 1685]
+#>      Date: about 1650
+#>      Medium: Black chalk and brown wash
+#>      Dimensions: 27.5 x 18.6 cm (10 13/16 x 7 5/16 in.)
+#>      Object Number: 2001.40
+#>      Department: Drawings
+#>      Culture: Dutch
+#>      Previous number: L.2001.12
+#>      Classification/Object Type: Drawings / Drawing
+#>   Exhibition history:
+#>      Dutch Drawings of the Golden Age (May 28 to August 25, 2002): The J. Paul Getty Museum at the Getty Center (Los Angeles), May 28,
+#>           2002 - August 25, 2002
+#>      Visions of Grandeur: Drawing in the Baroque Age (June 1 to September 12, 2004): The J. Paul Getty Museum at the Getty Center (Los Angeles), June 1,
+#>           2004 - September 12, 2004
+#>      Paper Art: Finished Drawings in Holland 1590-1800 (September 6 to November 20, 2005): The J. Paul Getty Museum at the Getty Center (Los Angeles), September
+#>           6, 2005 - November 20, 2005
+#>      Drawing Life: The Dutch Visual Tradition (November 24, 2009 to February 28, 2010): The J. Paul Getty Museum at the Getty Center (Los Angeles), November
+#>           24, 2009 - February 28, 2010
+#> 
+#> [[2]]
+#> <Getty metadata> Grave Stele of a Boy
+#>   Artist: Unknown
+#>   Provenance
+#>      - 1973: Nicolas Koutoulakis [Geneva, Switzerland], sold to the J. Paul Getty Museum, 1973.
+#>   Description:
+#>      Artist/Maker(s): Unknown
+#>      Date: 1 - 50
+#>      Medium: Marble
+#>      Dimensions: Object: H: 87 x W: 39.1 x D: 7 cm (34 1/4 x 15 3/8 x 2 3/4 in.)
+#>      Object Number: 73.AA.114
+#>      Department: Antiquities
+#>      Display Title: Gravestone of a Boy
+#>      Culture: Roman
+#>      Place Created: Roman Empire
+#>      Classification/Object Type: Sculpture / Relief
+#>   Exhibition history:
 ```
 
 ## Meta
