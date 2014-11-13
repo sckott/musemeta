@@ -26,10 +26,15 @@ Other sources of museum metadata will be added...check back later.
 
 ### Install
 
-Install musemeta
+Get `ckanr` first, not on CRAN yet (I'll get `ckanr` up to CRAN before this is on CRAN)
+
+```{r}
+devtools::install_github("sckott/ckanr")
+```
+
+Then install musemeta
 
 ```{r eval=FALSE}
-install.packages("devtools")
 devtools::install_github("ropensci/musemeta")
 ```
 
