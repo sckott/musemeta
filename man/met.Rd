@@ -3,28 +3,19 @@
 \alias{met}
 \alias{met_get}
 \alias{muse_get}
-\alias{nga}
 \title{Get metadata for objects in the Metropolitan Museum of Art.}
 \usage{
 met_get(id, ...)
 
 muse_get(id, ...)
-
-nga(id, ...)
 }
 \arguments{
-\item{id}{An object id}
-
-\item{...}{Curl args passed on to \code{\link[httr]{GET}}}
-
 \item{id}{An object id}
 
 \item{...}{Curl args passed on to \code{\link[httr]{GET}}}
 }
 \description{
 Get metadata for objects in the Metropolitan Museum of Art.
-
-Get metadata for objects in the National Gallery of Art.
 }
 \details{
 This function currently only gets data for The Metropolitan Museum of Art
@@ -38,12 +29,6 @@ out$name
 out$values
 met_get(246562)
 lapply(c(479283, 228901, 436876, 444244), muse_get)
-}
-\donttest{
-nga(id=33267)
-nga(47242)
-nga(47243)
-nga(45987)
 }
 }
 
