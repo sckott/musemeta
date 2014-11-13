@@ -1,4 +1,4 @@
-#' Use the scrapi API for The Metropolitan Museum of Art data
+#' Use the scrapi API for The Metropolitan Museum of Art data.
 #'
 #' @name scrapi
 #' @param id (numeric) An object id
@@ -6,6 +6,10 @@
 #' @param fields (character) One or more fields to return in a vector
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @references \url{http://scrapi.org/} \url{https://github.com/jedahan/collections-api}
+#' @seealso \code{\link{met}}
+#' @details You can also use the \code{\link{met}} function. The equivalent function with the
+#' scrapi API is \code{\link{scrapi_get}}. The latter gets much more data, and uses a REST API,
+#' while the former scrapes the html directly.
 #' @examples \donttest{
 #' # Get a random object
 #' scrapi_random()
@@ -19,6 +23,12 @@
 #' # Search for objects
 #' scrapi_search(query='mirror')
 #' scrapi_search(query='siphon nozzle')
+#'
+#' # Get an object
+#' ## with a url for a scrapi object
+#' scrapi_get("http://scrapi.org/object/427581")
+#' ## with an object id
+#' scrapi_get(427581)
 #' }
 NULL
 
@@ -42,7 +52,15 @@ scrapi_search <- function(query, ...){
   res <- musemeta_GET(paste0(scbase(), "search/", gsub("\\s", "+", query)), ...)
   out <- jsonlite::fromJSON(res, TRUE)
   links <- as.list(setNames(unname(unlist(out$`_links`)), names(out$`_links`)))
-  list(out=out$collection$items$href, links=links)
+  ids <- gsub("http://scrapi.org/object/", "", out$collection$items$href)
+  list(links=out$collection$items$href, ids=ids, paging=links)
+}
+
+#' @export
+#' @rdname scrapi
+scrapi_get <- function(x, ...){
+  res <- if(grepl("http://scrapi.org", x)) musemeta_GET(x, ...) else musemeta_GET(paste0(scbase(), "object/", x), ...)
+  jsonlite::fromJSON(res, FALSE)
 }
 
 scbase <- function() 'http://scrapi.org/'
