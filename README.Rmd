@@ -44,6 +44,8 @@ library("musemeta")
 
 ## MET data
 
+To get actual metadata for an object, you can use `met()` or `scrapi_get()` functions. The latter gets much more data, and uses a REST API, while the former scrapes the html directly, and can be more fragile with any changes in the html on the site.
+
 ### Scraping site directly
 
 Data for a single object
@@ -94,6 +96,20 @@ Search for objects
 
 ```{r}
 scrapi_search(query='mirror')
+```
+
+Get an object, with a scrapi.org url
+
+```{r}
+out <- scrapi_get("http://scrapi.org/object/427581")
+out$primaryArtist
+```
+
+or an object id
+
+```{r}
+out <- scrapi_get(427581)
+out$primaryArtist
 ```
 
 ## CSTMC data

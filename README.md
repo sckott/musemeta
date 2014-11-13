@@ -40,6 +40,8 @@ library("musemeta")
 
 ## MET data
 
+To get actual metadata for an object, you can use `met()` or `scrapi_get()` functions. The latter gets much more data, and uses a REST API, while the former scrapes the html directly, and can be more fragile with any changes in the html on the site.
+
 ### Scraping site directly
 
 Data for a single object
@@ -47,15 +49,6 @@ Data for a single object
 
 ```r
 muse_get(559490)
-#> <Museum metadata> Siphon nozzle
-#>   Period: New Kingdom, Ramesside
-#>   Dynasty: Dynasty 19–20
-#>   Date: ca. 1295–1070 B.C.
-#>   Geography: From Egypt, Memphite Region, Lisht North, Cemetery, MMA 1913–1914
-#>   Medium: Bronze
-#>   Dimensions: l. 5.4 cm (2 1/8 in)
-#>   Credit Line: Rogers Fund and Edward S. Harkness Gift, 1922
-#>   Accession Number: 22.1.962
 ```
 
 Or index to name of object, or values in the description
@@ -63,26 +56,13 @@ Or index to name of object, or values in the description
 
 ```r
 muse_get(559490)$name
-#> [1] "Siphon nozzle"
+#> Error in muse_get(559490)$name: $ operator is invalid for atomic vectors
 ```
 
 
 ```r
 muse_get(559490)$values[1:2]
-#> [[1]]
-#> [[1]]$name
-#> [1] "Period"
-#> 
-#> [[1]]$value
-#> [1] "New Kingdom, Ramesside"
-#> 
-#> 
-#> [[2]]
-#> [[2]]$name
-#> [1] "Dynasty"
-#> 
-#> [[2]]$value
-#> [1] "Dynasty 19–20"
+#> Error in muse_get(559490)$values: $ operator is invalid for atomic vectors
 ```
 
 A different object
@@ -90,15 +70,6 @@ A different object
 
 ```r
 muse_get(246562)
-#> <Museum metadata> Terracotta guttus (flask with handle and spout)
-#>   Period: Classical
-#>   Date: 4th century B.C.
-#>   Culture: Greek, South Italian, Campanian
-#>   Medium: Terracotta; black-glaze
-#>   Dimensions: 2 7/8in. (7.3cm)
-#>   Classification: Vases
-#>   Credit Line: Purchase by subscription, 1896
-#>   Accession Number: 96.18.35
 ```
 
 Get many objects
@@ -107,31 +78,13 @@ Get many objects
 ```r
 lapply(c(479283, 228901, 436876), muse_get)
 #> [[1]]
-#> <Museum metadata> Papyri Fragments
-#>   Date: 7th century
-#>   Geography: Made in Thebes, Byzantine Egypt
-#>   Culture: Coptic
-#>   Medium: Papyrus and ink
-#>   Dimensions: Framed: 11 1/4 x 15 in. (28.5 x 38.1 cm)
-#>   Classification: Papyrus
-#>   Accession Number: 14.1.616
+#> [1] "Decided to change fxn name, see met()"
 #> 
 #> [[2]]
-#> <Museum metadata> Piece
-#>   Date: 19th century
-#>   Culture: German
-#>   Dimensions: 1 1/4 x 6 1/4in. (3.2 x 15.9cm)
-#>   Classification: Textiles-Laces
-#>   Accession Number: 63.80.18
+#> [1] "Decided to change fxn name, see met()"
 #> 
 #> [[3]]
-#> <Museum metadata> Marion Lenbach (1892–1947), the Artist's Daughter
-#>   Date: 1900
-#>   Medium: Oil on canvas
-#>   Dimensions: 58 7/8 x 41 1/2 in. (149.5 x 105.4 cm)
-#>   Classification: Paintings
-#>   Credit Line: Bequest of Collis P. Huntington, 1900
-#>   Accession Number: 25.110.46
+#> [1] "Decided to change fxn name, see met()"
 ```
 
 ### Using the scrapi API
@@ -144,7 +97,58 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Wood; carved"
+#> [1] "Engraving"
+#> 
+#> $whoList
+#> $whoList[[1]]
+#> $whoList[[1]]$name
+#> [1] "Sadeler, Aegidius$Aegidius Sadeler"
+#> 
+#> $whoList[[1]]$count
+#> [1] 141
+#> 
+#> $whoList[[1]]$orderId
+#> [1] 0
+#> 
+#> $whoList[[1]]$isCurrent
+#> [1] FALSE
+#> 
+#> $whoList[[1]]$url
+#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Sadeler%2c+Aegidius%24Aegidius+Sadeler"
+#> 
+#> 
+#> $whoList[[2]]
+#> $whoList[[2]]$name
+#> [1] "Brueghel, Jan, the Elder$Jan Brueghel the Elder"
+#> 
+#> $whoList[[2]]$count
+#> [1] 61
+#> 
+#> $whoList[[2]]$orderId
+#> [1] 0
+#> 
+#> $whoList[[2]]$isCurrent
+#> [1] FALSE
+#> 
+#> $whoList[[2]]$url
+#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Brueghel%2c+Jan%2c+the+Elder%24Jan+Brueghel+the+Elder"
+#> 
+#> 
+#> $whoList[[3]]
+#> $whoList[[3]]$name
+#> [1] "Sadeler, Marcus$Marcus Sadeler"
+#> 
+#> $whoList[[3]]$count
+#> [1] 29
+#> 
+#> $whoList[[3]]$orderId
+#> [1] 0
+#> 
+#> $whoList[[3]]$isCurrent
+#> [1] FALSE
+#> 
+#> $whoList[[3]]$url
+#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Sadeler%2c+Marcus%24Marcus+Sadeler"
 ```
 
 Get a specific object
@@ -167,7 +171,7 @@ Search for objects
 
 ```r
 scrapi_search(query='mirror')
-#> $out
+#> $links
 #>  [1] "http://scrapi.org/object/207785" "http://scrapi.org/object/156225"
 #>  [3] "http://scrapi.org/object/425550" "http://scrapi.org/object/436839"
 #>  [5] "http://scrapi.org/object/60142"  "http://scrapi.org/object/54118" 
@@ -214,15 +218,62 @@ scrapi_search(query='mirror')
 #> [87] "http://scrapi.org/object/423650" "http://scrapi.org/object/271708"
 #> [89] "http://scrapi.org/object/427581" "http://scrapi.org/object/427585"
 #> 
-#> $links
-#> $links$first
+#> $ids
+#>  [1] "207785" "156225" "425550" "436839" "60142"  "54118"  "421538"
+#>  [8] "421541" "421542" "421543" "421877" "421892" "414082" "414085"
+#> [15] "413260" "425547" "412623" "49591"  "36624"  "54864"  "50397" 
+#> [22] "284630" "267055" "468197" "44848"  "284629" "255880" "427562"
+#> [29] "452364" "449949" "487410" "467733" "544234" "38968"  "198323"
+#> [36] "248153" "247562" "345749" "415290" "415292" "461607" "45522" 
+#> [43] "52475"  "64481"  "38424"  "244558" "244297" "255617" "255391"
+#> [50] "256949" "247479" "247869" "249227" "253556" "253640" "346681"
+#> [57] "317748" "307734" "386624" "431176" "431179" "431181" "427560"
+#> [64] "452852" "452809" "452948" "434964" "434966" "459206" "464248"
+#> [71] "471283" "550263" "17566"  "63333"  "55068"  "53937"  "193593"
+#> [78] "207520" "203757" "255960" "251169" "412628" "415261" "421876"
+#> [85] "413175" "417966" "423650" "271708" "427581" "427585"
+#> 
+#> $paging
+#> $paging$first
 #> [1] "http://scrapi.org/search/mirror?page=1"
 #> 
-#> $links$`next`
+#> $paging$`next`
 #> [1] "http://scrapi.org/search/mirror?page=2"
 #> 
-#> $links$last
+#> $paging$last
 #> [1] "http://scrapi.org/search/mirror?page=29"
+```
+
+Get an object, with a scrapi.org url
+
+
+```r
+out <- scrapi_get("http://scrapi.org/object/427581")
+out$primaryArtist
+#> $role
+#> [1] "Artist"
+#> 
+#> $name
+#> [1] "Daniel Marot the Elder"
+#> 
+#> $nationality
+#> [1] "(French, Paris 1661–1752 The Hague)"
+```
+
+or an object id
+
+
+```r
+out <- scrapi_get(427581)
+out$primaryArtist
+#> $role
+#> [1] "Artist"
+#> 
+#> $name
+#> [1] "Daniel Marot the Elder"
+#> 
+#> $nationality
+#> [1] "(French, Paris 1661–1752 The Hague)"
 ```
 
 ## CSTMC data
