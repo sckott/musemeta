@@ -1,4 +1,4 @@
-#' Get metadata for an object id.
+#' Get metadata for objects in the Metropolitan Museum of Art.
 #'
 #' @importFrom httr GET content stop_for_status
 #' @importFrom jsonlite fromJSON
