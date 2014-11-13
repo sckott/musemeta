@@ -2,25 +2,23 @@
 #'
 #' @importFrom httr GET content stop_for_status
 #' @importFrom jsonlite fromJSON
-#' @importFrom XML xpathApply xpathSApply xmlValue htmlParse
+#' @importFrom XML xpathApply xpathSApply xmlValue htmlParse xmlChildren xmlGetAttr
 #' @name met
 #'
 #' @param id An object id
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
-#' @details This function currently only gets data for The Metropolitan Museum of Art
-#'
-#' \code{muse_get} has changed to \code{met_get}
+#' @details \code{muse_get} has changed to \code{met}
 #' @examples \donttest{
-#' out <- met_get(559490)
+#' out <- met(559490)
 #' out$name
 #' out$values
-#' met_get(246562)
-#' lapply(c(479283, 228901, 436876, 444244), muse_get)
+#' met(246562)
+#' lapply(c(479283, 228901, 436876, 444244), met)
 #' }
 
 #' @export
 #' @rdname met
-met_get <- function(id, ...){
+met <- function(id, ...){
   out <- musemeta_GET(paste0(metbase(), id), ...)
   met_parse(out)
 }
@@ -28,7 +26,7 @@ met_get <- function(id, ...){
 #' @export
 #' @rdname met
 muse_get <- function(id, ...){
-  .Deprecated("met_get", "musemeta", "Decided to change fxn name, see met_get()")
+  .Deprecated("met", "musemeta", "Decided to change fxn name, see met()")
 }
 
 met_parse <- function(x){
@@ -44,6 +42,3 @@ met_parse <- function(x){
 }
 
 metbase <- function() "http://www.metmuseum.org/collection/the-collection-online/search/"
-
-# url <- 'http://www.metmuseum.org/collection/the-collection-online/search/559490?rpp=30&pg=1&rndkey=20140815&ft=*&what=Bronze&pos=1'
-# url <- 'http://www.metmuseum.org/collection/the-collection-online/search/559490'
