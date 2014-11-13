@@ -48,43 +48,92 @@ Data for a single object
 
 
 ```r
-muse_get(559490)
+met(559490)
+#> <Museum metadata> Siphon nozzle
+#>   Period: New Kingdom, Ramesside
+#>   Dynasty: Dynasty 19–20
+#>   Date: ca. 1295–1070 B.C.
+#>   Geography: From Egypt, Memphite Region, Lisht North, Cemetery, MMA 1913–1914
+#>   Medium: Bronze
+#>   Dimensions: l. 5.4 cm (2 1/8 in)
+#>   Credit Line: Rogers Fund and Edward S. Harkness Gift, 1922
+#>   Accession Number: 22.1.962
 ```
 
 Or index to name of object, or values in the description
 
 
 ```r
-muse_get(559490)$name
-#> Error in muse_get(559490)$name: $ operator is invalid for atomic vectors
+met(559490)$name
+#> [1] "Siphon nozzle"
 ```
 
 
 ```r
-muse_get(559490)$values[1:2]
-#> Error in muse_get(559490)$values: $ operator is invalid for atomic vectors
+met(559490)$values[1:2]
+#> [[1]]
+#> [[1]]$name
+#> [1] "Period"
+#> 
+#> [[1]]$value
+#> [1] "New Kingdom, Ramesside"
+#> 
+#> 
+#> [[2]]
+#> [[2]]$name
+#> [1] "Dynasty"
+#> 
+#> [[2]]$value
+#> [1] "Dynasty 19–20"
 ```
 
 A different object
 
 
 ```r
-muse_get(246562)
+met(246562)
+#> <Museum metadata> Terracotta guttus (flask with handle and spout)
+#>   Period: Classical
+#>   Date: 4th century B.C.
+#>   Culture: Greek, South Italian, Campanian
+#>   Medium: Terracotta; black-glaze
+#>   Dimensions: 2 7/8in. (7.3cm)
+#>   Classification: Vases
+#>   Credit Line: Purchase by subscription, 1896
+#>   Accession Number: 96.18.35
 ```
 
 Get many objects
 
 
 ```r
-lapply(c(479283, 228901, 436876), muse_get)
+lapply(c(479283, 228901, 436876), met)
 #> [[1]]
-#> [1] "Decided to change fxn name, see met()"
+#> <Museum metadata> Papyri Fragments
+#>   Date: 7th century
+#>   Geography: Made in Thebes, Byzantine Egypt
+#>   Culture: Coptic
+#>   Medium: Papyrus and ink
+#>   Dimensions: Framed: 11 1/4 x 15 in. (28.5 x 38.1 cm)
+#>   Classification: Papyrus
+#>   Accession Number: 14.1.616
 #> 
 #> [[2]]
-#> [1] "Decided to change fxn name, see met()"
+#> <Museum metadata> Piece
+#>   Date: 19th century
+#>   Culture: German
+#>   Dimensions: 1 1/4 x 6 1/4in. (3.2 x 15.9cm)
+#>   Classification: Textiles-Laces
+#>   Accession Number: 63.80.18
 #> 
 #> [[3]]
-#> [1] "Decided to change fxn name, see met()"
+#> <Museum metadata> Marion Lenbach (1892–1947), the Artist's Daughter
+#>   Date: 1900
+#>   Medium: Oil on canvas
+#>   Dimensions: 58 7/8 x 41 1/2 in. (149.5 x 105.4 cm)
+#>   Classification: Paintings
+#>   Credit Line: Bequest of Collis P. Huntington, 1900
+#>   Accession Number: 25.110.46
 ```
 
 ### Using the scrapi API
@@ -97,58 +146,7 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Engraving"
-#> 
-#> $whoList
-#> $whoList[[1]]
-#> $whoList[[1]]$name
-#> [1] "Sadeler, Aegidius$Aegidius Sadeler"
-#> 
-#> $whoList[[1]]$count
-#> [1] 141
-#> 
-#> $whoList[[1]]$orderId
-#> [1] 0
-#> 
-#> $whoList[[1]]$isCurrent
-#> [1] FALSE
-#> 
-#> $whoList[[1]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Sadeler%2c+Aegidius%24Aegidius+Sadeler"
-#> 
-#> 
-#> $whoList[[2]]
-#> $whoList[[2]]$name
-#> [1] "Brueghel, Jan, the Elder$Jan Brueghel the Elder"
-#> 
-#> $whoList[[2]]$count
-#> [1] 61
-#> 
-#> $whoList[[2]]$orderId
-#> [1] 0
-#> 
-#> $whoList[[2]]$isCurrent
-#> [1] FALSE
-#> 
-#> $whoList[[2]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Brueghel%2c+Jan%2c+the+Elder%24Jan+Brueghel+the+Elder"
-#> 
-#> 
-#> $whoList[[3]]
-#> $whoList[[3]]$name
-#> [1] "Sadeler, Marcus$Marcus Sadeler"
-#> 
-#> $whoList[[3]]$count
-#> [1] 29
-#> 
-#> $whoList[[3]]$orderId
-#> [1] 0
-#> 
-#> $whoList[[3]]$isCurrent
-#> [1] FALSE
-#> 
-#> $whoList[[3]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Sadeler%2c+Marcus%24Marcus+Sadeler"
+#> [1] "straw, silk"
 ```
 
 Get a specific object
