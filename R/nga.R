@@ -5,15 +5,15 @@
 #' @param id An object id
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @examples \donttest{
-#' nga_get(id=33267)
-#' nga_get(47242)
-#' nga_get(47243)
-#' nga_get(45987)
+#' nga(id=33267)
+#' nga(47242)
+#' nga(47243)
+#' nga(45987)
 #' }
 
 #' @export
 #' @rdname met
-nga_get <- function(id, ...){
+nga <- function(id, ...){
   out <- musemeta_GET(sprintf(ngabase(), id), ...)
   nga_parse(out)
 }

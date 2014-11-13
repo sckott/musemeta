@@ -3,14 +3,14 @@
 \alias{met}
 \alias{met_get}
 \alias{muse_get}
-\alias{nga_get}
+\alias{nga}
 \title{Get metadata for objects in the Metropolitan Museum of Art.}
 \usage{
 met_get(id, ...)
 
 muse_get(id, ...)
 
-nga_get(id, ...)
+nga(id, ...)
 }
 \arguments{
 \item{id}{An object id}
@@ -40,10 +40,10 @@ met_get(246562)
 lapply(c(479283, 228901, 436876, 444244), muse_get)
 }
 \donttest{
-nga_get(id=33267)
-nga_get(47242)
-nga_get(47243)
-nga_get(45987)
+nga(id=33267)
+nga(47242)
+nga(47243)
+nga(45987)
 }
 }
 
