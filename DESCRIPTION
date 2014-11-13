@@ -11,6 +11,7 @@ BugReports: http://www.github.com/ropensci/musemeta/issues
 Imports:
     httr,
     jsonlite,
-    XML
+    XML,
+    ckanr
 Suggests:
     roxygen2
