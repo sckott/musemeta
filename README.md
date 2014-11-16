@@ -16,6 +16,7 @@ Currently `musemeta` can get data from:
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
+* The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
 
 Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
 
@@ -148,7 +149,24 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Glass"
+#> [1] "Pen, brown ink with brown and grey washes"
+#> 
+#> $whoList
+#> $whoList[[1]]
+#> $whoList[[1]]$name
+#> [1] "Bibiena, Giuseppe Galli$Giuseppe Galli Bibiena"
+#> 
+#> $whoList[[1]]$count
+#> [1] 78
+#> 
+#> $whoList[[1]]$orderId
+#> [1] 0
+#> 
+#> $whoList[[1]]$isCurrent
+#> [1] FALSE
+#> 
+#> $whoList[[1]]$url
+#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Bibiena%2c+Giuseppe+Galli%24Giuseppe+Galli+Bibiena"
 ```
 
 Get a specific object
@@ -174,64 +192,64 @@ scrapi_search(query='mirror')
 #> $links
 #>  [1] "http://scrapi.org/object/207785" "http://scrapi.org/object/156225"
 #>  [3] "http://scrapi.org/object/425550" "http://scrapi.org/object/436839"
-#>  [5] "http://scrapi.org/object/60142"  "http://scrapi.org/object/54118" 
-#>  [7] "http://scrapi.org/object/421538" "http://scrapi.org/object/421541"
-#>  [9] "http://scrapi.org/object/421542" "http://scrapi.org/object/421543"
-#> [11] "http://scrapi.org/object/421877" "http://scrapi.org/object/421892"
+#>  [5] "http://scrapi.org/object/421538" "http://scrapi.org/object/421541"
+#>  [7] "http://scrapi.org/object/421542" "http://scrapi.org/object/421543"
+#>  [9] "http://scrapi.org/object/421877" "http://scrapi.org/object/421892"
+#> [11] "http://scrapi.org/object/425547" "http://scrapi.org/object/413260"
 #> [13] "http://scrapi.org/object/414082" "http://scrapi.org/object/414085"
-#> [15] "http://scrapi.org/object/413260" "http://scrapi.org/object/425547"
-#> [17] "http://scrapi.org/object/412623" "http://scrapi.org/object/49591" 
-#> [19] "http://scrapi.org/object/36624"  "http://scrapi.org/object/54864" 
-#> [21] "http://scrapi.org/object/50397"  "http://scrapi.org/object/284630"
-#> [23] "http://scrapi.org/object/267055" "http://scrapi.org/object/468197"
-#> [25] "http://scrapi.org/object/44848"  "http://scrapi.org/object/284629"
-#> [27] "http://scrapi.org/object/255880" "http://scrapi.org/object/427562"
-#> [29] "http://scrapi.org/object/452364" "http://scrapi.org/object/449949"
+#> [15] "http://scrapi.org/object/54118"  "http://scrapi.org/object/60142" 
+#> [17] "http://scrapi.org/object/412623" "http://scrapi.org/object/267055"
+#> [19] "http://scrapi.org/object/284630" "http://scrapi.org/object/36624" 
+#> [21] "http://scrapi.org/object/49591"  "http://scrapi.org/object/50397" 
+#> [23] "http://scrapi.org/object/54864"  "http://scrapi.org/object/468197"
+#> [25] "http://scrapi.org/object/255880" "http://scrapi.org/object/284629"
+#> [27] "http://scrapi.org/object/44848"  "http://scrapi.org/object/452364"
+#> [29] "http://scrapi.org/object/449949" "http://scrapi.org/object/427562"
 #> [31] "http://scrapi.org/object/487410" "http://scrapi.org/object/467733"
-#> [33] "http://scrapi.org/object/544234" "http://scrapi.org/object/38968" 
-#> [35] "http://scrapi.org/object/198323" "http://scrapi.org/object/248153"
-#> [37] "http://scrapi.org/object/247562" "http://scrapi.org/object/345749"
-#> [39] "http://scrapi.org/object/415290" "http://scrapi.org/object/415292"
-#> [41] "http://scrapi.org/object/461607" "http://scrapi.org/object/45522" 
-#> [43] "http://scrapi.org/object/52475"  "http://scrapi.org/object/64481" 
-#> [45] "http://scrapi.org/object/38424"  "http://scrapi.org/object/244558"
-#> [47] "http://scrapi.org/object/244297" "http://scrapi.org/object/255617"
-#> [49] "http://scrapi.org/object/255391" "http://scrapi.org/object/256949"
-#> [51] "http://scrapi.org/object/247479" "http://scrapi.org/object/247869"
-#> [53] "http://scrapi.org/object/249227" "http://scrapi.org/object/253556"
-#> [55] "http://scrapi.org/object/253640" "http://scrapi.org/object/346681"
-#> [57] "http://scrapi.org/object/317748" "http://scrapi.org/object/307734"
-#> [59] "http://scrapi.org/object/386624" "http://scrapi.org/object/431176"
-#> [61] "http://scrapi.org/object/431179" "http://scrapi.org/object/431181"
-#> [63] "http://scrapi.org/object/427560" "http://scrapi.org/object/452852"
-#> [65] "http://scrapi.org/object/452809" "http://scrapi.org/object/452948"
-#> [67] "http://scrapi.org/object/434964" "http://scrapi.org/object/434966"
-#> [69] "http://scrapi.org/object/459206" "http://scrapi.org/object/464248"
-#> [71] "http://scrapi.org/object/471283" "http://scrapi.org/object/550263"
-#> [73] "http://scrapi.org/object/17566"  "http://scrapi.org/object/63333" 
-#> [75] "http://scrapi.org/object/55068"  "http://scrapi.org/object/53937" 
-#> [77] "http://scrapi.org/object/193593" "http://scrapi.org/object/207520"
-#> [79] "http://scrapi.org/object/203757" "http://scrapi.org/object/255960"
-#> [81] "http://scrapi.org/object/251169" "http://scrapi.org/object/412628"
-#> [83] "http://scrapi.org/object/415261" "http://scrapi.org/object/421876"
-#> [85] "http://scrapi.org/object/413175" "http://scrapi.org/object/417966"
-#> [87] "http://scrapi.org/object/423650" "http://scrapi.org/object/271708"
-#> [89] "http://scrapi.org/object/427581" "http://scrapi.org/object/427585"
+#> [33] "http://scrapi.org/object/544234" "http://scrapi.org/object/198323"
+#> [35] "http://scrapi.org/object/248153" "http://scrapi.org/object/247562"
+#> [37] "http://scrapi.org/object/415292" "http://scrapi.org/object/415290"
+#> [39] "http://scrapi.org/object/345749" "http://scrapi.org/object/38968" 
+#> [41] "http://scrapi.org/object/461607" "http://scrapi.org/object/255391"
+#> [43] "http://scrapi.org/object/255617" "http://scrapi.org/object/256949"
+#> [45] "http://scrapi.org/object/247869" "http://scrapi.org/object/249227"
+#> [47] "http://scrapi.org/object/253556" "http://scrapi.org/object/253640"
+#> [49] "http://scrapi.org/object/247479" "http://scrapi.org/object/307734"
+#> [51] "http://scrapi.org/object/244297" "http://scrapi.org/object/244558"
+#> [53] "http://scrapi.org/object/317748" "http://scrapi.org/object/386624"
+#> [55] "http://scrapi.org/object/346681" "http://scrapi.org/object/38424" 
+#> [57] "http://scrapi.org/object/45522"  "http://scrapi.org/object/52475" 
+#> [59] "http://scrapi.org/object/64481"  "http://scrapi.org/object/452948"
+#> [61] "http://scrapi.org/object/452852" "http://scrapi.org/object/452809"
+#> [63] "http://scrapi.org/object/431176" "http://scrapi.org/object/431179"
+#> [65] "http://scrapi.org/object/431181" "http://scrapi.org/object/434966"
+#> [67] "http://scrapi.org/object/434964" "http://scrapi.org/object/427560"
+#> [69] "http://scrapi.org/object/464248" "http://scrapi.org/object/471283"
+#> [71] "http://scrapi.org/object/459206" "http://scrapi.org/object/550263"
+#> [73] "http://scrapi.org/object/207520" "http://scrapi.org/object/203757"
+#> [75] "http://scrapi.org/object/193593" "http://scrapi.org/object/255960"
+#> [77] "http://scrapi.org/object/251169" "http://scrapi.org/object/271708"
+#> [79] "http://scrapi.org/object/415261" "http://scrapi.org/object/421876"
+#> [81] "http://scrapi.org/object/413175" "http://scrapi.org/object/412628"
+#> [83] "http://scrapi.org/object/17566"  "http://scrapi.org/object/63333" 
+#> [85] "http://scrapi.org/object/53937"  "http://scrapi.org/object/55068" 
+#> [87] "http://scrapi.org/object/417966" "http://scrapi.org/object/423650"
+#> [89] "http://scrapi.org/object/456956" "http://scrapi.org/object/427585"
 #> 
 #> $ids
-#>  [1] "207785" "156225" "425550" "436839" "60142"  "54118"  "421538"
-#>  [8] "421541" "421542" "421543" "421877" "421892" "414082" "414085"
-#> [15] "413260" "425547" "412623" "49591"  "36624"  "54864"  "50397" 
-#> [22] "284630" "267055" "468197" "44848"  "284629" "255880" "427562"
-#> [29] "452364" "449949" "487410" "467733" "544234" "38968"  "198323"
-#> [36] "248153" "247562" "345749" "415290" "415292" "461607" "45522" 
-#> [43] "52475"  "64481"  "38424"  "244558" "244297" "255617" "255391"
-#> [50] "256949" "247479" "247869" "249227" "253556" "253640" "346681"
-#> [57] "317748" "307734" "386624" "431176" "431179" "431181" "427560"
-#> [64] "452852" "452809" "452948" "434964" "434966" "459206" "464248"
-#> [71] "471283" "550263" "17566"  "63333"  "55068"  "53937"  "193593"
-#> [78] "207520" "203757" "255960" "251169" "412628" "415261" "421876"
-#> [85] "413175" "417966" "423650" "271708" "427581" "427585"
+#>  [1] "207785" "156225" "425550" "436839" "421538" "421541" "421542"
+#>  [8] "421543" "421877" "421892" "425547" "413260" "414082" "414085"
+#> [15] "54118"  "60142"  "412623" "267055" "284630" "36624"  "49591" 
+#> [22] "50397"  "54864"  "468197" "255880" "284629" "44848"  "452364"
+#> [29] "449949" "427562" "487410" "467733" "544234" "198323" "248153"
+#> [36] "247562" "415292" "415290" "345749" "38968"  "461607" "255391"
+#> [43] "255617" "256949" "247869" "249227" "253556" "253640" "247479"
+#> [50] "307734" "244297" "244558" "317748" "386624" "346681" "38424" 
+#> [57] "45522"  "52475"  "64481"  "452948" "452852" "452809" "431176"
+#> [64] "431179" "431181" "434966" "434964" "427560" "464248" "471283"
+#> [71] "459206" "550263" "207520" "203757" "193593" "255960" "251169"
+#> [78] "271708" "415261" "421876" "413175" "412628" "17566"  "63333" 
+#> [85] "53937"  "55068"  "417966" "423650" "456956" "427585"
 #> 
 #> $paging
 #> $paging$first
@@ -614,6 +632,84 @@ lapply(c(140725,8197), getty)
 #>      Place Created: Roman Empire
 #>      Classification/Object Type: Sculpture / Relief
 #>   Exhibition history:
+```
+
+## Art Institute of Chicago
+
+Get metadata for a single object
+
+
+```r
+aic(41033)
+#> <AIC metadata> 41033
+#>    Artist:
+#>       Name: Charles Edmund Brock English
+#>       Years: 1870-1938
+#>    Link: http://www.artic.edu/aic/collections/artwork/41033
+#>    Title: "'The unwelcome hints of Mr. Shepherd, his Agent,' Chapter I"
+#>       frontispiece for Jane Austen's Persuasion, 1898
+#>    Description: Pen and black ink with brush and watercolor, on ivory wove card 298 x
+#>       222 mm Signed lower right, in pen and black ink: "C.E.Brock .
+#>       1898"; inscribed, lower center: "'The unwelcome hints of Mr.
+#>       Shepherd, his agent' / Chapter I"; further ink and graphite
+#>       inscriptions in marginsGift of James Deering, 1927.1623
+#>    Description-2: Prints and Drawings Not on Display
+#>    Artwork body: 
+#>    Exhibition history:
+#>    Publication history:
+#>      - : Jane Austen, edited by Gerald Brimley Johnson, Persuasion, in Jane
+#>           Austen's Novels, Volume X, (London: Dent, 1898), p. 8
+#>           (ill).
+#>    Ownership history:
+```
+
+Get metadata for many objects
+
+
+```r
+lapply(c(41033,210804), aic)
+#> [[1]]
+#> <AIC metadata> 41033
+#>    Artist:
+#>       Name: Charles Edmund Brock English
+#>       Years: 1870-1938
+#>    Link: http://www.artic.edu/aic/collections/artwork/41033
+#>    Title: "'The unwelcome hints of Mr. Shepherd, his Agent,' Chapter I"
+#>       frontispiece for Jane Austen's Persuasion, 1898
+#>    Description: Pen and black ink with brush and watercolor, on ivory wove card 298 x
+#>       222 mm Signed lower right, in pen and black ink: "C.E.Brock .
+#>       1898"; inscribed, lower center: "'The unwelcome hints of Mr.
+#>       Shepherd, his agent' / Chapter I"; further ink and graphite
+#>       inscriptions in marginsGift of James Deering, 1927.1623
+#>    Description-2: Prints and Drawings Not on Display
+#>    Artwork body: 
+#>    Exhibition history:
+#>    Publication history:
+#>      - : Jane Austen, edited by Gerald Brimley Johnson, Persuasion, in Jane
+#>           Austen's Novels, Volume X, (London: Dent, 1898), p. 8
+#>           (ill).
+#>    Ownership history: 
+#> 
+#> [[2]]
+#> <AIC metadata> 210804
+#>    Artist:
+#>       Name: William H. Bell , American
+#>       Years: 1830–1910
+#>    Link: http://www.artic.edu/aic/collections/artwork/210804
+#>    Title: The "Vermillion Cliff," a typical plateau edge, as seen from Jacobs
+#>       Pool, Arizona. From its top a plateau stretches to the right,
+#>       and from its base another to the left. Their difference of
+#>       level is 1.500 feet, and the step is too steep for scaling.,
+#>       1872
+#>    Description: Albumen print, stereo, No. 15 from the series "Geographical
+#>       Explorations and Surveys West of the 100th Meridian" 9.3 x 7.5
+#>       cm (each image); 10 x 17.7 cm (card)Photography Gallery Fund,
+#>       1959.616.13
+#>    Description-2: Photography Not on Display
+#>    Artwork body: 
+#>    Exhibition history:
+#>    Publication history:
+#>    Ownership history:
 ```
 
 ## Meta

@@ -23,6 +23,7 @@ Currently `musemeta` can get data from:
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
+* The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
 
 Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
 
@@ -161,6 +162,20 @@ Get metadata for many objects
 
 ```{r}
 lapply(c(140725,8197), getty)
+```
+
+## Art Institute of Chicago
+
+Get metadata for a single object
+
+```{r}
+aic(41033)
+```
+
+Get metadata for many objects
+
+```{r}
+lapply(c(41033,210804), aic)
 ```
 
 ## Meta
