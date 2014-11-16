@@ -13,6 +13,8 @@
 #'
 #' library('httr')
 #' nga(45987, config=verbose())
+#'
+#' browse(nga(33268))
 #' }
 nga <- function(id, ...){
   out <- musemeta_GET(sprintf(ngabase(), id), ...)
@@ -39,10 +41,6 @@ print.nga <- function(x, ...){
   }
 }
 
-catpaswrap <- function(x, y, space, width=70, exdent=10, ...){
-  cat(sprintf("%s%s: %s", space, y, paste0(strwrap(x, width = width, exdent = exdent, ...), collapse = "\n")), sep="\n")
-}
-
 nga_parse <- function(x){
   tmp <- htmlParse(x)
   name <- xpathSApply(tmp, '//meta[@property="og:title"]', xmlGetAttr, "content")
@@ -63,22 +61,6 @@ nga_parse <- function(x){
   structure(list(name=name, link=link, artist=artist, provenance=prov,
                  description=desc, inscription=insc, history=hist,
                  bibliography=biblio), class="nga")
-}
-
-namval <- function(desc, x, y){
-  tmp <- xpathSApply(desc, sprintf('%s[@class="%s"]', x, y))
-  if(length(tmp) == 1){
-    list(name=xmlGetAttr(tmp[[1]], "class"), value=xmlValue(tmp[[1]]))
-  } else {
-    list(name=xmlGetAttr(tmp[[1]], "class"), value=paste0(sapply(tmp, xmlValue), collapse = ", "))
-  }
-}
-
-ext_ <- function(input, name){
-  tmp <- xpathApply(input, sprintf("//div[@id='%s']", name), xmlChildren)[[1]]
-  unname(lapply(tmp[ names(tmp) == "dl" ], function(x){
-    setNames(unname(sapply(c('dt','dd'), function(y) xpathApply(x, y, xmlValue))), c('year','info'))
-  }))
 }
 
 ngabase <- function() "http://www.nga.gov/content/ngaweb/Collection/art-object-page.%s.html"

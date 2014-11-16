@@ -24,6 +24,8 @@ lapply(c(75861,20820,75959,27809,143679,27773,28487), nga)
 
 library('httr')
 nga(45987, config=verbose())
+
+browse(nga(33268))
 }
 }
 
