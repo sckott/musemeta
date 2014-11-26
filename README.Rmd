@@ -32,7 +32,7 @@ Other sources of museum metadata will be added...check back later & see [issues]
 Get `ckanr` first, not on CRAN yet (I'll get `ckanr` up to CRAN before this is on CRAN)
 
 ```{r}
-devtools::install_github("sckott/ckanr")
+devtools::install_github("ropensci/ckanr")
 ```
 
 Then install musemeta

@@ -26,7 +26,7 @@ Get `ckanr` first, not on CRAN yet (I'll get `ckanr` up to CRAN before this is o
 
 
 ```r
-devtools::install_github("sckott/ckanr")
+devtools::install_github("ropensci/ckanr")
 ```
 
 Then install musemeta
@@ -149,15 +149,15 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Pen, brown ink with brown and grey washes"
+#> [1] "Etching"
 #> 
 #> $whoList
 #> $whoList[[1]]
 #> $whoList[[1]]$name
-#> [1] "Bibiena, Giuseppe Galli$Giuseppe Galli Bibiena"
+#> [1] "Hollar, Wenceslaus (Wenzel Vaclav)$Wenceslaus Hollar (Wenzel Vaclav)"
 #> 
 #> $whoList[[1]]$count
-#> [1] 78
+#> [1] 1285
 #> 
 #> $whoList[[1]]$orderId
 #> [1] 0
@@ -166,7 +166,7 @@ scrapi_random(fields=c('medium','whoList'))
 #> [1] FALSE
 #> 
 #> $whoList[[1]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Bibiena%2c+Giuseppe+Galli%24Giuseppe+Galli+Bibiena"
+#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Hollar%2c+Wenceslaus+(Wenzel+Vaclav)%24Wenceslaus+Hollar+(Wenzel+Vaclav)"
 ```
 
 Get a specific object
@@ -192,64 +192,64 @@ scrapi_search(query='mirror')
 #> $links
 #>  [1] "http://scrapi.org/object/207785" "http://scrapi.org/object/156225"
 #>  [3] "http://scrapi.org/object/425550" "http://scrapi.org/object/436839"
-#>  [5] "http://scrapi.org/object/421538" "http://scrapi.org/object/421541"
-#>  [7] "http://scrapi.org/object/421542" "http://scrapi.org/object/421543"
-#>  [9] "http://scrapi.org/object/421877" "http://scrapi.org/object/421892"
-#> [11] "http://scrapi.org/object/425547" "http://scrapi.org/object/413260"
-#> [13] "http://scrapi.org/object/414082" "http://scrapi.org/object/414085"
+#>  [5] "http://scrapi.org/object/413260" "http://scrapi.org/object/414082"
+#>  [7] "http://scrapi.org/object/414085" "http://scrapi.org/object/421541"
+#>  [9] "http://scrapi.org/object/421542" "http://scrapi.org/object/421543"
+#> [11] "http://scrapi.org/object/421538" "http://scrapi.org/object/421877"
+#> [13] "http://scrapi.org/object/421892" "http://scrapi.org/object/425547"
 #> [15] "http://scrapi.org/object/54118"  "http://scrapi.org/object/60142" 
 #> [17] "http://scrapi.org/object/412623" "http://scrapi.org/object/267055"
-#> [19] "http://scrapi.org/object/284630" "http://scrapi.org/object/36624" 
+#> [19] "http://scrapi.org/object/284630" "http://scrapi.org/object/468197"
 #> [21] "http://scrapi.org/object/49591"  "http://scrapi.org/object/50397" 
-#> [23] "http://scrapi.org/object/54864"  "http://scrapi.org/object/468197"
+#> [23] "http://scrapi.org/object/36624"  "http://scrapi.org/object/54864" 
 #> [25] "http://scrapi.org/object/255880" "http://scrapi.org/object/284629"
-#> [27] "http://scrapi.org/object/44848"  "http://scrapi.org/object/452364"
-#> [29] "http://scrapi.org/object/449949" "http://scrapi.org/object/427562"
-#> [31] "http://scrapi.org/object/487410" "http://scrapi.org/object/467733"
-#> [33] "http://scrapi.org/object/544234" "http://scrapi.org/object/198323"
+#> [27] "http://scrapi.org/object/487410" "http://scrapi.org/object/427562"
+#> [29] "http://scrapi.org/object/449949" "http://scrapi.org/object/452364"
+#> [31] "http://scrapi.org/object/467733" "http://scrapi.org/object/544234"
+#> [33] "http://scrapi.org/object/44848"  "http://scrapi.org/object/198323"
 #> [35] "http://scrapi.org/object/248153" "http://scrapi.org/object/247562"
-#> [37] "http://scrapi.org/object/415292" "http://scrapi.org/object/415290"
-#> [39] "http://scrapi.org/object/345749" "http://scrapi.org/object/38968" 
-#> [41] "http://scrapi.org/object/461607" "http://scrapi.org/object/255391"
-#> [43] "http://scrapi.org/object/255617" "http://scrapi.org/object/256949"
-#> [45] "http://scrapi.org/object/247869" "http://scrapi.org/object/249227"
-#> [47] "http://scrapi.org/object/253556" "http://scrapi.org/object/253640"
-#> [49] "http://scrapi.org/object/247479" "http://scrapi.org/object/307734"
-#> [51] "http://scrapi.org/object/244297" "http://scrapi.org/object/244558"
-#> [53] "http://scrapi.org/object/317748" "http://scrapi.org/object/386624"
-#> [55] "http://scrapi.org/object/346681" "http://scrapi.org/object/38424" 
-#> [57] "http://scrapi.org/object/45522"  "http://scrapi.org/object/52475" 
-#> [59] "http://scrapi.org/object/64481"  "http://scrapi.org/object/452948"
-#> [61] "http://scrapi.org/object/452852" "http://scrapi.org/object/452809"
-#> [63] "http://scrapi.org/object/431176" "http://scrapi.org/object/431179"
-#> [65] "http://scrapi.org/object/431181" "http://scrapi.org/object/434966"
-#> [67] "http://scrapi.org/object/434964" "http://scrapi.org/object/427560"
-#> [69] "http://scrapi.org/object/464248" "http://scrapi.org/object/471283"
-#> [71] "http://scrapi.org/object/459206" "http://scrapi.org/object/550263"
-#> [73] "http://scrapi.org/object/207520" "http://scrapi.org/object/203757"
-#> [75] "http://scrapi.org/object/193593" "http://scrapi.org/object/255960"
-#> [77] "http://scrapi.org/object/251169" "http://scrapi.org/object/271708"
-#> [79] "http://scrapi.org/object/415261" "http://scrapi.org/object/421876"
-#> [81] "http://scrapi.org/object/413175" "http://scrapi.org/object/412628"
-#> [83] "http://scrapi.org/object/17566"  "http://scrapi.org/object/63333" 
-#> [85] "http://scrapi.org/object/53937"  "http://scrapi.org/object/55068" 
-#> [87] "http://scrapi.org/object/417966" "http://scrapi.org/object/423650"
-#> [89] "http://scrapi.org/object/456956" "http://scrapi.org/object/427585"
+#> [37] "http://scrapi.org/object/345749" "http://scrapi.org/object/415290"
+#> [39] "http://scrapi.org/object/415292" "http://scrapi.org/object/461607"
+#> [41] "http://scrapi.org/object/38968"  "http://scrapi.org/object/244558"
+#> [43] "http://scrapi.org/object/247479" "http://scrapi.org/object/247869"
+#> [45] "http://scrapi.org/object/244297" "http://scrapi.org/object/256949"
+#> [47] "http://scrapi.org/object/255391" "http://scrapi.org/object/255617"
+#> [49] "http://scrapi.org/object/249227" "http://scrapi.org/object/253640"
+#> [51] "http://scrapi.org/object/253556" "http://scrapi.org/object/346681"
+#> [53] "http://scrapi.org/object/307734" "http://scrapi.org/object/317748"
+#> [55] "http://scrapi.org/object/471283" "http://scrapi.org/object/386624"
+#> [57] "http://scrapi.org/object/427560" "http://scrapi.org/object/434964"
+#> [59] "http://scrapi.org/object/434966" "http://scrapi.org/object/464248"
+#> [61] "http://scrapi.org/object/459206" "http://scrapi.org/object/452809"
+#> [63] "http://scrapi.org/object/452852" "http://scrapi.org/object/452948"
+#> [65] "http://scrapi.org/object/431176" "http://scrapi.org/object/431181"
+#> [67] "http://scrapi.org/object/431179" "http://scrapi.org/object/550263"
+#> [69] "http://scrapi.org/object/52475"  "http://scrapi.org/object/45522" 
+#> [71] "http://scrapi.org/object/38424"  "http://scrapi.org/object/193593"
+#> [73] "http://scrapi.org/object/203757" "http://scrapi.org/object/207520"
+#> [75] "http://scrapi.org/object/271708" "http://scrapi.org/object/251169"
+#> [77] "http://scrapi.org/object/255960" "http://scrapi.org/object/412628"
+#> [79] "http://scrapi.org/object/413175" "http://scrapi.org/object/415261"
+#> [81] "http://scrapi.org/object/417966" "http://scrapi.org/object/421876"
+#> [83] "http://scrapi.org/object/427585" "http://scrapi.org/object/427581"
+#> [85] "http://scrapi.org/object/456956" "http://scrapi.org/object/459239"
+#> [87] "http://scrapi.org/object/423650" "http://scrapi.org/object/17566" 
+#> [89] "http://scrapi.org/object/53937"  "http://scrapi.org/object/55068" 
 #> 
 #> $ids
-#>  [1] "207785" "156225" "425550" "436839" "421538" "421541" "421542"
-#>  [8] "421543" "421877" "421892" "425547" "413260" "414082" "414085"
-#> [15] "54118"  "60142"  "412623" "267055" "284630" "36624"  "49591" 
-#> [22] "50397"  "54864"  "468197" "255880" "284629" "44848"  "452364"
-#> [29] "449949" "427562" "487410" "467733" "544234" "198323" "248153"
-#> [36] "247562" "415292" "415290" "345749" "38968"  "461607" "255391"
-#> [43] "255617" "256949" "247869" "249227" "253556" "253640" "247479"
-#> [50] "307734" "244297" "244558" "317748" "386624" "346681" "38424" 
-#> [57] "45522"  "52475"  "64481"  "452948" "452852" "452809" "431176"
-#> [64] "431179" "431181" "434966" "434964" "427560" "464248" "471283"
-#> [71] "459206" "550263" "207520" "203757" "193593" "255960" "251169"
-#> [78] "271708" "415261" "421876" "413175" "412628" "17566"  "63333" 
-#> [85] "53937"  "55068"  "417966" "423650" "456956" "427585"
+#>  [1] "207785" "156225" "425550" "436839" "413260" "414082" "414085"
+#>  [8] "421541" "421542" "421543" "421538" "421877" "421892" "425547"
+#> [15] "54118"  "60142"  "412623" "267055" "284630" "468197" "49591" 
+#> [22] "50397"  "36624"  "54864"  "255880" "284629" "487410" "427562"
+#> [29] "449949" "452364" "467733" "544234" "44848"  "198323" "248153"
+#> [36] "247562" "345749" "415290" "415292" "461607" "38968"  "244558"
+#> [43] "247479" "247869" "244297" "256949" "255391" "255617" "249227"
+#> [50] "253640" "253556" "346681" "307734" "317748" "471283" "386624"
+#> [57] "427560" "434964" "434966" "464248" "459206" "452809" "452852"
+#> [64] "452948" "431176" "431181" "431179" "550263" "52475"  "45522" 
+#> [71] "38424"  "193593" "203757" "207520" "271708" "251169" "255960"
+#> [78] "412628" "413175" "415261" "417966" "421876" "427585" "427581"
+#> [85] "456956" "459239" "423650" "17566"  "53937"  "55068" 
 #> 
 #> $paging
 #> $paging$first
