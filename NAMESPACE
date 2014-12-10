@@ -2,10 +2,12 @@
 
 S3method(browse,aic)
 S3method(browse,nga)
+S3method(print,aam)
 S3method(print,aic)
 S3method(print,getty)
 S3method(print,muse)
 S3method(print,nga)
+export(aam)
 export(aic)
 export(cstmc_changes)
 export(cstmc_datasets)
