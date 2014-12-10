@@ -54,7 +54,7 @@ nameele <- function(x){
 aam_parse <- function(x, id){
   tmp <- htmlParse(x)
   nodes <- xpathApply(tmp, '//div[@id="singledata"]')
-  out <- do.call(c, compact(lapply(xpathApply(nodes[[1]], "div", xmlValue), nameele)))
+  out <- do.call(c, mc(lapply(xpathApply(nodes[[1]], "div", xmlValue), nameele)))
   names(out) <- gsub("\\s", "_", tolower(names(out)))
   structure(out, class="aam")
 }
