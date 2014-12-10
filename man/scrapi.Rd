@@ -23,6 +23,8 @@ scrapi_get(x, ...)
 \item{id}{(numeric) An object id}
 
 \item{query}{(character) Query terms}
+
+\item{x}{URL or ID for a scrapi object.}
 }
 \description{
 Use the scrapi API for The Metropolitan Museum of Art data.

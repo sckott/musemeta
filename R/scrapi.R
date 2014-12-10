@@ -5,6 +5,7 @@
 #' @param query (character) Query terms
 #' @param fields (character) One or more fields to return in a vector
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
+#' @param x URL or ID for a scrapi object.
 #' @references \url{http://scrapi.org/} \url{https://github.com/jedahan/collections-api}
 #' @seealso \code{\link{met}}
 #' @details You can also use the \code{\link{met}} function. The equivalent function with the
