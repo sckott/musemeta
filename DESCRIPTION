@@ -2,7 +2,7 @@ Package: musemeta
 Type: Package
 Title: R Client for Scraping Museum Metadata
 Description: Scrape museum metadata.
-Version: 0.0.2.99
+Version: 0.0.2
 Date: 2014-12-09
 Authors@R: as.person(c("Scott Chamberlain <myrmecocystus@gmail.com> [aut,cre]"))
 License: MIT + file LICENSE
