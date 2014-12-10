@@ -17,6 +17,7 @@ Currently `musemeta` can get data from:
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
+* The [Asian Art Museum of San Francisco](http://www.asianart.org/) (see function `aam()`)
 
 Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
 
@@ -149,15 +150,15 @@ Get a random object, limit to a few fields for brevity
 ```r
 scrapi_random(fields=c('medium','whoList'))
 #> $medium
-#> [1] "Etching"
+#> [1] "Film negative"
 #> 
 #> $whoList
 #> $whoList[[1]]
 #> $whoList[[1]]$name
-#> [1] "Hollar, Wenceslaus (Wenzel Vaclav)$Wenceslaus Hollar (Wenzel Vaclav)"
+#> [1] "Evans, Walker$Walker Evans"
 #> 
 #> $whoList[[1]]$count
-#> [1] 1285
+#> [1] 8296
 #> 
 #> $whoList[[1]]$orderId
 #> [1] 0
@@ -166,7 +167,7 @@ scrapi_random(fields=c('medium','whoList'))
 #> [1] FALSE
 #> 
 #> $whoList[[1]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Hollar%2c+Wenceslaus+(Wenzel+Vaclav)%24Wenceslaus+Hollar+(Wenzel+Vaclav)"
+#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Evans%2c+Walker%24Walker+Evans"
 ```
 
 Get a specific object
@@ -192,64 +193,64 @@ scrapi_search(query='mirror')
 #> $links
 #>  [1] "http://scrapi.org/object/207785" "http://scrapi.org/object/156225"
 #>  [3] "http://scrapi.org/object/425550" "http://scrapi.org/object/436839"
-#>  [5] "http://scrapi.org/object/413260" "http://scrapi.org/object/414082"
-#>  [7] "http://scrapi.org/object/414085" "http://scrapi.org/object/421541"
-#>  [9] "http://scrapi.org/object/421542" "http://scrapi.org/object/421543"
-#> [11] "http://scrapi.org/object/421538" "http://scrapi.org/object/421877"
-#> [13] "http://scrapi.org/object/421892" "http://scrapi.org/object/425547"
-#> [15] "http://scrapi.org/object/54118"  "http://scrapi.org/object/60142" 
-#> [17] "http://scrapi.org/object/412623" "http://scrapi.org/object/267055"
-#> [19] "http://scrapi.org/object/284630" "http://scrapi.org/object/468197"
-#> [21] "http://scrapi.org/object/49591"  "http://scrapi.org/object/50397" 
-#> [23] "http://scrapi.org/object/36624"  "http://scrapi.org/object/54864" 
-#> [25] "http://scrapi.org/object/255880" "http://scrapi.org/object/284629"
-#> [27] "http://scrapi.org/object/487410" "http://scrapi.org/object/427562"
-#> [29] "http://scrapi.org/object/449949" "http://scrapi.org/object/452364"
-#> [31] "http://scrapi.org/object/467733" "http://scrapi.org/object/544234"
-#> [33] "http://scrapi.org/object/44848"  "http://scrapi.org/object/198323"
-#> [35] "http://scrapi.org/object/248153" "http://scrapi.org/object/247562"
-#> [37] "http://scrapi.org/object/345749" "http://scrapi.org/object/415290"
-#> [39] "http://scrapi.org/object/415292" "http://scrapi.org/object/461607"
-#> [41] "http://scrapi.org/object/38968"  "http://scrapi.org/object/244558"
-#> [43] "http://scrapi.org/object/247479" "http://scrapi.org/object/247869"
-#> [45] "http://scrapi.org/object/244297" "http://scrapi.org/object/256949"
-#> [47] "http://scrapi.org/object/255391" "http://scrapi.org/object/255617"
-#> [49] "http://scrapi.org/object/249227" "http://scrapi.org/object/253640"
-#> [51] "http://scrapi.org/object/253556" "http://scrapi.org/object/346681"
-#> [53] "http://scrapi.org/object/307734" "http://scrapi.org/object/317748"
-#> [55] "http://scrapi.org/object/471283" "http://scrapi.org/object/386624"
-#> [57] "http://scrapi.org/object/427560" "http://scrapi.org/object/434964"
-#> [59] "http://scrapi.org/object/434966" "http://scrapi.org/object/464248"
-#> [61] "http://scrapi.org/object/459206" "http://scrapi.org/object/452809"
-#> [63] "http://scrapi.org/object/452852" "http://scrapi.org/object/452948"
-#> [65] "http://scrapi.org/object/431176" "http://scrapi.org/object/431181"
-#> [67] "http://scrapi.org/object/431179" "http://scrapi.org/object/550263"
-#> [69] "http://scrapi.org/object/52475"  "http://scrapi.org/object/45522" 
-#> [71] "http://scrapi.org/object/38424"  "http://scrapi.org/object/193593"
-#> [73] "http://scrapi.org/object/203757" "http://scrapi.org/object/207520"
-#> [75] "http://scrapi.org/object/271708" "http://scrapi.org/object/251169"
-#> [77] "http://scrapi.org/object/255960" "http://scrapi.org/object/412628"
-#> [79] "http://scrapi.org/object/413175" "http://scrapi.org/object/415261"
-#> [81] "http://scrapi.org/object/417966" "http://scrapi.org/object/421876"
-#> [83] "http://scrapi.org/object/427585" "http://scrapi.org/object/427581"
-#> [85] "http://scrapi.org/object/456956" "http://scrapi.org/object/459239"
-#> [87] "http://scrapi.org/object/423650" "http://scrapi.org/object/17566" 
-#> [89] "http://scrapi.org/object/53937"  "http://scrapi.org/object/55068" 
+#>  [5] "http://scrapi.org/object/54118"  "http://scrapi.org/object/60142" 
+#>  [7] "http://scrapi.org/object/414082" "http://scrapi.org/object/414085"
+#>  [9] "http://scrapi.org/object/421538" "http://scrapi.org/object/421541"
+#> [11] "http://scrapi.org/object/421543" "http://scrapi.org/object/421542"
+#> [13] "http://scrapi.org/object/425547" "http://scrapi.org/object/413260"
+#> [15] "http://scrapi.org/object/421877" "http://scrapi.org/object/421892"
+#> [17] "http://scrapi.org/object/412623" "http://scrapi.org/object/36624" 
+#> [19] "http://scrapi.org/object/54864"  "http://scrapi.org/object/49591" 
+#> [21] "http://scrapi.org/object/267055" "http://scrapi.org/object/284630"
+#> [23] "http://scrapi.org/object/50397"  "http://scrapi.org/object/468197"
+#> [25] "http://scrapi.org/object/44848"  "http://scrapi.org/object/284629"
+#> [27] "http://scrapi.org/object/255880" "http://scrapi.org/object/427562"
+#> [29] "http://scrapi.org/object/449949" "http://scrapi.org/object/467733"
+#> [31] "http://scrapi.org/object/452364" "http://scrapi.org/object/544234"
+#> [33] "http://scrapi.org/object/487410" "http://scrapi.org/object/38968" 
+#> [35] "http://scrapi.org/object/247562" "http://scrapi.org/object/248153"
+#> [37] "http://scrapi.org/object/198323" "http://scrapi.org/object/415290"
+#> [39] "http://scrapi.org/object/415292" "http://scrapi.org/object/345749"
+#> [41] "http://scrapi.org/object/461607" "http://scrapi.org/object/45522" 
+#> [43] "http://scrapi.org/object/38424"  "http://scrapi.org/object/52475" 
+#> [45] "http://scrapi.org/object/247479" "http://scrapi.org/object/247869"
+#> [47] "http://scrapi.org/object/244558" "http://scrapi.org/object/244297"
+#> [49] "http://scrapi.org/object/249227" "http://scrapi.org/object/307734"
+#> [51] "http://scrapi.org/object/253556" "http://scrapi.org/object/253640"
+#> [53] "http://scrapi.org/object/255391" "http://scrapi.org/object/256949"
+#> [55] "http://scrapi.org/object/255617" "http://scrapi.org/object/434964"
+#> [57] "http://scrapi.org/object/434966" "http://scrapi.org/object/427560"
+#> [59] "http://scrapi.org/object/431181" "http://scrapi.org/object/431176"
+#> [61] "http://scrapi.org/object/431179" "http://scrapi.org/object/317748"
+#> [63] "http://scrapi.org/object/346681" "http://scrapi.org/object/386624"
+#> [65] "http://scrapi.org/object/459206" "http://scrapi.org/object/464248"
+#> [67] "http://scrapi.org/object/452809" "http://scrapi.org/object/452852"
+#> [69] "http://scrapi.org/object/452948" "http://scrapi.org/object/471283"
+#> [71] "http://scrapi.org/object/550263" "http://scrapi.org/object/17566" 
+#> [73] "http://scrapi.org/object/53937"  "http://scrapi.org/object/63333" 
+#> [75] "http://scrapi.org/object/207520" "http://scrapi.org/object/193593"
+#> [77] "http://scrapi.org/object/203757" "http://scrapi.org/object/55068" 
+#> [79] "http://scrapi.org/object/271708" "http://scrapi.org/object/255960"
+#> [81] "http://scrapi.org/object/251169" "http://scrapi.org/object/412628"
+#> [83] "http://scrapi.org/object/415261" "http://scrapi.org/object/417966"
+#> [85] "http://scrapi.org/object/427585" "http://scrapi.org/object/427581"
+#> [87] "http://scrapi.org/object/413175" "http://scrapi.org/object/421876"
+#> [89] "http://scrapi.org/object/423650" "http://scrapi.org/object/459239"
 #> 
 #> $ids
-#>  [1] "207785" "156225" "425550" "436839" "413260" "414082" "414085"
-#>  [8] "421541" "421542" "421543" "421538" "421877" "421892" "425547"
-#> [15] "54118"  "60142"  "412623" "267055" "284630" "468197" "49591" 
-#> [22] "50397"  "36624"  "54864"  "255880" "284629" "487410" "427562"
-#> [29] "449949" "452364" "467733" "544234" "44848"  "198323" "248153"
-#> [36] "247562" "345749" "415290" "415292" "461607" "38968"  "244558"
-#> [43] "247479" "247869" "244297" "256949" "255391" "255617" "249227"
-#> [50] "253640" "253556" "346681" "307734" "317748" "471283" "386624"
-#> [57] "427560" "434964" "434966" "464248" "459206" "452809" "452852"
-#> [64] "452948" "431176" "431181" "431179" "550263" "52475"  "45522" 
-#> [71] "38424"  "193593" "203757" "207520" "271708" "251169" "255960"
-#> [78] "412628" "413175" "415261" "417966" "421876" "427585" "427581"
-#> [85] "456956" "459239" "423650" "17566"  "53937"  "55068" 
+#>  [1] "207785" "156225" "425550" "436839" "54118"  "60142"  "414082"
+#>  [8] "414085" "421538" "421541" "421543" "421542" "425547" "413260"
+#> [15] "421877" "421892" "412623" "36624"  "54864"  "49591"  "267055"
+#> [22] "284630" "50397"  "468197" "44848"  "284629" "255880" "427562"
+#> [29] "449949" "467733" "452364" "544234" "487410" "38968"  "247562"
+#> [36] "248153" "198323" "415290" "415292" "345749" "461607" "45522" 
+#> [43] "38424"  "52475"  "247479" "247869" "244558" "244297" "249227"
+#> [50] "307734" "253556" "253640" "255391" "256949" "255617" "434964"
+#> [57] "434966" "427560" "431181" "431176" "431179" "317748" "346681"
+#> [64] "386624" "459206" "464248" "452809" "452852" "452948" "471283"
+#> [71] "550263" "17566"  "53937"  "63333"  "207520" "193593" "203757"
+#> [78] "55068"  "271708" "255960" "251169" "412628" "415261" "417966"
+#> [85] "427585" "427581" "413175" "421876" "423650" "459239"
 #> 
 #> $paging
 #> $paging$first
@@ -547,6 +548,8 @@ lapply(c(143679,27773,28487), nga)
 #>           83, pl. 265.
 ```
 
+There is no search functionality yet for this source.
+
 ## Getty Museum
 
 Get metadata for a single object
@@ -634,6 +637,8 @@ lapply(c(140725,8197), getty)
 #>   Exhibition history:
 ```
 
+There is no search functionality yet for this source.
+
 ## Art Institute of Chicago
 
 Get metadata for a single object
@@ -711,6 +716,99 @@ lapply(c(41033,210804), aic)
 #>    Publication history:
 #>    Ownership history:
 ```
+
+There is no search functionality yet for this source.
+
+## Asian Art Museum of San Francisco
+
+Get metadata for a single object
+
+
+```r
+aam(11462)
+#> <AAM metadata> Molded plaque (tsha tsha)
+#>   Object id: 1992.96
+#>   Object name: Votive plaque
+#>   Date: approx. 1992
+#>   Artist: 
+#>   Medium: Plaster mixed with resin and pigment
+#>   Credit line: Gift of Robert Tevis
+#>   On display?: no
+#>   Collection: Decorative Arts
+#>   Department: Himalayan Art
+#>   Dimensions: 
+#>   Label: Molded plaques (tsha tshas) are small sacred images, flat or
+#>           three-dimensional, shaped out of clay in metal molds. The
+#>           images are usually unbaked, and sometimes seeds, paper, or
+#>           human ashes were mixed with the clay. Making tsha tshas is
+#>           a meritorious act, and monasteries give them away to
+#>           pilgrims. Some Tibetans carry tsha tshas inside the amulet
+#>           boxes they wear or stuff them into larger images as part of
+#>           the consecration of those images. In Bhutan tsha tshas are
+#>           found in mani walls (a wall of stones carved with prayers)
+#>           or piled up in caves.The practice of making such plaques
+#>           began in India, and from there it spread to other countries
+#>           in Asia with the introduction of Buddhism. Authentic tsha
+#>           tshas are cast from clay. Modern examples , such as those
+#>           made for the tourist trade in Tibet, are made of plaster
+#>           and cast from ancient (1100-1200) molds and hand colored to
+#>           give them the appearance of age.
+```
+
+Get metadata for many objects
+
+
+```r
+lapply(c(17150,17140,17144), aam)
+#> [[1]]
+#> <AAM metadata> Boys sumo wrestling
+#>   Object id: 2005.100.35
+#>   Object name: Woodblock print
+#>   Date: approx. 1769
+#>   Artist: Suzuki HarunobuJapanese, 1724 - 1770
+#>   Medium: Ink and colors on paper
+#>   Credit line: Gift of the Grabhorn Ukiyo-e Collection
+#>   On display?: no
+#>   Collection: Prints And Drawings
+#>   Department: Japanese Art
+#>   Dimensions: H. 12 5/8 in x W. 5 3/4 in, H. 32.1 cm x W. 14.6 cm
+#>   Label: 40 é木Ø春t信M 相'撲oVびÑSuzuki Harunobu, 1725?1770Boys sumo wrestling ( Sumō
+#>           ?)c. 1769Woodblock print ( nishiki-e) Hosoban
+#> 
+#> [[2]]
+#> <AAM metadata> Autumn Moon of Matsukaze
+#>   Object id: 2005.100.25
+#>   Object name: Woodblock print
+#>   Date: 1768-1769
+#>   Artist: Suzuki HarunobuJapanese, 1724 - 1770
+#>   Medium: Ink and colors on paper
+#>   Credit line: Gift of the Grabhorn Ukiyo-e Collection
+#>   On display?: no
+#>   Collection: Prints And Drawings
+#>   Department: Japanese Art
+#>   Dimensions: H. 12 1/2 in x W. 5 3/4 in, H. 31.7 cm x W. 14.6 cm
+#>   Label: 30 é木Ø春t信M 『w流¬æ八"ª景i』x 「u松¼のÌ秋H月」vSuzuki Harunobu, 1725?1770"Autumn Moon of
+#>           Matsukaze" (Matsukaze no shū ?)From Fashionable Eight Views
+#>           of Noh Chants (Fū ?ū ?17681769Woodblock print
+#>           (nishiki-e)Hosoban
+#> 
+#> [[3]]
+#> <AAM metadata> Hunting for fireflies
+#>   Object id: 2005.100.29
+#>   Object name: Woodblock print
+#>   Date: 1767-1768
+#>   Artist: Suzuki HarunobuJapanese, 1724 - 1770
+#>   Medium: Ink and colors on paper
+#>   Credit line: Gift of the Grabhorn Ukiyo-e Collection
+#>   On display?: no
+#>   Collection: Prints And Drawings
+#>   Department: Japanese Art
+#>   Dimensions: H. 10 1/2 in x W. 8 in, H. 26.7 cm x W. 20.3 cm
+#>   Label: 34 é木Ø春t信M u狩ëりèSuzuki Harunobu, 1725?1770Hunting for
+#>           fireflies17671768Woodblock print ( nishiki-e) Chū ?
+```
+
+There is no search functionality yet for this source.
 
 ## Meta
 

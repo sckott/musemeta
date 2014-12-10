@@ -24,6 +24,7 @@ Currently `musemeta` can get data from:
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
+* The [Asian Art Museum of San Francisco](http://www.asianart.org/) (see function `aam()`)
 
 Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
 
@@ -150,6 +151,8 @@ Get metadata for many objects
 lapply(c(143679,27773,28487), nga)
 ```
 
+There is no search functionality yet for this source.
+
 ## Getty Museum
 
 Get metadata for a single object
@@ -164,6 +167,8 @@ Get metadata for many objects
 lapply(c(140725,8197), getty)
 ```
 
+There is no search functionality yet for this source.
+
 ## Art Institute of Chicago
 
 Get metadata for a single object
@@ -177,6 +182,24 @@ Get metadata for many objects
 ```{r}
 lapply(c(41033,210804), aic)
 ```
+
+There is no search functionality yet for this source.
+
+## Asian Art Museum of San Francisco
+
+Get metadata for a single object
+
+```{r}
+aam(11462)
+```
+
+Get metadata for many objects
+
+```{r}
+lapply(c(17150,17140,17144), aam)
+```
+
+There is no search functionality yet for this source.
 
 ## Meta
 
