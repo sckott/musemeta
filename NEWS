@@ -1,0 +1,7 @@
+musemeta 0.0.3.99
+===============
+
+BUG FIXES
+
+* Fixed problem with `met()` - wasn't parsing content correctly, somehow using `httr >= 0.6.1` seems to work (#9)
+* Changed all `scrapi_*()` functions to return message that the API is temporarily down (#8)
