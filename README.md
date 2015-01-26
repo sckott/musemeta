@@ -12,7 +12,7 @@ Currently `musemeta` can get data from:
 
 * [The Metropolitan Museum of Art](http://www.metmuseum.org/) via 
     * scraping the MET website (see function `met()`)
-    * http://scrapi.org/ (see functions `scrapi_()`)
+    * http://scrapi.org/ (see functions `scrapi_()`) - __UPDATE__: THIS API IS TEMPORARILY DOWN, THESE FUNCTIONS NOW SPIT OUT A MESSAGE SAYING SO...
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
@@ -53,15 +53,7 @@ Data for a single object
 
 ```r
 met(559490)
-#> <Museum metadata> Siphon nozzle
-#>   Period: New Kingdom, Ramesside
-#>   Dynasty: Dynasty 19–20
-#>   Date: ca. 1295–1070 B.C.
-#>   Geography: From Egypt, Memphite Region, Lisht North, Cemetery, MMA 1913–1914
-#>   Medium: Bronze
-#>   Dimensions: l. 5.4 cm (2 1/8 in)
-#>   Credit Line: Rogers Fund and Edward S. Harkness Gift, 1922
-#>   Accession Number: 22.1.962
+#> Error in xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]: subscript out of bounds
 ```
 
 Or index to name of object, or values in the description
@@ -69,26 +61,13 @@ Or index to name of object, or values in the description
 
 ```r
 met(559490)$name
-#> [1] "Siphon nozzle"
+#> Error in xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]: subscript out of bounds
 ```
 
 
 ```r
 met(559490)$values[1:2]
-#> [[1]]
-#> [[1]]$name
-#> [1] "Period"
-#> 
-#> [[1]]$value
-#> [1] "New Kingdom, Ramesside"
-#> 
-#> 
-#> [[2]]
-#> [[2]]$name
-#> [1] "Dynasty"
-#> 
-#> [[2]]$value
-#> [1] "Dynasty 19–20"
+#> Error in xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]: subscript out of bounds
 ```
 
 A different object
@@ -96,15 +75,7 @@ A different object
 
 ```r
 met(246562)
-#> <Museum metadata> Terracotta guttus (flask with handle and spout)
-#>   Period: Classical
-#>   Date: 4th century B.C.
-#>   Culture: Greek, South Italian, Campanian
-#>   Medium: Terracotta; black-glaze
-#>   Dimensions: 2 7/8in. (7.3cm)
-#>   Classification: Vases
-#>   Credit Line: Purchase by subscription, 1896
-#>   Accession Number: 96.18.35
+#> Error in xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]: subscript out of bounds
 ```
 
 Get many objects
@@ -112,35 +83,12 @@ Get many objects
 
 ```r
 lapply(c(479283, 228901, 436876), met)
-#> [[1]]
-#> <Museum metadata> Papyri Fragments
-#>   Date: 7th century
-#>   Geography: Made in Thebes, Byzantine Egypt
-#>   Culture: Coptic
-#>   Medium: Papyrus and ink
-#>   Dimensions: Framed: 11 1/4 x 15 in. (28.5 x 38.1 cm)
-#>   Classification: Papyrus
-#>   Accession Number: 14.1.616
-#> 
-#> [[2]]
-#> <Museum metadata> Piece
-#>   Date: 19th century
-#>   Culture: German
-#>   Dimensions: 1 1/4 x 6 1/4in. (3.2 x 15.9cm)
-#>   Classification: Textiles-Laces
-#>   Accession Number: 63.80.18
-#> 
-#> [[3]]
-#> <Museum metadata> Marion Lenbach (1892–1947), the Artist's Daughter
-#>   Date: 1900
-#>   Medium: Oil on canvas
-#>   Dimensions: 58 7/8 x 41 1/2 in. (149.5 x 105.4 cm)
-#>   Classification: Paintings
-#>   Credit Line: Bequest of Collis P. Huntington, 1900
-#>   Accession Number: 25.110.46
+#> Error in xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]: subscript out of bounds
 ```
 
 ### Using the scrapi API
+
+SCRAPI FUNCTIONS ARE DOWN TEMPORARILY
 
 This is again, for The Metropolitan Museum of Art only 
 
@@ -149,25 +97,6 @@ Get a random object, limit to a few fields for brevity
 
 ```r
 scrapi_random(fields=c('medium','whoList'))
-#> $medium
-#> [1] "Film negative"
-#> 
-#> $whoList
-#> $whoList[[1]]
-#> $whoList[[1]]$name
-#> [1] "Evans, Walker$Walker Evans"
-#> 
-#> $whoList[[1]]$count
-#> [1] 8296
-#> 
-#> $whoList[[1]]$orderId
-#> [1] 0
-#> 
-#> $whoList[[1]]$isCurrent
-#> [1] FALSE
-#> 
-#> $whoList[[1]]$url
-#> [1] "/collection/the-collection-online/search?ft=*&amp;who=Evans%2c+Walker%24Walker+Evans"
 ```
 
 Get a specific object
@@ -175,14 +104,6 @@ Get a specific object
 
 ```r
 scrapi_info(123, fields=c('title','primaryArtistNameOnly','medium'))
-#> $title
-#> [1] "Andiron"
-#> 
-#> $primaryArtistNameOnly
-#> [1] "Richard Wittingham"
-#> 
-#> $medium
-#> [1] "Brass"
 ```
 
 Search for objects
@@ -190,77 +111,6 @@ Search for objects
 
 ```r
 scrapi_search(query='mirror')
-#> $links
-#>  [1] "http://scrapi.org/object/207785" "http://scrapi.org/object/156225"
-#>  [3] "http://scrapi.org/object/425550" "http://scrapi.org/object/436839"
-#>  [5] "http://scrapi.org/object/54118"  "http://scrapi.org/object/60142" 
-#>  [7] "http://scrapi.org/object/414082" "http://scrapi.org/object/414085"
-#>  [9] "http://scrapi.org/object/421538" "http://scrapi.org/object/421541"
-#> [11] "http://scrapi.org/object/421543" "http://scrapi.org/object/421542"
-#> [13] "http://scrapi.org/object/425547" "http://scrapi.org/object/413260"
-#> [15] "http://scrapi.org/object/421877" "http://scrapi.org/object/421892"
-#> [17] "http://scrapi.org/object/412623" "http://scrapi.org/object/36624" 
-#> [19] "http://scrapi.org/object/54864"  "http://scrapi.org/object/49591" 
-#> [21] "http://scrapi.org/object/267055" "http://scrapi.org/object/284630"
-#> [23] "http://scrapi.org/object/50397"  "http://scrapi.org/object/468197"
-#> [25] "http://scrapi.org/object/44848"  "http://scrapi.org/object/284629"
-#> [27] "http://scrapi.org/object/255880" "http://scrapi.org/object/427562"
-#> [29] "http://scrapi.org/object/449949" "http://scrapi.org/object/467733"
-#> [31] "http://scrapi.org/object/452364" "http://scrapi.org/object/544234"
-#> [33] "http://scrapi.org/object/487410" "http://scrapi.org/object/38968" 
-#> [35] "http://scrapi.org/object/247562" "http://scrapi.org/object/248153"
-#> [37] "http://scrapi.org/object/198323" "http://scrapi.org/object/415290"
-#> [39] "http://scrapi.org/object/415292" "http://scrapi.org/object/345749"
-#> [41] "http://scrapi.org/object/461607" "http://scrapi.org/object/45522" 
-#> [43] "http://scrapi.org/object/38424"  "http://scrapi.org/object/52475" 
-#> [45] "http://scrapi.org/object/247479" "http://scrapi.org/object/247869"
-#> [47] "http://scrapi.org/object/244558" "http://scrapi.org/object/244297"
-#> [49] "http://scrapi.org/object/249227" "http://scrapi.org/object/307734"
-#> [51] "http://scrapi.org/object/253556" "http://scrapi.org/object/253640"
-#> [53] "http://scrapi.org/object/255391" "http://scrapi.org/object/256949"
-#> [55] "http://scrapi.org/object/255617" "http://scrapi.org/object/434964"
-#> [57] "http://scrapi.org/object/434966" "http://scrapi.org/object/427560"
-#> [59] "http://scrapi.org/object/431181" "http://scrapi.org/object/431176"
-#> [61] "http://scrapi.org/object/431179" "http://scrapi.org/object/317748"
-#> [63] "http://scrapi.org/object/346681" "http://scrapi.org/object/386624"
-#> [65] "http://scrapi.org/object/459206" "http://scrapi.org/object/464248"
-#> [67] "http://scrapi.org/object/452809" "http://scrapi.org/object/452852"
-#> [69] "http://scrapi.org/object/452948" "http://scrapi.org/object/471283"
-#> [71] "http://scrapi.org/object/550263" "http://scrapi.org/object/17566" 
-#> [73] "http://scrapi.org/object/53937"  "http://scrapi.org/object/63333" 
-#> [75] "http://scrapi.org/object/207520" "http://scrapi.org/object/193593"
-#> [77] "http://scrapi.org/object/203757" "http://scrapi.org/object/55068" 
-#> [79] "http://scrapi.org/object/271708" "http://scrapi.org/object/255960"
-#> [81] "http://scrapi.org/object/251169" "http://scrapi.org/object/412628"
-#> [83] "http://scrapi.org/object/415261" "http://scrapi.org/object/417966"
-#> [85] "http://scrapi.org/object/427585" "http://scrapi.org/object/427581"
-#> [87] "http://scrapi.org/object/413175" "http://scrapi.org/object/421876"
-#> [89] "http://scrapi.org/object/423650" "http://scrapi.org/object/459239"
-#> 
-#> $ids
-#>  [1] "207785" "156225" "425550" "436839" "54118"  "60142"  "414082"
-#>  [8] "414085" "421538" "421541" "421543" "421542" "425547" "413260"
-#> [15] "421877" "421892" "412623" "36624"  "54864"  "49591"  "267055"
-#> [22] "284630" "50397"  "468197" "44848"  "284629" "255880" "427562"
-#> [29] "449949" "467733" "452364" "544234" "487410" "38968"  "247562"
-#> [36] "248153" "198323" "415290" "415292" "345749" "461607" "45522" 
-#> [43] "38424"  "52475"  "247479" "247869" "244558" "244297" "249227"
-#> [50] "307734" "253556" "253640" "255391" "256949" "255617" "434964"
-#> [57] "434966" "427560" "431181" "431176" "431179" "317748" "346681"
-#> [64] "386624" "459206" "464248" "452809" "452852" "452948" "471283"
-#> [71] "550263" "17566"  "53937"  "63333"  "207520" "193593" "203757"
-#> [78] "55068"  "271708" "255960" "251169" "412628" "415261" "417966"
-#> [85] "427585" "427581" "413175" "421876" "423650" "459239"
-#> 
-#> $paging
-#> $paging$first
-#> [1] "http://scrapi.org/search/mirror?page=1"
-#> 
-#> $paging$`next`
-#> [1] "http://scrapi.org/search/mirror?page=2"
-#> 
-#> $paging$last
-#> [1] "http://scrapi.org/search/mirror?page=29"
 ```
 
 Get an object, with a scrapi.org url
@@ -269,14 +119,6 @@ Get an object, with a scrapi.org url
 ```r
 out <- scrapi_get("http://scrapi.org/object/427581")
 out$primaryArtist
-#> $role
-#> [1] "Artist"
-#> 
-#> $name
-#> [1] "Daniel Marot the Elder"
-#> 
-#> $nationality
-#> [1] "(French, Paris 1661–1752 The Hague)"
 ```
 
 or an object id
@@ -285,14 +127,6 @@ or an object id
 ```r
 out <- scrapi_get(427581)
 out$primaryArtist
-#> $role
-#> [1] "Artist"
-#> 
-#> $name
-#> [1] "Daniel Marot the Elder"
-#> 
-#> $nationality
-#> [1] "(French, Paris 1661–1752 The Hague)"
 ```
 
 ## CSTMC data
@@ -304,16 +138,16 @@ List changes
 cstmc_changes(limit = 1)
 #> [[1]]
 #> [[1]]$user_id
-#> [1] "b50449ea-1dcc-4d52-b620-fc95bf56034b"
+#> [1] "27778230-2e90-4818-9f00-bbf778c8fa09"
 #> 
 #> [[1]]$timestamp
-#> [1] "2014-11-06T18:58:08.001743"
+#> [1] "2015-01-09T23:33:14.303237"
 #> 
 #> [[1]]$object_id
-#> [1] "cc6a523c-cecf-4a95-836b-295a11ce2bce"
+#> [1] "0a801729-aa94-4d76-a5e0-7b487303f4e5"
 #> 
 #> [[1]]$revision_id
-#> [1] "5d11079e-fc05-4121-9fd5-fe086f5e5f33"
+#> [1] "100c4915-f995-4925-956e-bcacfdd8de89"
 #> 
 #> [[1]]$data
 #> [[1]]$data$package
@@ -321,10 +155,10 @@ cstmc_changes(limit = 1)
 #> [1] ""
 #> 
 #> [[1]]$data$package$name
-#> [1] "test"
+#> [1] "scientific-instrumentation-astronomy-astronomie"
 #> 
 #> [[1]]$data$package$metadata_modified
-#> [1] "2014-11-06T18:55:54.772675"
+#> [1] "2015-01-09T23:33:13.972898"
 #> 
 #> [[1]]$data$package$author
 #> [1] ""
@@ -333,7 +167,7 @@ cstmc_changes(limit = 1)
 #> [1] ""
 #> 
 #> [[1]]$data$package$notes
-#> [1] ""
+#> [1] "This dataset includes artifacts in the collection of the Canada Science and Technology Museums Corporation related to astronomy."
 #> 
 #> [[1]]$data$package$owner_org
 #> [1] "fafa260d-e2bf-46cd-9c35-34c1dfa46c57"
@@ -348,36 +182,36 @@ cstmc_changes(limit = 1)
 #> [1] ""
 #> 
 #> [[1]]$data$package$state
-#> [1] "deleted"
+#> [1] "active"
 #> 
 #> [[1]]$data$package$version
 #> [1] ""
 #> 
 #> [[1]]$data$package$creator_user_id
-#> [1] "b50449ea-1dcc-4d52-b620-fc95bf56034b"
+#> [1] "27778230-2e90-4818-9f00-bbf778c8fa09"
 #> 
 #> [[1]]$data$package$id
-#> [1] "cc6a523c-cecf-4a95-836b-295a11ce2bce"
+#> [1] "0a801729-aa94-4d76-a5e0-7b487303f4e5"
 #> 
 #> [[1]]$data$package$title
-#> [1] "test"
+#> [1] "Artifact Data - Astronomy"
 #> 
 #> [[1]]$data$package$revision_id
-#> [1] "5d11079e-fc05-4121-9fd5-fe086f5e5f33"
+#> [1] "6a0dcffe-e104-4942-93ab-a23f2a2ffe3a"
 #> 
 #> [[1]]$data$package$type
 #> [1] "dataset"
 #> 
 #> [[1]]$data$package$license_id
-#> [1] "notspecified"
+#> [1] "ca-ogl-lgo"
 #> 
 #> 
 #> 
 #> [[1]]$id
-#> [1] "59c308c8-68b2-4b92-bc57-129378d31882"
+#> [1] "b78fb52c-6447-4ded-8933-a75183d012e7"
 #> 
 #> [[1]]$activity_type
-#> [1] "deleted package"
+#> [1] "changed package"
 ```
 
 List datasets
@@ -385,37 +219,7 @@ List datasets
 
 ```r
 cstmc_datasets(as = "table")
-#>  [1] "artifact-data-agriculture"                                  
-#>  [2] "artifact-data-aviation"                                     
-#>  [3] "artifact-data-bookbinding"                                  
-#>  [4] "artifact-data-chemistry"                                    
-#>  [5] "artifact-data-communications"                               
-#>  [6] "artifact-data-computing-technology"                         
-#>  [7] "artifact-data-domestic-technology"                          
-#>  [8] "artifact-data-energy-electric"                              
-#>  [9] "artifact-data-exploration-and-survey"                       
-#> [10] "artifact-data-fisheries"                                    
-#> [11] "artifact-data-forestry"                                     
-#> [12] "artifact-data-horology"                                     
-#> [13] "artifact-data-industrial-technology"                        
-#> [14] "artifact-data-lighting-technology"                          
-#> [15] "artifact-data-location-canada-agriculture-and-food-museum"  
-#> [16] "artifact-data-location-canada-aviation-and-space-museum"    
-#> [17] "artifact-data-location-canada-science-and-technology-museum"
-#> [18] "artifact-data-marine-transportation"                        
-#> [19] "artifact-data-mathematics"                                  
-#> [20] "artifact-data-medical-technology"                           
-#> [21] "artifact-data-meteorology"                                  
-#> [22] "artifact-data-metrology"                                    
-#> [23] "artifact-data-mining-and-metallurgy"                        
-#> [24] "artifact-data-motorized-ground-transportation"              
-#> [25] "artifact-data-non-motorized-ground-transportation"          
-#> [26] "artifact-data-on-loan"                                      
-#> [27] "artifact-data-photography"                                  
-#> [28] "artifact-data-physics"                                      
-#> [29] "artifact-data-printing"                                     
-#> [30] "artifact-data-railway-transportation"                       
-#> [31] "artifact-dataset-fire-fighting"
+#> Error: 'datasets' is not an exported object from 'namespace:ckanr'
 ```
 
 Search for packages
@@ -426,6 +230,18 @@ out <- cstmc_package_search(q = '*:*', rows = 2, as='table')
 lapply(out$results$resources, function(x) x[,1:3])
 #> [[1]]
 #>                      resource_group_id cache_last_updated
+#> 1 9d1467e6-4e87-4ebf-bd73-35326fd46491                 NA
+#> 2 9d1467e6-4e87-4ebf-bd73-35326fd46491                 NA
+#> 3 9d1467e6-4e87-4ebf-bd73-35326fd46491                 NA
+#> 4 9d1467e6-4e87-4ebf-bd73-35326fd46491                 NA
+#>           revision_timestamp
+#> 1 2015-01-09T23:33:13.972143
+#> 2 2014-10-31T22:37:58.762911
+#> 3 2014-11-05T18:23:00.789562
+#> 4 2014-11-05T18:25:16.764967
+#> 
+#> [[2]]
+#>                      resource_group_id cache_last_updated
 #> 1 cce39b19-e07c-4c51-941b-242afd3f1c4a                 NA
 #> 2 cce39b19-e07c-4c51-941b-242afd3f1c4a                 NA
 #> 3 cce39b19-e07c-4c51-941b-242afd3f1c4a                 NA
@@ -435,18 +251,6 @@ lapply(out$results$resources, function(x) x[,1:3])
 #> 2 2014-11-04T03:04:24.281137
 #> 3 2014-11-05T21:46:30.031396
 #> 4 2014-11-05T21:48:27.302007
-#> 
-#> [[2]]
-#>                      resource_group_id cache_last_updated
-#> 1 02de4923-4b61-4078-9bf7-71cada759cbc                 NA
-#> 2 02de4923-4b61-4078-9bf7-71cada759cbc                 NA
-#> 3 02de4923-4b61-4078-9bf7-71cada759cbc                 NA
-#> 4 02de4923-4b61-4078-9bf7-71cada759cbc                 NA
-#>           revision_timestamp
-#> 1 2014-10-28T15:25:38.337754
-#> 2 2014-11-03T18:08:49.560921
-#> 3 2014-11-05T18:44:23.555560
-#> 4 2014-11-05T18:45:18.003557
 ```
 
 ## National Gallery of Art (NGA)
