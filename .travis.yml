@@ -1,25 +1,15 @@
-language: c
+language: r
 
-before_install:
-  - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
-  - chmod 755 ./travis-tool.sh
-  - ./travis-tool.sh bootstrap
+r_github_packages:
+- jimhester/covr
+- ropensci/ckanr
 
-install:
-  - ./travis-tool.sh github_package ropensci/ckanr
-  - ./travis-tool.sh install_deps
-
-script: ./travis-tool.sh run_tests
-
-env:
-  global:
-  - R_BUILD_ARGS=" "
-  - R_CHECK_ARGS="--as-cran"
-  - BOOTSTRAP_LATEX="1"
-
-after_failure:
-- ./travis-tool.sh dump_logs
+after_success:
+- Rscript -e 'library(covr); coveralls()'
 
 notifications:
+  email:
+    on_success: change
+    on_failure: change
   slack:
     secure: JDkdp5ZqayceiLxlBmADo+QaFCgJDG2Da48yEx6ODt8+3pLoQ7eIXWOsToptTWtzLMBVrySuWpwZdxPOc9QERg9IlppQ3OxN++Jft9bn2850nVdMq+5b5gL1adP9Y37yMgqb9Q6Sj2QR1uEWPTKf1BkHRovtT9fyFhXHEv+qOLw=
