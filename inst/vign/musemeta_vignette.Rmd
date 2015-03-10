@@ -54,29 +54,23 @@ To get actual metadata for an object, you can use `met()` or `scrapi_get()` func
 Data for a single object
 
 ```{r}
-met(559490)
+met(246562)
 ```
 
 Or index to name of object, or values in the description
 
 ```{r}
-met(559490)$name
+met(246562)$name
 ```
 
 ```{r}
-met(559490)$values[1:2]
-```
-
-A different object
-
-```{r}
-met(246562)
+met(246562)$values[1:2]
 ```
 
 Get many objects
 
 ```{r}
-lapply(c(479283, 228901, 436876), met)
+lapply(c(479283, 228901), met)
 ```
 
 ### Using the scrapi API

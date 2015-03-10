@@ -4,10 +4,13 @@
 \alias{nga}
 \title{Get metadata for objects in the National Gallery of Art.}
 \usage{
-nga(id, ...)
+nga(id, ascii = FALSE, ...)
 }
 \arguments{
 \item{id}{An object id}
+
+\item{ascii}{(logical) Allow non-ascii characters. Set to \code{TRUE} to show
+non-ascii characters. Default: FALSE}
 
 \item{...}{Curl args passed on to \code{\link[httr]{GET}}}
 }

@@ -2,6 +2,8 @@
 #'
 #' @export
 #' @param id An object id
+#' @param ascii (logical) Allow non-ascii characters. Set to \code{TRUE} to show
+#' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @examples \donttest{
 #' aam(17150)
@@ -13,9 +15,9 @@
 #' aam(11462)
 #' lapply(c(17150,17140,17144), aam)
 #' }
-aam <- function(id, ...){
+aam <- function(id, ascii = FALSE, ...){
   out <- musemeta_GET(paste0(aambase(), id), ...)
-  aam_parse(out, id)
+  aam_parse(out, id, ascii)
 }
 
 #' @export
@@ -34,13 +36,6 @@ print.aam <- function(x, ...){
   catpaswrap(x$label, "Label", "  ")
 }
 
-# tryget <- function(x){
-#   out <- tryCatch(x, error=function(e) e)
-#   if(is(out, "simpleError")) NA else out
-# }
-# #     tmp <- xmlToList(x)
-# #     list(tryget(tmp$div$span$text), tryget(tmp$div$text))
-
 nameele <- function(x){
   if(nchar(x)==0){
     NULL
@@ -51,12 +46,12 @@ nameele <- function(x){
   }
 }
 
-aam_parse <- function(x, id){
+aam_parse <- function(x, id, ascii){
   tmp <- htmlParse(x)
   nodes <- xpathApply(tmp, '//div[@id="singledata"]')
   out <- do.call(c, mc(lapply(xpathApply(nodes[[1]], "div", xmlValue), nameele)))
   names(out) <- gsub("\\s", "_", tolower(names(out)))
-  structure(out, class="aam")
+  structure(nonascii(out, ascii), class="aam")
 }
 
 aambase <- function() "http://searchcollection.asianart.org/view/objects/asitem/nid/"

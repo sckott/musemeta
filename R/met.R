@@ -7,6 +7,8 @@
 #' @name met
 #'
 #' @param id An object id
+#' @param ascii (logical) Allow non-ascii characters. Set to \code{TRUE} to show
+#' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @details \code{muse_get} has changed to \code{met}
 #' @examples \donttest{
@@ -19,9 +21,9 @@
 
 #' @export
 #' @rdname met
-met <- function(id, ...){
+met <- function(id, ascii = FALSE, ...){
   out <- musemeta_GET(paste0(metbase(), id), ...)
-  met_parse(out)
+  met_parse(out, ascii)
 }
 
 #' @export
@@ -30,7 +32,7 @@ muse_get <- function(id, ...){
   .Deprecated("met", "musemeta", "Decided to change fxn name, see met()")
 }
 
-met_parse <- function(x){
+met_parse <- function(x, ascii){
   tmp <- htmlParse(x)
   tcon <- xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]
   name <- xmlValue(xpathApply(tcon, "h2")[[1]])
@@ -39,7 +41,7 @@ met_parse <- function(x){
     list(name = gsub(":", "", xpathSApply(x, "strong", xmlValue)),
          value = gsub("^\\s+", "", gsub(".+\n|.+\r", "", xmlValue(x))))
   })
-  structure(list(name=name, values=tags), class="muse")
+  structure(nonascii(list(name=name, values=tags), ascii), class="muse")
 }
 
 metbase <- function() "http://www.metmuseum.org/collection/the-collection-online/search/"

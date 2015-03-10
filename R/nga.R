@@ -2,6 +2,8 @@
 #'
 #' @export
 #' @param id An object id
+#' @param ascii (logical) Allow non-ascii characters. Set to \code{TRUE} to show
+#' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @examples \donttest{
 #' nga(id=33267)
@@ -16,9 +18,9 @@
 #'
 #' browse(nga(33268))
 #' }
-nga <- function(id, ...){
+nga <- function(id, ascii = FALSE, ...){
   out <- musemeta_GET(sprintf(ngabase(), id), ...)
-  nga_parse(out)
+  nga_parse(out, ascii)
 }
 
 #' @export
@@ -41,7 +43,7 @@ print.nga <- function(x, ...){
   }
 }
 
-nga_parse <- function(x){
+nga_parse <- function(x, ascii){
   tmp <- htmlParse(x)
   name <- xpathSApply(tmp, '//meta[@property="og:title"]', xmlGetAttr, "content")
   link <- xpathSApply(tmp, "//div[@data-url]", xmlGetAttr, "data-url")
@@ -58,9 +60,10 @@ nga_parse <- function(x){
   insc <- xmlValue(xpathApply(tmp, "//div[@id='inscription']", xmlChildren)[[1]][['p']])
   hist <- ext_(tmp, "history")
   biblio <- ext_(tmp, "bibliography")
-  structure(list(name=name, link=link, artist=artist, provenance=prov,
-                 description=desc, inscription=insc, history=hist,
-                 bibliography=biblio), class="nga")
+  all <- list(name=name, link=link, artist=artist, provenance=prov,
+              description=desc, inscription=insc, history=hist,
+              bibliography=biblio)
+  structure(nonascii(all, ascii), class="nga")
 }
 
 ngabase <- function() "http://www.nga.gov/content/ngaweb/Collection/art-object-page.%s.html"

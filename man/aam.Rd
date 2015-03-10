@@ -4,10 +4,13 @@
 \alias{aam}
 \title{Get metadata for objects in the Asian Art Museum of San Francisco.}
 \usage{
-aam(id, ...)
+aam(id, ascii = FALSE, ...)
 }
 \arguments{
 \item{id}{An object id}
+
+\item{ascii}{(logical) Allow non-ascii characters. Set to \code{TRUE} to show
+non-ascii characters. Default: FALSE}
 
 \item{...}{Curl args passed on to \code{\link[httr]{GET}}}
 }

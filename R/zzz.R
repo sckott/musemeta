@@ -37,3 +37,11 @@ ext_ <- function(input, name){
 }
 
 strmatch <- function(x, y) regmatches(x, regexpr(y, x))
+
+nonascii <- function(z, ascii = FALSE) {
+  if(ascii) {
+    return(z)
+  } else {
+    rapply(z, function(x) gsub("[^\x20-\x7F]", " ", x), how = "list")
+  }
+}

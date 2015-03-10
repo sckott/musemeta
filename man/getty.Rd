@@ -4,10 +4,13 @@
 \alias{getty}
 \title{Get metadata for objects in the Getty Museum.}
 \usage{
-getty(id, ...)
+getty(id, ascii = FALSE, ...)
 }
 \arguments{
 \item{id}{An object id}
+
+\item{ascii}{(logical) Allow non-ascii characters. Set to \code{TRUE} to show
+non-ascii characters. Default: FALSE}
 
 \item{...}{Curl args passed on to \code{\link[httr]{GET}}}
 }

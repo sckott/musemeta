@@ -2,6 +2,8 @@
 #'
 #' @export
 #' @param id An object id
+#' @param ascii (logical) Allow non-ascii characters. Set to \code{TRUE} to show
+#' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @details Sorry, but the metadata returned in this function is a bit messy because the metadata
 #' given for each piece is not stuctured, i.e., all elements are simply in html p tags, so its
@@ -25,9 +27,9 @@
 #' aic(8254)
 #' aic(25316)
 #' }
-aic <- function(id, ...){
+aic <- function(id, ascii = FALSE, ...){
   out <- musemeta_GET(paste0(aicbase(), id), ...)
-  aic_parse(out, id)
+  aic_parse(out, id, ascii)
 }
 
 #' @export
@@ -52,7 +54,7 @@ print.aic <- function(x, ...){
   catpaswrap(x$ownership_history, "Ownership history", "   ")
 }
 
-aic_parse <- function(x, id){
+aic_parse <- function(x, id, ascii){
   tmp <- htmlParse(x)
   ps <- xpathSApply(tmp, '//div[@id="tombstone"]//p')
   title <- xmlValue(ps[[2]])
@@ -61,12 +63,10 @@ aic_parse <- function(x, id){
   desc <- gsub("\n|^\\s+", "", xmlValue(ps[[3]]))
   display <- gsub("\n|^\\s+|\\s+$", "", xmlValue(ps[[4]]))
   link <- paste0(aicbase(), id)
-#   ab <- xpathSApply(tmp, '//div[@id="artwork-body"]//p')
-#   artbody <- if(is.null(ab)) NULL else paste0(sapply(ab, xmlValue), collapse = "")
-#   history <- xpathSApply(tmp, '//div[@id="extended"]//p', xmlValue)[[2]]
   deets <- get_deets(tmp)
-  structure(c(list(id=id, title=title, link=link, artist=artist,
-                 description=desc, display=display), deets), class="aic")
+  all <- c(list(id=id, title=title, link=link, artist=artist,
+         description=desc, display=display), deets)
+  structure(nonascii(all, ascii), class="aic")
 }
 
 aicbase <- function() "http://www.artic.edu/aic/collections/artwork/"

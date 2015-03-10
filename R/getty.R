@@ -2,6 +2,8 @@
 #'
 #' @export
 #' @param id An object id
+#' @param ascii (logical) Allow non-ascii characters. Set to \code{TRUE} to show
+#' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @examples \donttest{
 #' getty(140725)
@@ -18,9 +20,9 @@
 #' ### see http://search.getty.edu/gri/records/griobject?objectid=301703057
 #' getty(id=301703057)
 #' }
-getty <- function(id, ...){
+getty <- function(id, ascii = FALSE, ...){
   out <- musemeta_GET(paste0(gettybase(), id), ...)
-  getty_parse(out, id)
+  getty_parse(out, id, ascii)
 }
 
 #' @export
@@ -43,7 +45,7 @@ print.getty <- function(x, ...){
 
 l2i <- function(x) if(x) 1 else 0
 
-getty_parse <- function(x, id){
+getty_parse <- function(x, id, ascii){
   tmp <- htmlParse(x)
   name <- gsub("\n|\\s\\s", "", xpathSApply(tmp, '//div[@id="cs-results-a"]//h1', xmlValue))
   link <- paste0(gettybase(), id)
@@ -58,8 +60,11 @@ getty_parse <- function(x, id){
     list(text=xmlValue(z), href=gethref(tmp))
   })
   hist <- Map(function(x,y) c(x,where_when=y), hist3, xpathSApply(hist1, "ul/li", xmlValue))
-  structure(list(name=name, link=link, artist=artist, provenance=prov,
-                 description=desc, history=hist), class="getty")
+  hist <- rapply(hist, function(x) gsub("[^\x20-\x7F]", " ", x), how = "list")
+
+  all <- list(name=name, link=link, artist=artist, provenance=prov,
+              description=desc, history=hist)
+  structure(nonascii(all, ascii), class="getty")
 }
 
 gethref <- function(b){
