@@ -28,7 +28,7 @@ scrapi_get(x, ...)
 \item{x}{URL or ID for a scrapi object.}
 }
 \description{
-UPDATE: THIS API IS TEMPORARILY DOWN, THESE FUNCTIONS NOW SPIT OUT A MESSAGE SAYING SO...
+NOTE: THE RANDOM ENDPOINT IS DOWN FOR NOW.
 }
 \details{
 You can also use the \code{\link{met}} function. The equivalent function with the

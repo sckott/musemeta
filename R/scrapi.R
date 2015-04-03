@@ -1,6 +1,6 @@
 #' Use the scrapi API for The Metropolitan Museum of Art data.
 #'
-#' UPDATE: THIS API IS TEMPORARILY DOWN, THESE FUNCTIONS NOW SPIT OUT A MESSAGE SAYING SO...
+#' NOTE: THE RANDOM ENDPOINT IS DOWN FOR NOW.
 #'
 #' @name scrapi
 #' @param id (numeric) An object id
@@ -39,37 +39,34 @@ NULL
 #' @rdname scrapi
 scrapi_random <- function(fields=NULL, ...){
   scrapi_down()
-#   res <- musemeta_GET(paste0(scbase(), "random"), mc(list(fields=p2c(fields))), ...)
+#   res <- musemeta_GET(paste0(scbase(), "random"), mc(list(fields = p2c(fields))), ...)
 #   jsonlite::fromJSON(res, FALSE)
 }
 
 #' @export
 #' @rdname scrapi
 scrapi_info <- function(id, fields=NULL, ...){
-  scrapi_down()
-#   res <- musemeta_GET(paste0(scbase(), "object/", id), mc(list(fields=p2c(fields))), ...)
-#   jsonlite::fromJSON(res, FALSE)
+  res <- musemeta_GET(paste0(scbase(), "object/", id), mc(list(fields = p2c(fields))), ...)
+  jsonlite::fromJSON(res, FALSE)
 }
 
 #' @export
 #' @rdname scrapi
 scrapi_search <- function(query, ...){
-  scrapi_down()
-#   res <- musemeta_GET(paste0(scbase(), "search/", gsub("\\s", "+", query)), ...)
-#   out <- jsonlite::fromJSON(res, TRUE)
-#   links <- as.list(setNames(unname(unlist(out$`_links`)), names(out$`_links`)))
-#   ids <- gsub("http://scrapi.org/object/", "", out$collection$items$href)
-#   list(links=out$collection$items$href, ids=ids, paging=links)
+  res <- musemeta_GET(paste0(scbase(), "search/", gsub("\\s", "+", query)), ...)
+  out <- jsonlite::fromJSON(res, TRUE)
+  links <- as.list(setNames(unname(unlist(out$`_links`)), names(out$`_links`)))
+  ids <- gsub("http://scrapi.org/object/", "", out$collection$items$href)
+  list(links = out$collection$items$href, ids = ids, paging = links)
 }
 
 #' @export
 #' @rdname scrapi
 scrapi_get <- function(x, ...){
-  scrapi_down()
-#   res <- if(grepl("http://scrapi.org", x)) musemeta_GET(x, ...) else musemeta_GET(paste0(scbase(), "object/", x), ...)
-#   jsonlite::fromJSON(res, FALSE)
+  res <- if (grepl("http://scrapi.org", x)) musemeta_GET(x, ...) else musemeta_GET(paste0(scbase(), "object/", x), ...)
+  jsonlite::fromJSON(res, FALSE)
 }
 
 scbase <- function() 'http://scrapi.org/'
 
-scrapi_down <- function() message("Sorry, the scrapi.org API is temporarily down\nscrapi_*() functions will work again when the API is back up")
+scrapi_down <- function() message("Sorry, the scrapi.org API random endpoint is temporarily down\n will work again when the API is back up")
