@@ -31,7 +31,7 @@ lapply(c(140725,8197), getty)
 
 ## doesn't work, different url and html schema
 ### see http://search.getty.edu/gri/records/griobject?objectid=301703057
-getty(id=301703057)
+# getty(id=301703057)
 }
 }
 

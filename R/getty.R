@@ -18,10 +18,10 @@
 #'
 #' ## doesn't work, different url and html schema
 #' ### see http://search.getty.edu/gri/records/griobject?objectid=301703057
-#' getty(id=301703057)
+#' # getty(id=301703057)
 #' }
 getty <- function(id, ascii = FALSE, ...){
-  out <- musemeta_GET(paste0(gettybase(), id), ...)
+  out <- musemeta_GET(gettybase(), list(objectid = id), ...)
   getty_parse(out, id, ascii)
 }
 
