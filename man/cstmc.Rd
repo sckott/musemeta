@@ -101,7 +101,7 @@ schema defined with an IDatasetForm plugin. Default: FALSE}
 Query for data from the CSTMC (Canadian Science & Technology Museum Corporation)
 }
 \examples{
-\donttest{
+\dontrun{
 # Changes
 cstmc_changes()
 cstmc_changes(as='json')

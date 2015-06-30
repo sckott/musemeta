@@ -8,7 +8,7 @@
 #' @details Sorry, but the metadata returned in this function is a bit messy because the metadata
 #' given for each piece is not stuctured, i.e., all elements are simply in html p tags, so its
 #' hard to have consistent parsing.
-#' @examples \donttest{
+#' @examples \dontrun{
 #' aic(40652)
 #' aic(145241)
 #' aic(87531)

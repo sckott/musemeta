@@ -45,7 +45,7 @@
 #' @param ... Curl args passed on to \code{\link[httr]{POST}}
 #'
 #' @references \url{http://data.techno-science.ca/}
-#' @examples \donttest{
+#' @examples \dontrun{
 #' # Changes
 #' cstmc_changes()
 #' cstmc_changes(as='json')
@@ -97,7 +97,7 @@ cstmc_changes <- function(offset=0, limit=31, as='list', ...){
 #' @export
 #' @rdname cstmc
 cstmc_datasets <- function(offset=0, limit=31, as='list', ...){
-  ckanr::datasets(offset=offset, limit=limit, url=cstmcbase(), as=as, ...)
+  ckanr::package_list(offset=offset, limit=limit, url=cstmcbase(), as=as, ...)
 }
 
 #' @export

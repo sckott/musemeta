@@ -11,7 +11,7 @@
 #' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @details \code{muse_get} has changed to \code{met}
-#' @examples \donttest{
+#' @examples \dontrun{
 #' out <- met(559490)
 #' out$name
 #' out$values

@@ -5,7 +5,7 @@
 #' @param ascii (logical) Allow non-ascii characters. Set to \code{TRUE} to show
 #' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
-#' @examples \donttest{
+#' @examples \dontrun{
 #' aam(17150)
 #'
 #' aam(17140)

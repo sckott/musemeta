@@ -18,7 +18,7 @@ non-ascii characters. Default: FALSE}
 Get metadata for objects in the National Gallery of Art.
 }
 \examples{
-\donttest{
+\dontrun{
 nga(id=33267)
 nga(47242)
 nga(47243)

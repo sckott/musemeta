@@ -24,7 +24,7 @@ Get metadata for objects in the Metropolitan Museum of Art.
 \code{muse_get} has changed to \code{met}
 }
 \examples{
-\donttest{
+\dontrun{
 out <- met(559490)
 out$name
 out$values

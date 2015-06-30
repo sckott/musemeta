@@ -1290,7 +1290,37 @@ List datasets
 
 ```r
 cstmc_datasets(as = "table")
-#> Error: 'datasets' is not an exported object from 'namespace:ckanr'
+#>  [1] "artifact-data-agriculture"                                  
+#>  [2] "artifact-data-aviation"                                     
+#>  [3] "artifact-data-bookbinding"                                  
+#>  [4] "artifact-data-chemistry"                                    
+#>  [5] "artifact-data-communications"                               
+#>  [6] "artifact-data-computing-technology"                         
+#>  [7] "artifact-data-domestic-technology"                          
+#>  [8] "artifact-data-energy-electric"                              
+#>  [9] "artifact-data-exploration-and-survey"                       
+#> [10] "artifact-data-fisheries"                                    
+#> [11] "artifact-data-forestry"                                     
+#> [12] "artifact-data-horology"                                     
+#> [13] "artifact-data-industrial-technology"                        
+#> [14] "artifact-data-lighting-technology"                          
+#> [15] "artifact-data-location-canada-agriculture-and-food-museum"  
+#> [16] "artifact-data-location-canada-aviation-and-space-museum"    
+#> [17] "artifact-data-location-canada-science-and-technology-museum"
+#> [18] "artifact-data-marine-transportation"                        
+#> [19] "artifact-data-mathematics"                                  
+#> [20] "artifact-data-medical-technology"                           
+#> [21] "artifact-data-meteorology"                                  
+#> [22] "artifact-data-metrology"                                    
+#> [23] "artifact-data-mining-and-metallurgy"                        
+#> [24] "artifact-data-motorized-ground-transportation"              
+#> [25] "artifact-data-non-motorized-ground-transportation"          
+#> [26] "artifact-data-on-loan"                                      
+#> [27] "artifact-data-photography"                                  
+#> [28] "artifact-data-physics"                                      
+#> [29] "artifact-data-printing"                                     
+#> [30] "artifact-data-railway-transportation"                       
+#> [31] "artifact-dataset-fire-fighting"
 ```
 
 Search for packages

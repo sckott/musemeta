@@ -18,7 +18,7 @@ non-ascii characters. Default: FALSE}
 Get metadata for objects in the Getty Museum.
 }
 \examples{
-\donttest{
+\dontrun{
 getty(140725)
 getty(329471)
 getty(138860)

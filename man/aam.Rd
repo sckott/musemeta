@@ -18,7 +18,7 @@ non-ascii characters. Default: FALSE}
 Get metadata for objects in the Asian Art Museum of San Francisco.
 }
 \examples{
-\donttest{
+\dontrun{
 aam(17150)
 
 aam(17140)

@@ -13,7 +13,7 @@ Imports:
     httr (>= 0.6.1),
     jsonlite,
     XML,
-    ckanr
+    ckanr (>= 0.0.7.920)
 Suggests:
     roxygen2,
     knitr
