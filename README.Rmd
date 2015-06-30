@@ -19,7 +19,7 @@ Currently `musemeta` can get data from:
 
 * [The Metropolitan Museum of Art](http://www.metmuseum.org/) via 
     * scraping the MET website (see function `met()`)
-    * http://scrapi.org/ (see functions `scrapi_()`) - __UPDATE__: THIS API IS TEMPORARILY DOWN, THESE FUNCTIONS NOW SPIT OUT A MESSAGE SAYING SO...
+    * http://scrapi.org/ (see functions `scrapi_()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
@@ -32,7 +32,7 @@ Other sources of museum metadata will be added...check back later & see [issues]
 
 Get `ckanr` first, not on CRAN yet (I'll get `ckanr` up to CRAN before this is on CRAN)
 
-```{r}
+```{r eval=FALSE}
 devtools::install_github("ropensci/ckanr")
 ```
 
@@ -82,38 +82,32 @@ lapply(c(479283, 228901, 436876), met)
 
 ### Using the scrapi API
 
-SCRAPI FUNCTIONS ARE DOWN TEMPORARILY
+> Note: the `/random` endpoint is down.
 
 This is again, for The Metropolitan Museum of Art only 
 
-Get a random object, limit to a few fields for brevity
-
-```{r eval=FALSE}
-scrapi_random(fields=c('medium','whoList'))
-```
-
 Get a specific object
 
-```{r eval=FALSE}
-scrapi_info(123, fields=c('title','primaryArtistNameOnly','medium'))
+```{r}
+scrapi_info(123, fields = c('title', 'primaryArtistNameOnly', 'medium'))
 ```
 
 Search for objects
 
-```{r eval=FALSE}
-scrapi_search(query='mirror')
+```{r}
+scrapi_search(query = 'mirror')
 ```
 
 Get an object, with a scrapi.org url
 
-```{r eval=FALSE}
+```{r}
 out <- scrapi_get("http://scrapi.org/object/427581")
 out$primaryArtist
 ```
 
 or an object id
 
-```{r eval=FALSE}
+```{r}
 out <- scrapi_get(427581)
 out$primaryArtist
 ```
