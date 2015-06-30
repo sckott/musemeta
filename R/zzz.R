@@ -1,4 +1,4 @@
-musemeta_GET <- function(url, args = list(), ...){
+musemeta_GET <- function(url, args = NULL, ...){
   res <- GET(url, query = args, ...)
   stop_for_status(res)
   content(res, "text")
