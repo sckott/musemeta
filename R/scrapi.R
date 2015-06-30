@@ -13,11 +13,7 @@
 #' @details You can also use the \code{\link{met}} function. The equivalent function with the
 #' scrapi API is \code{\link{scrapi_get}}. The latter gets much more data, and uses a REST API,
 #' while the former scrapes the html directly.
-#' @examples \donttest{
-#' # Get a random object
-#' scrapi_random()
-#' scrapi_random(fields=c('medium','whoList'))
-#'
+#' @examples \dontrun{
 #' # Get object information
 #' scrapi_info(123)
 #' scrapi_info(123, fields='title')
@@ -32,6 +28,10 @@
 #' scrapi_get("http://scrapi.org/object/427581")
 #' ## with an object id
 #' scrapi_get(427581)
+#'
+#' # RANDOM down for now
+#' ## scrapi_random()
+#' ## scrapi_random(fields=c('medium','whoList'))
 #' }
 NULL
 
