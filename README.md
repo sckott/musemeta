@@ -5,6 +5,7 @@ musemeta
 
 [![Build Status](https://api.travis-ci.org/ropensci/musemeta.png)](https://travis-ci.org/ropensci/musemeta)
 [![Build status](https://ci.appveyor.com/api/projects/status/y3tefs9xb6pmql36/branch/master?svg=true)](https://ci.appveyor.com/project/sckott/musemeta/branch/master)
+[![codecov.io](https://codecov.io/github/ropensci/musemeta/coverage.svg?branch=master)](https://codecov.io/github/ropensci/musemeta?branch=master)
 
 **R client for museum metadata**
 
