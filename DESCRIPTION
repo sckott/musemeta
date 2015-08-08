@@ -1,18 +1,19 @@
 Package: musemeta
 Type: Package
-Title: R Client for Scraping Museum Metadata
+Title: Client for Scraping Museum Metadata
 Description: Scrape museum metadata.
-Version: 0.0.5.9000
+Version: 0.0.6.9300
 Authors@R: as.person(c("Scott Chamberlain <myrmecocystus@gmail.com> [aut,cre]"))
 License: MIT + file LICENSE
 URL: https://github.com/ropensci/musemeta
 BugReports: http://www.github.com/ropensci/musemeta/issues
 VignetteBuilder: knitr
 Imports:
-    httr (>= 0.6.1),
+    httr (>= 1.0.0),
     jsonlite,
     XML,
     ckanr (>= 0.0.7.920)
 Suggests:
     roxygen2,
-    knitr
+    knitr,
+    testthat

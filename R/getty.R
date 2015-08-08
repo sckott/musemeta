@@ -21,8 +21,15 @@
 #' # getty(id=301703057)
 #' }
 getty <- function(id, ascii = FALSE, ...){
-  out <- musemeta_GET(gettybase(), list(objectid = id), ...)
+  out <- getty_GET(gettybase(), list(objectid = id), ...)
   getty_parse(out, id, ascii)
+}
+
+getty_GET <- function(url, args = NULL, ...){
+  res <- GET(url, query = args, ...)
+  if (grepl("No Object Found", content(res, "text"))) stop(args$objectid, " not found", call. = FALSE)
+  stop_for_status(res)
+  content(res, "text")
 }
 
 #' @export
@@ -30,20 +37,20 @@ print.getty <- function(x, ...){
   cat(sprintf("<Getty metadata> %s", x$name), sep = "\n")
   catpaswrap(x$artist, "Artist", "  ")
   cat("  Provenance", sep = "\n")
-  for(i in seq_along(x$provenance)){
+  for (i in seq_along(x$provenance)) {
     cat(sprintf("     %s: %s", x$provenance[[i]]$name, x$provenance[[i]]$value), sep = "\n")
   }
   cat("  Description:", sep = "\n")
-  for(i in seq_along(x$description)){
+  for (i in seq_along(x$description)) {
     cat(sprintf("     %s: %s", x$description[[i]]$name, x$description[[i]]$value), sep = "\n")
   }
   cat("  Exhibition history:", sep = "\n")
-  for(i in seq_along(x$history)){
+  for (i in seq_along(x$history)) {
     catpaswrap(x$history[[i]]$where_when, x$history[[i]]$text, "     ")
   }
 }
 
-l2i <- function(x) if(x) 1 else 0
+l2i <- function(x) if (x) 1 else 0
 
 getty_parse <- function(x, id, ascii){
   tmp <- htmlParse(x)
@@ -83,7 +90,7 @@ plist <- function(ob){
   }
 }
 
-gettybase <- function() "http://search.getty.edu/museum/records/musobject?objectid="
+gettybase <- function() "http://search.getty.edu/museum/records/musobject"
 
 
 # getty_search <- function(q, filter=NULL, cat=NULL, dir=NULL, img=FALSE, dsp=FALSE,
