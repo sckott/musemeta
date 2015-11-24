@@ -1,9 +1,12 @@
 Package: musemeta
 Type: Package
 Title: Client for Scraping Museum Metadata
-Description: Scrape museum metadata.
-Version: 0.0.6.9300
-Authors@R: as.person(c("Scott Chamberlain <myrmecocystus@gmail.com> [aut,cre]"))
+Description: Scrape museum metadata. Includes many
+		different museums, including the MET, Getty Museum, and
+		more. New museums are added occassionally.
+Version: 0.0.6.9301
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
 URL: https://github.com/ropensci/musemeta
 BugReports: http://www.github.com/ropensci/musemeta/issues
