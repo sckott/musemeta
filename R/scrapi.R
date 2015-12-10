@@ -22,6 +22,7 @@
 #' # Search for objects
 #' scrapi_search(query='mirror')
 #' scrapi_search(query='siphon nozzle')
+#' scrapi_search(query='22.1.962')
 #'
 #' # Get an object
 #' ## with a url for a scrapi object
@@ -55,6 +56,7 @@ scrapi_info <- function(id, fields=NULL, ...){
 scrapi_search <- function(query, ...){
   res <- musemeta_GET(paste0(scbase(), "search/", gsub("\\s", "+", query)), ...)
   out <- jsonlite::fromJSON(res, TRUE)
+  out$`_links` <- out$`_links`[vapply(out$`_links`, function(z) class(z[[1]]), "") != "NULL"]
   links <- as.list(setNames(unname(unlist(out$`_links`)), names(out$`_links`)))
   ids <- gsub("http://scrapi.org/object/", "", out$collection$items$href)
   list(links = out$collection$items$href, ids = ids, paging = links)
