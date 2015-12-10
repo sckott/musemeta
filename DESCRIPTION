@@ -2,8 +2,8 @@ Package: musemeta
 Type: Package
 Title: Client for Scraping Museum Metadata
 Description: Scrape museum metadata. Includes many
-		different museums, including the MET, Getty Museum, and
-		more. New museums are added occassionally.
+    different museums, including the MET, Getty Museum, and
+    more. New museums are added occassionally.
 Version: 0.0.6.9500
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
@@ -20,3 +20,4 @@ Suggests:
     roxygen2,
     knitr,
     testthat
+RoxygenNote: 5.0.1
