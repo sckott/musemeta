@@ -27,9 +27,9 @@ getty <- function(id, ascii = FALSE, ...){
 
 getty_GET <- function(url, args = NULL, ...){
   res <- GET(url, query = args, ...)
-  if (grepl("No Object Found", content(res, "text"))) stop(args$objectid, " not found", call. = FALSE)
+  if (grepl("No Object Found", content(res, "text", encoding = "UTF-8"))) stop(args$objectid, " not found", call. = FALSE)
   stop_for_status(res)
-  content(res, "text")
+  content(res, "text", encoding = "UTF-8")
 }
 
 #' @export
@@ -91,15 +91,3 @@ plist <- function(ob){
 }
 
 gettybase <- function() "http://search.getty.edu/museum/records/musobject"
-
-
-# getty_search <- function(q, filter=NULL, cat=NULL, dir=NULL, img=FALSE, dsp=FALSE,
-#   rows=10, pg=1, ...)
-# {
-#   args <- mc(list(q=q, f=filter, cata=cat, dir=dir, img=l2i(img), dsp=l2i(dsp),
-#                   rows=rows, pg=pg))
-#   res <- GET(gettysbase(), query = args, config(followlocation=TRUE))
-#   stop_for_status(res)
-#   content(res, "text")
-# #   getty_search_parse(out)
-# }

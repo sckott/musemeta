@@ -2,7 +2,7 @@ musemeta_GET <- function(url, args = NULL, ...){
   res <- GET(url, query = args, ...)
   if (res$all_headers[[1]]$status > 201) stop(sprintf("%s not found", basename(url)), call. = FALSE)
   stop_for_status(res)
-  content(res, "text")
+  content(res, "text", encoding = "UTF-8")
 }
 
 #' @export
