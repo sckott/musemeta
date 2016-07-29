@@ -8,8 +8,8 @@ browse <- function(x, ...){
 
 #' @export
 #' @rdname browse
-browse.aic <- function(x, ...) browseURL(x$link, ...)
+browse.aic <- function(x, ...) utils::browseURL(x$link, ...)
 
 #' @export
 #' @rdname browse
-browse.nga <- function(x, ...) browseURL(x$link, ...)
+browse.nga <- function(x, ...) utils::browseURL(x$link, ...)

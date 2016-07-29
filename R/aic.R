@@ -102,6 +102,6 @@ get_deets <- function(x){
         }
       }
     }
-    c(artwork_body=ab, setNames(out, nms))
+    c(artwork_body=ab, stats::setNames(out, nms))
   }
 }

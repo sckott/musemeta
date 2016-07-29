@@ -8,7 +8,7 @@
 #' @param fields (character) One or more fields to return in a vector
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @param x URL or ID for a scrapi object.
-#' @references \url{http://scrapi.org/} \url{https://github.com/jedahan/collections-api}
+#' @references http://scrapi.org \url{https://github.com/jedahan/collections-api}
 #' @seealso \code{\link{met}}
 #' @details You can also use the \code{\link{met}} function. The equivalent function with the
 #' scrapi API is \code{\link{scrapi_get}}. The latter gets much more data, and uses a REST API,
@@ -57,7 +57,7 @@ scrapi_search <- function(query, ...){
   res <- musemeta_GET(paste0(scbase(), "search/", gsub("\\s", "+", query)), ...)
   out <- jsonlite::fromJSON(res, TRUE)
   out$`_links` <- out$`_links`[vapply(out$`_links`, function(z) class(z[[1]]), "") != "NULL"]
-  links <- as.list(setNames(unname(unlist(out$`_links`)), names(out$`_links`)))
+  links <- as.list(stats::setNames(unname(unlist(out$`_links`)), names(out$`_links`)))
   ids <- gsub("http://scrapi.org/object/", "", out$collection$items$href)
   list(links = out$collection$items$href, ids = ids, paging = links)
 }

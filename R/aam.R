@@ -41,7 +41,7 @@ nameele <- function(x){
     NULL
   } else {
     vals <- gsub("^\\s+|\\s+$", "", strsplit(x, ":")[[1]])
-    tmp <- as.list(setNames(vals[2], vals[1]))
+    tmp <- as.list(stats::setNames(vals[2], vals[1]))
     if(names(tmp) == "Permalink to this object") NULL else tmp
   }
 }

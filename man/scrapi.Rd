@@ -59,7 +59,7 @@ scrapi_get(427581)
 }
 }
 \references{
-\url{http://scrapi.org/} \url{https://github.com/jedahan/collections-api}
+http://scrapi.org \url{https://github.com/jedahan/collections-api}
 }
 \seealso{
 \code{\link{met}}

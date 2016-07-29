@@ -6,7 +6,7 @@
 #' non-ascii characters. Default: FALSE
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @examples \dontrun{
-#' getty(140725)
+#' getty(233750)
 #' getty(329471)
 #' getty(138860)
 #' getty(8197)
@@ -76,7 +76,7 @@ getty_parse <- function(x, id, ascii){
 
 gethref <- function(b){
   out <- tryCatch(b$em$a$.attrs[['href']], error=function(e) e)
-  if(is(out, "simpleError")) NA else out
+  if(inherits(out, "simpleError")) NA else out
 }
 
 plist <- function(ob){
@@ -85,9 +85,10 @@ plist <- function(ob){
     tmp <- apply(trytable, 1, as.list)
     lapply(tmp, function(x){
       x[[1]] <- sub(":", "", x[[1]])
-      setNames(x, c('name','value'))
+      stats::setNames(x, c('name','value'))
     })
   }
 }
 
-gettybase <- function() "http://search.getty.edu/museum/records/musobject"
+gettybase <- function() "http://www.getty.edu/art/collection/objects"
+#"http://search.getty.edu/museum/records/musobject"

@@ -33,7 +33,7 @@ namval <- function(desc, x, y){
 ext_ <- function(input, name){
   tmp <- xpathApply(input, sprintf("//div[@id='%s']", name), xmlChildren)[[1]]
   unname(lapply(tmp[ names(tmp) == "dl" ], function(x){
-    setNames(unname(sapply(c('dt','dd'), function(y) xpathApply(x, y, xmlValue))), c('year','info'))
+    stats::setNames(unname(sapply(c('dt','dd'), function(y) xpathApply(x, y, xmlValue))), c('year','info'))
   }))
 }
 
