@@ -1,6 +1,6 @@
 #' Get metadata for objects in the Metropolitan Museum of Art.
 #'
-#' @importFrom httr GET content stop_for_status
+#' @importFrom httr GET content stop_for_status config
 #' @importFrom jsonlite fromJSON
 #' @importFrom XML xpathApply xpathSApply xmlValue htmlParse xmlChildren xmlGetAttr readHTMLTable
 #' xmlToList

@@ -19,7 +19,7 @@ Currently `musemeta` can get data from:
 
 * [The Metropolitan Museum of Art](http://www.metmuseum.org/) via
     * scraping the MET website (see function `met()`)
-    * http://scrapi.org/ (see functions `scrapi_()`)
+    * http://scrapi.org (see functions `scrapi_()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
