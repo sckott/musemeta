@@ -4,6 +4,7 @@
 #' @importFrom jsonlite fromJSON
 #' @importFrom XML xpathApply xpathSApply xmlValue htmlParse xmlChildren xmlGetAttr readHTMLTable
 #' xmlToList
+#' @importFrom xml2 read_html xml_find_first xml_text xml_find_all
 #' @name met
 #'
 #' @param id An object id
@@ -22,8 +23,8 @@
 #' @export
 #' @rdname met
 met <- function(id, ascii = FALSE, ...){
-  out <- musemeta_GET(paste0(metbase(), id), ...)
-  met_parse(out, ascii)
+  out <- musemeta_GET(paste0(metbase(), id), config(followlocation = TRUE), ...)
+  met_parse(out, ascii, id)
 }
 
 #' @export
@@ -32,16 +33,20 @@ muse_get <- function(id, ...){
   .Deprecated("met", "musemeta", "Decided to change fxn name, see met()")
 }
 
-met_parse <- function(x, ascii){
-  tmp <- htmlParse(x)
-  tcon <- xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]
-  name <- xmlValue(xpathApply(tcon, "h2")[[1]])
-  tomb <- xpathApply(tcon, "//div[@class='tombstone']")[[1]]
-  tags <- lapply(xpathApply(tomb, "div"), function(x){
-    list(name = gsub(":", "", xpathSApply(x, "strong", xmlValue)),
-         value = gsub("^\\s+", "", gsub(".+\n|.+\r", "", xmlValue(x))))
-  })
-  structure(nonascii(list(name=name, values=tags), ascii), class="muse")
+met_parse <- function(x, ascii, id){
+  tmp <- xml2::read_html(x)
+  #tcon <- xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]
+  #tcon <- xpathApply(tmp, "//div[@class='collection-details__tombstone']")[[1]]
+  tcon <- xml2::xml_find_first(tmp, "//div[@class='collection-details__tombstone']")
+  name <- gsub(":", "", xml2::xml_text(xml2::xml_find_all(tcon, "//dt")))
+  tags <- xml2::xml_text(xml2::xml_find_all(tcon, "//dd"))
+  tags <- unname(Map(function(x, y) list(name = x, value = y), name, tags))
+  # tomb <- xpathApply(tcon, "//div[@class='tombstone']")[[1]]
+  # tags <- lapply(xpathApply(tomb, "div"), function(x){
+  #   list(name = gsub(":", "", xpathSApply(x, "strong", xmlValue)),
+  #        value = gsub("^\\s+", "", gsub(".+\n|.+\r", "", xmlValue(x))))
+  # })
+  structure(nonascii(list(name = id, values = tags), ascii), class = "muse")
 }
 
 metbase <- function() "http://www.metmuseum.org/collection/the-collection-online/search/"
