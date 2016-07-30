@@ -27,9 +27,9 @@ getty <- function(id, ascii = FALSE, ...){
 
 getty_GET <- function(url, args = NULL, ...){
   res <- GET(url, query = args, ...)
-  if (grepl("No Object Found", content(res, "text", encoding = "UTF-8"))) stop(args$objectid, " not found", call. = FALSE)
+  if (grepl("No Object Found", c2utf8(res))) stop(args$objectid, " not found", call. = FALSE)
   stop_for_status(res)
-  content(res, "text", encoding = "UTF-8")
+  c2utf8(res)
 }
 
 #' @export

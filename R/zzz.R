@@ -1,8 +1,8 @@
 musemeta_GET <- function(url, args = NULL, ...){
   res <- GET(url, query = args, ...)
-  if (res$all_headers[[1]]$status > 301) stop(sprintf("%s not found", basename(url)), call. = FALSE)
+  #if (res$all_headers[[1]]$status > 301) stop(sprintf("%s not found", basename(url)), call. = FALSE)
   stop_for_status(res)
-  content(res, "text", encoding = "UTF-8")
+  c2utf8(res)
 }
 
 #' @export
@@ -46,3 +46,8 @@ nonascii <- function(z, ascii = FALSE) {
     rapply(z, function(x) gsub("[^\x20-\x7F]", " ", x), how = "list")
   }
 }
+
+c2utf8 <- function(x) {
+  content(x, "text", encoding = "UTF-8")
+}
+
