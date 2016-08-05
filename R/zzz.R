@@ -51,3 +51,4 @@ c2utf8 <- function(x) {
   content(x, "text", encoding = "UTF-8")
 }
 
+strw <- function(x) gsub("^\\s|\\s$", "", x)

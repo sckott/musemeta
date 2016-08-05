@@ -4,7 +4,7 @@
 \alias{moma}
 \alias{moma_artists}
 \alias{moma_artwork}
-\title{Get metadata from Metropolitan Museum of Art}
+\title{Get metadata from Museum of Modern Art}
 \usage{
 moma_artists(...)
 
@@ -14,7 +14,7 @@ moma_artwork(...)
 \item{...}{Curl args passed on to \code{\link[httr]{GET}}}
 }
 \description{
-Get metadata from Metropolitan Museum of Art
+Get metadata from Museum of Modern Art
 }
 \examples{
 \dontrun{

@@ -25,7 +25,7 @@ Get metadata for objects in the Metropolitan Museum of Art.
 }
 \examples{
 \dontrun{
-out <- met(559490)
+(out <- met(559490))
 out$name
 out$values
 met(246562)

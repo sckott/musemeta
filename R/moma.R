@@ -1,4 +1,4 @@
-#' Get metadata from Metropolitan Museum of Art
+#' Get metadata from Museum of Modern Art
 #'
 #' @export
 #' @name moma

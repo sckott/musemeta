@@ -13,7 +13,7 @@
 #' @param ... Curl args passed on to \code{\link[httr]{GET}}
 #' @details \code{muse_get} has changed to \code{met}
 #' @examples \dontrun{
-#' out <- met(559490)
+#' (out <- met(559490))
 #' out$name
 #' out$values
 #' met(246562)
@@ -37,9 +37,10 @@ met_parse <- function(x, ascii, id){
   tmp <- xml2::read_html(x)
   #tcon <- xpathApply(tmp, "//div[@class='tombstone-container']")[[1]]
   #tcon <- xpathApply(tmp, "//div[@class='collection-details__tombstone']")[[1]]
+  title <- strw(strsplit(xml2::xml_text(xml2::xml_find_first(tmp, "//title")), "\\|")[[1]])[[1]]
   tcon <- xml2::xml_find_first(tmp, "//div[@class='collection-details__tombstone']")
-  name <- gsub(":", "", xml2::xml_text(xml2::xml_find_all(tcon, "//dt")))
-  tags <- xml2::xml_text(xml2::xml_find_all(tcon, "//dd"))
+  name <- c("title", gsub(":", "", xml2::xml_text(xml2::xml_find_all(tcon, "//dt"))))
+  tags <- c(title, xml2::xml_text(xml2::xml_find_all(tcon, "//dd")))
   tags <- unname(Map(function(x, y) list(name = x, value = y), name, tags))
   # tomb <- xpathApply(tcon, "//div[@class='tombstone']")[[1]]
   # tags <- lapply(xpathApply(tomb, "div"), function(x){
