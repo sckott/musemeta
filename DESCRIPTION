@@ -4,7 +4,7 @@ Title: Client for Scraping Museum Metadata
 Description: Scrape museum metadata. Includes many
     different museums, including the MET, Getty Museum, and
     more. New museums are added occassionally.
-Version: 0.0.6.9694
+Version: 0.0.6.9696
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
@@ -17,7 +17,7 @@ Imports:
     XML,
     xml2,
     tibble,
-    ckanr (>= 0.0.7.920)
+    ckanr (>= 0.1.0)
 Suggests:
     knitr,
     testthat

@@ -1,16 +1,13 @@
 language: r
-
-r_github_packages:
-- jimhester/robustr
-- jimhester/covr
-- ropensci/ckanr
+sudo: false
+cache: packages
 
 after_success:
 - Rscript -e 'covr::codecov()'
 
 notifications:
   email:
-    on_success: change
-    on_failure: change
+    on_success: never
+    on_failure: never
   slack:
     secure: JDkdp5ZqayceiLxlBmADo+QaFCgJDG2Da48yEx6ODt8+3pLoQ7eIXWOsToptTWtzLMBVrySuWpwZdxPOc9QERg9IlppQ3OxN++Jft9bn2850nVdMq+5b5gL1adP9Y37yMgqb9Q6Sj2QR1uEWPTKf1BkHRovtT9fyFhXHEv+qOLw=
