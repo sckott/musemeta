@@ -2,6 +2,7 @@ context("getty")
 
 test_that("getty works", {
   skip_on_cran()
+  skip_on_travis()
 
   aa <- getty(140725)
   bb <- lapply(c(140725,8197), getty)
@@ -29,6 +30,7 @@ test_that("getty works", {
 
 test_that("getty fails well", {
   skip_on_cran()
+  skip_on_travis()
 
   # no input
   expect_error(getty(), "argument \"id\" is missing")
