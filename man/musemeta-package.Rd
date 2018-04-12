@@ -2,8 +2,8 @@
 % Please edit documentation in R/musemeta.R
 \docType{package}
 \name{musemeta-package}
-\alias{musemeta}
 \alias{musemeta-package}
+\alias{musemeta}
 \title{R client for museum metadata}
 \description{
 R client for museum metadata
@@ -12,4 +12,3 @@ R client for museum metadata
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 }
 \keyword{package}
-

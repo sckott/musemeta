@@ -2,10 +2,10 @@
 % Please edit documentation in R/scrapi.R
 \name{scrapi}
 \alias{scrapi}
-\alias{scrapi_get}
-\alias{scrapi_info}
 \alias{scrapi_random}
+\alias{scrapi_info}
 \alias{scrapi_search}
+\alias{scrapi_get}
 \title{Use the scrapi API for The Metropolitan Museum of Art data.}
 \usage{
 scrapi_random(fields = NULL, ...)
@@ -64,4 +64,3 @@ http://scrapi.org \url{https://github.com/jedahan/collections-api}
 \seealso{
 \code{\link{met}}
 }
-

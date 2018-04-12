@@ -20,4 +20,3 @@ browse(x, ...)
 \description{
 Browse the object
 }
-

@@ -25,4 +25,3 @@ Get metadata from Museum of Modern Art
 (work <- moma_artwork(config = verbose()))
 }
 }
-

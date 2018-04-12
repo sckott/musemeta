@@ -6,11 +6,11 @@
 \alias{cstmc_datasets}
 \alias{cstmc_group_list}
 \alias{cstmc_group_show}
+\alias{cstmc_tag_list}
+\alias{cstmc_tag_show}
 \alias{cstmc_package_search}
 \alias{cstmc_package_show}
 \alias{cstmc_resource_search}
-\alias{cstmc_tag_list}
-\alias{cstmc_tag_show}
 \title{Query for data from the CSTMC (Canadian Science & Technology Museum Corporation)}
 \usage{
 cstmc_changes(offset = 0, limit = 31, as = "list", ...)
@@ -146,4 +146,3 @@ cstmc_resource_search(q = 'name:data', limit = 2, as='table')
 \references{
 \url{http://data.techno-science.ca/}
 }
-
