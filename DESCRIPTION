@@ -9,7 +9,7 @@ Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
 URL: https://github.com/ropensci/musemeta
-BugReports: http://www.github.com/ropensci/musemeta/issues
+BugReports: https://github.com/ropensci/musemeta/issues
 VignetteBuilder: knitr
 Imports:
     httr (>= 1.0.0),
