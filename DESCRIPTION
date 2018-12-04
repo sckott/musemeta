@@ -4,13 +4,14 @@ Title: Client for Scraping Museum Metadata
 Description: Scrape museum metadata. Includes many
     different museums, including the MET, Getty Museum, and
     more. New museums are added occassionally.
-Version: 0.0.6.9696
+Version: 0.0.6.9697
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
 URL: https://github.com/ropensci/musemeta
 BugReports: https://github.com/ropensci/musemeta/issues
 VignetteBuilder: knitr
+Encoding: UTF-8
 Imports:
     httr (>= 1.0.0),
     jsonlite,
@@ -21,4 +22,4 @@ Imports:
 Suggests:
     knitr,
     testthat
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
