@@ -22,7 +22,7 @@ aam <- function(id, ascii = FALSE, ...){
 
 #' @export
 print.aam <- function(x, ...){
-  cat(sprintf("<AAM metadata> %s", x$designation), sep = "\n")
+  cat(sprintf("<AAM metadata> %s", x$title), sep = "\n")
   catpaswrap(x$object_number, "Object Number", "  ")
   catpaswrap(x$object_name, "Object name", "  ")
   catpaswrap(x$place_of_origin, "Place of Origin", "  ")
@@ -40,22 +40,21 @@ print.aam <- function(x, ...){
   catpaswrap(x$label, "Label", "  ")
 }
 
-nameele <- function(x){
-  if(nchar(x)==0){
-    NULL
-  } else {
-    vals <- gsub("^\\s+|\\s+$", "", strsplit(x, ":")[[1]])
-    tmp <- as.list(stats::setNames(vals[2], vals[1]))
-    if(names(tmp) == "Permalink to this object") NULL else tmp
-  }
-}
-
 aam_parse <- function(x, id, ascii){
-  tmp <- htmlParse(x)
-  nodes <- xpathApply(tmp, '//div[@id="singledata"]')
-  out <- do.call(c, mc(lapply(xpathApply(nodes[[1]], "div", xmlValue), nameele)))
-  names(out) <- gsub("\\s", "_", tolower(names(out)))
-  structure(nonascii(out, ascii), class="aam")
+  tmp <- xml2::read_html(x)
+  nodes <- xml2::xml_find_all(tmp, '//div[@id="singledata"]')
+  out <- lapply(xml2::xml_children(nodes[[1]]), function(z) {
+    tmp <- stats::setNames(as.list(xml2::xml_text(z)), 
+      xml2::xml_attr(z, "class"))
+    if (grepl(":", tmp[[1]])) {
+      vals <- gsub("^\\s+|\\s+$", "", strsplit(tmp[[1]], ":")[[1]])
+      tmp <- as.list(stats::setNames(vals[2], vals[1]))
+    }
+    if (grepl("item-title", names(tmp))) names(tmp) <- "title"
+    names(tmp) <- gsub("-|\\s", "_", tolower(names(tmp)))
+    tmp
+  })
+  structure(nonascii(unlist(out, FALSE), ascii), class="aam")
 }
 
 aambase <- function() "http://searchcollection.asianart.org/view/objects/asitem/nid/"
