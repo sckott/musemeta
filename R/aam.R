@@ -23,11 +23,15 @@ aam <- function(id, ascii = FALSE, ...){
 #' @export
 print.aam <- function(x, ...){
   cat(sprintf("<AAM metadata> %s", x$designation), sep = "\n")
-  catpaswrap(x$object_id, "Object id", "  ")
+  catpaswrap(x$object_number, "Object Number", "  ")
   catpaswrap(x$object_name, "Object name", "  ")
+  catpaswrap(x$place_of_origin, "Place of Origin", "  ")
+  catpaswrap(x$historical_period, "Historical Period", "  ")
+  catpaswrap(x$location, "Location", "  ")
+  catpaswrap(x$culture, "Culture", "  ")
   catpaswrap(x$date, "Date", "  ")
   catpaswrap(x$artist, "Artist", "  ")
-  catpaswrap(x$medium, "Medium", "  ")
+  catpaswrap(x$materials, "Materials", "  ")
   catpaswrap(x$credit_line, "Credit line", "  ")
   catpaswrap(x$on_display, "On display?", "  ")
   catpaswrap(x$collection, "Collection", "  ")
