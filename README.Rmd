@@ -2,37 +2,7 @@ musemeta
 =======
 
 ```{r echo=FALSE}
-library("knitr")
-hook_output <- knitr::knit_hooks$get("output")
-knitr::knit_hooks$set(output = function(x, options) {
-   lines <- options$output.lines
-   if (is.null(lines)) {
-     return(hook_output(x, options))  # pass to default hook
-   }
-   x <- unlist(strsplit(x, "\n"))
-   more <- "..."
-   if (length(lines)==1) {        # first n lines
-     if (length(x) > lines) {
-       # truncate the output, but add ....
-       x <- c(head(x, lines), more)
-     }
-   } else {
-     x <- c(if (abs(lines[1])>1) more else NULL,
-            x[lines],
-            if (length(x)>lines[abs(length(lines))]) more else NULL
-           )
-   }
-   # paste these lines together
-   x <- paste(c(x, ""), collapse = "\n")
-   hook_output(x, options)
- })
-
-knitr::opts_chunk$set(
-  comment = "#>",
-  collapse = TRUE,
-  warning = FALSE,
-  message = FALSE
-)
+knitr::opts_chunk$set(eval = FALSE)
 ```
 
 [![Build Status](https://api.travis-ci.org/ropensci/musemeta.png)](https://travis-ci.org/ropensci/musemeta)
@@ -56,177 +26,25 @@ Other sources of museum metadata will be added...check back later & see [issues]
 
 ## Install
 
-Get `ckanr` first, not on CRAN yet (I'll get `ckanr` up to CRAN before this is on CRAN)
-
-```{r eval=FALSE}
-devtools::install_github("ropensci/ckanr")
+```{r}
+install.packages("musemeta")
 ```
 
-Then install musemeta
+OR
 
-```{r eval=FALSE}
-devtools::install_github("ropensci/musemeta")
+```{r}
+remotes::install_github("ropensci/musemeta")
 ```
 
 ```{r}
 library("musemeta")
 ```
 
-## MET data
-
-To get actual metadata for an object, you can use `met()` or `scrapi_get()` functions. The latter gets much more data, and uses a REST API, while the former scrapes the html directly, and can be more fragile with any changes in the html on the site.
-
-### Scraping site directly
-
-Data for a single object
-
-```{r}
-met(559490)
-```
-
-Or index to name of object, or values in the description
-
-```{r}
-met(559490)$name
-```
-
-```{r}
-met(559490)$values[1:2]
-```
-
-A different object
-
-```{r}
-met(246562)
-```
-
-Get many objects
-
-```{r output.lines = 1:10}
-lapply(c(479283, 228901, 436876), met)
-```
-
-### Using the scrapi API
-
-> Note: the `/random` endpoint is down.
-
-This is again, for The Metropolitan Museum of Art only
-
-Get a specific object
-
-```{r output.lines = 1:10}
-scrapi_info(123, fields = c('title', 'primaryArtistNameOnly', 'medium'))
-```
-
-Search for objects
-
-```{r output.lines = 1:10}
-scrapi_search(query = 'mirror')
-```
-
-Get an object, with a scrapi.org url
-
-```{r}
-out <- scrapi_get("http://scrapi.org/object/427581")
-out$primaryArtist
-```
-
-or an object id
-
-```{r}
-out <- scrapi_get(427581)
-out$primaryArtist
-```
-
-## CSTMC data
-
-List changes
-
-```{r output.lines = 1:10}
-cstmc_changes(limit = 1)
-```
-
-List datasets
-
-```{r output.lines = 1:10}
-cstmc_datasets(as = "table")
-```
-
-Search for packages
-
-```{r}
-out <- cstmc_package_search(q = '*:*', rows = 2, as = 'table')
-lapply(out$results$resources, function(x) x[,1:3])
-```
-
-## National Gallery of Art (NGA)
-
-Get metadata for a single object
-
-```{r output.lines = 1:10}
-nga(id = 33267)
-```
-
-Get metadata for many objects
-
-```{r output.lines = 1:10}
-lapply(c(143679,27773,28487), nga)
-```
-
-There is no search functionality yet for this source.
-
-## Getty Museum
-
-Get metadata for a single object
-
-```{r output.lines = 1:10}
-getty(id = 140725)
-```
-
-Get metadata for many objects
-
-```{r output.lines = 1:10} 
-lapply(c(140725,8197), getty)
-```
-
-There is no search functionality yet for this source.
-
-## Art Institute of Chicago
-
-Get metadata for a single object
-
-```{r output.lines = 1:10}
-aic(41033)
-```
-
-Get metadata for many objects
-
-```{r output.lines = 1:10}
-lapply(c(41033,210804), aic)
-```
-
-There is no search functionality yet for this source.
-
-## Asian Art Museum of San Francisco
-
-Get metadata for a single object
-
-```{r output.lines = 1:10}
-aam(11462)
-```
-
-Get metadata for many objects
-
-```{r output.lines = 1:10}
-lapply(c(17150,17140,17144), aam)
-```
-
-There is no search functionality yet for this source.
-
 ## Meta
 
 * Please [report any issues or bugs](https://github.com/ropensci/musemeta/issues).
 * License: MIT
 * Get citation information for `musemeta` in R doing `citation(package = 'musemeta')`
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
 
-[![ro_footer](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![ro_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
