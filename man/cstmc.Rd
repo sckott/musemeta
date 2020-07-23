@@ -17,24 +17,51 @@ cstmc_changes(offset = 0, limit = 31, as = "list", ...)
 
 cstmc_datasets(offset = 0, limit = 31, as = "list", ...)
 
-cstmc_group_list(offset = 0, limit = 31, sort = NULL,
-  groups = NULL, all_fields = FALSE, as = "list", ...)
+cstmc_group_list(
+  offset = 0,
+  limit = 31,
+  sort = NULL,
+  groups = NULL,
+  all_fields = FALSE,
+  as = "list",
+  ...
+)
 
 cstmc_group_show(id, include_datasets = TRUE, as = "list", ...)
 
-cstmc_tag_list(query = "*:*", vocabulary_id = NULL,
-  all_fields = FALSE, as = "list", ...)
+cstmc_tag_list(
+  query = "*:*",
+  vocabulary_id = NULL,
+  all_fields = FALSE,
+  as = "list",
+  ...
+)
 
 cstmc_tag_show(id, as = "list", ...)
 
-cstmc_package_search(q = "*:*", fq = NULL, sort = NULL,
-  rows = NULL, start = NULL, facet = FALSE, facet.limit = NULL,
-  facet.field = NULL, as = "list", ...)
+cstmc_package_search(
+  q = "*:*",
+  fq = NULL,
+  sort = NULL,
+  rows = NULL,
+  start = NULL,
+  facet = FALSE,
+  facet.limit = NULL,
+  facet.field = NULL,
+  as = "list",
+  ...
+)
 
 cstmc_package_show(id, use_default_schema = FALSE, as = "list", ...)
 
-cstmc_resource_search(q = "*:*", sort = NULL, offset = NULL,
-  limit = NULL, as = "list", ...)
+cstmc_resource_search(
+  q = "*:*",
+  sort = NULL,
+  offset = NULL,
+  limit = NULL,
+  as = "list",
+  ...
+)
 }
 \arguments{
 \item{offset}{Record to start at, default to beginning.}
