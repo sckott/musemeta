@@ -3,5 +3,5 @@
 README.Rmd
 .travis.yml
 appveyor.yml
-Makefile
+^Makefile$
 ^codemeta\.json$
