@@ -22,5 +22,6 @@ Imports:
     ckanr (>= 0.1.0)
 Suggests:
     knitr,
+    rmarkdown,
     testthat
 RoxygenNote: 7.1.1
