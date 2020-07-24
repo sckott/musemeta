@@ -15,10 +15,8 @@ Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 Language: en-US
 Imports:
-    httr (>= 1.0.0),
     crul,
     jsonlite,
-    XML,
     xml2,
     tibble,
     ckanr (>= 0.1.0)
