@@ -6,3 +6,4 @@ appveyor.yml
 ^Makefile$
 ^codemeta\.json$
 ^.github$
+^cran-comments\.md$
