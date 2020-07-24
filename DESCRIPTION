@@ -2,9 +2,11 @@ Package: musemeta
 Type: Package
 Title: Gather Museum Metadata
 Description: Gather museum metadata. Includes many
-    different museums, including the MET, Getty Museum, and
-    more.
-Version: 0.0.7.92
+    different museums, including the MET, Getty Museum, the
+    Asian Art Museum of San Francisco, Art Institute of Chicago,
+    Canadian Science & Technology Museum Corporation, and
+    Museum of Modern Art.
+Version: 0.1.0
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
