@@ -2,12 +2,11 @@
 #'
 #' @export
 #' @param id An object id
-#' @param ascii (logical) Allow non-ascii characters. Set to \code{TRUE} to show
-#' non-ascii characters. Default: FALSE
-#' @param ... Curl args passed on to \code{\link[httr]{GET}}
+#' @param ascii (logical) Allow non-ascii characters. Set to `TRUE` to show
+#' non-ascii characters. Default: `FALSE`
+#' @param ... Curl args passed on to [crul::verb-GET]
 #' @examples \dontrun{
 #' aam(17150)
-#'
 #' aam(17140)
 #' aam(17146)
 #' aam(17144)

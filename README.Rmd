@@ -13,11 +13,8 @@ knitr::opts_chunk$set(eval = FALSE)
 
 Currently `musemeta` can get data from:
 
-* [The Metropolitan Museum of Art](http://www.metmuseum.org/) via
-    * scraping the MET website (see function `met()`)
-    * http://scrapi.org/ (see functions `scrapi_()`)
+* [The Metropolitan Museum of Art](http://www.metmuseum.org/) (see function `met()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
-* The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
 * The [Asian Art Museum of San Francisco](http://www.asianart.org/) (see function `aam()`)

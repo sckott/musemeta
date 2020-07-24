@@ -4,11 +4,11 @@
 \name{musemeta-package}
 \alias{musemeta-package}
 \alias{musemeta}
-\title{R client for museum metadata}
+\title{musemeta}
 \description{
 R client for museum metadata
 }
 \author{
-Scott Chamberlain \email{myrmecocystus@gmail.com}
+Scott Chamberlain
 }
 \keyword{package}

@@ -11,7 +11,7 @@ moma_artists(...)
 moma_artwork(...)
 }
 \arguments{
-\item{...}{Curl args passed on to \code{\link[httr]{GET}}}
+\item{...}{Curl args passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
 \description{
 Get metadata from Museum of Modern Art
@@ -22,6 +22,6 @@ Get metadata from Museum of Modern Art
 (arts <- moma_artists())
 
 # artwork
-(work <- moma_artwork(config = verbose()))
+(work <- moma_artwork())
 }
 }

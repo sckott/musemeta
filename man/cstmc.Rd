@@ -11,7 +11,8 @@
 \alias{cstmc_package_search}
 \alias{cstmc_package_show}
 \alias{cstmc_resource_search}
-\title{Query for data from the CSTMC (Canadian Science & Technology Museum Corporation)}
+\title{Query for data from the CSTMC (Canadian Science & Technology
+Museum Corporation)}
 \usage{
 cstmc_changes(offset = 0, limit = 31, as = "list", ...)
 
@@ -68,64 +69,69 @@ cstmc_resource_search(
 
 \item{limit}{Number of records to return.}
 
-\item{as}{(character) One of list (default), table, or json. Parsing with table option
-uses \code{jsonlite::fromJSON(..., simplifyDataFrame = TRUE)}, which attempts to parse
-data to data.frame's when possible, so the result can vary.}
+\item{as}{(character) One of list (default), table, or json. Parsing with
+table option uses \code{jsonlite::fromJSON(..., simplifyDataFrame = TRUE)}, which
+attempts to parse data to data.frame's when possible, so the result can vary.}
 
-\item{...}{Curl args passed on to \code{\link[httr]{POST}}}
+\item{...}{Curl args passed on to \code{httr::POST}}
 
 \item{sort}{Field to sort on. You can specify ascending (e.g., score desc) or
-descending (e.g., score asc), sort by two fields (e.g., score desc, price asc),
-or sort by a function (e.g., sum(x_f, y_f) desc, which sorts by the sum of
-x_f and y_f in a descending order).}
+descending (e.g., score asc), sort by two fields (e.g., score desc,
+price asc), or sort by a function (e.g., \verb{sum(x_f, y_f) desc}, which sorts
+by the sum of \code{x_f} and \code{y_f} in a descending order).}
 
-\item{groups}{(character) A list of names of the groups to return, if given only groups whose
-names are in this list will be returned}
+\item{groups}{(character) A list of names of the groups to return, if given
+only groups whose names are in this list will be returned}
 
-\item{all_fields}{(logical) Return full tag or group dictionaries instead of just names.
-Default: FALSE}
+\item{all_fields}{(logical) Return full tag or group dictionaries instead of
+just names. Default: \code{FALSE}}
 
 \item{id}{(character) The name or id of the tag}
 
-\item{include_datasets}{(logical) Include a list of the group's datasets. Default: TRUE}
+\item{include_datasets}{(logical) Include a list of the group's datasets.
+Default: \code{TRUE}}
 
-\item{query}{(character) A tag name query to search for, if given only tags whose names contain
-this string will be returned}
+\item{query}{(character) A tag name query to search for, if given only tags
+whose names contain this string will be returned}
 
-\item{vocabulary_id}{(character) The id or name of a vocabulary, if give only tags that belong
-to this vocabulary will be returned}
+\item{vocabulary_id}{(character) The id or name of a vocabulary, if give
+only tags that belong to this vocabulary will be returned}
 
-\item{q}{Query terms, defaults to '*:*', or everything. It is a string of the form
-\code{field:term} or a list of strings, each of the same form.  Within each string, \code{field}
-is a field or extra field on the Resource domain object. If \code{field} is hash, then an
-attempt is made to match the \code{term} as a *prefix* of the Resource.hash field. If
-\code{field} is an extra field, then an attempt is made to match against the extra fields
-stored against the Resource.}
+\item{q}{Query terms, defaults to '\emph{:}', or everything. It is a string of
+the form \code{field:term} or a list of strings, each of the same form.  Within
+each string, \code{field} is a field or extra field on the Resource domain
+object. If \code{field} is hash, then an attempt is made to match the \code{term}
+as a \emph{prefix} of the Resource.hash field. If \code{field} is an extra field, then
+an attempt is made to match against the extra fields stored against
+the Resource.}
 
-\item{fq}{Filter query, this does not affect the search, only what gets returned}
+\item{fq}{Filter query, this does not affect the search, only what gets
+returned}
 
 \item{rows}{Number of records to return. Defaults to 10.}
 
 \item{start}{Record to start at, default to beginning.}
 
-\item{facet}{(logical) Whether to return facet results or not. Default: FALSE}
+\item{facet}{(logical) Whether to return facet results or not.
+Default: \code{FALSE}}
 
-\item{facet.limit}{(numeric) This param indicates the maximum number of constraint counts
-that should be returned for the facet fields. A negative value means unlimited.
-Default: 100. Can be specified on a per field basis.}
+\item{facet.limit}{(numeric) This param indicates the maximum number of
+constraint counts that should be returned for the facet fields. A negative
+value means unlimited. Default: 100. Can be specified on a per field basis.}
 
-\item{facet.field}{(charcter) This param allows you to specify a field which should be
-treated as a facet. It will iterate over each Term in the field and generate a
-facet count using that Term as the constraint. This parameter can be specified
-multiple times to indicate multiple facet fields. None of the other params in
-this section will have any effect without specifying at least one field name
-using this param.}
+\item{facet.field}{(charcter) This param allows you to specify a field which
+should be treated as a facet. It will iterate over each Term in the field
+and generate a facet count using that Term as the constraint. This parameter
+can be specified multiple times to indicate multiple facet fields. None of
+the other params in this section will have any effect without specifying at
+least one field name using this param.}
 
-\item{use_default_schema}{(logical) Use default package schema instead of a custom
-schema defined with an IDatasetForm plugin. Default: FALSE}
+\item{use_default_schema}{(logical) Use default package schema instead of a
+custom schema defined with an IDatasetForm plugin. Default: \code{FALSE}}
 }
 \description{
-Query for data from the CSTMC (Canadian Science & Technology Museum Corporation)
+Query for data from the CSTMC (Canadian Science & Technology
+Museum Corporation)
 }
 \examples{
 \dontrun{
@@ -171,5 +177,5 @@ cstmc_resource_search(q = 'name:data', limit = 2, as='table')
 }
 }
 \references{
-\url{http://data.techno-science.ca/}
+http://data.techno-science.ca/
 }

@@ -1,7 +1,7 @@
 #' Browse the object
 #'
 #' @param x Output from any of the functions in this package.
-#' @param ... Further arguments passed on to \code{browseURL}
+#' @param ... Further arguments passed on to `browseURL()`
 browse <- function(x, ...){
   UseMethod("browse")
 }

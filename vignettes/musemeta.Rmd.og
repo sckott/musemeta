@@ -44,11 +44,8 @@ knitr::opts_chunk$set(
 
 Currently `musemeta` can get data from:
 
-* [The Metropolitan Museum of Art](http://www.metmuseum.org/) via
-    * scraping the MET website (see function `met()`)
-    * http://scrapi.org (see functions `scrapi_()`)
+* [The Metropolitan Museum of Art](http://www.metmuseum.org/) (see function `met()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
-* The [National Gallery of Art](http://www.nga.gov/content/ngaweb.html) (NGA) (see function `nga()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
 
@@ -72,9 +69,7 @@ library("musemeta")
 
 ## MET data
 
-To get actual metadata for an object, you can use `met()` or `scrapi_get()` functions. The latter gets much more data, and uses a REST API, while the former scrapes the html directly, and can be more fragile with any changes in the html on the site.
-
-### Scraping site directly
+To get actual metadata for an object use the `met()` function. Scrapes the website directly
 
 Data for a single object
 
@@ -104,38 +99,6 @@ Get many objects
 lapply(c(479283, 228901, 436876), met)
 ```
 
-### Using the scrapi API
-
-> Note: the `/random` endpoint is down.
-
-This is again, for The Metropolitan Museum of Art only
-
-Get a specific object
-
-```{r output.lines = 1:10}
-scrapi_info(123, fields = c('title', 'primaryArtistNameOnly', 'medium'))
-```
-
-Search for objects
-
-```{r output.lines = 1:10}
-scrapi_search(query = 'mirror')
-```
-
-Get an object, with a scrapi.org url
-
-```{r}
-out <- scrapi_get("http://scrapi.org/object/427581")
-out$primaryArtist
-```
-
-or an object id
-
-```{r}
-out <- scrapi_get(427581)
-out$primaryArtist
-```
-
 ## CSTMC data
 
 List changes
@@ -156,22 +119,6 @@ Search for packages
 out <- cstmc_package_search(q = '*:*', rows = 2, as = 'table')
 lapply(out$results$resources, function(x) x[,1:3])
 ```
-
-## National Gallery of Art (NGA)
-
-Get metadata for a single object
-
-```{r output.lines = 1:10}
-nga(id = 33267)
-```
-
-Get metadata for many objects
-
-```{r output.lines = 1:10}
-lapply(c(143679,27773,28487), nga)
-```
-
-There is no search functionality yet for this source.
 
 ## Getty Museum
 

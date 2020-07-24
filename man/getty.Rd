@@ -10,9 +10,9 @@ getty(id, ascii = FALSE, ...)
 \item{id}{An object id}
 
 \item{ascii}{(logical) Allow non-ascii characters. Set to \code{TRUE} to show
-non-ascii characters. Default: FALSE}
+non-ascii characters. Default: \code{FALSE}}
 
-\item{...}{Curl args passed on to \code{\link[httr]{GET}}}
+\item{...}{Curl args passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
 \description{
 Get metadata for objects in the Getty Museum.
@@ -20,17 +20,11 @@ Get metadata for objects in the Getty Museum.
 \examples{
 \dontrun{
 getty(233750)
-getty(329471)
 getty(138860)
 getty(8197)
 getty(3242)
 getty(4967)
 getty(112297)
-getty(253190)
 lapply(c(140725,8197), getty)
-
-## doesn't work, different url and html schema
-### see http://search.getty.edu/gri/records/griobject?objectid=301703057
-# getty(id=301703057)
 }
 }

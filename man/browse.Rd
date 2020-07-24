@@ -15,7 +15,7 @@ browse(x, ...)
 \arguments{
 \item{x}{Output from any of the functions in this package.}
 
-\item{...}{Further arguments passed on to \code{browseURL}}
+\item{...}{Further arguments passed on to \code{browseURL()}}
 }
 \description{
 Browse the object

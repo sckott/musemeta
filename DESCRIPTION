@@ -11,10 +11,12 @@ License: MIT + file LICENSE
 URL: https://docs.ropensci.org/musemeta, https://github.com/ropensci/musemeta
 BugReports: https://github.com/ropensci/musemeta/issues
 VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 Language: en-US
 Imports:
     httr (>= 1.0.0),
+    crul,
     jsonlite,
     XML,
     xml2,

@@ -2,6 +2,7 @@ context("met")
 
 test_that("met works", {
   skip_on_cran()
+  skip_on_ci()
 
   aa <- met(559490)
   bb <- met(246562)
@@ -33,6 +34,7 @@ test_that("met works", {
 
 test_that("met fails well", {
   skip_on_cran()
+  skip_on_ci()
 
   # no input
   expect_error(met(), "argument \"id\" is missing")

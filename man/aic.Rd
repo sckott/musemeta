@@ -10,17 +10,17 @@ aic(id, ascii = FALSE, ...)
 \item{id}{An object id}
 
 \item{ascii}{(logical) Allow non-ascii characters. Set to \code{TRUE} to show
-non-ascii characters. Default: FALSE}
+non-ascii characters. Default: \code{FALSE}}
 
-\item{...}{Curl args passed on to \code{\link[httr]{GET}}}
+\item{...}{Curl args passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
 \description{
 Get metadata for objects in the Art Institute of Chicago.
 }
 \details{
-Sorry, but the metadata returned in this function is a bit messy because the metadata
-given for each piece is not stuctured, i.e., all elements are simply in html p tags, so its
-hard to have consistent parsing.
+Sorry, but the metadata returned in this function is a bit messy
+because the metadata given for each piece is not stuctured, i.e., all
+elements are simply in html p tags, so its hard to have consistent parsing.
 }
 \examples{
 \dontrun{
@@ -31,9 +31,14 @@ aic(80538)
 aic(11332)
 aic(11287)
 aic(210804)
-aic(11475) # with artwork body description
-aic(41033) # with history
+
+# with artwork body description
+aic(11475) 
+
+# many at once
 lapply(c(11475,41594,59978,129410,41033,3394,21535,11475,41033), aic)
+
+# browse to the page
 out <- aic(210765)
 out
 unclass(out)
