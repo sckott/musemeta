@@ -2,9 +2,8 @@ context("met")
 
 test_that("met works", {
   skip_on_cran()
-  skip_on_ci()
 
-  aa <- met(559490)
+  aa <- met(559490, verbose=TRUE)
   bb <- met(246562)
   cc <- lapply(c(479283, 228901), met)
 
@@ -34,7 +33,6 @@ test_that("met works", {
 
 test_that("met fails well", {
   skip_on_cran()
-  skip_on_ci()
 
   # no input
   expect_error(met(), "argument \"id\" is missing")
