@@ -2,7 +2,7 @@ Package: musemeta
 Type: Package
 Title: Gather Museum Metadata
 Description: Gather museum metadata. Includes many
-    different museums, including the MET, Getty Museum, the
+    different museums, including the Getty Museum, the
     Asian Art Museum of San Francisco, Art Institute of Chicago,
     Canadian Science & Technology Museum Corporation, and
     Museum of Modern Art.

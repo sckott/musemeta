@@ -1,7 +1,7 @@
 ---
 title: musemeta introduction
 author: Scott Chamberlain
-date: "2020-07-23"
+date: "2020-07-24"
 output: rmarkdown::html_vignette
 vignette: >
     %\VignetteIndexEntry{musemeta introduction}
@@ -13,7 +13,6 @@ vignette: >
 
 Currently `musemeta` can get data from:
 
-* [The Metropolitan Museum of Art](http://www.metmuseum.org/) (see function `met()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
@@ -37,89 +36,6 @@ remotes::install_github("ropensci/musemeta")
 
 ```r
 library("musemeta")
-```
-
-## MET data
-
-To get actual metadata for an object use the `met()` function. Scrapes the website directly
-
-Data for a single object
-
-
-```r
-met(559490)
-#> <Museum metadata> 559490
-#>   Title: Siphon nozzle
-#>   Period: New Kingdom, Ramesside
-#>   Dynasty: Dynasty 19 20
-#>   Date: ca. 1295 1070 B.C.
-#>   Geography: From Egypt, Memphite Region, Lisht North, Cemetery, MMA excavations, 1913 14
-#>   Medium: Bronze
-#>   Dimensions: L. 5.4 cm (2 1/8 in.)
-#>   Credit Line: Rogers Fund and Edward S. Harkness Gift, 1922
-#>   Accession Number: 22.1.962
-```
-
-Or index to name of object, or values in the description
-
-
-```r
-met(559490)$name
-#> [1] "559490"
-```
-
-
-```r
-met(559490)$values[1:2]
-#> [[1]]
-#> [[1]]$name
-#> [1] "Title"
-#> 
-#> [[1]]$value
-#> [1] "Siphon nozzle"
-#> 
-#> 
-#> [[2]]
-#> [[2]]$name
-#> [1] "Period"
-#> 
-#> [[2]]$value
-#> [1] "New Kingdom, Ramesside"
-```
-
-A different object
-
-
-```r
-met(246562)
-#> <Museum metadata> 246562
-#>   Title: Terracotta guttus (flask with handle and spout)
-#>   Period: Classical
-#>   Date: 4th century B.C.
-#>   Culture: Greek, South Italian, Campanian
-#>   Medium: Terracotta; black-glaze
-#>   Dimensions: 2 7/8in. (7.3cm)
-#>   Classification: Vases
-#>   Credit Line: Purchase by subscription, 1896
-#>   Accession Number: 96.18.35
-```
-
-Get many objects
-
-
-```r
-lapply(c(479283, 228901, 436876), met)
-#> [[1]]
-#> <Museum metadata> 479283
-#>   Title: Papyri Fragments
-#>   Date: 7th century
-#>   Geography: Made in Thebes, Byzantine Egypt
-#>   Culture: Coptic
-#>   Medium: Papyrus and ink
-#>   Dimensions: Framed: 11 1/4 x 15 in. (28.5 x 38.1 cm)
-#>   Classification: Papyrus
-#>   Credit Line: Rogers Fund, 1914
-...
 ```
 
 ## CSTMC data

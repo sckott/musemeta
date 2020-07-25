@@ -12,7 +12,6 @@ knitr::opts_chunk$set(eval = FALSE)
 
 Currently `musemeta` can get data from:
 
-* [The Metropolitan Museum of Art](http://www.metmuseum.org/) (see function `met()`)
 * The [Canadian Science & Technology Museum Corporation](http://techno-science.ca/en/index.php) (CSTMC) (see functions `cstmc_()`)
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
