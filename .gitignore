@@ -3,3 +3,4 @@
 .DS_Store
 ^.*\.Rproj$
 ^\.Rproj\.user$
+tests/fixtures/moma_artists.yml

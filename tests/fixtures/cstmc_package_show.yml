@@ -1,0 +1,213 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://data.techno-science.ca/api/3/action/package_show?id=34d60b13-1fd5-430e-b0ec-c8bc7f4841cf
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Content-Type: application/json
+      X-CKAN-API-Key: 705dc6d4-1f67-4825-9e12-b5cfdcc68f4e
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Mon, 27 Jul 2020 22:21:10 GMT
+      server: Apache/2.2.29 (Amazon)
+      pragma: no-cache
+      cache-control: no-cache
+      access-control-allow-origin: '*'
+      access-control-allow-methods: POST, PUT, GET, DELETE, OPTIONS
+      access-control-allow-headers: X-CKAN-API-KEY, Authorization, Content-Type
+      content-length: '6286'
+      connection: close
+      content-type: application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"help": "Return the metadata of a dataset (package) and its resources.\n\n    :param
+        id: the id or name of the dataset\n    :type id: string\n    :param use_default_schema:
+        use default package schema instead of\n        a custom schema defined with
+        an IDatasetForm plugin (default: False)\n    :type use_default_schema: bool\n\n    :rtype:
+        dictionary\n\n    ", "success": true, "result": {"license_title": "Open Government
+        Licence - Canada", "maintainer": "", "relationships_as_object": [], "private":
+        false, "maintainer_email": "", "revision_timestamp": "2014-10-28T21:05:48.096900",
+        "id": "34d60b13-1fd5-430e-b0ec-c8bc7f4841cf", "metadata_created": "2014-10-28T18:12:11.453636",
+        "metadata_modified": "2016-06-13T20:06:50.014352", "author": "", "author_email":
+        "", "state": "active", "version": "", "creator_user_id": "27778230-2e90-4818-9f00-bbf778c8fa09",
+        "type": "dataset", "resources": [{"resource_group_id": "ea8533d9-cdc6-4e0e-97b9-894e06d50b92",
+        "cache_last_updated": null, "revision_timestamp": "2016-06-13T20:05:16.818800",
+        "webstore_last_updated": null, "id": "be2b0af8-24a8-4a55-8b30-89f5459b713a",
+        "size": null, "state": "active", "hash": "", "description": "XML Dataset",
+        "format": "XML", "tracking_summary": {"total": 0, "recent": 0}, "last_modified":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Artifact
+        Data - Vacuum Tubes (XML)", "created": "2014-10-28T18:13:22.240393", "url":
+        "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/groups-groupes/Vacuum-Tubes-en.xml",
+        "webstore_url": null, "mimetype_inner": null, "position": 0, "revision_id":
+        "5bcfbac8-2d08-4671-82f3-eee41d535702", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-04T02:59:50.567068", "webstore_last_updated": null, "id": "7d65910e-4bdc-4f06-a213-e24e36762767",
+        "size": null, "state": "active", "hash": "", "description": "Data dictionary
+        for CSTMC artifact datasets.", "format": "XLS", "tracking_summary": {"total":
+        15, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Data Dictionary", "created": "2014-11-04T02:59:50.643658",
+        "url": "http://source.techno-science.ca/datasets-donn%C3%A9es/artifacts-artefacts/cstmc-artifact-data-dictionary-dictionnaire-de-donnees-artefacts-smstc.xls",
+        "webstore_url": null, "mimetype_inner": null, "position": 1, "revision_id":
+        "5d27b3e6-7870-4c12-a122-9e9f5adee4a0", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T21:23:58.533397", "webstore_last_updated": null, "id": "97622ad7-1507-4f6a-8acb-14e826447389",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        3, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (English)", "created": "2014-11-04T18:14:23.952937",
+        "url": "http://techno-science.ca/en/open-data/tips-using-artifact-open-data-set.php",
+        "webstore_url": null, "mimetype_inner": null, "position": 2, "revision_id":
+        "40993f16-402b-439c-9288-2f2b177e4b8f", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T21:25:16.848423", "webstore_last_updated": null, "id": "7a72498a-c49c-4e84-8b10-58991de10df6",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        2, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (French)", "created": "2014-11-05T21:25:16.887796",
+        "url": "http://techno-science.ca/fr/donnees-ouvertes/conseils-donnees-ouvertes-artefacts.php",
+        "webstore_url": null, "mimetype_inner": null, "position": 3, "revision_id":
+        "57f1488e-a140-4eb6-9329-fc13202a73af", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2016-06-13T20:06:50.013746", "webstore_last_updated": null, "id": "7e2cb5de-550d-41a8-ab9d-b2ec35b6671a",
+        "size": null, "state": "active", "hash": "", "description": "Jeux de donn\u00e9es
+        XML", "format": "XML", "tracking_summary": {"total": 0, "recent": 0}, "last_modified":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Donn\u00e9es
+        d''artefact - Tubes Electronique (XML)", "created": "2016-06-13T20:06:50.054740",
+        "url": "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/groups-groupes/Tubes-Electronique-fr.xml",
+        "webstore_url": null, "mimetype_inner": null, "position": 4, "revision_id":
+        "3c644f3d-002d-4745-9971-c42b3ab94c05", "resource_type": null}], "num_resources":
+        5, "tags": [{"vocabulary_id": null, "display_name": "Vacuum Tubes", "name":
+        "Vacuum Tubes", "revision_timestamp": "2014-10-28T18:12:11.453636", "state":
+        "active", "id": "87d7ece6-1152-42b9-847f-be41b6c83be9"}], "tracking_summary":
+        {"total": 361, "recent": 1}, "groups": [{"display_name": "Communications",
+        "description": "", "image_display_url": "http://data.techno-science.ca/uploads/group/20141024-162305.6896412comm.jpg",
+        "title": "Communications", "id": "5268ce18-e3b8-4802-b29e-30740b46e52d", "name":
+        "communications"}], "license_id": "ca-ogl-lgo", "relationships_as_subject":
+        [], "num_tags": 1, "organization": {"description": "", "created": "2014-10-24T14:49:36.878579",
+        "title": "CSTMC", "name": "cstmc", "revision_timestamp": "2014-10-24T14:49:36.813670",
+        "is_organization": true, "state": "active", "image_url": "", "revision_id":
+        "7a325a56-46f1-419c-b7b2-ec7501edb35a", "type": "organization", "id": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57",
+        "approval_status": "approved"}, "name": "artifact-data-vacuum-tubes", "isopen":
+        false, "url": "", "notes": "This dataset includes artifacts in the collection
+        of the Canada Science and Technology Museums Corporation related to vacuum
+        tubes.", "owner_org": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57", "extras": [],
+        "license_url": "http://data.gc.ca/eng/open-government-licence-canada", "title":
+        "Artifact Data - Vacuum Tubes", "revision_id": "b55894a3-83f5-4436-976e-216aadd49530"}}'
+  recorded_at: 2020-07-27 22:21:10 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://data.techno-science.ca/api/3/action/package_show?id=34d60b13-1fd5-430e-b0ec-c8bc7f4841cf&use_default_schema=FALSE
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Content-Type: application/json
+      X-CKAN-API-Key: 705dc6d4-1f67-4825-9e12-b5cfdcc68f4e
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Mon, 27 Jul 2020 22:21:10 GMT
+      server: Apache/2.2.29 (Amazon)
+      pragma: no-cache
+      cache-control: no-cache
+      access-control-allow-origin: '*'
+      access-control-allow-methods: POST, PUT, GET, DELETE, OPTIONS
+      access-control-allow-headers: X-CKAN-API-KEY, Authorization, Content-Type
+      content-length: '6504'
+      connection: close
+      content-type: application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"help": "Return the metadata of a dataset (package) and its resources.\n\n    :param
+        id: the id or name of the dataset\n    :type id: string\n    :param use_default_schema:
+        use default package schema instead of\n        a custom schema defined with
+        an IDatasetForm plugin (default: False)\n    :type use_default_schema: bool\n\n    :rtype:
+        dictionary\n\n    ", "success": true, "result": {"owner_org": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57",
+        "maintainer": "", "relationships_as_object": [], "private": false, "maintainer_email":
+        "", "revision_timestamp": "2014-10-28T21:05:48.096900", "id": "34d60b13-1fd5-430e-b0ec-c8bc7f4841cf",
+        "metadata_created": "2014-10-28T18:12:11.453636", "metadata_modified": "2016-06-13T20:06:50.014352",
+        "author": "", "author_email": "", "state": "active", "version": "", "license_id":
+        "ca-ogl-lgo", "type": "dataset", "resources": [{"resource_group_id": "ea8533d9-cdc6-4e0e-97b9-894e06d50b92",
+        "cache_last_updated": null, "revision_timestamp": "2016-06-13T20:05:16.818800",
+        "webstore_last_updated": null, "id": "be2b0af8-24a8-4a55-8b30-89f5459b713a",
+        "size": null, "state": "active", "hash": "", "description": "XML Dataset",
+        "format": "XML", "tracking_summary": {"total": 0, "recent": 0}, "mimetype_inner":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Artifact
+        Data - Vacuum Tubes (XML)", "created": "2014-10-28T18:13:22.240393", "url":
+        "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/groups-groupes/Vacuum-Tubes-en.xml",
+        "webstore_url": null, "last_modified": null, "position": 0, "revision_id":
+        "5bcfbac8-2d08-4671-82f3-eee41d535702", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-04T02:59:50.567068", "webstore_last_updated": null, "id": "7d65910e-4bdc-4f06-a213-e24e36762767",
+        "size": null, "state": "active", "hash": "", "description": "Data dictionary
+        for CSTMC artifact datasets.", "format": "XLS", "tracking_summary": {"total":
+        15, "recent": 1}, "mimetype_inner": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Data Dictionary", "created": "2014-11-04T02:59:50.643658",
+        "url": "http://source.techno-science.ca/datasets-donn%C3%A9es/artifacts-artefacts/cstmc-artifact-data-dictionary-dictionnaire-de-donnees-artefacts-smstc.xls",
+        "webstore_url": null, "last_modified": null, "position": 1, "revision_id":
+        "5d27b3e6-7870-4c12-a122-9e9f5adee4a0", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T21:23:58.533397", "webstore_last_updated": null, "id": "97622ad7-1507-4f6a-8acb-14e826447389",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        3, "recent": 1}, "mimetype_inner": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (English)", "created": "2014-11-04T18:14:23.952937",
+        "url": "http://techno-science.ca/en/open-data/tips-using-artifact-open-data-set.php",
+        "webstore_url": null, "last_modified": null, "position": 2, "revision_id":
+        "40993f16-402b-439c-9288-2f2b177e4b8f", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T21:25:16.848423", "webstore_last_updated": null, "id": "7a72498a-c49c-4e84-8b10-58991de10df6",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        2, "recent": 1}, "mimetype_inner": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (French)", "created": "2014-11-05T21:25:16.887796",
+        "url": "http://techno-science.ca/fr/donnees-ouvertes/conseils-donnees-ouvertes-artefacts.php",
+        "webstore_url": null, "last_modified": null, "position": 3, "revision_id":
+        "57f1488e-a140-4eb6-9329-fc13202a73af", "resource_type": null}, {"resource_group_id":
+        "ea8533d9-cdc6-4e0e-97b9-894e06d50b92", "cache_last_updated": null, "revision_timestamp":
+        "2016-06-13T20:06:50.013746", "webstore_last_updated": null, "id": "7e2cb5de-550d-41a8-ab9d-b2ec35b6671a",
+        "size": null, "state": "active", "hash": "", "description": "Jeux de donn\u00e9es
+        XML", "format": "XML", "tracking_summary": {"total": 0, "recent": 0}, "mimetype_inner":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Donn\u00e9es
+        d''artefact - Tubes Electronique (XML)", "created": "2016-06-13T20:06:50.054740",
+        "url": "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/groups-groupes/Tubes-Electronique-fr.xml",
+        "webstore_url": null, "last_modified": null, "position": 4, "revision_id":
+        "3c644f3d-002d-4745-9971-c42b3ab94c05", "resource_type": null}], "num_resources":
+        5, "tags": [{"vocabulary_id": null, "display_name": "Vacuum Tubes", "name":
+        "Vacuum Tubes", "revision_timestamp": "2014-10-28T18:12:11.453636", "state":
+        "active", "id": "87d7ece6-1152-42b9-847f-be41b6c83be9"}], "title": "Artifact
+        Data - Vacuum Tubes", "tracking_summary": {"total": 361, "recent": 1}, "groups":
+        [{"capacity": "public", "description": "", "image_display_url": "http://data.techno-science.ca/uploads/group/20141024-162305.6896412comm.jpg",
+        "title": "Communications", "name": "communications", "is_organization": false,
+        "state": "active", "image_url": "20141024-162305.6896412comm.jpg", "display_name":
+        "Communications", "revision_id": "cc302424-2e68-4fcc-9a3a-6de60748c2e4", "type":
+        "group", "id": "5268ce18-e3b8-4802-b29e-30740b46e52d", "approval_status":
+        "approved"}], "creator_user_id": "27778230-2e90-4818-9f00-bbf778c8fa09", "relationships_as_subject":
+        [], "num_tags": 1, "name": "artifact-data-vacuum-tubes", "isopen": false,
+        "url": "", "notes": "This dataset includes artifacts in the collection of
+        the Canada Science and Technology Museums Corporation related to vacuum tubes.",
+        "license_title": "Open Government Licence - Canada", "extras": [], "license_url":
+        "http://data.gc.ca/eng/open-government-licence-canada", "organization": {"description":
+        "", "created": "2014-10-24T14:49:36.878579", "title": "CSTMC", "name": "cstmc",
+        "revision_timestamp": "2014-10-24T14:49:36.813670", "is_organization": true,
+        "state": "active", "image_url": "", "revision_id": "7a325a56-46f1-419c-b7b2-ec7501edb35a",
+        "type": "organization", "id": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57", "approval_status":
+        "approved"}, "revision_id": "b55894a3-83f5-4436-976e-216aadd49530"}}'
+  recorded_at: 2020-07-27 22:21:10 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

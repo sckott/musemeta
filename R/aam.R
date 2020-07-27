@@ -42,6 +42,10 @@ print.aam <- function(x, ...){
 aam_parse <- function(x, id, ascii){
   tmp <- xml2::read_html(x)
   nodes <- xml2::xml_find_all(tmp, '//div[@id="singledata"]')
+  if (length(nodes) == 0) {
+    warning("'", id, "' not found")
+    return(list())
+  }
   out <- lapply(xml2::xml_children(nodes[[1]]), function(z) {
     tmp <- stats::setNames(as.list(xml2::xml_text(z)), 
       xml2::xml_attr(z, "class"))

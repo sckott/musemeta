@@ -1,0 +1,1481 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://www.getty.edu/art/collection/objects/138860
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.71.1 r-curl/4.3 crul/0.9.4.91
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      content-type: text/html; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      date: Mon, 27 Jul 2020 21:44:27 GMT
+      server: Apache/2.2.15 (Red Hat) PHP/5.3.3
+      x-powered-by: PHP/5.3.3
+      expires: Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma: no-cache
+      x-cache: Miss from cloudfront
+      via: 1.1 cb27f31b9469fdef1a92a138218b5759.cloudfront.net (CloudFront)
+      x-amz-cf-pop: HIO50-C1
+      x-amz-cf-id: z87KKaqUBorOB5gvrg7s7yoHRUkZPUc9KwKyrP0PsBBdEk13y8k6FQ==
+    body:
+      encoding: UTF-8
+      file: no
+      string: "<!DOCTYPE html>\n<!--[if IE 8]><html class=\"no-js lt-ie9\" lang=\"en\"><![endif]-->\n<!--[if
+        IE 9]><html class=\"no-js ie9\" lang=\"en\"><![endif]-->\n<!--[if gt IE 9]><!--><html
+        class=\"no-js\" lang=\"en\"><!--<![endif]-->\n\t<head>\n\t\t<meta charset=\"utf-8\"/>\n\t\t\n\t\t<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n\t\t\n\t\t<meta name=\"viewport\"
+        content=\"width=device-width\"/>\n\t\t<meta name=\"apple-mobile-web-app-capable\"
+        content=\"yes\"/>\n\t\t<meta name=\"description\" content=\"La Vierge assise,
+        embarassant l&#039;enfant J&eacute;sus; Bisson Fr&egrave;res (French, active
+        1840 - 1864); 1861; Albumen silver print; 11.8 &times; 7.6 cm (4 5/8 &times;
+        3 in.); 84.XB.419.36; J. Paul Getty Museum, Los Angeles, California\"/>\n\t\t<meta
+        name=\"keywords\" content=\"Getty Museum collections, artworks, art works,
+        art history, video, interpretation of art, acquisitions, artists, Getty art,
+        collections Getty, collezioni Getty, colecciones Getty, Sammlung Getty, Getty
+        exhibits, Getty current exhibitions, Getty Museum exhibits, los angeles collections,
+        antiquities, decorative arts, sculpture, manuscripts, photography, paintings,
+        drawings\"/>\n\t\t<meta name=\"title\" content=\"La Vierge assise, embarassant
+        l&#039;enfant J&eacute;sus\"/>\n\t\t<meta name=\"name\" content=\"La Vierge
+        assise, embarassant l&#039;enfant J&eacute;sus\"/>\n\t\t<meta name=\"medium\"
+        content=\"Albumen silver print\"/>\n\t\t<meta name=\"date\" content=\"1861\"/>\n\t\t<meta
+        name=\"dimensions\" content=\"11.8 &times; 7.6 cm (4 5/8 &times; 3 in.)\"/>\n\t\t<meta
+        name=\"maker\" content=\"Bisson Fr&egrave;res (French, active 1840 - 1864)\"/>\n\t\t<meta
+        name=\"classification\" content=\"Photographs\"/>\n\t\t<meta name=\"place_created\"
+        content=\"Paris, France\"/>\n\t\t<meta name=\"object_type\" content=\"Print\"/>\n\t\t<meta
+        name=\"object_number\" content=\"84.XB.419.36\"/>\n\t\t<meta name=\"image\"
+        content=\"http://media.getty.edu/museum/images/web/enlarge/15181401.jpg\"/>\n\t\t<meta
+        name=\"thumbimage\" content=\"http://media.getty.edu/museum/images/web/thumbnail/15181401.jpg\"/>\n\t\t<meta
+        name=\"open_content\" content=\"yes\"/>\n\t\t<meta name=\"department\" content=\"Photographs\"/>\n\t\t<meta
+        name=\"on_view\" content=\"no\"/>\n\t\t<meta name=\"robots\" content=\"index,follow\"/>\n\t\t\n\t\t<meta
+        property=\"og:title\" content=\"La Vierge assise, embarassant l&#039;enfant
+        J&eacute;sus (Getty Museum)\"/>\n\t\t<meta property=\"og:site_name\" content=\"The
+        J. Paul Getty in Los Angeles\"/>\n\t\t<meta property=\"og:type\" content=\"website\"/>\n\t\t<meta
+        property=\"og:image\" content=\"http://media.getty.edu/museum/images/web/enlarge/15181401.jpg\"/>\n\t\t\n\t\t<title>La
+        Vierge assise, embarassant l&#039;enfant J&eacute;sus (Getty Museum)</title>\n\n\t\t<link
+        rel=\"canonical\" href=\"http://www.getty.edu/art/collection/objects/138860/\"/>\n\t\t<link
+        rel=\"shortcut icon\" href=\"/global/r/images/getty_logo_favicon.ico\"/>\n\t\t<link
+        rel=\"apple-touch-icon img_src\" href=\"/global/r/images/getty_logo_favicon.png\"/>\n\t\t\n\t\t<!--\n\t\t/*
+        @license\n\t\t * MyFonts Webfont Build ID 2577370, 2013-06-10T18:14:07-0400\n\t\t
+        *\n\t\t * The fonts listed in this notice are subject to the End User License\n\t\t
+        * Agreement(s) entered into by the website owner. All other parties are\n\t\t
+        * explicitly restricted from using the Licensed Webfonts(s).\n\t\t *\n\t\t
+        * You may obtain a valid license at the URLs below.\n\t\t *\n\t\t * Webfont:
+        Humanist 531 by Bitstream\n\t\t * URL: http://www.myfonts.com/fonts/bitstream/humanist-531/humanist-531/\n\t\t
+        *\n\t\t * Webfont: Humanist 531 Bold by Bitstream\n\t\t * URL: http://www.myfonts.com/fonts/bitstream/humanist-531/bold/\n\t\t
+        *\n\t\t *\n\t\t * License: http://www.myfonts.com/viewlicense?type=web&buildid=2577370\n\t\t
+        * Webfonts copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.\n\t\t
+        *\n\t\t * © 2013 MyFonts Inc\n\t\t*/\n\t\t-->\n\t\t\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/normalize.css?1590028845\"/>\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/app.css?1590028845\"/>\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/helpers.css?1590028845\"/>\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/art.css?1590028845\"/>\n\t\t<!--[if lte IE 9]>\n\t\t<link
+        rel=\"stylesheet\" href=\"/global/r/css/ie.css?1590028845\"/>\n\t\t<![endif]-->\n\t\t\n\t\t<script
+        type=\"text/javascript\">\n\t\t\t// resolves issue with /global/r/js/getty.functions.js
+        -> checkCarousel() -> $.getUrlVar() page hashes\n\t\t\t\n\t\t\tvar getQueryStringParameterByName
+        = function(name, url) {\n\t\t\t\tif(!url) {\n\t\t\t\t\turl = window.location.href;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\tname
+        = name.replace(/[\\[\\]]/g, '\\\\$&');\n\t\t\t\t\n\t\t\t\tvar regex = new
+        RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');\n\t\t\t\tvar results = regex.exec(url);\n\t\t\t\tif(!results)
+        {\n\t\t\t\t\treturn null;\n\t\t\t\t} else {\n\t\t\t\t\tif(!results[2]) {\n\t\t\t\t\t\treturn
+        '';\n\t\t\t\t\t} else {\n\t\t\t\t\t\treturn decodeURIComponent(results[2].replace(/\\+/g,
+        ' '));\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tvar artview = getQueryStringParameterByName('artview');\n\t\t\tif(!(typeof(artview)
+        == \"string\") || (artview.length === 0 || (artview.length > 0 && artview.substring(0,
+        1) == \"#\"))) {\n\t\t\t\tvar search = window.location.search.replace(/(&?artview=([^&#]*)|$)/,
+        \"\"); // remove invalid 'artview' parameter\n\t\t\t\t\n\t\t\t\tif(\"pushState\"
+        in window.history) {\n\t\t\t\t\twindow.history.pushState(\"\", document.title,
+        window.location.pathname + search);\n\t\t\t\t} else {\n\t\t\t\t\twindow.location
+        = window.location.pathname + search;\n\t\t\t\t}\n\t\t\t}\n\t\t</script>\n\t\t\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.getscripts.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/getty.set-sections.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/getty.get-includes.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\">\n\t\t\tgetty_header_script_array.push(\n\t\t\t\t\"/global/r/js/vendor/openseadragon.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.jplayer.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.fittext.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.cycle2.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.cycle2.swipe.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.cycle2.carousel.js?1590028845\"\n\t\t\t);\n\t\t\t\n\t\t\tajax_header_scripts(getty_header_script_array);\n\t\t\t\n\t\t\t//
+        load the broadcast banner\n\t\t\t$(document).ready(function() {\n\t\t\t\t$.ajax({\n\t\t\t\t\ttype:
+        \"GET\",\n\t\t\t\t\turl: \"/global/r/html-includes/broadcast.html\",\n\t\t\t\t\tsuccess:
+        function(data) {\n\t\t\t\t\t\tif(data.length > 0) {\n\t\t\t\t\t\t\tvar $site_alert
+        = $('div#site-alert');\n\t\t\t\t\t\t\tif($site_alert instanceof jQuery) {\n\t\t\t\t\t\t\t\t$('#site-alert').html(data).removeClass('hide').css(\"display\",
+        \"block\");\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t});\n\t\t</script>\n\t\t\n\t\t<!--
+        Google Analytics start -->\n\t\t<script>\n\t\t\t(function(i, s, o, g, r, a,
+        m) {\n\t\t\t\ti['GoogleAnalyticsObject'] = r;\n\t\t\t\ti[r] = i[r] || function()
+        {\n\t\t\t\t\t(i[r].q = i[r].q || []).push(arguments)\n\t\t\t\t}, i[r].l =
+        1 * new Date();\n\t\t\t\ta = s.createElement(o),\n\t\t\t\tm = s.getElementsByTagName(o)[0];\n\t\t\t\ta.async
+        = 1;\n\t\t\t\ta.src   = g;\n\t\t\t\tm.parentNode.insertBefore(a, m)\n\t\t\t})(window,
+        document, 'script', '//www.google-analytics.com/analytics.js', 'ga');\n\t\t\t\n\t\t\tga('create',
+        \ 'UA-8087223-1', 'auto');\n\t\t\tga('require', 'linkid', 'linkid.js');\n\t\t\tga('send',
+        \   'pageview');\n\t\t</script>\n\t\t<!-- Google Analytics end -->\n\t\t\n\t\t<!--
+        Google Analytics: to handle pdfs, docs, xls start -->\n\t\t<script type=\"text/javascript\">\n\t\t\t$(document).ready(function()
+        {\n\t\t\t\t$(\"a[href$='pdf'], a[href$='rtf'], a[href$='doc'], a[href$='xls'],
+        a[href*='bit.ly']\").each(function(index) {\n\t\t\t\t\tvar pdfLabel   = $(this).attr('href');\n\t\t\t\t\tvar
+        pdfOnClick = \"ga('send', 'pageview','\" + pdfLabel + \"');\";\n\t\t\t\t\t$(this).attr(\"onClick\",
+        pdfOnClick);\n\t\t\t\t});\n\t\t\t});\n\t\t</script>\n\t\t<!-- Google Analytics:
+        to handle pdfs, docs, xls end  -->\n\t\t\n\t\t<!-- Google Analytics: to handle
+        outbound links -->\n\t\t<script type=\"text/javascript\">\n\t\t\tfunction
+        trackOutboundLink(link, category, action) {\n\t\t\t\ttry {\n\t\t\t\t\t_gaq.push(['_trackEvent',
+        category , action]);\n\t\t\t\t} catch(err) {\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\tsetTimeout(function()
+        {\n\t\t\t\t\tdocument.location.href = link.href;\n\t\t\t\t}, 100);\n\t\t\t}\n\t\t</script>\n\t\t<!--
+        Google Analytics: to handle outbound links end -->\n\t\t\n\t\t\t\t\n\t\t<link
+        rel=\"stylesheet\" href=\"/art/collection/static/stylesheets/styles.css?1590028845\"/>\n\t\t<link
+        rel=\"stylesheet\" href=\"/art/collection/objects/index.css?1590028845\"/>\n\t\t\n\t\t<style
+        type='text/css'>\n\t\t\t.frame {\n\t\t\t\t-ms-transform: scale(0.85);\n\t\t\t\t-moz-transform:
+        scale(0.85);\n\t\t\t\t-o-transform: scale(0.85);\n\t\t\t\t-webkit-transform:
+        scale(0.85);\n\t\t\t\ttransform: scale(0.85);\n\t\t\t\t\n\t\t\t\t-ms-transform-origin:
+        0 0;\n\t\t\t\t-moz-transform-origin: 0 0;\n\t\t\t\t-o-transform-origin: 0
+        0;\n\t\t\t\t-webkit-transform-origin: 0 0;\n\t\t\t\ttransform-origin: 0 0;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body
+        class=\"art\">\n\t\t<section id=\"mobile-panel-nav\" class=\"mobile-panel
+        show-for-medium-down hide-on-print\">\n\t\t\t<div id=\"mobile-panel-wrap\"
+        class=\"top-bar-section\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<a href=\"/\">Home</a><span
+        class=\"icon-remove icon-large close\"></span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        \ href=\"/visit/\">Visit</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a  href=\"/visit/center/\">The Getty
+        Center</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/center/plan/\">Plan a Visit</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/art.html\">Art</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/architecture.html\">Architecture</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/gardens.html\">Gardens</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/eat.html\">Eat</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/shop.html\">Shop</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        \ href=\"/visit/villa/\">The Getty Villa</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/villa/plan/\">Plan a Visit</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/villa/art.html\">Art</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/villa/architecture.html\">Architecture</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/villa/gardens.html\">Gardens</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/villa/eat.html\">Eat</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/villa/shop.html\">Shop</a></li>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"/visit/calendar/\">Calendar</a></li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"/visit/exhibitions/\">Exhibitions</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/exhibitions\">Current
+        Exhibitions</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/exhibitions/future.html\">Future Exhibitions</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/exhibitions/past.html\">Past
+        Exhibitions</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        class=\"active\" href=\"/museum/\">Museum</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li><a
+        href=\"/museum/exhibitions/\">Exhibitions</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a
+        class=\"active\" href=\"/art/collection/\">Collection</a></li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/education/\">Education</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/adult_learners/index.html\">Adult Learners</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/college/index.html\">College
+        Faculty and Students</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/teachers/index.html\">K-12 Teachers and Students</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/kids_families/index.html\">Kids
+        and Families</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/teens/index.html\">Teens</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/groups/index.html\">Community
+        Groups</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/museum_educators/index.html\">Museum Educators</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/about/index.html\">About
+        the Education Department</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"/museum/research/\">Research
+        and Conservation</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a
+        href=\"/museum/publications/\">Publications</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a href=\"/museum/programs/\">Public
+        Programs</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/museum/programs/courses/index.html\">Courses and Demonstrations</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/museum/programs/lectures/index.html\">Lectures
+        and Conversations</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/museum/programs/performances/index.html\">Performances and Films</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/museum/programs/talks/index.html\">Talks
+        and Tours</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/museum/programs/past.html\">Highlights of Past Programs</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"/museum/about.html\">About
+        the J. Paul Getty Museum</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/research/\">Research Institute</a>\n\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/exhibitions_events/\">Exhibitions &amp; Events</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/exhibitions_events/past_events.html\">Past
+        Events</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/exhibitions_events/past_exhibitions.html\">Past Exhibitions</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/special_collections/\">Special Collections</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/special_collections/notable/index.html\">Notable
+        Works &amp; Collections</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/special_collections/acquisitions.html\">New Acquisitions
+        &amp; Donations</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/special_collections/highlights/index.html\">Major Collecting
+        Areas</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/special_collections/institutional_archives/\">Institutional
+        Archives</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/library/\">Library</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/library/overview.html\">Library Overview</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/library/using/\">Using
+        The Library</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/library/faq.html\">Frequently Asked Questions</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/tools/\">Search Tools &amp; Databases</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"http://primo.getty.edu\">Library
+        Catalog</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/portal/index.html\">Getty Research Portal</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"http://archives2.getty.edu:8082/xtf/search?browse-creator=first;sort=creator\">Collection
+        Inventories &amp; Finding Aids</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/guides_bibliographies/\">Research Guides &amp; Bibliographies</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools/digital_collections/\">Digital
+        Collections</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/article_databases/\">Article &amp; Research Databases</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools/provenance/\">Collecting
+        &amp; Provenance Research</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/photo/\">Photo Archive</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools/bha/\">BHA
+        &amp; RILA</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/vocabularies/\">Getty Vocabularies</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/scholars/\">Scholars &amp; Projects</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/scholars/years/index.html\">Scholars
+        Program</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/scholars/research_projects/index.html\">Research Projects</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/publications/\">Publications</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/publications/all.html\">All Getty Research Institute Publications</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/publications/issues_debates/index.html\">Issues
+        &amp; Debates Series</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/publications/texts_documents/index.html\">Texts &amp; Documents
+        Series</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/publications/grj/\">Getty
+        Research Journal</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/publications/electronic_publications/\">Electronic Publications</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/institute/\">About the GRI</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/institute/development_partnerships/\">Development &amp; Partnerships</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/institute/staff.html\">Senior
+        Staff</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/institute/e_news/index.html\">GRI e-News</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/conservation/\">Conservation Institute</a>\n\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/about/\">About the Conservation Institute</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/mission.html\">Mission
+        &amp; Values</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/about/overview.html\">Overview of the Institute</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/org_chart.html\">Organizational
+        Chart</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/about/education/index.html\">Education Dept.</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/field_projects/index.html\">Field
+        Projects Dept.</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/about/science/index.html\">Science Dept.</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/contact.html\">Contact
+        Information</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/our_projects/index.html\">Our Projects</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/our_projects/current.html\">Current
+        Projects</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/our_projects/past.html\">Past Projects</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/core_areas/index.html\">Core Areas of Work</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/core_areas/buildings/index.html\">Buildings
+        &amp; Sites</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/core_areas/collections/index.html\">Collections</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/core_areas/education/index.html\">Education
+        &amp; Dissemination</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/publications_resources/\">Publications &amp; Resources</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"http://aata.getty.edu/\"
+        target=\"_blank\">AATA Online</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"http://gcibibs.getty.edu/asp/\" target=\"_blank\">Project Bibliographies
+        (searchable)</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/teaching/index.html\">Teaching
+        &amp; Learning Resources</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/pdf_publications/\">PDF Publications</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/books/index.html\"
+        target=\"_blank\">Books for Purchase</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/newsletters/\">Conservation Perspectives,
+        The GCI Newsletter</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/bulletin/index.html\">GCI e-Bulletin</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/videos/\">Multimedia
+        (videos &amp; slideshows)</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/reference_collection/index.html\">GCI
+        Reference Collection (for materials analysis)</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/lectures.html\">Lectures
+        &amp; Conferences</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/research_resources/infocenter.html\">Research
+        Assistance at GCI Information Center</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/guides_bibliographies/conservation_collection/index.html\"
+        target=\"_blank\">Conservation Collection at GRI Library</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/research_resources/charters.html\">Links
+        to Cultural Heritage Policy Documents</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/research_resources/othersites.html\">Links
+        to Other Conservation Sites</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/search/options\">Search GCI</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/search/options\">Search
+        GCI</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/search/browse\">Browse GCI</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        \ href=\"/foundation/\">Foundation</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/initiatives/\">Our
+        Priorities</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/foundation/initiatives/current/\">Current Initiatives</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/foundation/initiatives/past/\">Past
+        Initiatives</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/apply/\">How
+        to Apply</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        \ href=\"/foundation/grants/\">Grants Awarded</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/news/\">News
+        and Resources</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/about/\">About
+        the Foundation</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/foundation/about/contact.html\">Contact Us</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/publications/\">Publications</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        href=\"/publications/books.html\">New &amp; Notable</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"/publications/virtuallibrary/index.html\">Virtual
+        Library</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        href=\"/publications/ordering_information.html\">Order</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"/publications/catalog_request.html\">Sales
+        Catalogs</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        href=\"/publications/about.html\">Contact</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        \ href=\"/about/\">About the Getty</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li><a
+        href=\"/about/mission.html\">Mission</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a href=\"/about/getty/index.html\">History</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/getty/founder.html\">The
+        Founder and His Vision</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/getty/getty_evolves.html\">The Getty Evolves</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/about/governance/\">Governance</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<!--
+        <li><a href=\"/about/governance/mission_statement.html\">Mission Statement</a></li>
+        -->\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/indenture.html\">Trust
+        Indenture</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/bylaws.html\">Bylaws</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/trustees.html\">Board
+        of Trustees</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/committees.html\">Board Committees</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/officers.html\">Trust
+        Officers and Program Directors</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/policies.html\">Policies</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/finance.html\">Financial
+        Information</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/trustreport/\">Trust Report</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/caag_report.html\">California
+        Attorney General's Report</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/about/opportunities/\">Opportunities</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://jobs-getty.icims.com/jobs/intro\">Jobs</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/opportunities/volunteer_opps.html\">Docents
+        &amp; Volunteers</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/opportunities/intern_opps.html\">Internships &amp; Fellowships</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"http://news.getty.edu\">Press
+        Room</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a
+        href=\"/about/contact_us.html\">Contact Us</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/global/connect.html\"
+        data-fancybox-type=\"iframe\">Connect with Us</a></li>\n\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t<li><a
+        href=\"http://shop.getty.edu/\">Shop</a></li>\n\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<label for=\"offcanvas-search-input\">Search</label>\n\t\t\t\t\t\t<form
+        action=\"/art/collection/search/\" method=\"POST\" name=\"offcanvas-search\"
+        id=\"m-search\" class=\"custom\">\n\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns\">\n\t\t\t\t\t\t\t\t\t<ul class=\"has-inputs\">\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"text\" id=\"offcanvas-search-input\" name=\"qt\" placeholder=\"Enter
+        Search Terms\">\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<label
+        for=\"mobile-search-all\" onclick=\"$('#m-search').attr('action', '//www.getty.edu/Search/SearchServlet')\"><input
+        type=\"radio\" name=\"mrgroup\" id=\"mobile-search-all\" value=\"all\" checked=\"yes\"><span
+        class=\"custom radio checked\"></span> All Getty</label>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<label
+        for=\"mobile-search-museum\" onclick=\"$('#m-search').attr('action', '/art/collection/search/')\"><input
+        type=\"radio\" name=\"mrgroup\" id=\"mobile-search-museum\" value=\"museum\"
+        checked=\"yes\"><span class=\"custom radio\"></span> Museum Collection</label>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<label
+        for=\"mobile-search-conservation-institute\" onclick=\"$('#m-search').attr('action',
+        '//www.getty.edu/conservation/search/results')\"><input type=\"radio\" name=\"mrgroup\"
+        id=\"mobile-search-conservation-institute\" value=\"conservation-institute\"><span
+        class=\"custom radio\"></span> Conservation Institute</label>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t<p
+        class=\"truncate\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"submit\" value=\"Submit\"
+        class=\"button round small close\"> <input type=\"button\" class=\"button
+        small round close\" value=\"Close Menu\">\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</form>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<a href=\"//www.getty.edu/Search/\"><span
+        class=\"icon-angle-right pull-right\"></span>More Ways to Search</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</section>\n\t\t<div
+        id=\"wrapper\">\n\t\t\t<div id=\"site-alert\" class=\"essential\" style=\"display:none\">!</div>\n\t\t\t<div
+        class=\"row collapse hide-on-print\">\n\t\t\t\t<div class=\"small-12\">\n\t\t\t\t\t<!--
+        Global \"Top-Top\" Navigation -->\n\t\t\t\t\t<nav id=\"global-nav\" class=\"top-bar
+        off-canvas\">\n\t\t\t\t\t\t<ul class=\"top-bar-mobile show-for-medium-down\">\n\t\t\t\t\t\t\t<!--
+        Title Area -->\n\t\t\t\t\t\t\t<li class=\"name\">\n\t\t\t\t\t\t\t\t<a href=\"//www.getty.edu\"
+        class=\"icon-getty-logo icon-large\"></a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"section-title\"><h1><a href=\"/museum\">The J. Paul Getty Museum</a></h1></li>\n\t\t\t\t\t\t\t<li
+        id=\"toggle-offcanvas\"><span class=\"icon-reorder icon-large\"></span></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<section
+        class=\"top-bar-section show-for-large-up\">\n\t\t\t\t\t\t\t<!-- Left Nav
+        Section -->\n\t\t\t\t\t\t\t<ul class=\"left\">\n\t\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<label><a
+        href=\"//www.getty.edu/\">Explore the Getty</a></label>\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        \ href=\"//www.getty.edu/visit/\">Visit</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a class=\"active\" href=\"//www.getty.edu/museum/\">Museum</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/research/\">Research
+        Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/conservation/\">Conservation Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/foundation/\">Foundation</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/publications/\">Publications</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/about/\">About
+        the Getty</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!--
+        Search Nav Section -->\n\t\t\t\t\t\t\t<ul class=\"right\" id=\"advanced-search\">\n\t\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<span class=\"adv-search\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"icon-adv-search\"></span>\n\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><label>Advanced
+        Search Options</label></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/art/collection/search/\">Museum Collection</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools\">Research
+        Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/conservation/search/options\">Conservation Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/Search/\"><span
+        class=\"icon-angle-right right\"></span>More Ways to Search</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"has-form\">\n\t\t\t\t\t\t\t\t\t<form class=\"custom\" action=\"//www.getty.edu/Search/SearchServlet?la=en\"
+        method=\"get\" name=\"seek2\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\"
+        value=\"getty\" name=\"col\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\"
+        value=\"10\" name=\"nh\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row collapse\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"large-8 columns\">\n\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"search\"
+        name=\"qt\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"large-4
+        columns\">\n\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"button\" value=\"Search\"
+        class=\"button round\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!--
+        Right Nav Section -->\n\t\t\t\t\t\t\t<ul class=\"right\">\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<!-- <li><a href=\"http://blogs.getty.edu/iris\">The
+        Iris</a></li> -->\n\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/global/connect.html\"
+        class=\"fancybox\" data-fancybox-type=\"iframe\">Connect with Us</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"><span>&#124;</span></li>\n\t\t\t\t\t\t\t\t<li><a href=\"http://shop.getty.edu/\">Shop</a></li>\n\t\t\t\t\t\t\t\t<!--
+        <li class=\"divider\"><span class=\"hide-for-small\">&#124;</span></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"#\">Join</a></li> -->\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</section>\n\t\t\t\t\t</nav>\n\t\t\t\t\t<!--
+        End Global Navigation -->\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div
+        id=\"banner\" class=\"row collapse hide-on-print hide-for-medium-down\">\n\t\t\t\t<div
+        class=\"small-12 columns\">\n\t\t\t\t\t<h1>\n\t\t\t\t\t\t<a id=\"getty-logo\"
+        href=\"//www.getty.edu/\" title=\"The J. Paul Getty\"><span class=\"icon-getty-logo
+        pull-left\"></span></a>\n\t\t\t\t\t\t<a id=\"section-title\" href=\"//www.getty.edu/museum/\">The
+        J. Paul Getty Museum</a>\n\t\t\t\t\t</h1>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div
+        class=\"row hide-on-print hide-for-medium-down\" id=\"level2-nav\">\n\t\t\t\t<div
+        class=\"small-12\">\n\t\t\t\t\t<!-- Level 2 Nav -->\n\t\t\t\t\t<nav class=\"top-bar\">\n\t\t\t\t\t\t<section
+        class=\"top-bar-section\">\n\t\t\t\t\t\t\t<ul class=\"left\">\n\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/exhibitions/\">Exhibitions</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a class=\"active\" href=\"//www.getty.edu/art/collection\">Collection</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/education/\">Education</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/adult_learners/index.html\">Adult Learners</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/college/index.html\">College
+        Faculty and Students</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/teachers/index.html\">K-12 Teachers and Students</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/kids_families/index.html\">Kids
+        and Families</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/teens/index.html\">Teens</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/groups/index.html\">Community
+        Groups</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/museum_educators/index.html\">Museum Educators</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/about/index.html\">About
+        the Education Department</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/research/\">Research
+        and Conservation</a></li>\n\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/publications/\">Publications</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/museum/programs/\">Public Programs</a>\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/programs/courses/index.html\">Courses
+        and Demonstrations</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/programs/lectures/index.html\">Lectures and
+        Conversations</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/programs/performances/index.html\">Performances
+        and Films</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/programs/talks/index.html\">Talks and Tours</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/programs/past.html\">Highlights
+        of Past Programs</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/about.html\">About
+        the J. Paul Getty Museum</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</section>\n\t\t\t\t\t</nav>\n\t\t\t\t\t<!--
+        End Level 2 Nav -->\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div
+        class=\"small-12 columns\" id=\"main\">\n\t\t\t\t\t<div data-print-header>\n\t\t\t\t\t\t<img
+        src='/art/collection/static/images/getty.png' data-print-logo/>\n\t\t\t\t\t\t<div
+        data-print-name>The J. Paul Getty Museum</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t\t<!--
+        search-row -->\n\t\t\t\t\t<div id=\"l2-search-row\" class=\"row\">\n\t\t\t\t\t\t<ul
+        id=\"l2-search\" class=\"show-for-medium-up inline-list right\">\n\t\t\t\t\t\t\t<li
+        class=\"l2-search-sub\">\n\t\t\t\t\t\t\t\t<ul class=\"l2-search-list inline-list
+        left\">\n\t\t\t\t\t\t\t\t\t<li class=\"l2-search-box\">\n\t\t\t\t\t\t\t\t\t\t<form
+        class=\"l2-search-form\" action=\"/art/collection/search/\" method=\"GET\"
+        name=\"collectionsearch\">\n\t\t\t\t\t\t\t\t\t\t\t<input type=\"textbox\"
+        name=\"qt\" placeholder=\"Type here\" class=\"l2-search-input\"/>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"radio\" name=\"rgroup\" class=\"l2-search-radio\" id=\"collections-search\"
+        value=\"collections\" checked=\"yes\"/>\n\t\t\t\t\t\t\t\t\t\t\t<label for=\"collections-search\"
+        onclick=\"\" id=\"search-col-label\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span></span><em>Museum
+        Collection</em>\n\t\t\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"radio\" name=\"rgroup\" class=\"l2-search-radio\" id=\"video-gallery\"
+        value=\"video\"/>\n\t\t\t\t\t\t\t\t\t\t\t<label for=\"video-gallery\" onclick=\"\"
+        id=\"search-vid-label\" style=\"visibility:hidden;\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span></span><em>Video
+        Gallery</em>\n\t\t\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"l2-search-collapse\"><span class=\"icon-remove\"></span></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"l2-search-icon\"><span class=\"icon-search\"></span></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<span
+        class=\"l2-search-text\"><em>Collections Search</em></span>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!--
+        / search-row -->\n\t\t\t\t\t\n\t\t\t\t\t<!-- utilities-row -->\n\t\t\t\t\t<div
+        class=\"row\" id=\"utilities-row\">\n\t\t\t\t\t\t<!-- print, share -->\n\t\t\t\t\t\t<div
+        id=\"utility-display\" class=\"small-1 small-push-11 columns hide-on-print\">\n\t\t\t\t\t\t\t<span
+        class=\"icon-cog icon-border pull-right show-for-small\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        id=\"utilities\" class=\"medium-3 medium-push-9 small-11 small-pull-1 columns
+        hide-on-print\">\n\t\t\t\t\t\t\t<ul class=\"inline-list right\">\n\t\t\t\t\t\t\t\t<li
+        id=\"textsizer\" class=\"page-text-size\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><span
+        title=\"Small Text\" class=\"icon-font text-reduce\"></span></li>\n\t\t\t\t\t\t\t\t\t\t<li><span
+        title=\"Medium Text\" class=\"icon-font text-normal\"></span></li>\n\t\t\t\t\t\t\t\t\t\t<li><span
+        title=\"Large Text\" class=\"icon-font text-enlarge\"></span></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"page-print\"><a href=\"JavaScript:xbrowse_print();\" title=\"Print\"><span
+        class=\"icon-print\"></span></a></li>\n\t\t\t\t\t\t\t\t<li class=\"page-feedback\"><a
+        href=\"//www.getty.edu/art/collection/feedback\" class=\"fancybox\" data-fancybox-type=\"iframe\"><span
+        class=\"icon-comment\" title=\"Feedback\"></span></a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"medium-9 medium-pull-3 small-11 small-pull-1 columns\">\n\t\t\t\t\t\t\t<h2>La
+        Vierge assise, embarassant l'enfant Jésus</h2>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!--
+        / utilities-row -->\n\t\t\t\t\t\n\t\t\t\t\t<!-- center column (body content)
+        -->\n\t\t\t\t\t<div class=\"row\" id=\"content\">\n\t\t\t\t\t\t<div id=\"center-column\"
+        class=\"small-12 columns\">\n\t\t\t\t\t\t\t<!-- object-primary-image -->\n\t\t\t\t\t\t\t<section
+        id='object-primary-image' class='zoom-image-strata gallery-image-strata row'
+        data-clearance='DOWNLOAD' data-available='DOWNLOAD' data-display='ZOOM' data-object-copyright=''><div
+        class='small-12 columns'><figure id=\"zoom-image-display\" class=\"gallery-image-container
+        zoom-image-container\"><div id=\"object-image-print\" class=\"gallery-image-object\"><img
+        class=\"gallery-image\" src=\"http://media.getty.edu/museum/images/web/enlarge/15181401.jpg\"
+        alt=\"La Vierge assise, embarassant l&#039;enfant J&eacute;sus; Bisson Fr&egrave;res
+        (French, active 1840 - 1864); 1861; Albumen silver print; 11.8 &times; 7.6
+        cm (4 5/8 &times; 3 in.); 84.XB.419.36; Rights Statement: No Copyright - United
+        States\" title=\"La Vierge assise, embarassant l&#039;enfant J&eacute;sus;
+        Bisson Fr&egrave;res (French, active 1840 - 1864); 1861; Albumen silver print;
+        11.8 &times; 7.6 cm (4 5/8 &times; 3 in.); 84.XB.419.36; Rights Statement:
+        No Copyright - United States\"/></div><div id=\"object-image-display\" class=\"zoom-image-object
+        gallery-image-object hide-on-print\" data-hash=\"b8ba65f49c51eb6e529c248dbce61c7fa085fdf8\"
+        data-dzi=\"{&quot;xmlns&quot;:&quot;http:\\/\\/schemas.microsoft.com\\/deepzoom\\/2008&quot;,&quot;Url&quot;:&quot;http:\\/\\/media.getty.edu\\/museum\\/images\\/web\\/zoom\\/15181401\\/15181401_files\\/&quot;,&quot;Format&quot;:&quot;jpg&quot;,&quot;Overlap&quot;:1,&quot;TileSize&quot;:254,&quot;Size&quot;:{&quot;Width&quot;:5464,&quot;Height&quot;:7846}}\"
+        data-fs=\"true\" data-download-url=\"http://media.getty.edu/museum/images/web/download/15181401.jpg\"
+        data-download-size=\"19.65 MB\"></div><figcaption class=\"gallery-image-caption\"><div
+        id='image-caption'></div><div id='image-copyright' class=''></div><div style='clear:both;'></div></figcaption></figure><ul
+        id='object-image-controls' class='image-controls inline-list hide-on-print
+        download-choices'><li id='zoom-zoom-in-container' class='hide-for-touch'><a
+        id='zoom-zoom-in'><span class='icon-zoomin'></span></a></li><li id='zoom-zoom-out-container'
+        class='hide-for-touch'><a id='zoom-zoom-out'><span class='icon-zoomout'></span></a></li><li
+        id='zoom-reset-container'><a id='zoom-reset'><span class='icon-repeat'></span></a></li><li
+        id='zoom-full-screen-container'><a id='zoom-full-screen'><span class='icon-expand'></span></a></li><li
+        id='download-open-content-container'><section id=\"download-open-content\"><ul
+        class='drop-down-sub-menu'><li><span class='icon-download'></span> <small
+        class='text-caps'>Download</small><ul id='download-open-content-size-choices'
+        data-download-url='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/download/15181401.jpg&id=138860&objnum=84.XB.419.36&medium=Albumen+silver+print&objmaker=Bisson+Fr%C3%A8res+%28French%2C+active+1840+-+1864%29&title=La+Vierge+assise%2C+embarassant+l%27enfant+J%C3%A9sus&objdim=11.8+%C3%97+7.6+cm+%284+5%2F8+%C3%97+3+in.%29%2C+84.XB.419.36&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles&objdate=1861&uoiid=b8ba65f49c51eb6e529c248dbce61c7fa085fdf8'
+        data-download-width='5464' data-download-height='7846' data-download-size='19.65
+        MB' data-larger-url='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/larger/15181401.jpg&id=138860&objnum=84.XB.419.36&medium=Albumen+silver+print&objmaker=Bisson+Fr%C3%A8res+%28French%2C+active+1840+-+1864%29&title=La+Vierge+assise%2C+embarassant+l%27enfant+J%C3%A9sus&objdim=11.8+%C3%97+7.6+cm+%284+5%2F8+%C3%97+3+in.%29%2C+84.XB.419.36&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles&objdate=1861&uoiid=b8ba65f49c51eb6e529c248dbce61c7fa085fdf8'
+        data-larger-width='2089' data-larger-height='3000' data-larger-size='772.99
+        KB' data-enlarge-url='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/enlarge/15181401.jpg&id=138860&objnum=84.XB.419.36&medium=Albumen+silver+print&objmaker=Bisson+Fr%C3%A8res+%28French%2C+active+1840+-+1864%29&title=La+Vierge+assise%2C+embarassant+l%27enfant+J%C3%A9sus&objdim=11.8+%C3%97+7.6+cm+%284+5%2F8+%C3%97+3+in.%29%2C+84.XB.419.36&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles&objdate=1861&uoiid=b8ba65f49c51eb6e529c248dbce61c7fa085fdf8'
+        data-enlarge-width='713' data-enlarge-height='1024' data-enlarge-size='94.08
+        KB'><li><a href='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/enlarge/15181401.jpg&id=138860&objnum=84.XB.419.36&medium=Albumen+silver+print&objmaker=Bisson+Fr%C3%A8res+%28French%2C+active+1840+-+1864%29&title=La+Vierge+assise%2C+embarassant+l%27enfant+J%C3%A9sus&objdim=11.8+%C3%97+7.6+cm+%284+5%2F8+%C3%97+3+in.%29%2C+84.XB.419.36&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles&objdate=1861&uoiid=b8ba65f49c51eb6e529c248dbce61c7fa085fdf8'
+        target='_blank' class=\"fancybox\" data-fancybox-type=\"iframe\"><small class='text-caps'>Presentation/Study
+        Size (713 x 1024 px • 94.08 KB)</small></a></li><li><a href='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/larger/15181401.jpg&id=138860&objnum=84.XB.419.36&medium=Albumen+silver+print&objmaker=Bisson+Fr%C3%A8res+%28French%2C+active+1840+-+1864%29&title=La+Vierge+assise%2C+embarassant+l%27enfant+J%C3%A9sus&objdim=11.8+%C3%97+7.6+cm+%284+5%2F8+%C3%97+3+in.%29%2C+84.XB.419.36&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles&objdate=1861&uoiid=b8ba65f49c51eb6e529c248dbce61c7fa085fdf8'
+        target='_blank' class=\"fancybox\" data-fancybox-type=\"iframe\"><small class='text-caps'>Print
+        Resolution Size (2089 x 3000 px • 772.99 KB)</small></a></li><li><a href='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/download/15181401.jpg&id=138860&objnum=84.XB.419.36&medium=Albumen+silver+print&objmaker=Bisson+Fr%C3%A8res+%28French%2C+active+1840+-+1864%29&title=La+Vierge+assise%2C+embarassant+l%27enfant+J%C3%A9sus&objdim=11.8+%C3%97+7.6+cm+%284+5%2F8+%C3%97+3+in.%29%2C+84.XB.419.36&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles&objdate=1861&uoiid=b8ba65f49c51eb6e529c248dbce61c7fa085fdf8'
+        target='_blank' class=\"fancybox\" data-fancybox-type=\"iframe\"><small class='text-caps'>Highest
+        Resolution Size (5464 x 7846 px • 19.65 MB)</small></a></li></ul></li></ul></section></li><li
+        id=\"download-available-message\"><p class=\"credits\" style='font-style:italic;margin-left:10px;'>This
+        image is available for download, without charge, under the Getty's <a rel='nofollow'
+        href='//www.getty.edu/about/opencontent.html' style='padding:0;' class='sitelink'
+        target='_blank'>Open Content Program</a>.</p></li><li id=\"order-image-container\"
+        style='display:none;'><a id=\"order-image\" rel=\"nofollow\" href=\"//www.getty.edu/legal/image_request/license.html?t=La+Vierge+assise%2C+embarassant+l%27enfant+J%C3%A9sus&a=Bisson+Fr%C3%A8res+%28French%2C+active+1840+-+1864%29&o=84.XB.419.36&uoiid=b8ba65f49c51eb6e529c248dbce61c7fa085fdf8\"
+        target=\"_blank\" title=\"Order this image\" class=\"fancybox\" data-fancybox-type=\"iframe\"><span
+        class=\"icon-cart\"></span>&nbsp;<small class=\"text-caps\">(Order this image)</small></a></li><li
+        class='hide-for-touch' style='float:right;'><span id='iiif_logo'><a target='_blank'
+        href='http://www.getty.edu/art/collection/static/viewers/mirador/?manifest=https://data.getty.edu/museum/api/iiif/138860/manifest.json'><img
+        class='iiif' src='/art/collection/static/images/IIIF.png' alt='IIIF Manifest'
+        title='Open this object record in Mirador by clicking on this icon or by dragging
+        this icon into an open IIIF viewer window'></a></span><li><li class=\"pull-right
+        gallery-image-caption\"><p><strong>La Vierge assise, embarassant l'enfant
+        Jésus</strong></p><p id='image-caption'><span><a href=\"//www.getty.edu/art/collection/artists/1239/bisson-freres-french-active-1840-1864/\">Bisson
+        Frères</a> (French, active 1840 - 1864)</span>&nbsp;<span>11.8 × 7.6 cm (4
+        5/8 × 3 in.)</span>&nbsp;<span>84.XB.419.36</span></p></li></ul><div style='clear:both;'></div><p
+        id=\"download-mobile-size-warning\" class=\"essential show-for-touch alert
+        credits\"><span class=\"icon-exclamation-sign\"></span> Open Content images
+        tend to be large in file-size. To avoid potential data charges from your carrier,
+        we recommend making sure your device is connected to a Wi-Fi network before
+        downloading.</p><p class=\"text-center\" style='clear:both;'><strong>Not currently
+        on view</strong></p></div></section>\t\t\t\t\t\t\t<!-- /object-primary-image
+        -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!-- object-alternate-images -->\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<!--
+        /object-alternate-images -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!-- object details
+        section -->\n\t\t\t\t\t\t\t<section id=\"object-details\" class=\"row\">\n\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns textsizer-wrap tile-header-solid\">\n\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\t<h4>Object
+        Details</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns textsizer-wrap tile-bg-40 tile\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"row collapse\">\n\t\t\t\t\t\t\t\t\t\t<section class=\"object-details-primary
+        clearfix details-list\">\n\t\t\t\t\t\t\t\t\t\t\t<div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Title:</h6></div><div
+        class='medium-9 large-9 columns'><p>La Vierge assise, embarassant l'enfant
+        Jésus</p></div></div><div class='clearfix'><div class='medium-3 large-3 columns'><h6
+        class='subheader'>Artist/Maker:</h6></div><div class='medium-9 large-9 columns'><p
+        class='multiple makers'><a href=\"/art/collection/artists/1239/bisson-freres-french-active-1840-1864/\">Bisson
+        Frères</a> (French, active 1840 - 1864)</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Place:</h6></div><div
+        class='medium-9 large-9 columns'><p class='multiple places'>Paris, France
+        (Place Created)</p></div></div><div class='clearfix'><div class='medium-3
+        large-3 columns'><h6 class='subheader'>Date:</h6></div><div class='medium-9
+        large-9 columns'><p>1861</p></div></div><div class='clearfix'><div class='medium-3
+        large-3 columns'><h6 class='subheader'>Medium:</h6></div><div class='medium-9
+        large-9 columns'><p>Albumen silver print</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Object Number:</h6></div><div
+        class='medium-9 large-9 columns'><p>84.XB.419.36</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Dimensions:</h6></div><div
+        class='medium-9 large-9 columns'><p>11.8 × 7.6 cm (4 5/8 × 3 in.)</p></div></div></section><section
+        class='object-details-misc clearfix details-list show-for-print' style='display:none;'><div
+        class='clearfix'><div class='medium-3 large-3 columns'><h6 class='subheader'>Mark(s):</h6></div><div
+        class='medium-9 large-9 columns'><p class='multiple marks'>(Recto, mount)
+        lower center, printseller blind stamp: \"CLEMENT Editeur 3 R. DES Sts PÈRES
+        3.\"</p></div></div><div class='clearfix'><div class='medium-3 large-3 columns'><h6
+        class='subheader'>Inscription(s):</h6></div><div class='medium-9 large-9 columns'><p
+        class='multiple marks'>(Recto, mount) lower center, letterpress: \"BISSON
+        FRÈRES PHOTOG.\"\r\nLower right, handwritten in pencil: \"35\" [written twice]</p></div></div><div
+        class='clearfix'><div class='medium-3 large-3 columns'><h6 class='subheader'>Alternate
+        Titles:</h6></div><div class='medium-9 large-9 columns'><p class='multiple
+        titles'>The Virgin and Child Seated by a Tree (Alternate Title)</p><p class='multiple
+        titles'>The Virgin seated, embracing the infant Jesus (Translated Title)</p></div></div><div
+        class='clearfix'><div class='medium-3 large-3 columns'><h6 class='subheader'>Department:</h6></div><div
+        class='medium-9 large-9 columns'><p>Photographs</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Classification:</h6></div><div
+        class='medium-9 large-9 columns'><p>Photographs</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Object Type:</h6></div><div
+        class='medium-9 large-9 columns'><p>Print</p></div></div>\t\t\t\t\t\t\t\t\t\t</section>\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns detail-misc-toggle hide-for-print\">\n\t\t\t\t\t\t\t\t\t\t\t<p
+        class=\"toggle-more truncate\"><span>See more <span class=\"icon-angle-down\"></span></span></p>\n\t\t\t\t\t\t\t\t\t\t\t<p
+        class=\"toggle-less hide truncate\"><span>See less <span class=\"icon-angle-up\"></span></span></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div
+        id=\"detail-text\" class=\"small-12 columns textsizer-wrap\"><h5 data-print-title>Object
+        Description</h5><p class='justified'>Reproduction of an engraving by Albrecht
+        Dürer depicting the Virgin sitting against a tree as she holds the infant
+        Christ in her lap.</p></div>\t\t\t\t\t\t\t</section>\n\t\t\t\t\t\t\t<!-- /object
+        details section -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!-- tabs -->\n\t\t\t\t\t\t\t<section
+        id=\"object-extras\" class=\"row\">\n\t\t\t\t\t\t\t\t<div class=\"small-12
+        columns\">\n\t\t\t\t\t\t\t\t\t<div class=\"section-container tabs\" data-section=\"tabs\">\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<section
+        id='object-section-related-objects'><h5 class='title' data-section-title><a
+        href='#object-section-related-objects-content'><span class='icon-stack pull-right
+        show-for-small'><span class='icon-sign-blank icon-base icon-stroke'></span><span
+        class='icon-plus-sign2 icon-light'></span></span>Related Works</a></h5><div
+        class='section-content textsizer-wrap show-for-print' data-slug='object-section-related-objects-content'
+        data-section-content=''><h5 data-print-title>Related Works</h5><div class='row'><div
+        class='small-6 columns'><p id='viewing-totals-related-objects' class='viewing-totals'>&nbsp;</p></div><div
+        class='small-6 columns noselect'><ul id='pagination-related-objects' class='pagination-goto
+        inline-list pull-right' data-record-id='138860' data-resource='artifact' data-page-offset='1'
+        data-page-limit='12' data-page-last='0'><li><span id='pagination-related-objects-previous'
+        class='icon-caret-left icon-large icon-muted'></span></li><li><label for='pager-related-objects'>Go
+        to page:</label>&nbsp;</li><li><form name='pager' method='post'><input type='number'
+        name='pg' id='pager-related-objects' class='pager-input truncate' placeholder='0'
+        pattern='[0-9]+'/></form></li><li><label for='pager-related-objects'>&nbsp;of&nbsp;<span
+        class='pager-related-objects-total'>0</span></label></li><li><span id='pagination-related-objects-next'
+        class='icon-caret-right icon-large icon-muted'></span></li></ul></div></div><div
+        id='pagination-related-objects-content' style='position:relative;'></div></div></section>\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</section>\n\t\t\t\t\t\t\t<!--
+        end of tabs -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<hr/>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<aside
+        id=\"collection-changing-data-warning\" class=\"credits\">\n\t\t\t\t\t\t\t\t<p>This
+        information is published from the Museum's collection database. Updates and
+        additions stemming from research and imaging activities are ongoing, with
+        new content added each week. <a href=\"//www.getty.edu/art/collection/feedback\"
+        class=\"fancybox\" data-fancybox-type=\"iframe\"><span style=\"white-space:
+        nowrap;\"><span class=\"icon-comment\"></span>&nbsp;Help</span> us improve
+        our records by sharing your corrections or suggestions.</a></p>\n\t\t\t\t\t\t\t\t<p
+        class='hide'>Every effort has been made to accurately determine the rights
+        status of works and their images. Please contact <a href='mailto:rights@getty.edu'>Museum
+        Rights and Reproductions</a> if you have  further information on the rights
+        status of a work contrary or in addition to the information in our records.</p><p><span
+        style='margin-right:6px;float:left;'><a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\"><img
+        alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by/4.0/80x15.png\"
+        /></a></span> <span xmlns:dct=\"http://purl.org/dc/terms/\" href=\"http://purl.org/dc/dcmitype/Text\"
+        property=\"dct:title\" rel=\"dct:type\">The text on this page is licensed
+        under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\">Creative
+        Commons Attribution 4.0 International License</a>, unless otherwise noted.
+        Images and other media are excluded.</span></p><p data-iiif-footer><span id='iiif_logo'
+        style='margin-top:4px;margin-right:6px;float:left;'><a href='http://iiif.io'
+        target='_blank' title='Learn more about IIIF'><img class='iiif' src='/art/collection/static/images/IIIF.png'
+        alt='IIIF'/></a></span>The content on this page is available according to
+        the <a href='http://iiif.io' target='_blank'>International Image Interoperability
+        Framework (IIIF)</a> specifications. You may view this object in <a href='http://www.projectmirador.org'
+        target='_blank'>Mirador</a> – a IIIF-compatible viewer – by clicking on the
+        IIIF icon below the main image, or by dragging the icon into an open IIIF
+        viewer window.</p>\t\t\t\t\t\t\t</aside>\n\t\t\t\t\t\t</div><!-- /#center-column
+        (body content) -->\n\t\t\t\t\t</div><!-- /.row #content -->\n\t\t\t\t</div><!--
+        /#main -->\n\t\t\t</div><!-- /.row -->\n\t\t</div><!-- /#wrapper -->\n\t\t\n\t\t<!--
+        Footer -->\n\t\t<footer id=\"footer\" class=\"row\">\n\t\t<!-- Bug, Copyright,
+        Terms of Use, Contact, begin, to display above toolbar on medium down -->\n\t\t\t<div
+        class=\"footer-copy small-12 medium-6 large-12 columns show-for-medium-down
+        hide-on-print\">\n\t\t\t\t<span class=\"icon-getty-logo-r\"></span>\n\t\t\t\t<span>The
+        J. Paul Getty Trust</span>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>&copy; J. Paul Getty
+        Trust</li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/legal/privacy.html\">Privacy Policy</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/legal/copyright.html\">Terms
+        of Use</a></li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/about/contact_us.html\">Contact Us</a></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--
+        Bug, Copyright, Terms of Use, Contact, end -->\n\t\t\t\n\t\t\t<!-- Begin Toolbar
+        -->\n\t\t\t<div id=\"footer-programs\" class=\"small-12 medium-6 large-12
+        columns hide-on-print\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/visit/calendar/\">Event
+        Calendar</a></li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/\">Museum Education</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/research/library/\">Library</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/subscribe/index.html\">e-Newsletters</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"http://news.getty.edu\">Press
+        Room</a></li>\n\t\t\t\t\t<!-- <li class=\"hide-for-medium-down\">&#124;</li>
+        -->\n\t\t\t\t\t<!-- <li><a href=\"//www.getty.edu/global/connect_with_us/index.html\"
+        class=\"fancybox\" data-fancybox-type=\"iframe\" data-fancybox-height=\"600\"
+        data-fancybox-width=\"680\">Connect with Us</a></li> -->\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--
+        End Toolbar -->\n\t\t\t\n\t\t\t<!-- Bug, Copyright, Terms of Use, Contact,
+        begin, to display below toolbar on large up-->\n\t\t\t<div class=\"footer-copy
+        small-12 medium-6 large-12 columns hide-for-medium-down hide-on-print\">\n\t\t\t\t<span
+        class=\"icon-getty-logo-r\"></span>\n\t\t\t\t<span>The J. Paul Getty Trust</span>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>&copy;
+        J. Paul Getty Trust</li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/legal/privacy.html\">Privacy Policy</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/legal/copyright.html\">Terms
+        of Use</a></li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/about/contact_us.html\">Contact Us</a></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--
+        Bug, Copyright, Terms of Use, Contact, end -->\n\t\t\t\n\t\t\t<div class=\"row
+        print-only footer-copy\">\n\t\t\t\t<span class=\"icon-getty-logo-r\"></span>\n\t\t\t\t<span>The
+        J. Paul Getty Trust</span>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>&copy; J. Paul Getty
+        Trust</li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</footer>\n\t\t\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.cookie.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.textresizer.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.alerts.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.abide.js?1590028845\"></script>\n\t\t<!--
+        script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.clearing.js?1590028845\"></script
+        -->\n\t\t<script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.cookie.js?1590028845\"></script>\n\t\t<!--
+        script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.dropdown.js?1590028845\"></script
+        -->\n\t\t<script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.forms.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.interchange.js?1590028845\"></script>\n\t\t<!--
+        script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.joyride.js?1590028845\"></script
+        -->\n\t\t<!-- script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.magellan.js?1590028845\"></script
+        -->\n\t\t<script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.placeholder.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.reveal.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.section.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.tooltips.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.topbar.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.mousewheel.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.mCustomScrollbar.concat.min.js?1590028845\"></script>\n\t\t\n\t\t<script
+        type=\"text/javascript\" src=\"/art/collection/objects/index.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/art/collection/static/scripts/related_objects.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/art/collection/static/scripts/fixes/feedback.js?1590028845\"></script>\n\t\t\n\t\t\t</body>\n</html>"
+  recorded_at: 2020-07-27 21:44:38 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://www.getty.edu/art/collection/objects/4967
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.71.1 r-curl/4.3 crul/0.9.4.91
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      content-type: text/html; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      date: Mon, 27 Jul 2020 21:44:32 GMT
+      server: Apache/2.2.15 (Red Hat) PHP/5.3.3
+      x-powered-by: PHP/5.3.3
+      expires: Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma: no-cache
+      x-cache: Miss from cloudfront
+      via: 1.1 cb27f31b9469fdef1a92a138218b5759.cloudfront.net (CloudFront)
+      x-amz-cf-pop: HIO50-C1
+      x-amz-cf-id: qNCtjjjclDZaJXNN9EcMKI8XPMNBeFwXuTKccVU6JSl4As2W-icLTQ==
+    body:
+      encoding: UTF-8
+      file: no
+      string: "<!DOCTYPE html>\n<!--[if IE 8]><html class=\"no-js lt-ie9\" lang=\"en\"><![endif]-->\n<!--[if
+        IE 9]><html class=\"no-js ie9\" lang=\"en\"><![endif]-->\n<!--[if gt IE 9]><!--><html
+        class=\"no-js\" lang=\"en\"><!--<![endif]-->\n\t<head>\n\t\t<meta charset=\"utf-8\"/>\n\t\t\n\t\t<meta
+        http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n\t\t\n\t\t<meta name=\"viewport\"
+        content=\"width=device-width\"/>\n\t\t<meta name=\"apple-mobile-web-app-capable\"
+        content=\"yes\"/>\n\t\t<meta name=\"description\" content=\"The Tournament
+        before the Castle of Pucelles; Unknown; about 1320&ndash;1340; Tempera colors,
+        gold paint, and silver and gold leaf on parchment; Leaf: 39.4 &times; 29.8
+        cm (15 1/2 &times; 11 3/4 in.); Ms. Ludwig XV 5 (83.MR.175), fol. 283v; J.
+        Paul Getty Museum, Los Angeles, California\"/>\n\t\t<meta name=\"keywords\"
+        content=\"Getty Museum collections, artworks, art works, art history, video,
+        interpretation of art, acquisitions, artists, Getty art, collections Getty,
+        collezioni Getty, colecciones Getty, Sammlung Getty, Getty exhibits, Getty
+        current exhibitions, Getty Museum exhibits, los angeles collections, antiquities,
+        decorative arts, sculpture, manuscripts, photography, paintings, drawings\"/>\n\t\t<meta
+        name=\"title\" content=\"The Tournament before the Castle of Pucelles\"/>\n\t\t<meta
+        name=\"name\" content=\"The Tournament before the Castle of Pucelles\"/>\n\t\t<meta
+        name=\"culture\" content=\"French\"/>\n\t\t<meta name=\"medium\" content=\"Tempera
+        colors, gold paint, and silver and gold leaf on parchment\"/>\n\t\t<meta name=\"date\"
+        content=\"about 1320&ndash;1340\"/>\n\t\t<meta name=\"dimensions\" content=\"Leaf:
+        39.4 &times; 29.8 cm (15 1/2 &times; 11 3/4 in.)\"/>\n\t\t<meta name=\"maker\"
+        content=\"Unknown\"/>\n\t\t<meta name=\"classification\" content=\"Manuscripts\"/>\n\t\t<meta
+        name=\"place_created\" content=\"Paris, France\"/>\n\t\t<meta name=\"object_type\"
+        content=\"Folio\"/>\n\t\t<meta name=\"object_number\" content=\"Ms. Ludwig
+        XV 5 (83.MR.175), fol. 283v\"/>\n\t\t<meta name=\"image\" content=\"http://media.getty.edu/museum/images/web/enlarge/00562901.jpg\"/>\n\t\t<meta
+        name=\"thumbimage\" content=\"http://media.getty.edu/museum/images/web/thumbnail/00562901.jpg\"/>\n\t\t<meta
+        name=\"open_content\" content=\"yes\"/>\n\t\t<meta name=\"department\" content=\"Manuscripts\"/>\n\t\t<meta
+        name=\"on_view\" content=\"no\"/>\n\t\t<meta name=\"robots\" content=\"index,follow\"/>\n\t\t\n\t\t<meta
+        property=\"og:title\" content=\"The Tournament before the Castle of Pucelles
+        (Getty Museum)\"/>\n\t\t<meta property=\"og:site_name\" content=\"The J. Paul
+        Getty in Los Angeles\"/>\n\t\t<meta property=\"og:type\" content=\"website\"/>\n\t\t<meta
+        property=\"og:image\" content=\"http://media.getty.edu/museum/images/web/enlarge/00562901.jpg\"/>\n\t\t\n\t\t<title>The
+        Tournament before the Castle of Pucelles (Getty Museum)</title>\n\n\t\t<link
+        rel=\"canonical\" href=\"http://www.getty.edu/art/collection/objects/4967/\"/>\n\t\t<link
+        rel=\"shortcut icon\" href=\"/global/r/images/getty_logo_favicon.ico\"/>\n\t\t<link
+        rel=\"apple-touch-icon img_src\" href=\"/global/r/images/getty_logo_favicon.png\"/>\n\t\t\n\t\t<!--\n\t\t/*
+        @license\n\t\t * MyFonts Webfont Build ID 2577370, 2013-06-10T18:14:07-0400\n\t\t
+        *\n\t\t * The fonts listed in this notice are subject to the End User License\n\t\t
+        * Agreement(s) entered into by the website owner. All other parties are\n\t\t
+        * explicitly restricted from using the Licensed Webfonts(s).\n\t\t *\n\t\t
+        * You may obtain a valid license at the URLs below.\n\t\t *\n\t\t * Webfont:
+        Humanist 531 by Bitstream\n\t\t * URL: http://www.myfonts.com/fonts/bitstream/humanist-531/humanist-531/\n\t\t
+        *\n\t\t * Webfont: Humanist 531 Bold by Bitstream\n\t\t * URL: http://www.myfonts.com/fonts/bitstream/humanist-531/bold/\n\t\t
+        *\n\t\t *\n\t\t * License: http://www.myfonts.com/viewlicense?type=web&buildid=2577370\n\t\t
+        * Webfonts copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.\n\t\t
+        *\n\t\t * © 2013 MyFonts Inc\n\t\t*/\n\t\t-->\n\t\t\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/normalize.css?1590028845\"/>\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/app.css?1590028845\"/>\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/helpers.css?1590028845\"/>\n\t\t<link rel=\"stylesheet\"
+        href=\"/global/r/css/art.css?1590028845\"/>\n\t\t<!--[if lte IE 9]>\n\t\t<link
+        rel=\"stylesheet\" href=\"/global/r/css/ie.css?1590028845\"/>\n\t\t<![endif]-->\n\t\t\n\t\t<script
+        type=\"text/javascript\">\n\t\t\t// resolves issue with /global/r/js/getty.functions.js
+        -> checkCarousel() -> $.getUrlVar() page hashes\n\t\t\t\n\t\t\tvar getQueryStringParameterByName
+        = function(name, url) {\n\t\t\t\tif(!url) {\n\t\t\t\t\turl = window.location.href;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\tname
+        = name.replace(/[\\[\\]]/g, '\\\\$&');\n\t\t\t\t\n\t\t\t\tvar regex = new
+        RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');\n\t\t\t\tvar results = regex.exec(url);\n\t\t\t\tif(!results)
+        {\n\t\t\t\t\treturn null;\n\t\t\t\t} else {\n\t\t\t\t\tif(!results[2]) {\n\t\t\t\t\t\treturn
+        '';\n\t\t\t\t\t} else {\n\t\t\t\t\t\treturn decodeURIComponent(results[2].replace(/\\+/g,
+        ' '));\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tvar artview = getQueryStringParameterByName('artview');\n\t\t\tif(!(typeof(artview)
+        == \"string\") || (artview.length === 0 || (artview.length > 0 && artview.substring(0,
+        1) == \"#\"))) {\n\t\t\t\tvar search = window.location.search.replace(/(&?artview=([^&#]*)|$)/,
+        \"\"); // remove invalid 'artview' parameter\n\t\t\t\t\n\t\t\t\tif(\"pushState\"
+        in window.history) {\n\t\t\t\t\twindow.history.pushState(\"\", document.title,
+        window.location.pathname + search);\n\t\t\t\t} else {\n\t\t\t\t\twindow.location
+        = window.location.pathname + search;\n\t\t\t\t}\n\t\t\t}\n\t\t</script>\n\t\t\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.getscripts.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/getty.set-sections.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/getty.get-includes.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\">\n\t\t\tgetty_header_script_array.push(\n\t\t\t\t\"/global/r/js/vendor/openseadragon.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.jplayer.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.fittext.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.cycle2.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.cycle2.swipe.min.js?1590028845\",\n\t\t\t\t\"/global/r/js/vendor/jquery.cycle2.carousel.js?1590028845\"\n\t\t\t);\n\t\t\t\n\t\t\tajax_header_scripts(getty_header_script_array);\n\t\t\t\n\t\t\t//
+        load the broadcast banner\n\t\t\t$(document).ready(function() {\n\t\t\t\t$.ajax({\n\t\t\t\t\ttype:
+        \"GET\",\n\t\t\t\t\turl: \"/global/r/html-includes/broadcast.html\",\n\t\t\t\t\tsuccess:
+        function(data) {\n\t\t\t\t\t\tif(data.length > 0) {\n\t\t\t\t\t\t\tvar $site_alert
+        = $('div#site-alert');\n\t\t\t\t\t\t\tif($site_alert instanceof jQuery) {\n\t\t\t\t\t\t\t\t$('#site-alert').html(data).removeClass('hide').css(\"display\",
+        \"block\");\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t});\n\t\t</script>\n\t\t\n\t\t<!--
+        Google Analytics start -->\n\t\t<script>\n\t\t\t(function(i, s, o, g, r, a,
+        m) {\n\t\t\t\ti['GoogleAnalyticsObject'] = r;\n\t\t\t\ti[r] = i[r] || function()
+        {\n\t\t\t\t\t(i[r].q = i[r].q || []).push(arguments)\n\t\t\t\t}, i[r].l =
+        1 * new Date();\n\t\t\t\ta = s.createElement(o),\n\t\t\t\tm = s.getElementsByTagName(o)[0];\n\t\t\t\ta.async
+        = 1;\n\t\t\t\ta.src   = g;\n\t\t\t\tm.parentNode.insertBefore(a, m)\n\t\t\t})(window,
+        document, 'script', '//www.google-analytics.com/analytics.js', 'ga');\n\t\t\t\n\t\t\tga('create',
+        \ 'UA-8087223-1', 'auto');\n\t\t\tga('require', 'linkid', 'linkid.js');\n\t\t\tga('send',
+        \   'pageview');\n\t\t</script>\n\t\t<!-- Google Analytics end -->\n\t\t\n\t\t<!--
+        Google Analytics: to handle pdfs, docs, xls start -->\n\t\t<script type=\"text/javascript\">\n\t\t\t$(document).ready(function()
+        {\n\t\t\t\t$(\"a[href$='pdf'], a[href$='rtf'], a[href$='doc'], a[href$='xls'],
+        a[href*='bit.ly']\").each(function(index) {\n\t\t\t\t\tvar pdfLabel   = $(this).attr('href');\n\t\t\t\t\tvar
+        pdfOnClick = \"ga('send', 'pageview','\" + pdfLabel + \"');\";\n\t\t\t\t\t$(this).attr(\"onClick\",
+        pdfOnClick);\n\t\t\t\t});\n\t\t\t});\n\t\t</script>\n\t\t<!-- Google Analytics:
+        to handle pdfs, docs, xls end  -->\n\t\t\n\t\t<!-- Google Analytics: to handle
+        outbound links -->\n\t\t<script type=\"text/javascript\">\n\t\t\tfunction
+        trackOutboundLink(link, category, action) {\n\t\t\t\ttry {\n\t\t\t\t\t_gaq.push(['_trackEvent',
+        category , action]);\n\t\t\t\t} catch(err) {\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\tsetTimeout(function()
+        {\n\t\t\t\t\tdocument.location.href = link.href;\n\t\t\t\t}, 100);\n\t\t\t}\n\t\t</script>\n\t\t<!--
+        Google Analytics: to handle outbound links end -->\n\t\t\n\t\t\t\t\n\t\t<link
+        rel=\"stylesheet\" href=\"/art/collection/static/stylesheets/styles.css?1590028845\"/>\n\t\t<link
+        rel=\"stylesheet\" href=\"/art/collection/objects/index.css?1590028845\"/>\n\t\t\n\t\t<style
+        type='text/css'>\n\t\t\t.frame {\n\t\t\t\t-ms-transform: scale(0.85);\n\t\t\t\t-moz-transform:
+        scale(0.85);\n\t\t\t\t-o-transform: scale(0.85);\n\t\t\t\t-webkit-transform:
+        scale(0.85);\n\t\t\t\ttransform: scale(0.85);\n\t\t\t\t\n\t\t\t\t-ms-transform-origin:
+        0 0;\n\t\t\t\t-moz-transform-origin: 0 0;\n\t\t\t\t-o-transform-origin: 0
+        0;\n\t\t\t\t-webkit-transform-origin: 0 0;\n\t\t\t\ttransform-origin: 0 0;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body
+        class=\"art\">\n\t\t<section id=\"mobile-panel-nav\" class=\"mobile-panel
+        show-for-medium-down hide-on-print\">\n\t\t\t<div id=\"mobile-panel-wrap\"
+        class=\"top-bar-section\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<a href=\"/\">Home</a><span
+        class=\"icon-remove icon-large close\"></span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        \ href=\"/visit/\">Visit</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a  href=\"/visit/center/\">The Getty
+        Center</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/center/plan/\">Plan a Visit</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/art.html\">Art</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/architecture.html\">Architecture</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/gardens.html\">Gardens</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/eat.html\">Eat</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/center/shop.html\">Shop</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        \ href=\"/visit/villa/\">The Getty Villa</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/villa/plan/\">Plan a Visit</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/villa/art.html\">Art</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/villa/architecture.html\">Architecture</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/villa/gardens.html\">Gardens</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/villa/eat.html\">Eat</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/villa/shop.html\">Shop</a></li>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"/visit/calendar/\">Calendar</a></li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"/visit/exhibitions/\">Exhibitions</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/exhibitions\">Current
+        Exhibitions</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/visit/exhibitions/future.html\">Future Exhibitions</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/visit/exhibitions/past.html\">Past
+        Exhibitions</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        class=\"active\" href=\"/museum/\">Museum</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li><a
+        href=\"/museum/exhibitions/\">Exhibitions</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a
+        class=\"active\" href=\"/art/collection/\">Collection</a></li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/education/\">Education</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/adult_learners/index.html\">Adult Learners</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/college/index.html\">College
+        Faculty and Students</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/teachers/index.html\">K-12 Teachers and Students</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/kids_families/index.html\">Kids
+        and Families</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/teens/index.html\">Teens</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/groups/index.html\">Community
+        Groups</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/education/museum_educators/index.html\">Museum Educators</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/education/about/index.html\">About
+        the Education Department</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"/museum/research/\">Research
+        and Conservation</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a
+        href=\"/museum/publications/\">Publications</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a href=\"/museum/programs/\">Public
+        Programs</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/museum/programs/courses/index.html\">Courses and Demonstrations</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/museum/programs/lectures/index.html\">Lectures
+        and Conversations</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/museum/programs/performances/index.html\">Performances and Films</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/museum/programs/talks/index.html\">Talks
+        and Tours</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/museum/programs/past.html\">Highlights of Past Programs</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"/museum/about.html\">About
+        the J. Paul Getty Museum</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/research/\">Research Institute</a>\n\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/exhibitions_events/\">Exhibitions &amp; Events</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/exhibitions_events/past_events.html\">Past
+        Events</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/exhibitions_events/past_exhibitions.html\">Past Exhibitions</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/special_collections/\">Special Collections</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/special_collections/notable/index.html\">Notable
+        Works &amp; Collections</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/special_collections/acquisitions.html\">New Acquisitions
+        &amp; Donations</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/special_collections/highlights/index.html\">Major Collecting
+        Areas</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/special_collections/institutional_archives/\">Institutional
+        Archives</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/library/\">Library</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/library/overview.html\">Library Overview</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/library/using/\">Using
+        The Library</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/library/faq.html\">Frequently Asked Questions</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/tools/\">Search Tools &amp; Databases</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"http://primo.getty.edu\">Library
+        Catalog</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/portal/index.html\">Getty Research Portal</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"http://archives2.getty.edu:8082/xtf/search?browse-creator=first;sort=creator\">Collection
+        Inventories &amp; Finding Aids</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/guides_bibliographies/\">Research Guides &amp; Bibliographies</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools/digital_collections/\">Digital
+        Collections</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/article_databases/\">Article &amp; Research Databases</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools/provenance/\">Collecting
+        &amp; Provenance Research</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/photo/\">Photo Archive</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools/bha/\">BHA
+        &amp; RILA</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/vocabularies/\">Getty Vocabularies</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/scholars/\">Scholars &amp; Projects</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/scholars/years/index.html\">Scholars
+        Program</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/scholars/research_projects/index.html\">Research Projects</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/publications/\">Publications</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/publications/all.html\">All Getty Research Institute Publications</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/publications/issues_debates/index.html\">Issues
+        &amp; Debates Series</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/publications/texts_documents/index.html\">Texts &amp; Documents
+        Series</a></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/publications/grj/\">Getty
+        Research Journal</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/publications/electronic_publications/\">Electronic Publications</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/research/institute/\">About the GRI</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/institute/development_partnerships/\">Development &amp; Partnerships</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/research/institute/staff.html\">Senior
+        Staff</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/institute/e_news/index.html\">GRI e-News</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/conservation/\">Conservation Institute</a>\n\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/about/\">About the Conservation Institute</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/mission.html\">Mission
+        &amp; Values</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/about/overview.html\">Overview of the Institute</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/org_chart.html\">Organizational
+        Chart</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/about/education/index.html\">Education Dept.</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/field_projects/index.html\">Field
+        Projects Dept.</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/about/science/index.html\">Science Dept.</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/about/contact.html\">Contact
+        Information</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/our_projects/index.html\">Our Projects</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/our_projects/current.html\">Current
+        Projects</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/our_projects/past.html\">Past Projects</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/core_areas/index.html\">Core Areas of Work</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/core_areas/buildings/index.html\">Buildings
+        &amp; Sites</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/core_areas/collections/index.html\">Collections</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/core_areas/education/index.html\">Education
+        &amp; Dissemination</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/publications_resources/\">Publications &amp; Resources</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"http://aata.getty.edu/\"
+        target=\"_blank\">AATA Online</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"http://gcibibs.getty.edu/asp/\" target=\"_blank\">Project Bibliographies
+        (searchable)</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/teaching/index.html\">Teaching
+        &amp; Learning Resources</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/pdf_publications/\">PDF Publications</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/books/index.html\"
+        target=\"_blank\">Books for Purchase</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/newsletters/\">Conservation Perspectives,
+        The GCI Newsletter</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/bulletin/index.html\">GCI e-Bulletin</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/videos/\">Multimedia
+        (videos &amp; slideshows)</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/reference_collection/index.html\">GCI
+        Reference Collection (for materials analysis)</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/lectures.html\">Lectures
+        &amp; Conferences</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/research_resources/infocenter.html\">Research
+        Assistance at GCI Information Center</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/research/tools/guides_bibliographies/conservation_collection/index.html\"
+        target=\"_blank\">Conservation Collection at GRI Library</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/publications_resources/research_resources/charters.html\">Links
+        to Cultural Heritage Policy Documents</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/publications_resources/research_resources/othersites.html\">Links
+        to Other Conservation Sites</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/conservation/search/options\">Search GCI</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/conservation/search/options\">Search
+        GCI</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/conservation/search/browse\">Browse GCI</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        \ href=\"/foundation/\">Foundation</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/initiatives/\">Our
+        Priorities</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/foundation/initiatives/current/\">Current Initiatives</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/foundation/initiatives/past/\">Past
+        Initiatives</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/apply/\">How
+        to Apply</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        \ href=\"/foundation/grants/\">Grants Awarded</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/news/\">News
+        and Resources</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a  href=\"/foundation/about/\">About
+        the Foundation</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/foundation/about/contact.html\">Contact Us</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/publications/\">Publications</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        href=\"/publications/books.html\">New &amp; Notable</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"/publications/virtuallibrary/index.html\">Virtual
+        Library</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        href=\"/publications/ordering_information.html\">Order</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a href=\"/publications/catalog_request.html\">Sales
+        Catalogs</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<a
+        href=\"/publications/about.html\">Contact</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t<a
+        \ href=\"/about/\">About the Getty</a>\n\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t<li><a
+        href=\"/about/mission.html\">Mission</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a href=\"/about/getty/index.html\">History</a>\n\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/getty/founder.html\">The
+        Founder and His Vision</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/getty/getty_evolves.html\">The Getty Evolves</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/about/governance/\">Governance</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<!--
+        <li><a href=\"/about/governance/mission_statement.html\">Mission Statement</a></li>
+        -->\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/indenture.html\">Trust
+        Indenture</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/bylaws.html\">Bylaws</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/trustees.html\">Board
+        of Trustees</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/committees.html\">Board Committees</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/officers.html\">Trust
+        Officers and Program Directors</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/policies.html\">Policies</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/finance.html\">Financial
+        Information</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/governance/trustreport/\">Trust Report</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/governance/caag_report.html\">California
+        Attorney General's Report</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t<a
+        href=\"/about/opportunities/\">Opportunities</a>\n\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"https://jobs-getty.icims.com/jobs/intro\">Jobs</a></li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a href=\"/about/opportunities/volunteer_opps.html\">Docents
+        &amp; Volunteers</a></li>\n\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/about/opportunities/intern_opps.html\">Internships &amp; Fellowships</a></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a href=\"http://news.getty.edu\">Press
+        Room</a></li>\n\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t<li><a
+        href=\"/about/contact_us.html\">Contact Us</a></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/global/connect.html\"
+        data-fancybox-type=\"iframe\">Connect with Us</a></li>\n\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t<li><a
+        href=\"http://shop.getty.edu/\">Shop</a></li>\n\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<label for=\"offcanvas-search-input\">Search</label>\n\t\t\t\t\t\t<form
+        action=\"/art/collection/search/\" method=\"POST\" name=\"offcanvas-search\"
+        id=\"m-search\" class=\"custom\">\n\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns\">\n\t\t\t\t\t\t\t\t\t<ul class=\"has-inputs\">\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"text\" id=\"offcanvas-search-input\" name=\"qt\" placeholder=\"Enter
+        Search Terms\">\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<label
+        for=\"mobile-search-all\" onclick=\"$('#m-search').attr('action', '//www.getty.edu/Search/SearchServlet')\"><input
+        type=\"radio\" name=\"mrgroup\" id=\"mobile-search-all\" value=\"all\" checked=\"yes\"><span
+        class=\"custom radio checked\"></span> All Getty</label>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<label
+        for=\"mobile-search-museum\" onclick=\"$('#m-search').attr('action', '/art/collection/search/')\"><input
+        type=\"radio\" name=\"mrgroup\" id=\"mobile-search-museum\" value=\"museum\"
+        checked=\"yes\"><span class=\"custom radio\"></span> Museum Collection</label>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t<label
+        for=\"mobile-search-conservation-institute\" onclick=\"$('#m-search').attr('action',
+        '//www.getty.edu/conservation/search/results')\"><input type=\"radio\" name=\"mrgroup\"
+        id=\"mobile-search-conservation-institute\" value=\"conservation-institute\"><span
+        class=\"custom radio\"></span> Conservation Institute</label>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t<p
+        class=\"truncate\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"submit\" value=\"Submit\"
+        class=\"button round small close\"> <input type=\"button\" class=\"button
+        small round close\" value=\"Close Menu\">\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</form>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<a href=\"//www.getty.edu/Search/\"><span
+        class=\"icon-angle-right pull-right\"></span>More Ways to Search</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</section>\n\t\t<div
+        id=\"wrapper\">\n\t\t\t<div id=\"site-alert\" class=\"essential\" style=\"display:none\">!</div>\n\t\t\t<div
+        class=\"row collapse hide-on-print\">\n\t\t\t\t<div class=\"small-12\">\n\t\t\t\t\t<!--
+        Global \"Top-Top\" Navigation -->\n\t\t\t\t\t<nav id=\"global-nav\" class=\"top-bar
+        off-canvas\">\n\t\t\t\t\t\t<ul class=\"top-bar-mobile show-for-medium-down\">\n\t\t\t\t\t\t\t<!--
+        Title Area -->\n\t\t\t\t\t\t\t<li class=\"name\">\n\t\t\t\t\t\t\t\t<a href=\"//www.getty.edu\"
+        class=\"icon-getty-logo icon-large\"></a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"section-title\"><h1><a href=\"/museum\">The J. Paul Getty Museum</a></h1></li>\n\t\t\t\t\t\t\t<li
+        id=\"toggle-offcanvas\"><span class=\"icon-reorder icon-large\"></span></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<section
+        class=\"top-bar-section show-for-large-up\">\n\t\t\t\t\t\t\t<!-- Left Nav
+        Section -->\n\t\t\t\t\t\t\t<ul class=\"left\">\n\t\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<label><a
+        href=\"//www.getty.edu/\">Explore the Getty</a></label>\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        \ href=\"//www.getty.edu/visit/\">Visit</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a class=\"active\" href=\"//www.getty.edu/museum/\">Museum</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/research/\">Research
+        Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/conservation/\">Conservation Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/foundation/\">Foundation</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/publications/\">Publications</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/about/\">About
+        the Getty</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!--
+        Search Nav Section -->\n\t\t\t\t\t\t\t<ul class=\"right\" id=\"advanced-search\">\n\t\t\t\t\t\t\t\t<li
+        class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<span class=\"adv-search\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"icon-adv-search\"></span>\n\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><label>Advanced
+        Search Options</label></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"/art/collection/search/\">Museum Collection</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"/research/tools\">Research
+        Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/conservation/search/options\">Conservation Institute</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/Search/\"><span
+        class=\"icon-angle-right right\"></span>More Ways to Search</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"has-form\">\n\t\t\t\t\t\t\t\t\t<form class=\"custom\" action=\"//www.getty.edu/Search/SearchServlet?la=en\"
+        method=\"get\" name=\"seek2\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\"
+        value=\"getty\" name=\"col\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\"
+        value=\"10\" name=\"nh\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row collapse\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"large-8 columns\">\n\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"search\"
+        name=\"qt\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"large-4
+        columns\">\n\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"button\" value=\"Search\"
+        class=\"button round\">\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!--
+        Right Nav Section -->\n\t\t\t\t\t\t\t<ul class=\"right\">\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<!-- <li><a href=\"http://blogs.getty.edu/iris\">The
+        Iris</a></li> -->\n\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/global/connect.html\"
+        class=\"fancybox\" data-fancybox-type=\"iframe\">Connect with Us</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"><span>&#124;</span></li>\n\t\t\t\t\t\t\t\t<li><a href=\"http://shop.getty.edu/\">Shop</a></li>\n\t\t\t\t\t\t\t\t<!--
+        <li class=\"divider\"><span class=\"hide-for-small\">&#124;</span></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"#\">Join</a></li> -->\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</section>\n\t\t\t\t\t</nav>\n\t\t\t\t\t<!--
+        End Global Navigation -->\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div
+        id=\"banner\" class=\"row collapse hide-on-print hide-for-medium-down\">\n\t\t\t\t<div
+        class=\"small-12 columns\">\n\t\t\t\t\t<h1>\n\t\t\t\t\t\t<a id=\"getty-logo\"
+        href=\"//www.getty.edu/\" title=\"The J. Paul Getty\"><span class=\"icon-getty-logo
+        pull-left\"></span></a>\n\t\t\t\t\t\t<a id=\"section-title\" href=\"//www.getty.edu/museum/\">The
+        J. Paul Getty Museum</a>\n\t\t\t\t\t</h1>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div
+        class=\"row hide-on-print hide-for-medium-down\" id=\"level2-nav\">\n\t\t\t\t<div
+        class=\"small-12\">\n\t\t\t\t\t<!-- Level 2 Nav -->\n\t\t\t\t\t<nav class=\"top-bar\">\n\t\t\t\t\t\t<section
+        class=\"top-bar-section\">\n\t\t\t\t\t\t\t<ul class=\"left\">\n\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/exhibitions/\">Exhibitions</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a class=\"active\" href=\"//www.getty.edu/art/collection\">Collection</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/education/\">Education</a>\n\t\t\t\t\t\t\t\t\t<ul class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/adult_learners/index.html\">Adult Learners</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/college/index.html\">College
+        Faculty and Students</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/teachers/index.html\">K-12 Teachers and Students</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/kids_families/index.html\">Kids
+        and Families</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/teens/index.html\">Teens</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/groups/index.html\">Community
+        Groups</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/museum_educators/index.html\">Museum Educators</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/education/about/index.html\">About
+        the Education Department</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/research/\">Research
+        and Conservation</a></li>\n\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/publications/\">Publications</a></li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li class=\"has-dropdown\">\n\t\t\t\t\t\t\t\t\t<a
+        href=\"//www.getty.edu/museum/programs/\">Public Programs</a>\n\t\t\t\t\t\t\t\t\t<ul
+        class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/programs/courses/index.html\">Courses
+        and Demonstrations</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/programs/lectures/index.html\">Lectures and
+        Conversations</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/programs/performances/index.html\">Performances
+        and Films</a></li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/museum/programs/talks/index.html\">Talks and Tours</a></li>\n\t\t\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/programs/past.html\">Highlights
+        of Past Programs</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"divider\"></li>\n\t\t\t\t\t\t\t\t<li><a href=\"//www.getty.edu/museum/about.html\">About
+        the J. Paul Getty Museum</a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</section>\n\t\t\t\t\t</nav>\n\t\t\t\t\t<!--
+        End Level 2 Nav -->\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div
+        class=\"small-12 columns\" id=\"main\">\n\t\t\t\t\t<div data-print-header>\n\t\t\t\t\t\t<img
+        src='/art/collection/static/images/getty.png' data-print-logo/>\n\t\t\t\t\t\t<div
+        data-print-name>The J. Paul Getty Museum</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t\t<!--
+        search-row -->\n\t\t\t\t\t<div id=\"l2-search-row\" class=\"row\">\n\t\t\t\t\t\t<ul
+        id=\"l2-search\" class=\"show-for-medium-up inline-list right\">\n\t\t\t\t\t\t\t<li
+        class=\"l2-search-sub\">\n\t\t\t\t\t\t\t\t<ul class=\"l2-search-list inline-list
+        left\">\n\t\t\t\t\t\t\t\t\t<li class=\"l2-search-box\">\n\t\t\t\t\t\t\t\t\t\t<form
+        class=\"l2-search-form\" action=\"/art/collection/search/\" method=\"GET\"
+        name=\"collectionsearch\">\n\t\t\t\t\t\t\t\t\t\t\t<input type=\"textbox\"
+        name=\"qt\" placeholder=\"Type here\" class=\"l2-search-input\"/>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"radio\" name=\"rgroup\" class=\"l2-search-radio\" id=\"collections-search\"
+        value=\"collections\" checked=\"yes\"/>\n\t\t\t\t\t\t\t\t\t\t\t<label for=\"collections-search\"
+        onclick=\"\" id=\"search-col-label\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span></span><em>Museum
+        Collection</em>\n\t\t\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"radio\" name=\"rgroup\" class=\"l2-search-radio\" id=\"video-gallery\"
+        value=\"video\"/>\n\t\t\t\t\t\t\t\t\t\t\t<label for=\"video-gallery\" onclick=\"\"
+        id=\"search-vid-label\" style=\"visibility:hidden;\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span></span><em>Video
+        Gallery</em>\n\t\t\t\t\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t<li
+        class=\"l2-search-collapse\"><span class=\"icon-remove\"></span></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li
+        class=\"l2-search-icon\"><span class=\"icon-search\"></span></li>\n\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t<span
+        class=\"l2-search-text\"><em>Collections Search</em></span>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!--
+        / search-row -->\n\t\t\t\t\t\n\t\t\t\t\t<!-- utilities-row -->\n\t\t\t\t\t<div
+        class=\"row\" id=\"utilities-row\">\n\t\t\t\t\t\t<!-- print, share -->\n\t\t\t\t\t\t<div
+        id=\"utility-display\" class=\"small-1 small-push-11 columns hide-on-print\">\n\t\t\t\t\t\t\t<span
+        class=\"icon-cog icon-border pull-right show-for-small\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        id=\"utilities\" class=\"medium-3 medium-push-9 small-11 small-pull-1 columns
+        hide-on-print\">\n\t\t\t\t\t\t\t<ul class=\"inline-list right\">\n\t\t\t\t\t\t\t\t<li
+        id=\"textsizer\" class=\"page-text-size\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><span
+        title=\"Small Text\" class=\"icon-font text-reduce\"></span></li>\n\t\t\t\t\t\t\t\t\t\t<li><span
+        title=\"Medium Text\" class=\"icon-font text-normal\"></span></li>\n\t\t\t\t\t\t\t\t\t\t<li><span
+        title=\"Large Text\" class=\"icon-font text-enlarge\"></span></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li
+        class=\"page-print\"><a href=\"JavaScript:xbrowse_print();\" title=\"Print\"><span
+        class=\"icon-print\"></span></a></li>\n\t\t\t\t\t\t\t\t<li class=\"page-feedback\"><a
+        href=\"//www.getty.edu/art/collection/feedback\" class=\"fancybox\" data-fancybox-type=\"iframe\"><span
+        class=\"icon-comment\" title=\"Feedback\"></span></a></li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"medium-9 medium-pull-3 small-11 small-pull-1 columns\">\n\t\t\t\t\t\t\t<h2>The
+        Tournament before the Castle of Pucelles</h2>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!--
+        / utilities-row -->\n\t\t\t\t\t\n\t\t\t\t\t<!-- center column (body content)
+        -->\n\t\t\t\t\t<div class=\"row\" id=\"content\">\n\t\t\t\t\t\t<div id=\"center-column\"
+        class=\"small-12 columns\">\n\t\t\t\t\t\t\t<!-- object-primary-image -->\n\t\t\t\t\t\t\t<section
+        id='object-primary-image' class='zoom-image-strata gallery-image-strata row'
+        data-clearance='DOWNLOAD' data-available='DOWNLOAD' data-display='ZOOM' data-object-copyright=''><div
+        class='small-12 columns'><figure id=\"zoom-image-display\" class=\"gallery-image-container
+        zoom-image-container\"><div id=\"object-image-print\" class=\"gallery-image-object\"><img
+        class=\"gallery-image\" src=\"http://media.getty.edu/museum/images/web/enlarge/00562901.jpg\"
+        alt=\"The Tournament before the Castle of Pucelles; Unknown; about 1320&ndash;1340;
+        Tempera colors, gold paint, and silver and gold leaf on parchment; Leaf: 39.4
+        &times; 29.8 cm (15 1/2 &times; 11 3/4 in.); Ms. Ludwig XV 5 (83.MR.175),
+        fol. 283v; Rights Statement: No Copyright - United States\" title=\"The Tournament
+        before the Castle of Pucelles; Unknown; about 1320&ndash;1340; Tempera colors,
+        gold paint, and silver and gold leaf on parchment; Leaf: 39.4 &times; 29.8
+        cm (15 1/2 &times; 11 3/4 in.); Ms. Ludwig XV 5 (83.MR.175), fol. 283v; Rights
+        Statement: No Copyright - United States\"/></div><div id=\"object-image-display\"
+        class=\"zoom-image-object gallery-image-object hide-on-print\" data-hash=\"f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b\"
+        data-dzi=\"{&quot;xmlns&quot;:&quot;http:\\/\\/schemas.microsoft.com\\/deepzoom\\/2008&quot;,&quot;Url&quot;:&quot;http:\\/\\/media.getty.edu\\/museum\\/images\\/web\\/zoom\\/00562901\\/00562901_files\\/&quot;,&quot;Format&quot;:&quot;jpg&quot;,&quot;Overlap&quot;:1,&quot;TileSize&quot;:254,&quot;Size&quot;:{&quot;Width&quot;:3233,&quot;Height&quot;:4324}}\"
+        data-fs=\"true\" data-download-url=\"http://media.getty.edu/museum/images/web/download/00562901.jpg\"
+        data-download-size=\"15.85 MB\"></div><figcaption class=\"gallery-image-caption\"><div
+        id='image-caption'></div><div id='image-copyright' class=''></div><div style='clear:both;'></div></figcaption></figure><ul
+        id='object-image-controls' class='image-controls inline-list hide-on-print
+        download-choices'><li id='zoom-zoom-in-container' class='hide-for-touch'><a
+        id='zoom-zoom-in'><span class='icon-zoomin'></span></a></li><li id='zoom-zoom-out-container'
+        class='hide-for-touch'><a id='zoom-zoom-out'><span class='icon-zoomout'></span></a></li><li
+        id='zoom-reset-container'><a id='zoom-reset'><span class='icon-repeat'></span></a></li><li
+        id='zoom-full-screen-container'><a id='zoom-full-screen'><span class='icon-expand'></span></a></li><li
+        id='download-open-content-container'><section id=\"download-open-content\"><ul
+        class='drop-down-sub-menu'><li><span class='icon-download'></span> <small
+        class='text-caps'>Download</small><ul id='download-open-content-size-choices'
+        data-download-url='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/download/00562901.jpg&id=4967&objnum=Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&medium=Tempera+colors%2C+gold+paint%2C+and+silver+and+gold+leaf+on+parchment&objmaker=Unknown&title=The+Tournament+before+the+Castle+of+Pucelles&objdim=Leaf%3A+39.4+%C3%97+29.8+cm+%2815+1%2F2+%C3%97+11+3%2F4+in.%29%2C+Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles%2C+Ms.+Ludwig+XV+5%2C+fol.+283v&objdate=about+1320%E2%80%931340&uoiid=f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b'
+        data-download-width='3233' data-download-height='4324' data-download-size='15.85
+        MB' data-larger-url='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/larger/00562901.jpg&id=4967&objnum=Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&medium=Tempera+colors%2C+gold+paint%2C+and+silver+and+gold+leaf+on+parchment&objmaker=Unknown&title=The+Tournament+before+the+Castle+of+Pucelles&objdim=Leaf%3A+39.4+%C3%97+29.8+cm+%2815+1%2F2+%C3%97+11+3%2F4+in.%29%2C+Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles%2C+Ms.+Ludwig+XV+5%2C+fol.+283v&objdate=about+1320%E2%80%931340&uoiid=f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b'
+        data-larger-width='2243' data-larger-height='3000' data-larger-size='3.07
+        MB' data-enlarge-url='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/enlarge/00562901.jpg&id=4967&objnum=Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&medium=Tempera+colors%2C+gold+paint%2C+and+silver+and+gold+leaf+on+parchment&objmaker=Unknown&title=The+Tournament+before+the+Castle+of+Pucelles&objdim=Leaf%3A+39.4+%C3%97+29.8+cm+%2815+1%2F2+%C3%97+11+3%2F4+in.%29%2C+Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles%2C+Ms.+Ludwig+XV+5%2C+fol.+283v&objdate=about+1320%E2%80%931340&uoiid=f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b'
+        data-enlarge-width='766' data-enlarge-height='1024' data-enlarge-size='421.56
+        KB'><li><a href='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/enlarge/00562901.jpg&id=4967&objnum=Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&medium=Tempera+colors%2C+gold+paint%2C+and+silver+and+gold+leaf+on+parchment&objmaker=Unknown&title=The+Tournament+before+the+Castle+of+Pucelles&objdim=Leaf%3A+39.4+%C3%97+29.8+cm+%2815+1%2F2+%C3%97+11+3%2F4+in.%29%2C+Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles%2C+Ms.+Ludwig+XV+5%2C+fol.+283v&objdate=about+1320%E2%80%931340&uoiid=f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b'
+        target='_blank' class=\"fancybox\" data-fancybox-type=\"iframe\"><small class='text-caps'>Presentation/Study
+        Size (766 x 1024 px • 421.56 KB)</small></a></li><li><a href='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/larger/00562901.jpg&id=4967&objnum=Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&medium=Tempera+colors%2C+gold+paint%2C+and+silver+and+gold+leaf+on+parchment&objmaker=Unknown&title=The+Tournament+before+the+Castle+of+Pucelles&objdim=Leaf%3A+39.4+%C3%97+29.8+cm+%2815+1%2F2+%C3%97+11+3%2F4+in.%29%2C+Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles%2C+Ms.+Ludwig+XV+5%2C+fol.+283v&objdate=about+1320%E2%80%931340&uoiid=f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b'
+        target='_blank' class=\"fancybox\" data-fancybox-type=\"iframe\"><small class='text-caps'>Print
+        Resolution Size (2243 x 3000 px • 3.07 MB)</small></a></li><li><a href='//www.getty.edu/art/collection/downloadform?dlimgurl=//media.getty.edu/museum/images/web/download/00562901.jpg&id=4967&objnum=Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&medium=Tempera+colors%2C+gold+paint%2C+and+silver+and+gold+leaf+on+parchment&objmaker=Unknown&title=The+Tournament+before+the+Castle+of+Pucelles&objdim=Leaf%3A+39.4+%C3%97+29.8+cm+%2815+1%2F2+%C3%97+11+3%2F4+in.%29%2C+Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&creditline=The+J.+Paul+Getty+Museum%2C+Los+Angeles%2C+Ms.+Ludwig+XV+5%2C+fol.+283v&objdate=about+1320%E2%80%931340&uoiid=f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b'
+        target='_blank' class=\"fancybox\" data-fancybox-type=\"iframe\"><small class='text-caps'>Highest
+        Resolution Size (3233 x 4324 px • 15.85 MB)</small></a></li></ul></li></ul></section></li><li
+        id=\"download-available-message\"><p class=\"credits\" style='font-style:italic;margin-left:10px;'>This
+        image is available for download, without charge, under the Getty's <a rel='nofollow'
+        href='//www.getty.edu/about/opencontent.html' style='padding:0;' class='sitelink'
+        target='_blank'>Open Content Program</a>.</p></li><li id=\"order-image-container\"
+        style='display:none;'><a id=\"order-image\" rel=\"nofollow\" href=\"//www.getty.edu/legal/image_request/license.html?t=The+Tournament+before+the+Castle+of+Pucelles&a=Unknown&o=Ms.+Ludwig+XV+5+%2883.MR.175%29%2C+fol.+283v&uoiid=f7fb8e2f535ab7a06b75ee6b5a37de837a4b5b5b\"
+        target=\"_blank\" title=\"Order this image\" class=\"fancybox\" data-fancybox-type=\"iframe\"><span
+        class=\"icon-cart\"></span>&nbsp;<small class=\"text-caps\">(Order this image)</small></a></li><li
+        class='hide-for-touch' style='float:right;'><span id='iiif_logo'><a target='_blank'
+        href='http://www.getty.edu/art/collection/static/viewers/mirador/?manifest=https://data.getty.edu/museum/api/iiif/4967/manifest.json'><img
+        class='iiif' src='/art/collection/static/images/IIIF.png' alt='IIIF Manifest'
+        title='Open this object record in Mirador by clicking on this icon or by dragging
+        this icon into an open IIIF viewer window'></a></span><li><li class=\"pull-right
+        gallery-image-caption\"><p><strong>The Tournament before the Castle of Pucelles</strong></p><p
+        id='image-caption'><span><a href=\"//www.getty.edu/art/collection/artists/0/unknown/\">Unknown</a></span>&nbsp;<span>Leaf:
+        39.4 × 29.8 cm (15 1/2 × 11 3/4 in.)</span>&nbsp;<span>Ms. Ludwig XV 5 (83.MR.175),
+        fol. 283v</span></p></li></ul><div style='clear:both;'></div><p id=\"download-mobile-size-warning\"
+        class=\"essential show-for-touch alert credits\"><span class=\"icon-exclamation-sign\"></span>
+        Open Content images tend to be large in file-size. To avoid potential data
+        charges from your carrier, we recommend making sure your device is connected
+        to a Wi-Fi network before downloading.</p><p class=\"text-center\" style='clear:both;'><strong>Not
+        currently on view</strong></p></div></section>\t\t\t\t\t\t\t<!-- /object-primary-image
+        -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!-- object-alternate-images -->\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<!--
+        /object-alternate-images -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!-- object details
+        section -->\n\t\t\t\t\t\t\t<section id=\"object-details\" class=\"row\">\n\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns textsizer-wrap tile-header-solid\">\n\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\t<h4>Object
+        Details</h4>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns textsizer-wrap tile-bg-40 tile\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"row collapse\">\n\t\t\t\t\t\t\t\t\t\t<section class=\"object-details-primary
+        clearfix details-list\">\n\t\t\t\t\t\t\t\t\t\t\t<div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Title:</h6></div><div
+        class='medium-9 large-9 columns'><p>The Tournament before the Castle of Pucelles</p></div></div><div
+        class='clearfix'><div class='medium-3 large-3 columns'><h6 class='subheader'>Artist/Maker:</h6></div><div
+        class='medium-9 large-9 columns'><p class='multiple makers'>Unknown</p></div></div><div
+        class='clearfix'><div class='medium-3 large-3 columns'><h6 class='subheader'>Culture:</h6></div><div
+        class='medium-9 large-9 columns'><p>French</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Place:</h6></div><div
+        class='medium-9 large-9 columns'><p class='multiple places'>Paris, France
+        (Place Created)</p></div></div><div class='clearfix'><div class='medium-3
+        large-3 columns'><h6 class='subheader'>Date:</h6></div><div class='medium-9
+        large-9 columns'><p>about 1320–1340</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Medium:</h6></div><div
+        class='medium-9 large-9 columns'><p>Tempera colors, gold paint, and silver
+        and gold leaf on parchment</p></div></div><div class='clearfix'><div class='medium-3
+        large-3 columns'><h6 class='subheader'>Object Number:</h6></div><div class='medium-9
+        large-9 columns'><p>Ms. Ludwig XV 5 (83.MR.175), fol. 283v</p></div></div><div
+        class='clearfix'><div class='medium-3 large-3 columns'><h6 class='subheader'>Dimensions:</h6></div><div
+        class='medium-9 large-9 columns'><p>Leaf: 39.4 × 29.8 cm (15 1/2 × 11 3/4
+        in.)</p></div></div></section><section class='object-details-misc clearfix
+        details-list show-for-print' style='display:none;'><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Alternate Title:</h6></div><div
+        class='medium-9 large-9 columns'><p class='multiple titles'>Roman du Bon Chevalier
+        Tristan, Fils au Bon Roy Meliadus de Leonois (Group Title)</p></div></div><div
+        class='clearfix'><div class='medium-3 large-3 columns'><h6 class='subheader'>Department:</h6></div><div
+        class='medium-9 large-9 columns'><p>Manuscripts</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Classification:</h6></div><div
+        class='medium-9 large-9 columns'><p>Manuscripts</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Object Type:</h6></div><div
+        class='medium-9 large-9 columns'><p>Folio</p></div></div><div class='clearfix'><div
+        class='medium-3 large-3 columns'><h6 class='subheader'>Alternate Numbers:</h6></div><div
+        class='medium-9 large-9 columns'><p class='multiple numbers'>83.MR.175.283v
+        (Object Number)</p><p class='multiple numbers'>Ms. Ludwig XV 5, fol. 283v
+        (Manuscript Number)</p></div></div>\t\t\t\t\t\t\t\t\t\t</section>\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"small-12 columns detail-misc-toggle hide-for-print\">\n\t\t\t\t\t\t\t\t\t\t\t<p
+        class=\"toggle-more truncate\"><span>See more <span class=\"icon-angle-down\"></span></span></p>\n\t\t\t\t\t\t\t\t\t\t\t<p
+        class=\"toggle-less hide truncate\"><span>See less <span class=\"icon-angle-up\"></span></span></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</section>\n\t\t\t\t\t\t\t<!--
+        /object details section -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!-- tabs -->\n\t\t\t\t\t\t\t<section
+        id=\"object-extras\" class=\"row\">\n\t\t\t\t\t\t\t\t<div class=\"small-12
+        columns\">\n\t\t\t\t\t\t\t\t\t<div class=\"section-container tabs\" data-section=\"tabs\">\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<section
+        id='object-section-related-objects'><h5 class='title' data-section-title><a
+        href='#object-section-related-objects-content'><span class='icon-stack pull-right
+        show-for-small'><span class='icon-sign-blank icon-base icon-stroke'></span><span
+        class='icon-plus-sign2 icon-light'></span></span>Related Works</a></h5><div
+        class='section-content textsizer-wrap show-for-print' data-slug='object-section-related-objects-content'
+        data-section-content=''><h5 data-print-title>Related Works</h5><div class='row'><div
+        class='small-6 columns'><p id='viewing-totals-related-objects' class='viewing-totals'>&nbsp;</p></div><div
+        class='small-6 columns noselect'><ul id='pagination-related-objects' class='pagination-goto
+        inline-list pull-right' data-record-id='4967' data-resource='artifact' data-page-offset='1'
+        data-page-limit='12' data-page-last='0'><li><span id='pagination-related-objects-previous'
+        class='icon-caret-left icon-large icon-muted'></span></li><li><label for='pager-related-objects'>Go
+        to page:</label>&nbsp;</li><li><form name='pager' method='post'><input type='number'
+        name='pg' id='pager-related-objects' class='pager-input truncate' placeholder='0'
+        pattern='[0-9]+'/></form></li><li><label for='pager-related-objects'>&nbsp;of&nbsp;<span
+        class='pager-related-objects-total'>0</span></label></li><li><span id='pagination-related-objects-next'
+        class='icon-caret-right icon-large icon-muted'></span></li></ul></div></div><div
+        id='pagination-related-objects-content' style='position:relative;'></div></div></section>\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</section>\n\t\t\t\t\t\t\t<!--
+        end of tabs -->\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<hr/>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<aside
+        id=\"collection-changing-data-warning\" class=\"credits\">\n\t\t\t\t\t\t\t\t<p>This
+        information is published from the Museum's collection database. Updates and
+        additions stemming from research and imaging activities are ongoing, with
+        new content added each week. <a href=\"//www.getty.edu/art/collection/feedback\"
+        class=\"fancybox\" data-fancybox-type=\"iframe\"><span style=\"white-space:
+        nowrap;\"><span class=\"icon-comment\"></span>&nbsp;Help</span> us improve
+        our records by sharing your corrections or suggestions.</a></p>\n\t\t\t\t\t\t\t\t<p
+        data-cc-footer><span style='margin-right:6px;float:left;'><a rel=\"license\"
+        href=\"http://creativecommons.org/licenses/by/4.0/\"><img alt=\"Creative Commons
+        License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by/4.0/80x15.png\"
+        /></a></span> <span xmlns:dct=\"http://purl.org/dc/terms/\" href=\"http://purl.org/dc/dcmitype/Text\"
+        property=\"dct:title\" rel=\"dct:type\">The text on this page is licensed
+        under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\">Creative
+        Commons Attribution 4.0 International License</a>, unless otherwise noted.
+        Images and other media are excluded.</span></p><p data-iiif-footer><span id='iiif_logo'
+        style='margin-top:4px;margin-right:6px;float:left;'><a href='http://iiif.io'
+        target='_blank' title='Learn more about IIIF'><img class='iiif' src='/art/collection/static/images/IIIF.png'
+        alt='IIIF'/></a></span>The content on this page is available according to
+        the <a href='http://iiif.io' target='_blank'>International Image Interoperability
+        Framework (IIIF)</a> specifications. You may view this object in <a href='http://www.projectmirador.org'
+        target='_blank'>Mirador</a> – a IIIF-compatible viewer – by clicking on the
+        IIIF icon below the main image, or by dragging the icon into an open IIIF
+        viewer window.</p>\t\t\t\t\t\t\t</aside>\n\t\t\t\t\t\t</div><!-- /#center-column
+        (body content) -->\n\t\t\t\t\t</div><!-- /.row #content -->\n\t\t\t\t</div><!--
+        /#main -->\n\t\t\t</div><!-- /.row -->\n\t\t</div><!-- /#wrapper -->\n\t\t\n\t\t<!--
+        Footer -->\n\t\t<footer id=\"footer\" class=\"row\">\n\t\t<!-- Bug, Copyright,
+        Terms of Use, Contact, begin, to display above toolbar on medium down -->\n\t\t\t<div
+        class=\"footer-copy small-12 medium-6 large-12 columns show-for-medium-down
+        hide-on-print\">\n\t\t\t\t<span class=\"icon-getty-logo-r\"></span>\n\t\t\t\t<span>The
+        J. Paul Getty Trust</span>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>&copy; J. Paul Getty
+        Trust</li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/legal/privacy.html\">Privacy Policy</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/legal/copyright.html\">Terms
+        of Use</a></li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/about/contact_us.html\">Contact Us</a></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--
+        Bug, Copyright, Terms of Use, Contact, end -->\n\t\t\t\n\t\t\t<!-- Begin Toolbar
+        -->\n\t\t\t<div id=\"footer-programs\" class=\"small-12 medium-6 large-12
+        columns hide-on-print\">\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/visit/calendar/\">Event
+        Calendar</a></li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/education/\">Museum Education</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/research/library/\">Library</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/subscribe/index.html\">e-Newsletters</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"http://news.getty.edu\">Press
+        Room</a></li>\n\t\t\t\t\t<!-- <li class=\"hide-for-medium-down\">&#124;</li>
+        -->\n\t\t\t\t\t<!-- <li><a href=\"//www.getty.edu/global/connect_with_us/index.html\"
+        class=\"fancybox\" data-fancybox-type=\"iframe\" data-fancybox-height=\"600\"
+        data-fancybox-width=\"680\">Connect with Us</a></li> -->\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--
+        End Toolbar -->\n\t\t\t\n\t\t\t<!-- Bug, Copyright, Terms of Use, Contact,
+        begin, to display below toolbar on large up-->\n\t\t\t<div class=\"footer-copy
+        small-12 medium-6 large-12 columns hide-for-medium-down hide-on-print\">\n\t\t\t\t<span
+        class=\"icon-getty-logo-r\"></span>\n\t\t\t\t<span>The J. Paul Getty Trust</span>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>&copy;
+        J. Paul Getty Trust</li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/legal/privacy.html\">Privacy Policy</a></li>\n\t\t\t\t\t<li
+        class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a href=\"//www.getty.edu/legal/copyright.html\">Terms
+        of Use</a></li>\n\t\t\t\t\t<li class=\"hide-for-medium-down\">&#124;</li>\n\t\t\t\t\t<li><a
+        href=\"//www.getty.edu/about/contact_us.html\">Contact Us</a></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<!--
+        Bug, Copyright, Terms of Use, Contact, end -->\n\t\t\t\n\t\t\t<div class=\"row
+        print-only footer-copy\">\n\t\t\t\t<span class=\"icon-getty-logo-r\"></span>\n\t\t\t\t<span>The
+        J. Paul Getty Trust</span>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>&copy; J. Paul Getty
+        Trust</li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</footer>\n\t\t\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.cookie.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.textresizer.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.alerts.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.abide.js?1590028845\"></script>\n\t\t<!--
+        script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.clearing.js?1590028845\"></script
+        -->\n\t\t<script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.cookie.js?1590028845\"></script>\n\t\t<!--
+        script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.dropdown.js?1590028845\"></script
+        -->\n\t\t<script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.forms.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.interchange.js?1590028845\"></script>\n\t\t<!--
+        script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.joyride.js?1590028845\"></script
+        -->\n\t\t<!-- script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.magellan.js?1590028845\"></script
+        -->\n\t\t<script type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.placeholder.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.reveal.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.section.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.tooltips.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/foundation/foundation.topbar.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.mousewheel.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/global/r/js/vendor/jquery.mCustomScrollbar.concat.min.js?1590028845\"></script>\n\t\t\n\t\t<script
+        type=\"text/javascript\" src=\"/art/collection/objects/index.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/art/collection/static/scripts/related_objects.js?1590028845\"></script>\n\t\t<script
+        type=\"text/javascript\" src=\"/art/collection/static/scripts/fixes/feedback.js?1590028845\"></script>\n\t\t\n\t\t\t</body>\n</html>"
+  recorded_at: 2020-07-27 21:44:38 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

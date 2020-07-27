@@ -1,0 +1,308 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://data.techno-science.ca/api/util/status
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Mon, 27 Jul 2020 22:21:10 GMT
+      server: Apache/2.2.29 (Amazon)
+      pragma: no-cache
+      cache-control: no-cache
+      access-control-allow-origin: '*'
+      access-control-allow-methods: POST, PUT, GET, DELETE, OPTIONS
+      access-control-allow-headers: X-CKAN-API-KEY, Authorization, Content-Type
+      content-length: '446'
+      connection: close
+      content-type: application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"ckan_version": "2.2", "site_url": "http://data.techno-science.ca",
+        "site_description": "CSTMC Open Data Portal", "site_title": "Open Data Portal
+        for the Canada Science and Technology Museums Corporation", "error_emails_to":
+        "alerts@thinkdataworks.com", "locale_default": "en", "extensions": ["tdw_theme",
+        "stats", "recline_preview", "pdf_preview", "resource_proxy", "hideorgs", "multilingual_dataset",
+        "multilingual_group", "multilingual_tag"]}'
+  recorded_at: 2020-07-27 22:21:11 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://data.techno-science.ca/api/3/action/package_search?q=%2A%3A%2A&rows=2&facet=false
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Content-Type: application/json
+      X-CKAN-API-Key: 705dc6d4-1f67-4825-9e12-b5cfdcc68f4e
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Mon, 27 Jul 2020 22:21:10 GMT
+      server: Apache/2.2.29 (Amazon)
+      pragma: no-cache
+      cache-control: no-cache
+      access-control-allow-origin: '*'
+      access-control-allow-methods: POST, PUT, GET, DELETE, OPTIONS
+      access-control-allow-headers: X-CKAN-API-KEY, Authorization, Content-Type
+      content-length: '20624'
+      connection: close
+      content-type: application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"help": "\n    Searches for packages satisfying a given search criteria.\n\n    This
+        action accepts solr search query parameters (details below), and\n    returns
+        a dictionary of results, including dictized datasets that match\n    the search
+        criteria, a search count and also facet information.\n\n    **Solr Parameters:**\n\n    For
+        more in depth treatment of each paramter, please read the `Solr\n    Documentation
+        <http://wiki.apache.org/solr/CommonQueryParameters>`_.\n\n    This action
+        accepts a *subset* of solr''s search query parameters:\n\n\n    :param q:
+        the solr query.  Optional.  Default: `\"*:*\"`\n    :type q: string\n    :param
+        fq: any filter queries to apply.  Note: `+site_id:{ckan_site_id}`\n        is
+        added to this string prior to the query being executed.\n    :type fq: string\n    :param
+        sort: sorting of the search results.  Optional.  Default:\n        ''relevance
+        asc, metadata_modified desc''.  As per the solr\n        documentation, this
+        is a comma-separated string of field names and\n        sort-orderings.\n    :type
+        sort: string\n    :param rows: the number of matching rows to return.\n    :type
+        rows: int\n    :param start: the offset in the complete result for where the
+        set of\n        returned datasets should begin.\n    :type start: int\n    :param
+        facet: whether to enable faceted results.  Default: \"true\".\n    :type facet:
+        string\n    :param facet.mincount: the minimum counts for facet fields should
+        be\n        included in the results.\n    :type facet.mincount: int\n    :param
+        facet.limit: the maximum number of values the facet fields return.\n        A
+        negative value means unlimited. This can be set instance-wide with\n        the
+        :ref:`search.facets.limit` config option. Default is 50.\n    :type facet.limit:
+        int\n    :param facet.field: the fields to facet upon.  Default empty.  If
+        empty,\n        then the returned facet information is empty.\n    :type facet.field:
+        list of strings\n\n\n    The following advanced Solr parameters are supported
+        as well. Note that\n    some of these are only available on particular Solr
+        versions. See Solr''s\n    `dismax`_ and `edismax`_ documentation for further
+        details on them:\n\n    ``qf``, ``wt``, ``bf``, ``boost``, ``tie``, ``defType``,
+        ``mm``\n\n\n    .. _dismax: http://wiki.apache.org/solr/DisMaxQParserPlugin\n    ..
+        _edismax: http://wiki.apache.org/solr/ExtendedDisMax\n\n\n    **Results:**\n\n    The
+        result of this action is a dict with the following keys:\n\n    :rtype: A
+        dictionary with the following keys\n    :param count: the number of results
+        found.  Note, this is the total number\n        of results found, not the
+        total number of results returned (which is\n        affected by limit and
+        row parameters used in the input).\n    :type count: int\n    :param results:
+        ordered list of datasets matching the query, where the\n        ordering defined
+        by the sort parameter used in the query.\n    :type results: list of dictized
+        datasets.\n    :param facets: DEPRECATED.  Aggregated information about facet
+        counts.\n    :type facets: DEPRECATED dict\n    :param search_facets: aggregated
+        information about facet counts.  The outer\n        dict is keyed by the facet
+        field name (as used in the search query).\n        Each entry of the outer
+        dict is itself a dict, with a \"title\" key, and\n        an \"items\" key.  The
+        \"items\" key''s value is a list of dicts, each with\n        \"count\", \"display_name\"
+        and \"name\" entries.  The display_name is a\n        form of the name that
+        can be used in titles.\n    :type search_facets: nested dict of dicts.\n    :param
+        use_default_schema: use default package schema instead of\n        a custom
+        schema defined with an IDatasetForm plugin (default: False)\n    :type use_default_schema:
+        bool\n\n    An example result: ::\n\n     {''count'': 2,\n      ''results'':
+        [ { <snip> }, { <snip> }],\n      ''search_facets'': {u''tags'': {''items'':
+        [{''count'': 1,\n                                             ''display_name'':
+        u''tolstoy'',\n                                             ''name'': u''tolstoy''},\n                                            {''count'':
+        2,\n                                             ''display_name'': u''russian'',\n                                             ''name'':
+        u''russian''}\n                                           ]\n                                 }\n                       }\n     }\n\n    **Limitations:**\n\n    The
+        full solr query language is not exposed, including.\n\n    fl\n        The
+        parameter that controls which fields are returned in the solr\n        query
+        cannot be changed.  CKAN always returns the matched datasets as\n        dictionary
+        objects.\n    ", "success": true, "result": {"count": 36, "sort": "score desc,
+        metadata_modified desc", "facets": {}, "results": [{"license_title": "Open
+        Government Licence - Canada", "maintainer": "", "relationships_as_object":
+        [], "private": false, "maintainer_email": "", "revision_timestamp": "2014-10-28T21:27:57.475091",
+        "id": "99f457c9-ea24-48a1-87be-b52385825b6a", "metadata_created": "2014-10-24T17:39:06.411039",
+        "metadata_modified": "2016-06-14T21:31:27.983485", "author": "", "author_email":
+        "", "state": "active", "version": "", "creator_user_id": "27778230-2e90-4818-9f00-bbf778c8fa09",
+        "type": "dataset", "resources": [{"resource_group_id": "6869e3d9-5dfe-47bc-9ee7-e057ce0f13da",
+        "cache_last_updated": null, "revision_timestamp": "2016-06-14T19:59:16.022814",
+        "webstore_last_updated": null, "id": "9aeafc88-ced0-4383-a8c4-ba13014ea171",
+        "size": null, "state": "active", "hash": "", "description": "XML Dataset",
+        "format": "XML", "tracking_summary": {"total": 3, "recent": 1}, "last_modified":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Artifact
+        Data - All Artifacts (XML)", "created": "2014-10-27T20:28:37.884642", "url":
+        "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/artifacts-all-en.xml",
+        "webstore_url": null, "mimetype_inner": null, "position": 0, "revision_id":
+        "d1434af9-ac4e-4cdd-9288-d9a103dce889", "resource_type": null}, {"resource_group_id":
+        "6869e3d9-5dfe-47bc-9ee7-e057ce0f13da", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-03T18:06:16.533032", "webstore_last_updated": null, "id": "fd0579c6-2d11-446c-825e-b90b837b643c",
+        "size": null, "state": "active", "hash": "", "description": "Data dictionary
+        for CSTMC artifact datasets.", "format": "XLS", "tracking_summary": {"total":
+        15, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Data Dictonary", "created": "2014-11-03T18:06:16.610871",
+        "url": "http://source.techno-science.ca/datasets-donn%C3%A9es/artifacts-artefacts/cstmc-artifact-data-dictionary-dictionnaire-de-donnees-artefacts-smstc.xls",
+        "webstore_url": null, "mimetype_inner": null, "position": 1, "revision_id":
+        "64b1dd62-bbc2-4302-83a0-67ec66b03e53", "resource_type": null}, {"resource_group_id":
+        "6869e3d9-5dfe-47bc-9ee7-e057ce0f13da", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T18:39:52.229126", "webstore_last_updated": null, "id": "8ddbbf02-32d8-4f89-b7bb-33a9b8d78fca",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        3, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (English)", "created": "2014-11-04T19:08:26.824237",
+        "url": "http://techno-science.ca/en/open-data/tips-using-artifact-open-data-set.php",
+        "webstore_url": null, "mimetype_inner": null, "position": 2, "revision_id":
+        "b8ed5e54-1153-4039-8044-3a4356d7931f", "resource_type": null}, {"resource_group_id":
+        "6869e3d9-5dfe-47bc-9ee7-e057ce0f13da", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T18:41:27.296672", "webstore_last_updated": null, "id": "558bd887-304d-449e-a179-47d4fb66a6cb",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        2, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (French)", "created": "2014-11-05T18:41:27.372541",
+        "url": "http://techno-science.ca/fr/donnees-ouvertes/conseils-donnees-ouvertes-artefacts.php",
+        "webstore_url": null, "mimetype_inner": null, "position": 3, "revision_id":
+        "fcc5ea5a-7f7e-4a6c-b3b3-201bdccb1fd5", "resource_type": null}, {"resource_group_id":
+        "6869e3d9-5dfe-47bc-9ee7-e057ce0f13da", "cache_last_updated": null, "revision_timestamp":
+        "2016-06-14T20:00:42.660517", "webstore_last_updated": null, "id": "3af18946-c1fa-4ca0-8e70-af0c2c0ccc80",
+        "size": null, "state": "active", "hash": "", "description": "Jeux de donn\u00e9es
+        XML", "format": "XML", "tracking_summary": {"total": 0, "recent": 0}, "last_modified":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Donn\u00e9es
+        d''artefact - Tout les artefacts (XML)", "created": "2016-06-14T20:00:42.739013",
+        "url": "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/artifacts-all-fr.xml",
+        "webstore_url": null, "mimetype_inner": null, "position": 4, "revision_id":
+        "c93bbb72-6a15-4633-badc-5433fdb61a57", "resource_type": null}, {"resource_group_id":
+        "6869e3d9-5dfe-47bc-9ee7-e057ce0f13da", "cache_last_updated": null, "revision_timestamp":
+        "2016-06-14T21:31:27.982837", "webstore_last_updated": null, "id": "ae066085-d710-463d-99d2-19efd3c7fe19",
+        "size": null, "state": "active", "hash": "", "description": "Artifact Data
+        - All Artifacts (CSV)", "format": "CSV", "tracking_summary": {"total": 5,
+        "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null, "cache_url":
+        null, "name": "Artifact Data - All Artifacts (CSV)", "created": "2016-06-14T21:23:11.411081",
+        "url": "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/csv/cstmc-CSV-en.csv",
+        "webstore_url": null, "mimetype_inner": null, "position": 5, "revision_id":
+        "e2d9463d-e97c-48f5-a816-7fe26ee60dcd", "resource_type": null}, {"resource_group_id":
+        "6869e3d9-5dfe-47bc-9ee7-e057ce0f13da", "cache_last_updated": null, "revision_timestamp":
+        "2016-06-14T21:30:26.277583", "webstore_last_updated": null, "id": "15d537cd-d9a6-4340-81b0-c56ed2df76ef",
+        "size": null, "state": "active", "hash": "", "description": "Jeux de donn\u00e9es
+        CSV", "format": "CSV", "tracking_summary": {"total": 0, "recent": 0}, "last_modified":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Donn\u00e9es
+        d''artefact - Tout les artefacts (CSV)", "created": "2016-06-14T21:30:26.357464",
+        "url": "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/csv/cstmc-CSV-fr.csv",
+        "webstore_url": null, "mimetype_inner": null, "position": 6, "revision_id":
+        "9d846213-1389-4dab-bfe5-77dd3256995a", "resource_type": null}], "num_resources":
+        7, "tags": [{"vocabulary_id": null, "display_name": "Agriculture", "name":
+        "Agriculture", "revision_timestamp": "2014-10-24T17:39:06.411039", "state":
+        "active", "id": "03893cfe-2a84-4c7d-92d9-54de94f6280d"}, {"vocabulary_id":
+        null, "display_name": "Alimentation", "name": "Alimentation", "revision_timestamp":
+        "2014-10-24T17:39:06.411039", "state": "active", "id": "3fe9f8ac-921f-4642-87d8-231f452f9774"},
+        {"vocabulary_id": null, "display_name": "Aviation", "name": "Aviation", "revision_timestamp":
+        "2014-10-24T17:39:06.411039", "state": "active", "id": "cc1db2db-b08b-4888-897f-a17eade2461b"},
+        {"vocabulary_id": null, "display_name": "Espace", "name": "Espace", "revision_timestamp":
+        "2014-10-24T17:39:06.411039", "state": "active", "id": "74aeec8a-41da-4d6c-89a6-e9e45c3e67e3"},
+        {"vocabulary_id": null, "display_name": "Food", "name": "Food", "revision_timestamp":
+        "2014-10-24T17:39:06.411039", "state": "active", "id": "bfa7565b-e004-4da2-bef9-e660b8ebfab9"},
+        {"vocabulary_id": null, "display_name": "Science", "name": "Science", "revision_timestamp":
+        "2014-10-24T17:39:06.411039", "state": "active", "id": "9decac90-041f-400a-bcd8-6e49761de244"},
+        {"vocabulary_id": null, "display_name": "Space", "name": "Space", "revision_timestamp":
+        "2014-10-24T17:39:06.411039", "state": "active", "id": "5af74206-a7f8-4fa6-9820-7db9405891af"},
+        {"vocabulary_id": null, "display_name": "Technologie", "name": "Technologie",
+        "revision_timestamp": "2014-10-24T17:39:06.411039", "state": "active", "id":
+        "893f6388-d920-4fea-a6cf-7d2e3d64963e"}, {"vocabulary_id": null, "display_name":
+        "Technology", "name": "Technology", "revision_timestamp": "2014-10-24T17:39:06.411039",
+        "state": "active", "id": "b1cae94d-2480-4038-bd5f-6f9422409fae"}], "tracking_summary":
+        {"total": 932, "recent": 6}, "groups": [{"display_name": "Everything", "description":
+        "", "image_display_url": "http://data.techno-science.ca/uploads/group/20141024-162448.0656596everything.jpg",
+        "title": "Everything", "id": "d7dd233e-a1cc-43da-8152-f7ed15d26756", "name":
+        "everything"}], "license_id": "ca-ogl-lgo", "relationships_as_subject": [],
+        "num_tags": 9, "organization": {"description": "", "created": "2014-10-24T14:49:36.878579",
+        "title": "CSTMC", "name": "cstmc", "revision_timestamp": "2014-10-24T14:49:36.813670",
+        "is_organization": true, "state": "active", "image_url": "", "revision_id":
+        "7a325a56-46f1-419c-b7b2-ec7501edb35a", "type": "organization", "id": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57",
+        "approval_status": "approved"}, "name": "cstmc-smstc-artifacts-artefact",
+        "isopen": false, "url": "", "notes": "This dataset includes all artifacts
+        in the collection of the Canada Agriculture and Food Museum, the Canada Aviation
+        and Space Museum, and the Canada Science and Technology Museum.  These artifacts
+        represent the products and processes of all areas of science and technology,
+        including communications; non-renewable resources and industrial design; physical
+        sciences and medicine; renewable resources, including agriculture and forestry;
+        and transportation including land, marine, aviation and Space flight. The
+        data set is currently available in XML. The data set also includes images
+        for almost every artifact in the collection. Subsets are also provided, based
+        on subject group.", "owner_org": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57", "extras":
+        [], "license_url": "http://data.gc.ca/eng/open-government-licence-canada",
+        "title": "Artifact Data - All Artifacts", "revision_id": "1b2b447d-b4b3-4669-8d2d-b7cc66571718"},
+        {"license_title": "Open Government Licence - Canada", "maintainer": "", "relationships_as_object":
+        [], "private": false, "maintainer_email": "", "revision_timestamp": "2014-10-28T20:40:55.803602",
+        "id": "443cb020-f2ae-48b1-be67-90df1abd298e", "metadata_created": "2014-10-28T20:39:23.561940",
+        "metadata_modified": "2016-06-14T18:59:17.786219", "author": "", "author_email":
+        "", "state": "active", "version": "", "creator_user_id": "27778230-2e90-4818-9f00-bbf778c8fa09",
+        "type": "dataset", "resources": [{"resource_group_id": "aa9de49e-db0b-42f9-83dc-38464f6066ad",
+        "cache_last_updated": null, "revision_timestamp": "2016-06-14T18:53:55.201070",
+        "webstore_last_updated": null, "id": "21cd9577-3e39-4596-bdab-20b74b3d9da3",
+        "size": null, "state": "active", "hash": "", "description": "XML Dataset",
+        "format": "XML", "tracking_summary": {"total": 0, "recent": 0}, "last_modified":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Artifact
+        Data - Location - Canada Aviation and Space Museum (XML)", "created": "2014-10-28T20:40:53.112508",
+        "url": "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/locations-emplacements/artifacts-casm-artefacts-maec-en.xml",
+        "webstore_url": null, "mimetype_inner": null, "position": 0, "revision_id":
+        "d17b3666-6757-4b90-a9d4-3cfd56066de0", "resource_type": null}, {"resource_group_id":
+        "aa9de49e-db0b-42f9-83dc-38464f6066ad", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-04T03:12:35.317249", "webstore_last_updated": null, "id": "f75d6e9a-90a1-4b71-903e-a0f653ba84ac",
+        "size": null, "state": "active", "hash": "", "description": "Data dictionary
+        for CSTMC artifact datasets.", "format": "XLS", "tracking_summary": {"total":
+        15, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Data Dictionary", "created": "2014-11-04T03:12:35.358995",
+        "url": "http://source.techno-science.ca/datasets-donn%C3%A9es/artifacts-artefacts/cstmc-artifact-data-dictionary-dictionnaire-de-donnees-artefacts-smstc.xls",
+        "webstore_url": null, "mimetype_inner": null, "position": 1, "revision_id":
+        "dbd1763a-cbc9-4152-b436-2bff24905d11", "resource_type": null}, {"resource_group_id":
+        "aa9de49e-db0b-42f9-83dc-38464f6066ad", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T21:53:33.722479", "webstore_last_updated": null, "id": "368004ea-6895-4c42-a23d-fe43eabe933e",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        3, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (English)", "created": "2014-11-04T17:57:02.105590",
+        "url": "http://techno-science.ca/en/open-data/tips-using-artifact-open-data-set.php",
+        "webstore_url": null, "mimetype_inner": null, "position": 2, "revision_id":
+        "45aef8c3-aa4e-4222-a124-02fa73f1aafe", "resource_type": null}, {"resource_group_id":
+        "aa9de49e-db0b-42f9-83dc-38464f6066ad", "cache_last_updated": null, "revision_timestamp":
+        "2014-11-05T21:54:39.145752", "webstore_last_updated": null, "id": "7e7883be-f495-49b4-a962-b2a51f3ae284",
+        "size": null, "state": "active", "hash": "", "description": "Tips for using
+        the artifacts datasets.", "format": ".php", "tracking_summary": {"total":
+        2, "recent": 1}, "last_modified": null, "url_type": null, "mimetype": null,
+        "cache_url": null, "name": "Tips (French)", "created": "2014-11-05T21:54:39.187223",
+        "url": "http://techno-science.ca/fr/donnees-ouvertes/conseils-donnees-ouvertes-artefacts.php",
+        "webstore_url": null, "mimetype_inner": null, "position": 3, "revision_id":
+        "a39f7f2e-685c-4007-b5d9-a1a45f28b470", "resource_type": null}, {"resource_group_id":
+        "aa9de49e-db0b-42f9-83dc-38464f6066ad", "cache_last_updated": null, "revision_timestamp":
+        "2016-06-14T18:59:17.785513", "webstore_last_updated": null, "id": "d0de9101-6de3-4e0d-aaca-551ad8d4c3e0",
+        "size": null, "state": "active", "hash": "", "description": "Jeux de donn\u00e9es
+        XML", "format": "XML", "tracking_summary": {"total": 0, "recent": 0}, "last_modified":
+        null, "url_type": null, "mimetype": null, "cache_url": null, "name": "Jeux
+        de donn\u00e9es XML - Emplacements - Mus\u00e9e de l''aviation et de l''espace
+        du Canada", "created": "2016-06-14T18:59:17.835739", "url": "http://source.techno-science.ca/datasets-donnees/artifacts-artefacts/locations-emplacements/artifacts-casm-artefacts-maec-fr.xml",
+        "webstore_url": null, "mimetype_inner": null, "position": 4, "revision_id":
+        "6f99982f-8560-4e87-af97-91115a6f2ca4", "resource_type": null}], "num_resources":
+        5, "tags": [{"vocabulary_id": null, "display_name": "Canada Aviation and Space
+        Museum", "name": "Canada Aviation and Space Museum", "revision_timestamp":
+        "2014-10-28T20:39:23.561940", "state": "active", "id": "8d05a650-bc7b-4b89-bcc8-c10177e60119"},
+        {"vocabulary_id": null, "display_name": "Location", "name": "Location", "revision_timestamp":
+        "2014-10-28T20:39:23.561940", "state": "active", "id": "da88c5a2-3766-41ea-a75b-9c87047cc528"}],
+        "tracking_summary": {"total": 406, "recent": 2}, "groups": [{"display_name":
+        "Location", "description": "", "image_display_url": "http://data.techno-science.ca/uploads/group/20141024-162528.8786547location.jpg",
+        "title": "Location", "id": "770fc9c0-d4f3-48b0-a4ee-e00c6882df1d", "name":
+        "location"}], "license_id": "ca-ogl-lgo", "relationships_as_subject": [],
+        "num_tags": 2, "organization": {"description": "", "created": "2014-10-24T14:49:36.878579",
+        "title": "CSTMC", "name": "cstmc", "revision_timestamp": "2014-10-24T14:49:36.813670",
+        "is_organization": true, "state": "active", "image_url": "", "revision_id":
+        "7a325a56-46f1-419c-b7b2-ec7501edb35a", "type": "organization", "id": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57",
+        "approval_status": "approved"}, "name": "artifact-data-location-canada-aviation-and-space-museum",
+        "isopen": false, "url": "", "notes": "This dataset includes artifacts in the
+        collection of the Canada Science and Technology Museums Corporation that are
+        currently in the Canada Aviation and Space Museum.", "owner_org": "fafa260d-e2bf-46cd-9c35-34c1dfa46c57",
+        "extras": [], "license_url": "http://data.gc.ca/eng/open-government-licence-canada",
+        "title": "Artifact Data - Location - Canada Aviation and Space Museum", "revision_id":
+        "9ae00285-63ee-4b66-a28a-a382bcabcfad"}], "search_facets": {}}}'
+  recorded_at: 2020-07-27 22:21:11 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

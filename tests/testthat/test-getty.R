@@ -3,8 +3,13 @@ context("getty")
 test_that("getty works", {
   skip_on_cran()
 
-  aa <- getty(138860)
-  bb <- lapply(c(138860, 4967), getty)
+  vcr::use_cassette("getty", {
+    aa <- getty(138860)
+  })
+
+  vcr::use_cassette("getty_many", {
+    bb <- lapply(c(138860, 4967), getty)
+  })
 
   expect_is(aa, "getty")
   expect_is(aa$name, "character")
@@ -29,5 +34,5 @@ test_that("getty fails well", {
   # no input
   expect_error(getty(), "argument \"id\" is missing")
   # not found
-  expect_error(getty("afafdaf"), class = "http_404")
+  expect_error(getty("afafdaf"))
 })

@@ -1,0 +1,701 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://searchcollection.asianart.org/view/objects/asitem/nid/17150
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.71.1 r-curl/4.3 crul/0.9.4.91
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      server: Apache-Coyote/1.1
+      set-cookie: JSESSIONID=9832E9636A32D1BCAC68DF7F6CFC2C9F; Path=/; HttpOnly
+      content-encoding: gzip
+      content-type: text/html;charset=UTF-8
+      transfer-encoding: chunked
+      date: Mon, 27 Jul 2020 21:55:25 GMT
+    body:
+      encoding: UTF-8
+      file: no
+      string: "<!DOCTYPE html><html><head><script src=\"/assets/42558097f36916cb/tap-jquery/tapestry.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/jquery_core/jquery-1.6.2.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.ui.core.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.ui.position.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.ui.widget.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.effects.core.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.effects.highlight.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/tapestry-jquery.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/core/tapestry-messages.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/validation.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/emuseum/components/emuseum.js\"
+        type=\"text/javascript\"></script><link type=\"text/css\" rel=\"stylesheet\"
+        href=\"/assets/42558097f36916cb/core/default.css\"></link><link type=\"text/css\"
+        rel=\"stylesheet\" href=\"/assets/42558097f36916cb/jquery/themes/ui-lightness/jquery-ui-1.8.15.custom.css\"></link><link
+        type=\"text/css\" rel=\"stylesheet\" href=\"/assets/42558097f36916cb/jquery/form.css\"></link><!--
+        Show version, revision and timestamp only for snapshot versions (which ends
+        with -SNAPSHOT)  --><title>Asian Art Museum Online Collection</title><meta
+        content=\"eMuseum\" name=\"description\"></meta><meta content=\"\" name=\"keywords\"></meta><meta
+        content=\"width=device-width, initial-scale=1\" name=\"viewport\"></meta><link
+        href=\"http://www.google.com/s2/favicons?domain=www.asianart.org\" rel=\"icon\"></link><link
+        type=\"text/css\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Rufina:400,700\"></link><link
+        type=\"text/css\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Playfair+Display:400italic\"></link><link
+        href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\"
+        rel=\"stylesheet\"></link><script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js\"></script><script
+        src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js\"></script><script
+        src=\"https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js\"></script><link
+        href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css\"
+        rel=\"stylesheet\"></link><link media=\"print\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/slick.css\"
+        rel=\"stylesheet\"></link><link media=\"print\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/print.css\"
+        rel=\"stylesheet\"></link><link media=\"screen\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/styles.css\"
+        rel=\"stylesheet\"></link><link media=\"screen\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/aa-icon.css\"
+        rel=\"stylesheet\"></link><script type=\"text/javascript\" src=\"/assets/42558097f36916cb/emuseum/components/js/slick.js\"></script><script
+        type=\"text/javascript\" src=\"/assets/42558097f36916cb/emuseum/components/js/bootstrap-tabcollapse.js\"></script><script
+        type=\"text/javascript\" src=\"/assets/42558097f36916cb/emuseum/components/js/script.js\"></script><meta
+        content=\"Apache Tapestry Framework (version 5.2.6)\" name=\"generator\"></meta></head><body
+        onload=\"Emuseum.setFocus('view/objects/AsItem');\" class=\"emuseum\"><!--Header
+        Area--><header><nav class=\"navbar navbar-default\" id=\"main-nav\"><div id=\"header-container\"
+        class=\"container\"><!-- Brand and toggle get grouped for better mobile display
+        --><div class=\"navbar-header\"><button aria-expanded=\"false\" data-target=\"#aa-navbar-collapse-1\"
+        data-toggle=\"collapse\" class=\"navbar-toggle collapsed\" type=\"button\"><span
+        class=\"sr-only\">Toggle navigation</span><i class=\"aa-icon aa-icon-hamburger\"></i></button><a
+        href=\"http://www.asianart.org/\" class=\"hidden-md hidden-lg\" id=\"logo-mobile\"><img
+        alt=\"Asian Art Museum Logo\" src=\"/assets/42558097f36916cb/emuseum/components/images/mobile_logo.png\"/></a></div><a
+        href=\"http://www.asianart.org/\" class=\"visible-md visible-lg\" id=\"logo-desktop\"><img
+        alt=\"Asian Art Museum Logo\" src=\"/assets/42558097f36916cb/emuseum/components/images/desktop_logo.png\"/></a><!--
+        Collect the nav links, forms, and other content for toggling --><div id=\"aa-navbar-collapse-1\"
+        class=\"collapse navbar-collapse\"><ul class=\"nav navbar-nav navbar-right\"><li><a
+        href=\"http://www.asianart.org/visit/visit\">Visit</a></li><li><a href=\"http://www.asianart.org/events_index/events\">Events</a></li><li><a
+        href=\"http://www.asianart.org/exhibitions_index/exhibitions\">Exhibitions</a></li><li><a
+        href=\"http://www.asianart.org/collections/collection\">Collections</a></li><li><a
+        href=\"http://education.asianart.org/\">Education</a></li><li><a href=\"http://www.asianart.org/get_involved/get-involved\">Join
+        &amp; Give</a></li><li><a href=\"http://www.asianart.org/about/about\">About</a></li><!--
+        \ Dropdown menu item example\n\t\t\t        <li class=\"dropdown\">\n\t\t\t
+        \         <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"
+        role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span
+        class=\"caret\"></span></a>\n\t\t\t          <ul class=\"dropdown-menu\">\n\t\t\t
+        \           <li><a href=\"#\">Action</a></li>\n\t\t\t            <li><a href=\"#\">Another
+        action</a></li>\n\t\t\t            <li><a href=\"#\">Something else here</a></li>\n\t\t\t
+        \           <li role=\"separator\" class=\"divider\"></li>\n\t\t\t            <li><a
+        href=\"#\">Separated link</a></li>\n\t\t\t          </ul>\n\t\t\t        </li>
+        --></ul></div><!-- /.navbar-collapse --></div><!-- /.container --></nav><!--
+        Hero Header Image --><div class=\"container-fluid hero-img\"><span class=\"hero-gradient\"></span><span
+        class=\"hero-title\"><h1>Online Collection</h1></span></div></header><!--
+        \ eMuseum Menu and breadcrumbs section --><div class=\"container\"><div class=\"row\"><div
+        id=\"breadcrumbs\" class=\"col-md-6 hidden-xs hidden-sm body1\"><span></span></div><div
+        class=\"col-md-6\"><!-- eMuseum Menu --><nav class=\"emuseum-nav text2\"><ul><span
+        class=\"navigation\"><!-- objects.ViewCollections --><li><a accesskey=\"c\"
+        href=\"/objects/viewcollections/highlights;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><span>Browse
+        <strong>C</strong>ollection</span></a></li><!-- search.Advanced --><li><a
+        href=\"/search/advanced/objects;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><span>Advanced
+        Search</span></a></li></span><!-- Login/Logout Links --><li class=\"hidden\"><a
+        accesskey=\"g\" href=\"/login;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\">Si<strong>g</strong>n
+        on</a></li><!--  Search Tips Dialog Trigger --><li><a data-target=\"#search-tips\"
+        data-toggle=\"modal\">Search Tips</a></li></ul></nav></div></div><!-- Modal
+        Search Tips --><!-- Modal --><div aria-labelledby=\"search-tips-dialog\" role=\"dialog\"
+        tabindex=\"-1\" id=\"search-tips\" class=\"modal fade\"><div class=\"vertical-alignment-helper\"><div
+        role=\"document\" class=\"modal-dialog vertical-align-center\"><div class=\"modal-content\"><div
+        class=\"modal-header\"><div aria-label=\"Close\" data-dismiss=\"modal\" class=\"close\"><span
+        aria-hidden=\"true\"><i class=\"aa-icon aa-icon-close-box\"></i></span></div></div><div
+        class=\"modal-body\"><h4 class=\"modal-title h4\">SEARCH TIPS</h4><ul class=\"body1\"><li>\nUse
+        \"Start your search …\" to quickly find objects by keyword. Acceptable search
+        terms include artists' names or terms such as <em>India</em>, <em>flower</em>,
+        or <em>bodhisattva</em>.\n</li><li>\nYou can enter several keyword terms at
+        once. For example, if you want to find Buddha images from China, you can enter
+        <em>Buddha China</em>. Such searches will call up those objects that have
+        either term in their entries. To only call up those objects with both terms
+        in their entries, enclose the search terms in quotes by entering \"<em>Buddha
+        China</em>.\"\n</li><li>\nYou can refine your results by applying filters,
+        located on the left sidebar. Expand the filter list by clicking on the plus
+        sign, and click on any filter value to apply it to the current search results.
+        To remove a filter, click on the filter name shown beneath \"Results.\"\n</li><li>\nUse
+        the Advanced Search form to search for objects by title, credit line, materials,
+        object type, object number, artist, date made, period, place of origin, exhibition
+        history, or subject.\n</li><li>\nYou can widen a keyword search to include
+        the full text of object labels by checking \"Search all Fields\" on the advanced
+        search form.\n</li><li>\nThe * (asterisk) can be used as a wild card in searches.
+        For example, <em>child*</em> will find both child and children, and <em>198*</em>
+        will find any date in the 1980s.\n</li><li>\nBe aware that search results
+        might include objects not currently on display at the museum. To limit your
+        results to only objects currently on view, check the box for \"Only display
+        objects on view.\"\n</li><li>\nMore objects are added regularly, and the information
+        is continuously reviewed and updated.\n</li></ul></div></div></div></div></div></div><!--
+        \ Page Title and Search Section --><div class=\"container title-section\"><div
+        class=\"row\"><div class=\"col-md-6 title-section-left\"><h1 id=\"page-title\">Collections</h1><!--
+        variable page title here --></div><div class=\"col-md-6 title-section-right
+        text3\"><div id=\"qs-form\"><form accept-charset=\"UTF-8\" action=\"/view/objects/asitem.layout.quicksearchform.searchform;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        method=\"post\" id=\"searchForm\"><div class=\"t-invisible\"><input value=\"nid/0\"
+        name=\"t:ac\" type=\"hidden\"></input><input value=\"c6e005b4-9b17-4d4c-ab71-6287d9823015\"
+        name=\"t:state:flow\" type=\"hidden\"></input><input value=\"H4sIAAAAAAAAAKWQsUrEQBCGx4BykE6wsNd2o+iJaGMQhIMgQrCWzWYut+dmN7c7udw1Vr6EjU9wWOkTXGHnO/gANhZWFia55kAQDruZn2G+j3/2AevVMRyNJVaBSYYoyAWh6xHmJ4pPTUlsVEpx65BbMegbmy/vzkLX2IzxgosBMuIFOrLTLhPGopIJS7hDFiZ1yAVdSFTpToxUFrvXc/996/Xbg7UIfGE0WaMueY4Em9GQj3mguM6CmKzU2emkIPCXsP8SDlcVvrJGoHNxmeTSOWn0/Ck97H89vnkAk6I6gP0VXFzzhWqNsz81hMkLo1GTYy2Xfls8xJ/bL8/35x54EXSEkvV1Lx3BXVspKszroKm0jZoKNxZwgs5iuNn7ASDZdDz+AQAA\"
+        name=\"t:formdata\" type=\"hidden\"></input></div><label class=\"hidden\"
+        for=\"quicksearch\" id=\"qsheader\" accesskey=\"q\">\nQuick Search\n<a style=\"margin-left:0.9em\"
+        accesskey=\"L\" onkeypress=\"return Emuseum.onkeypressExecuteOnclick(event,
+        this);\" onclick=\"return Emuseum.openPopup('/listsearchfields;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015');\"
+        target=\"_blank\" href=\"/listsearchfields;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><STRONG>?</STRONG></a></label><input
+        placeholder=\"Start your search...\" id=\"quicksearch\" name=\"quicksearch\"
+        type=\"text\"></input><input alt=\"Search\" value=\"►\" class=\"butgo\" id=\"submit\"
+        name=\"submit_0\" type=\"submit\"></input><i class=\"aa-icon aa-icon-search\"></i></form></div></div></div><hr
+        class=\"divider-thick\"/></div><!--  eMuseum Contents --><div class=\"container\"
+        id=\"mainbody\"><body class=\"emuseum\" id=\"detail-view\"><!-- detail type
+        pagination goes here --><div><div src=\"../../../../preview/navigation.jpg\"
+        class=\"pagenav\"><span class=\"page current-page\">1</span><div class=\"detailNav\"><h4
+        class=\"result-count\">1 of 1 Results</h4></div></div></div><hr class=\"divider-dotted\"/><!--
+        \ logo for print purposes only --><a href=\"#\" class=\"visible-print-block\"
+        id=\"logo-print\"><img alt=\"Asian Art Museum Logo\" src=\"/assets/42558097f36916cb/emuseum/components/images/desktop_logo.png\"/></a><div
+        class=\"reportsController\"></div><!-- \"Advanced search\" form --><!-- \"Simple/Quick
+        search\" form --><!-- 'you may also be interested in...' links block --><!--
+        Main cycle that displays allowed blocks --><div class=\"elementsView\"><div
+        class=\"hidden\"><div class=\"switchViews\"><div class=\"aa-label text1\">\nGrid/List
+        View\n</div><span class=\"disabled hidden\">view lightbox</span><!-- t:actionlink
+        t:id=\"asImages\">${message:switchviews.asimages}</t:actionlink --><span class=\"disabled
+        hidden\">view list</span><span class=\"aa-icon aa-icon-detail activeview\"></span><span
+        class=\"nolink hidden\">view single item</span></div></div><div class=\"row\"><form
+        action=\"/view/objects/asitem.viewform;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        method=\"post\" id=\"viewForm\"><div class=\"t-invisible\"><input value=\"nid/0\"
+        name=\"t:ac\" type=\"hidden\"></input><input value=\"c6e005b4-9b17-4d4c-ab71-6287d9823015\"
+        name=\"t:state:flow\" type=\"hidden\"></input><input value=\"H4sIAAAAAAAAAL2Wv2tUQRDHN9FEzOEPUmhroZhT8i4mRkQR0Yg/4FTwJGCjzO2bezd3+3bX3bm7HIKVhYW9tWCnqW3FLrXiX2AriNoK7ouCCCnuBfZVj2W+w+d9d2dn5+1XMTM6LepDwlHDtHso2Teu+FuM+QWP0ugU3Ng6LOKJMsZ6JxLjsgQsyC4mDBY9u/FqIo1DRe3wza3RqNknzaA/vvzdduo3jry5PC3Eho3LWnm/8Ozmys9NUQHr7P++TooTO7FSZCDl28rI/u44q4t3tz7XxZOtyJwzD75s/ui8+/iqNOdOKc69EA+hFgPjdWfyVrFK1xQFyTqoAS6+/PDpuTj2a1pMNUVN/guwmG/2YAgNBTprtNiRzi5uWBaHrKM8nOdt6KO7Smbin38snobyn9hqIZ9jUUvRU6aByejIqBkmVhjbj0dH6O9XgDrQC3Wi0WMVsFo/VBboKlDznnKrcK1LVZk7yg5SKkoQVIXY/RmazIHtjiODZi2asKOjU2Jhp7y/yz+i7cRHS0XmVNmEPWUTJrey2+5C3ioYXwv9Mf4eOzJpZMpeDXl0JzmmNMhjd2PP4+g3bC6lHLUPF9vHJsnw8BI3Q/OI7gktOA6+ODLpoFTgPXVIVvI8kx7q2OPGrNHrQR+Zsk8OFA9ctEooO46eWzr87fzD1y8ubY+jvwEzMNADpwwAAA==\"
+        name=\"t:formdata\" type=\"hidden\"></input></div><div class=\"col-lg-12\"></div><div
+        class=\"col-md-6 col-md-push-6\" id=\"singlemedia\"><div class=\"primary-container\"><a
+        data-target=\"#image-detail\" data-toggle=\"modal\" href=\"#\"><img src=\"/internal/media/dispatcher/6077/resize:format=preview;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        height=\"670\" width=\"670\"/><!-- <span class=\"enlarge-icon\"><i class=\"aa-icon
+        aa-icon-expand\"></i></span> --></a></div><!--<t:if test=\"false\">--><div
+        class=\"extramedia emuseum-slider\"></div><!--</t:if>--></div><div class=\"col-md-6
+        col-md-pull-6\"><div class=\"text3\" id=\"singledata\" src=\"../../../../preview/asItem_details.jpg\"><!--
+        Don't display on detail page --><div class=\"body5 as-item-title\">Boys sumo
+        wrestling</div><!-- Artist-given title must be in italics! --><div class=\"unicode-title\">\n鈴木春信
+        相撲遊び\n</div><div class=\"related\"><div class=\"paragraph\"><span class=\"label\">Artist:
+        </span>Suzuki Harunobu (Japanese, 1725 - 1770)</div></div><div class=\"paragraph\"><span
+        class=\"label\">Date: </span>approx. 1769\n</div><div class=\"paragraph\"><div><span
+        class=\"label\">Object Name: </span>Woodblock print (nishiki-e)</div></div><div
+        class=\"paragraph\"><div><span class=\"label\">Materials: </span>Ink and colors
+        on paper</div></div><div class=\"paragraph\"><div><span class=\"label\">Dimensions:
+        </span>H. 12 5/8 in x W. 5 3/4 in, H. 32.1 cm x W. 14.6 cm (hosōban)</div></div><div
+        class=\"paragraph\"><span class=\"label\">Credit Line: </span><em>Gift of
+        the Grabhorn Ukiyo-e Collection</em></div><div class=\"paragraph\"><span class=\"label\">Department:
+        </span>Japanese Art\n</div><div class=\"paragraph\"><span class=\"label\">Collection:
+        </span>Prints And Drawings\n</div><div class=\"paragraph\"><div><span class=\"label\">Object
+        Number: </span>2005.100.35</div></div><div class=\"paragraph\"><span class=\"label\">On
+        Display: </span>\nNo\n</div></div><!-- Permalink for print purposes only --><div
+        class=\"permalink-print visible-print-block margin-20\"><em>Permalink:http://asianart.emuseum.com/view/objects/asitem/items$0040:17150</em></div><div
+        class=\"my-collection-notes\"></div><div class=\"sharing-tools\"><a onClick=\"window.print();\"
+        href=\"#\"><span title=\"Print\" class=\"aa-icon aa-icon-print\"></span></a><a
+        title=\"Share by Email\" href=\"mailto:?subject=Asian Art Museum Object&amp;body=Artwork
+        from Asian Art Museum: http://asianart.emuseum.com/view/objects/asitem/items$0040:17150\"><span
+        title=\"Share by email\" class=\"aa-icon aa-icon-mail\"></span></a><a class=\"permalink-trigger\"><span
+        title=\"Permalink\" class=\"aa-icon aa-icon-link\"></span></a><a target=\"_blank\"
+        href=\"http://www.asianart.org/about/image-request\"><span title=\"Image reproduction
+        request\" class=\"aa-icon aa-icon-camera\"></span></a><div class=\"permalink
+        permalink-main\"><input value=\"http://asianart.emuseum.com/view/objects/asitem/items$0040:17150\"></input></div></div></div></form><!--
+        END OF FORM --></div><!-- end row --><div class=\"visible-print-block\"><h4>Description</h4><div
+        class=\"tab-pane active text3\"><span class=\"label\">Label: </span><FONT
+        size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>Two young
+        boys engage in a sumo wrestling match in front of a mound sprouting autumnal
+        bush clover and miscanthus grass. They wear tie-dyed or red loincloths wrapped
+        to resemble the </FONT></FONT><I><FONT size=3 face=GaramondPremrPro-It><FONT
+        size=3 face=GaramondPremrPro-It>mawashi </I></FONT></FONT><FONT size=3 face=GaramondPremrPro><FONT
+        size=3 face=GaramondPremrPro>worn by professional wrestlers. Behind them,
+        a boy umpire who has stripped down to his gray and red bib (</FONT></FONT><I><FONT
+        size=3 face=GaramondPremrPro-It><FONT size=3 face=GaramondPremrPro-It>haragake</I></FONT></FONT><FONT
+        size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>) gestures
+        with a folding fan. His “poppy” (</FONT></FONT><I><FONT size=3 face=GaramondPremrPro-It><FONT
+        size=3 face=GaramondPremrPro-It>keshi</I></FONT></FONT><FONT size=3 face=GaramondPremrPro><FONT
+        size=3 face=GaramondPremrPro>) hairstyle is associated with children of three
+        or four years of age.<br/></div><h4>More Information</h4><div class=\"margin-bottom-10\"><span
+        class=\"label\">Signature/Seal: </span>Signature: 春信画 Harunobu ga<br/></div><div
+        class=\"margin-bottom-10\"><span class=\"label\">Exhibition History: </span>“The
+        Printer’s Eye: Ukiyo-e from the Grabhorn Collection”, Asian Art Museum, 2/20/2015-5/10/2015<br/></div></div><!--
+        end printable tab section --><div class=\"as-item-tab-section\"><!-- Nav tabs
+        --><ul id=\"as-item-tab-pills\" role=\"tablist\" class=\"nav nav-pills\"><li
+        class=\"active\" role=\"presentation\"><a data-toggle=\"tab\" role=\"tab\"
+        aria-controls=\"item-description\" href=\"#item-description\">\nDescription</a></li><li
+        role=\"presentation\"><a data-toggle=\"tab\" role=\"tab\" aria-controls=\"item-info\"
+        href=\"#item-info\">More Information</a></li><li role=\"presentation\"><a
+        data-toggle=\"tab\" role=\"tab\" aria-controls=\"item-related\" href=\"#item-related\">Related
+        Objects</a></li></ul><!-- Tab panes --><div class=\"tab-content\"><div id=\"item-description\"
+        class=\"tab-pane active text3\" role=\"tabpanel\"><span class=\"label\">Label:
+        </span><FONT size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>Two
+        young boys engage in a sumo wrestling match in front of a mound sprouting
+        autumnal bush clover and miscanthus grass. They wear tie-dyed or red loincloths
+        wrapped to resemble the </FONT></FONT><I><FONT size=3 face=GaramondPremrPro-It><FONT
+        size=3 face=GaramondPremrPro-It>mawashi </I></FONT></FONT><FONT size=3 face=GaramondPremrPro><FONT
+        size=3 face=GaramondPremrPro>worn by professional wrestlers. Behind them,
+        a boy umpire who has stripped down to his gray and red bib (</FONT></FONT><I><FONT
+        size=3 face=GaramondPremrPro-It><FONT size=3 face=GaramondPremrPro-It>haragake</I></FONT></FONT><FONT
+        size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>) gestures
+        with a folding fan. His “poppy” (</FONT></FONT><I><FONT size=3 face=GaramondPremrPro-It><FONT
+        size=3 face=GaramondPremrPro-It>keshi</I></FONT></FONT><FONT size=3 face=GaramondPremrPro><FONT
+        size=3 face=GaramondPremrPro>) hairstyle is associated with children of three
+        or four years of age.<br/></div><div id=\"item-info\" class=\"tab-pane text3\"
+        role=\"tabpanel\"><div class=\"margin-bottom-10\"><span class=\"label\">Signature/Seal:
+        </span>Signature: 春信画 Harunobu ga<br/></div><div class=\"margin-bottom-10\"><span
+        class=\"label\">Exhibition History: </span>“The Printer’s Eye: Ukiyo-e from
+        the Grabhorn Collection”, Asian Art Museum, 2/20/2015-5/10/2015<br/></div></div><div
+        id=\"item-related\" class=\"tab-pane text3\" role=\"tabpanel\"><div id=\"seealso\"><div><div
+        class=\"related-object col-xxs-hug\"><div class=\"row row-no-gutter\"><div
+        class=\"as-list-image col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17150/0;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><img
+        src=\"/internal/media/dispatcher/10167/resize:format=thumbnail;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17150/0;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><span
+        class=\"body2\">A woman emerging from mosquito netting</span></a></div><div
+        class=\"body1 margin-20\"><div>Artist: Suzuki Harunobu</div><div>Date Made:
+        1770</div><div>Historical Period: Edo period (1615-1868)</div><div>Materials:
+        ink and colors on paper</div></div></div></div></div><div class=\"related-object
+        col-xxs-hug\"><div class=\"row row-no-gutter\"><div class=\"as-list-image
+        col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17150/1;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><img
+        src=\"/internal/media/dispatcher/6074/resize:format=thumbnail;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17150/1;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><span
+        class=\"body4\">Ariwara Narihira</span></a></div><div class=\"body1 margin-20\"><div>Artist:
+        Suzuki Harunobu</div><div>Date Made: 1768-1769</div><div>Materials: Ink and
+        colors on paper</div></div></div></div></div><div class=\"related-object col-xxs-hug\"><div
+        class=\"row row-no-gutter\"><div class=\"as-list-image col-xs-4 col-lg-3\"><a
+        href=\"/view/objects/asitem/Objects@17150/2;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><img
+        src=\"/internal/media/dispatcher/6067/resize:format=thumbnail;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17150/2;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><span
+        class=\"body2\">Autumn Moon of Matsukaze</span></a></div><div class=\"body1
+        margin-20\"><div>Artist: Suzuki Harunobu</div><div>Date Made: 1768-1769</div><div>Materials:
+        Ink and colors on paper</div></div></div></div></div><div class=\"related-object
+        col-xxs-hug\"><div class=\"row row-no-gutter\"><div class=\"as-list-image
+        col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17150/3;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><img
+        src=\"/internal/media/dispatcher/6078/resize:format=thumbnail;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17150/3;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><span
+        class=\"body4\">Chofu Jewel River, a Famous Place in Musashi Province</span></a></div><div
+        class=\"body1 margin-20\"><div>Artist: Suzuki Harunobu</div><div>Date Made:
+        1769-1770</div><div>Materials: Ink and colors on paper</div></div></div></div></div><div
+        class=\"related-object col-xxs-hug\"><div class=\"row row-no-gutter\"><div
+        class=\"as-list-image col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17150/4;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><img
+        src=\"/internal/media/dispatcher/57217/resize:format=thumbnail;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17150/4;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\"><span
+        class=\"body2\">Hunting cherry blossoms</span></a></div><div class=\"body1
+        margin-20\"><div>Artist: Suzuki Harunobu</div><div>Historical Period: Edo
+        period (1615-1868)</div><div>Materials: Ink and colors on paper</div></div></div></div></div></div></div></div><div
+        id=\"item-resources\" class=\"tab-pane text3\" role=\"tabpanel\"></div></div></div><!--
+        Continue Exploring Collection Section --><!--  \n\t\t/* \n    \t * 2 = Object
+        Type\n    \t * 4 = Place of Origin\n    \t * 5 = Materials\n    \t * 6 = Subjects\n
+        \   \t * 7 = Exhibitions\n    \t */\n    \t--><div class=\"explore-collection-section\"><ul
+        class=\"expandable-section\"><li class=\"toggle-element\"><span class=\"toggle\"><span
+        class=\"fa fa-plus\"></span> Continue Exploring the Collection</span><span
+        class=\"visible-md visible-lg body3\">Continue Exploring the Collection</span><hr
+        class=\"divider-dotted visible-md visible-lg\"/><ul class=\"toggle-content
+        text5\"><li class=\"body2\">Materials</li><li><a href=\"/view/objects/asimages/materials@color;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\">color</a></li><li><a
+        href=\"/view/objects/asimages/materials@ink;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\">ink</a></li><li><a
+        href=\"/view/objects/asimages/materials@paper;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\">paper</a></li></ul><ul
+        class=\"toggle-content text5\"><li class=\"body2\">Object Type</li><li><a
+        href=\"/view/objects/asimages/objecttype@Prints And Drawings;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\">Prints
+        And Drawings</a></li><li><a href=\"/view/objects/asimages/objecttype@Woodblock
+        print $0028nishiki-e$0029;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F?t:state:flow=c6e005b4-9b17-4d4c-ab71-6287d9823015\">Woodblock
+        print (nishiki-e)</a></li></ul></li></ul></div></div><div aria-hidden=\"true\"
+        aria-labelledby=\"enlarged image\" role=\"dialog\" tabindex=\"-1\" id=\"image-detail\"
+        class=\"modal fade detail-view-modal\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div
+        class=\"modal-header\"><div aria-label=\"Close\" data-dismiss=\"modal\" class=\"close\"><span
+        aria-hidden=\"true\" class=\"aa-icon aa-icon-close-box\"></span></div></div><div
+        class=\"modal-body\"><div class=\"row\"><div class=\"col-xs-9 col-sm-10 detail-view-modal-left\"><div
+        class=\"body5 margin-10\">Boys sumo wrestling</div><div class=\"unicode-title\">\n鈴木春信
+        相撲遊び\n</div><img src=\"http://asianart.emuseum.com/internal/media/dispatcher/6077/resize:format=full\"
+        class=\"shown-image\" id=\"detail-view-modal-main-image\"/></div><div class=\"col-xs-3
+        col-sm-2 detail-view-modal-right\"><div class=\"secondary-media-container\"><div
+        class=\"secondary-media\"><div class=\"emuseum-slider-vertical\"><div><img
+        src=\"/internal/media/dispatcher/6077/resize:format=postagestamp;jsessionid=9832E9636A32D1BCAC68DF7F6CFC2C9F\"
+        height=\"216\" width=\"216\"/></div></div><!--  if excluding primary media\n\t\t
+        \               \t\t<t:if test=\"eognl:current.id != detailed.primaryMedia.id\">\n\t\t
+        \               \t\t\t<t:media t:mediaid=\"${eognl:current.id}\" t:operations=\"literal:resize:format=postagestamp\"/>\n\t\t
+        \               \t\t</t:if>\n\t\t                \t\t--></div></div><div class=\"sharing-tools\"><a
+        onClick=\"window.print();\" href=\"#\"><span title=\"Print\" class=\"aa-icon
+        aa-icon-print\"></span></a><a title=\"Share by Email\" href=\"mailto:?subject=Asian
+        Art Museum Object&amp;body=Artwork from Asian Art Museum: http://asianart.emuseum.com/view/objects/asitem/items$0040:17150\"><span
+        title=\"Share by email\" class=\"aa-icon aa-icon-mail\"></span></a><span class=\"permalink\"><input
+        value=\"http://asianart.emuseum.com/view/objects/asitem/items$0040:17150\"></input></span><a
+        class=\"permalink-trigger\"><span title=\"Permalink\" class=\"aa-icon aa-icon-link\"></span></a><a
+        target=\"_blank\" href=\"http://www.asianart.org/about/image-request\"><span
+        title=\"Image reproduction request\" class=\"aa-icon aa-icon-camera\"></span></a></div></div></div><!--
+        end row --></div><!-- end modal-body --></div><!-- end modal-content --></div><!--
+        end modal-dialog --></div><!-- end modal --></body><script type=\"text/javascript\">\n$(document).ready(function(){\n$('#as-item-tab-pills').find('font').contents().unwrap();\n$('#item-description').find('font').contents().unwrap();\n$('#item-info').find('font').contents().unwrap();\n});\n</script><!--<br/>PAGE
+        CONTENT<br/> WILL<br/> BE<br/> SITUATED HERE--></div><!--  Footer --><footer><div
+        class=\"footer-content\"><div class=\"footer-credit\">The presentation of
+        these collections records for public use is made possible through the generous
+        support of the Wallis Foundation.</div><img alt=\"Asian Art Museum Logo\"
+        src=\"/assets/42558097f36916cb/emuseum/components/images/footer_logo.png\"/><div
+        class=\"copyright\">Copyright © 2017 Asian Art Museum Chong-Moon Lee Center
+        for Asian Art and Culture</div></div></footer><script>\r\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\r\n
+        \ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\r\n
+        \ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\r\n
+        \ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\r\n\r\n
+        \ ga('create', 'UA-36218640-12', 'auto');\r\n  ga('send', 'pageview');\r\n\r\n</script>\r\n<script
+        type=\"text/javascript\">var $ = jQuery; Tapestry.DEBUG_ENABLED = true; var
+        selector = new Array();\nTapestry.onDOMLoaded(function() {\nTapestry.init({\n
+        \ \"formEventManager\" : [\n    {\n      \"formId\" : \"searchForm\",\n      \"validate\"
+        : {\n        \"submit\" : false,\n        \"blur\" : false\n      }\n    },\n
+        \   {\n      \"formId\" : \"viewForm\",\n      \"validate\" : {\n        \"submit\"
+        : false,\n        \"blur\" : false\n      }\n    }\n  ]\n});\n});\n</script></body></html>"
+  recorded_at: 2020-07-27 21:55:25 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://searchcollection.asianart.org/view/objects/asitem/nid/17140
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.71.1 r-curl/4.3 crul/0.9.4.91
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      server: Apache-Coyote/1.1
+      set-cookie: JSESSIONID=B0B031DF40B2D23F4F3F3891AB943FEA; Path=/; HttpOnly
+      content-encoding: gzip
+      content-type: text/html;charset=UTF-8
+      transfer-encoding: chunked
+      date: Mon, 27 Jul 2020 21:55:25 GMT
+    body:
+      encoding: UTF-8
+      file: no
+      string: "<!DOCTYPE html><html><head><script src=\"/assets/42558097f36916cb/tap-jquery/tapestry.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/jquery_core/jquery-1.6.2.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.ui.core.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.ui.position.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.ui.widget.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.effects.core.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/ui_1_8/jquery.effects.highlight.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/tapestry-jquery.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/core/tapestry-messages.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/jquery/validation.js\"
+        type=\"text/javascript\"></script><script src=\"/assets/42558097f36916cb/emuseum/components/emuseum.js\"
+        type=\"text/javascript\"></script><link type=\"text/css\" rel=\"stylesheet\"
+        href=\"/assets/42558097f36916cb/core/default.css\"></link><link type=\"text/css\"
+        rel=\"stylesheet\" href=\"/assets/42558097f36916cb/jquery/themes/ui-lightness/jquery-ui-1.8.15.custom.css\"></link><link
+        type=\"text/css\" rel=\"stylesheet\" href=\"/assets/42558097f36916cb/jquery/form.css\"></link><!--
+        Show version, revision and timestamp only for snapshot versions (which ends
+        with -SNAPSHOT)  --><title>Asian Art Museum Online Collection</title><meta
+        content=\"eMuseum\" name=\"description\"></meta><meta content=\"\" name=\"keywords\"></meta><meta
+        content=\"width=device-width, initial-scale=1\" name=\"viewport\"></meta><link
+        href=\"http://www.google.com/s2/favicons?domain=www.asianart.org\" rel=\"icon\"></link><link
+        type=\"text/css\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Rufina:400,700\"></link><link
+        type=\"text/css\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Playfair+Display:400italic\"></link><link
+        href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\"
+        rel=\"stylesheet\"></link><script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js\"></script><script
+        src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js\"></script><script
+        src=\"https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js\"></script><link
+        href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css\"
+        rel=\"stylesheet\"></link><link media=\"print\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/slick.css\"
+        rel=\"stylesheet\"></link><link media=\"print\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/print.css\"
+        rel=\"stylesheet\"></link><link media=\"screen\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/styles.css\"
+        rel=\"stylesheet\"></link><link media=\"screen\" type=\"text/css\" href=\"/assets/42558097f36916cb/emuseum/components/css/aa-icon.css\"
+        rel=\"stylesheet\"></link><script type=\"text/javascript\" src=\"/assets/42558097f36916cb/emuseum/components/js/slick.js\"></script><script
+        type=\"text/javascript\" src=\"/assets/42558097f36916cb/emuseum/components/js/bootstrap-tabcollapse.js\"></script><script
+        type=\"text/javascript\" src=\"/assets/42558097f36916cb/emuseum/components/js/script.js\"></script><meta
+        content=\"Apache Tapestry Framework (version 5.2.6)\" name=\"generator\"></meta></head><body
+        onload=\"Emuseum.setFocus('view/objects/AsItem');\" class=\"emuseum\"><!--Header
+        Area--><header><nav class=\"navbar navbar-default\" id=\"main-nav\"><div id=\"header-container\"
+        class=\"container\"><!-- Brand and toggle get grouped for better mobile display
+        --><div class=\"navbar-header\"><button aria-expanded=\"false\" data-target=\"#aa-navbar-collapse-1\"
+        data-toggle=\"collapse\" class=\"navbar-toggle collapsed\" type=\"button\"><span
+        class=\"sr-only\">Toggle navigation</span><i class=\"aa-icon aa-icon-hamburger\"></i></button><a
+        href=\"http://www.asianart.org/\" class=\"hidden-md hidden-lg\" id=\"logo-mobile\"><img
+        alt=\"Asian Art Museum Logo\" src=\"/assets/42558097f36916cb/emuseum/components/images/mobile_logo.png\"/></a></div><a
+        href=\"http://www.asianart.org/\" class=\"visible-md visible-lg\" id=\"logo-desktop\"><img
+        alt=\"Asian Art Museum Logo\" src=\"/assets/42558097f36916cb/emuseum/components/images/desktop_logo.png\"/></a><!--
+        Collect the nav links, forms, and other content for toggling --><div id=\"aa-navbar-collapse-1\"
+        class=\"collapse navbar-collapse\"><ul class=\"nav navbar-nav navbar-right\"><li><a
+        href=\"http://www.asianart.org/visit/visit\">Visit</a></li><li><a href=\"http://www.asianart.org/events_index/events\">Events</a></li><li><a
+        href=\"http://www.asianart.org/exhibitions_index/exhibitions\">Exhibitions</a></li><li><a
+        href=\"http://www.asianart.org/collections/collection\">Collections</a></li><li><a
+        href=\"http://education.asianart.org/\">Education</a></li><li><a href=\"http://www.asianart.org/get_involved/get-involved\">Join
+        &amp; Give</a></li><li><a href=\"http://www.asianart.org/about/about\">About</a></li><!--
+        \ Dropdown menu item example\n\t\t\t        <li class=\"dropdown\">\n\t\t\t
+        \         <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"
+        role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span
+        class=\"caret\"></span></a>\n\t\t\t          <ul class=\"dropdown-menu\">\n\t\t\t
+        \           <li><a href=\"#\">Action</a></li>\n\t\t\t            <li><a href=\"#\">Another
+        action</a></li>\n\t\t\t            <li><a href=\"#\">Something else here</a></li>\n\t\t\t
+        \           <li role=\"separator\" class=\"divider\"></li>\n\t\t\t            <li><a
+        href=\"#\">Separated link</a></li>\n\t\t\t          </ul>\n\t\t\t        </li>
+        --></ul></div><!-- /.navbar-collapse --></div><!-- /.container --></nav><!--
+        Hero Header Image --><div class=\"container-fluid hero-img\"><span class=\"hero-gradient\"></span><span
+        class=\"hero-title\"><h1>Online Collection</h1></span></div></header><!--
+        \ eMuseum Menu and breadcrumbs section --><div class=\"container\"><div class=\"row\"><div
+        id=\"breadcrumbs\" class=\"col-md-6 hidden-xs hidden-sm body1\"><span></span></div><div
+        class=\"col-md-6\"><!-- eMuseum Menu --><nav class=\"emuseum-nav text2\"><ul><span
+        class=\"navigation\"><!-- objects.ViewCollections --><li><a accesskey=\"c\"
+        href=\"/objects/viewcollections/highlights;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><span>Browse
+        <strong>C</strong>ollection</span></a></li><!-- search.Advanced --><li><a
+        href=\"/search/advanced/objects;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><span>Advanced
+        Search</span></a></li></span><!-- Login/Logout Links --><li class=\"hidden\"><a
+        accesskey=\"g\" href=\"/login;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\">Si<strong>g</strong>n
+        on</a></li><!--  Search Tips Dialog Trigger --><li><a data-target=\"#search-tips\"
+        data-toggle=\"modal\">Search Tips</a></li></ul></nav></div></div><!-- Modal
+        Search Tips --><!-- Modal --><div aria-labelledby=\"search-tips-dialog\" role=\"dialog\"
+        tabindex=\"-1\" id=\"search-tips\" class=\"modal fade\"><div class=\"vertical-alignment-helper\"><div
+        role=\"document\" class=\"modal-dialog vertical-align-center\"><div class=\"modal-content\"><div
+        class=\"modal-header\"><div aria-label=\"Close\" data-dismiss=\"modal\" class=\"close\"><span
+        aria-hidden=\"true\"><i class=\"aa-icon aa-icon-close-box\"></i></span></div></div><div
+        class=\"modal-body\"><h4 class=\"modal-title h4\">SEARCH TIPS</h4><ul class=\"body1\"><li>\nUse
+        \"Start your search …\" to quickly find objects by keyword. Acceptable search
+        terms include artists' names or terms such as <em>India</em>, <em>flower</em>,
+        or <em>bodhisattva</em>.\n</li><li>\nYou can enter several keyword terms at
+        once. For example, if you want to find Buddha images from China, you can enter
+        <em>Buddha China</em>. Such searches will call up those objects that have
+        either term in their entries. To only call up those objects with both terms
+        in their entries, enclose the search terms in quotes by entering \"<em>Buddha
+        China</em>.\"\n</li><li>\nYou can refine your results by applying filters,
+        located on the left sidebar. Expand the filter list by clicking on the plus
+        sign, and click on any filter value to apply it to the current search results.
+        To remove a filter, click on the filter name shown beneath \"Results.\"\n</li><li>\nUse
+        the Advanced Search form to search for objects by title, credit line, materials,
+        object type, object number, artist, date made, period, place of origin, exhibition
+        history, or subject.\n</li><li>\nYou can widen a keyword search to include
+        the full text of object labels by checking \"Search all Fields\" on the advanced
+        search form.\n</li><li>\nThe * (asterisk) can be used as a wild card in searches.
+        For example, <em>child*</em> will find both child and children, and <em>198*</em>
+        will find any date in the 1980s.\n</li><li>\nBe aware that search results
+        might include objects not currently on display at the museum. To limit your
+        results to only objects currently on view, check the box for \"Only display
+        objects on view.\"\n</li><li>\nMore objects are added regularly, and the information
+        is continuously reviewed and updated.\n</li></ul></div></div></div></div></div></div><!--
+        \ Page Title and Search Section --><div class=\"container title-section\"><div
+        class=\"row\"><div class=\"col-md-6 title-section-left\"><h1 id=\"page-title\">Collections</h1><!--
+        variable page title here --></div><div class=\"col-md-6 title-section-right
+        text3\"><div id=\"qs-form\"><form accept-charset=\"UTF-8\" action=\"/view/objects/asitem.layout.quicksearchform.searchform;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        method=\"post\" id=\"searchForm\"><div class=\"t-invisible\"><input value=\"nid/0\"
+        name=\"t:ac\" type=\"hidden\"></input><input value=\"fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"
+        name=\"t:state:flow\" type=\"hidden\"></input><input value=\"H4sIAAAAAAAAAKWQsUrEQBCGx4BykE6wsNd2o+iJaGMQhIMgQrCWzWYut+dmN7c7udw1Vr6EjU9wWOkTXGHnO/gANhZWFia55kAQDruZn2G+j3/2AevVMRyNJVaBSYYoyAWh6xHmJ4pPTUlsVEpx65BbMegbmy/vzkLX2IzxgosBMuIFOrLTLhPGopIJS7hDFiZ1yAVdSFTpToxUFrvXc/996/Xbg7UIfGE0WaMueY4Em9GQj3mguM6CmKzU2emkIPCXsP8SDlcVvrJGoHNxmeTSOWn0/Ck97H89vnkAk6I6gP0VXFzzhWqNsz81hMkLo1GTYy2Xfls8xJ/bL8/35x54EXSEkvV1Lx3BXVspKszroKm0jZoKNxZwgs5iuNn7ASDZdDz+AQAA\"
+        name=\"t:formdata\" type=\"hidden\"></input></div><label class=\"hidden\"
+        for=\"quicksearch\" id=\"qsheader\" accesskey=\"q\">\nQuick Search\n<a style=\"margin-left:0.9em\"
+        accesskey=\"L\" onkeypress=\"return Emuseum.onkeypressExecuteOnclick(event,
+        this);\" onclick=\"return Emuseum.openPopup('/listsearchfields;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00');\"
+        target=\"_blank\" href=\"/listsearchfields;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><STRONG>?</STRONG></a></label><input
+        placeholder=\"Start your search...\" id=\"quicksearch\" name=\"quicksearch\"
+        type=\"text\"></input><input alt=\"Search\" value=\"►\" class=\"butgo\" id=\"submit\"
+        name=\"submit_0\" type=\"submit\"></input><i class=\"aa-icon aa-icon-search\"></i></form></div></div></div><hr
+        class=\"divider-thick\"/></div><!--  eMuseum Contents --><div class=\"container\"
+        id=\"mainbody\"><body class=\"emuseum\" id=\"detail-view\"><!-- detail type
+        pagination goes here --><div><div src=\"../../../../preview/navigation.jpg\"
+        class=\"pagenav\"><span class=\"page current-page\">1</span><div class=\"detailNav\"><h4
+        class=\"result-count\">1 of 1 Results</h4></div></div></div><hr class=\"divider-dotted\"/><!--
+        \ logo for print purposes only --><a href=\"#\" class=\"visible-print-block\"
+        id=\"logo-print\"><img alt=\"Asian Art Museum Logo\" src=\"/assets/42558097f36916cb/emuseum/components/images/desktop_logo.png\"/></a><div
+        class=\"reportsController\"></div><!-- \"Advanced search\" form --><!-- \"Simple/Quick
+        search\" form --><!-- 'you may also be interested in...' links block --><!--
+        Main cycle that displays allowed blocks --><div class=\"elementsView\"><div
+        class=\"hidden\"><div class=\"switchViews\"><div class=\"aa-label text1\">\nGrid/List
+        View\n</div><span class=\"disabled hidden\">view lightbox</span><!-- t:actionlink
+        t:id=\"asImages\">${message:switchviews.asimages}</t:actionlink --><span class=\"disabled
+        hidden\">view list</span><span class=\"aa-icon aa-icon-detail activeview\"></span><span
+        class=\"nolink hidden\">view single item</span></div></div><div class=\"row\"><form
+        action=\"/view/objects/asitem.viewform;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        method=\"post\" id=\"viewForm\"><div class=\"t-invisible\"><input value=\"nid/0\"
+        name=\"t:ac\" type=\"hidden\"></input><input value=\"fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"
+        name=\"t:state:flow\" type=\"hidden\"></input><input value=\"H4sIAAAAAAAAAL2Wv2tUQRDHN9FEzOEPUmhroZhT8i4mRkQR0Yg/4FTwJGCjzO2bezd3+3bX3bm7HIKVhYW9tWCnqW3FLrXiX2AriNoK7ouCCCnuBfZVj2W+w+d9d2dn5+1XMTM6LepDwlHDtHso2Teu+FuM+QWP0ugU3Ng6LOKJMsZ6JxLjsgQsyC4mDBY9u/FqIo1DRe3wza3RqNknzaA/vvzdduo3jry5PC3Eho3LWnm/8Ozmys9NUQHr7P++TooTO7FSZCDl28rI/u44q4t3tz7XxZOtyJwzD75s/ui8+/iqNOdOKc69EA+hFgPjdWfyVrFK1xQFyTqoAS6+/PDpuTj2a1pMNUVN/guwmG/2YAgNBTprtNiRzi5uWBaHrKM8nOdt6KO7Smbin38snobyn9hqIZ9jUUvRU6aByejIqBkmVhjbj0dH6O9XgDrQC3Wi0WMVsFo/VBboKlDznnKrcK1LVZk7yg5SKkoQVIXY/RmazIHtjiODZi2asKOjU2Jhp7y/yz+i7cRHS0XmVNmEPWUTJrey2+5C3ioYXwv9Mf4eOzJpZMpeDXl0JzmmNMhjd2PP4+g3bC6lHLUPF9vHJsnw8BI3Q/OI7gktOA6+ODLpoFTgPXVIVvI8kx7q2OPGrNHrQR+Zsk8OFA9ctEooO46eWzr87fzD1y8ubY+jvwEzMNADpwwAAA==\"
+        name=\"t:formdata\" type=\"hidden\"></input></div><div class=\"col-lg-12\"></div><div
+        class=\"col-md-6 col-md-push-6\" id=\"singlemedia\"><div class=\"primary-container\"><a
+        data-target=\"#image-detail\" data-toggle=\"modal\" href=\"#\"><img src=\"/internal/media/dispatcher/6067/resize:format=preview;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        height=\"670\" width=\"670\"/><!-- <span class=\"enlarge-icon\"><i class=\"aa-icon
+        aa-icon-expand\"></i></span> --></a></div><!--<t:if test=\"false\">--><div
+        class=\"extramedia emuseum-slider\"></div><!--</t:if>--></div><div class=\"col-md-6
+        col-md-pull-6\"><div class=\"text3\" id=\"singledata\" src=\"../../../../preview/asItem_details.jpg\"><!--
+        Don't display on detail page --><div class=\"body5 as-item-title\">Autumn
+        Moon of Matsukaze</div><!-- Artist-given title must be in italics! --><div
+        class=\"body5 italic-title as-item-title\"><em>Fashionable Eight Views of
+        Noh Chants</em></div><div class=\"unicode-title\">\n鈴木春信筆 『風流諷八景』 「松風の秋月」\n</div><div
+        class=\"related\"><div class=\"paragraph\"><span class=\"label\">Artist: </span>Suzuki
+        Harunobu (Japanese, 1725 - 1770)</div></div><div class=\"paragraph\"><span
+        class=\"label\">Date: </span>1768-1769\n</div><div class=\"paragraph\"><div><span
+        class=\"label\">Object Name: </span>Woodblock print (nishiki-e)</div></div><div
+        class=\"paragraph\"><div><span class=\"label\">Materials: </span>Ink and colors
+        on paper</div></div><div class=\"paragraph\"><div><span class=\"label\">Dimensions:
+        </span>H. 12 1/2 in x W. 5 3/4 in, H. 31.7 cm x W. 14.6 cm (hosōban)</div></div><div
+        class=\"paragraph\"><span class=\"label\">Credit Line: </span><em>Gift of
+        the Grabhorn Ukiyo-e Collection</em></div><div class=\"paragraph\"><span class=\"label\">Department:
+        </span>Japanese Art\n</div><div class=\"paragraph\"><span class=\"label\">Collection:
+        </span>Prints And Drawings\n</div><div class=\"paragraph\"><div><span class=\"label\">Object
+        Number: </span>2005.100.25</div></div><div class=\"paragraph\"><span class=\"label\">On
+        Display: </span>\nNo\n</div></div><!-- Permalink for print purposes only --><div
+        class=\"permalink-print visible-print-block margin-20\"><em>Permalink:http://asianart.emuseum.com/view/objects/asitem/items$0040:17140</em></div><div
+        class=\"my-collection-notes\"></div><div class=\"sharing-tools\"><a onClick=\"window.print();\"
+        href=\"#\"><span title=\"Print\" class=\"aa-icon aa-icon-print\"></span></a><a
+        title=\"Share by Email\" href=\"mailto:?subject=Asian Art Museum Object&amp;body=Artwork
+        from Asian Art Museum: http://asianart.emuseum.com/view/objects/asitem/items$0040:17140\"><span
+        title=\"Share by email\" class=\"aa-icon aa-icon-mail\"></span></a><a class=\"permalink-trigger\"><span
+        title=\"Permalink\" class=\"aa-icon aa-icon-link\"></span></a><a target=\"_blank\"
+        href=\"http://www.asianart.org/about/image-request\"><span title=\"Image reproduction
+        request\" class=\"aa-icon aa-icon-camera\"></span></a><div class=\"permalink
+        permalink-main\"><input value=\"http://asianart.emuseum.com/view/objects/asitem/items$0040:17140\"></input></div></div></div></form><!--
+        END OF FORM --></div><!-- end row --><div class=\"visible-print-block\"><h4>Description</h4><div
+        class=\"tab-pane active text3\"><span class=\"label\">Label: </span><P align=left><FONT
+        size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>Two women
+        dressed in the long-sleeved furisode of unmarried women are shown on an undulating
+        shoreline. A pine tree behind them partially screens a full moon. The standing
+        figure, wearing a design of plovers flying over a pine-lined shore and sails,
+        holds the cap (eboshi) and robe of an aristocrat. The other woman kneels on
+        the shore. She wears a dark obi decorated with tie-dyed pine bark lozenges
+        (matsukawabishi) over an autumnal morning glory–patterned furisode. </P></FONT></FONT><FONT
+        size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>\r\n<P align=left>Despite
+        the distinctly eighteenth-century character of the dress and hairstyles, viewers
+        of Harunobu’s time would have instantly recognized this print as a scene from
+        the classic Noh play Matsukaze (Wind in the Pines), which is associated with
+        Heian-period (794–1185) Japan. The play revolves around two sisters, Matsukaze
+        and Murasame, who work as brine maidens, carrying the seaweed used to make
+        salt in Suma. The play tells us that both sisters had love affairs with courtier
+        and poet Ariwara Yukihira (818–893) during his period of exile to Suma, a
+        reference drawn from a wellknown poem in the anthology Kokin wakashū, as well
+        as from a later reference in The Tale of Genji. In the Noh play, the ghosts
+        of the sisters wait on the beach for Yukihira’s return, with only his hat
+        and cloak as reminders. </P>\r\n<P align=left>This print comes from a series
+        of eight, each of which depicts a scene from a classical Noh play in an eighteenth-century
+        reinterpretation.</P></FONT></FONT><br/></div><h4>More Information</h4><div
+        class=\"margin-bottom-10\"><span class=\"label\">Signature/Seal: </span>Signature:
+        鈴木春信画 Suzuki Harunobu ga<br/>\n<br/>\nCollector’s seal: 白爾叟 Hakujisō or Berusō?(verso)<br/></div><div
+        class=\"margin-bottom-10\"><span class=\"label\">Exhibition History: </span>“The
+        Printer’s Eye: Ukiyo-e from the Grabhorn Collection”, Asian Art Museum, 2/20/2015-5/10/2015<br/></div></div><!--
+        end printable tab section --><div class=\"as-item-tab-section\"><!-- Nav tabs
+        --><ul id=\"as-item-tab-pills\" role=\"tablist\" class=\"nav nav-pills\"><li
+        class=\"active\" role=\"presentation\"><a data-toggle=\"tab\" role=\"tab\"
+        aria-controls=\"item-description\" href=\"#item-description\">\nDescription</a></li><li
+        role=\"presentation\"><a data-toggle=\"tab\" role=\"tab\" aria-controls=\"item-info\"
+        href=\"#item-info\">More Information</a></li><li role=\"presentation\"><a
+        data-toggle=\"tab\" role=\"tab\" aria-controls=\"item-related\" href=\"#item-related\">Related
+        Objects</a></li></ul><!-- Tab panes --><div class=\"tab-content\"><div id=\"item-description\"
+        class=\"tab-pane active text3\" role=\"tabpanel\"><span class=\"label\">Label:
+        </span><P align=left><FONT size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>Two
+        women dressed in the long-sleeved furisode of unmarried women are shown on
+        an undulating shoreline. A pine tree behind them partially screens a full
+        moon. The standing figure, wearing a design of plovers flying over a pine-lined
+        shore and sails, holds the cap (eboshi) and robe of an aristocrat. The other
+        woman kneels on the shore. She wears a dark obi decorated with tie-dyed pine
+        bark lozenges (matsukawabishi) over an autumnal morning glory–patterned furisode.
+        </P></FONT></FONT><FONT size=3 face=GaramondPremrPro><FONT size=3 face=GaramondPremrPro>\r\n<P
+        align=left>Despite the distinctly eighteenth-century character of the dress
+        and hairstyles, viewers of Harunobu’s time would have instantly recognized
+        this print as a scene from the classic Noh play Matsukaze (Wind in the Pines),
+        which is associated with Heian-period (794–1185) Japan. The play revolves
+        around two sisters, Matsukaze and Murasame, who work as brine maidens, carrying
+        the seaweed used to make salt in Suma. The play tells us that both sisters
+        had love affairs with courtier and poet Ariwara Yukihira (818–893) during
+        his period of exile to Suma, a reference drawn from a wellknown poem in the
+        anthology Kokin wakashū, as well as from a later reference in The Tale of
+        Genji. In the Noh play, the ghosts of the sisters wait on the beach for Yukihira’s
+        return, with only his hat and cloak as reminders. </P>\r\n<P align=left>This
+        print comes from a series of eight, each of which depicts a scene from a classical
+        Noh play in an eighteenth-century reinterpretation.</P></FONT></FONT><br/></div><div
+        id=\"item-info\" class=\"tab-pane text3\" role=\"tabpanel\"><div class=\"margin-bottom-10\"><span
+        class=\"label\">Signature/Seal: </span>Signature: 鈴木春信画 Suzuki Harunobu ga<br/>\n<br/>\nCollector’s
+        seal: 白爾叟 Hakujisō or Berusō?(verso)<br/></div><div class=\"margin-bottom-10\"><span
+        class=\"label\">Exhibition History: </span>“The Printer’s Eye: Ukiyo-e from
+        the Grabhorn Collection”, Asian Art Museum, 2/20/2015-5/10/2015<br/></div></div><div
+        id=\"item-related\" class=\"tab-pane text3\" role=\"tabpanel\"><div id=\"seealso\"><div><div
+        class=\"related-object col-xxs-hug\"><div class=\"row row-no-gutter\"><div
+        class=\"as-list-image col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17140/0;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><img
+        src=\"/internal/media/dispatcher/10167/resize:format=thumbnail;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17140/0;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><span
+        class=\"body2\">A woman emerging from mosquito netting</span></a></div><div
+        class=\"body1 margin-20\"><div>Artist: Suzuki Harunobu</div><div>Date Made:
+        1770</div><div>Historical Period: Edo period (1615-1868)</div><div>Materials:
+        ink and colors on paper</div></div></div></div></div><div class=\"related-object
+        col-xxs-hug\"><div class=\"row row-no-gutter\"><div class=\"as-list-image
+        col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17140/1;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><img
+        src=\"/internal/media/dispatcher/6074/resize:format=thumbnail;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17140/1;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><span
+        class=\"body4\">Ariwara Narihira</span></a></div><div class=\"body1 margin-20\"><div>Artist:
+        Suzuki Harunobu</div><div>Date Made: 1768-1769</div><div>Materials: Ink and
+        colors on paper</div></div></div></div></div><div class=\"related-object col-xxs-hug\"><div
+        class=\"row row-no-gutter\"><div class=\"as-list-image col-xs-4 col-lg-3\"><a
+        href=\"/view/objects/asitem/Objects@17140/2;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><img
+        src=\"/internal/media/dispatcher/6077/resize:format=thumbnail;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17140/2;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><span
+        class=\"body2\">Boys sumo wrestling</span></a></div><div class=\"body1 margin-20\"><div>Artist:
+        Suzuki Harunobu</div><div>Date Made: approx. 1769</div><div>Materials: Ink
+        and colors on paper</div></div></div></div></div><div class=\"related-object
+        col-xxs-hug\"><div class=\"row row-no-gutter\"><div class=\"as-list-image
+        col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17140/3;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><img
+        src=\"/internal/media/dispatcher/6078/resize:format=thumbnail;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17140/3;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><span
+        class=\"body4\">Chofu Jewel River, a Famous Place in Musashi Province</span></a></div><div
+        class=\"body1 margin-20\"><div>Artist: Suzuki Harunobu</div><div>Date Made:
+        1769-1770</div><div>Materials: Ink and colors on paper</div></div></div></div></div><div
+        class=\"related-object col-xxs-hug\"><div class=\"row row-no-gutter\"><div
+        class=\"as-list-image col-xs-4 col-lg-3\"><a href=\"/view/objects/asitem/Objects@17140/4;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><img
+        src=\"/internal/media/dispatcher/57217/resize:format=thumbnail;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        height=\"350\" width=\"350\"/></a></div><div class=\"as-list-text col-xs-8
+        col-lg-9\"><div class=\"as-list-title\"><a href=\"/view/objects/asitem/Objects@17140/4;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\"><span
+        class=\"body2\">Hunting cherry blossoms</span></a></div><div class=\"body1
+        margin-20\"><div>Artist: Suzuki Harunobu</div><div>Historical Period: Edo
+        period (1615-1868)</div><div>Materials: Ink and colors on paper</div></div></div></div></div></div></div></div><div
+        id=\"item-resources\" class=\"tab-pane text3\" role=\"tabpanel\"></div></div></div><!--
+        Continue Exploring Collection Section --><!--  \n\t\t/* \n    \t * 2 = Object
+        Type\n    \t * 4 = Place of Origin\n    \t * 5 = Materials\n    \t * 6 = Subjects\n
+        \   \t * 7 = Exhibitions\n    \t */\n    \t--><div class=\"explore-collection-section\"><ul
+        class=\"expandable-section\"><li class=\"toggle-element\"><span class=\"toggle\"><span
+        class=\"fa fa-plus\"></span> Continue Exploring the Collection</span><span
+        class=\"visible-md visible-lg body3\">Continue Exploring the Collection</span><hr
+        class=\"divider-dotted visible-md visible-lg\"/><ul class=\"toggle-content
+        text5\"><li class=\"body2\">Materials</li><li><a href=\"/view/objects/asimages/materials@color;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\">color</a></li><li><a
+        href=\"/view/objects/asimages/materials@ink;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\">ink</a></li><li><a
+        href=\"/view/objects/asimages/materials@paper;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\">paper</a></li></ul><ul
+        class=\"toggle-content text5\"><li class=\"body2\">Object Type</li><li><a
+        href=\"/view/objects/asimages/objecttype@Prints And Drawings;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\">Prints
+        And Drawings</a></li><li><a href=\"/view/objects/asimages/objecttype@Woodblock
+        print $0028nishiki-e$0029;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA?t:state:flow=fe7a99ed-3782-4212-b3f5-4ce7c2271d00\">Woodblock
+        print (nishiki-e)</a></li></ul></li></ul></div></div><div aria-hidden=\"true\"
+        aria-labelledby=\"enlarged image\" role=\"dialog\" tabindex=\"-1\" id=\"image-detail\"
+        class=\"modal fade detail-view-modal\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div
+        class=\"modal-header\"><div aria-label=\"Close\" data-dismiss=\"modal\" class=\"close\"><span
+        aria-hidden=\"true\" class=\"aa-icon aa-icon-close-box\"></span></div></div><div
+        class=\"modal-body\"><div class=\"row\"><div class=\"col-xs-9 col-sm-10 detail-view-modal-left\"><div
+        class=\"body5 margin-10\">Autumn Moon of Matsukaze</div><div class=\"unicode-title\">\n鈴木春信筆
+        『風流諷八景』 「松風の秋月」\n</div><img src=\"http://asianart.emuseum.com/internal/media/dispatcher/6067/resize:format=full\"
+        class=\"shown-image\" id=\"detail-view-modal-main-image\"/></div><div class=\"col-xs-3
+        col-sm-2 detail-view-modal-right\"><div class=\"secondary-media-container\"><div
+        class=\"secondary-media\"><div class=\"emuseum-slider-vertical\"><div><img
+        src=\"/internal/media/dispatcher/6067/resize:format=postagestamp;jsessionid=B0B031DF40B2D23F4F3F3891AB943FEA\"
+        height=\"216\" width=\"216\"/></div></div><!--  if excluding primary media\n\t\t
+        \               \t\t<t:if test=\"eognl:current.id != detailed.primaryMedia.id\">\n\t\t
+        \               \t\t\t<t:media t:mediaid=\"${eognl:current.id}\" t:operations=\"literal:resize:format=postagestamp\"/>\n\t\t
+        \               \t\t</t:if>\n\t\t                \t\t--></div></div><div class=\"sharing-tools\"><a
+        onClick=\"window.print();\" href=\"#\"><span title=\"Print\" class=\"aa-icon
+        aa-icon-print\"></span></a><a title=\"Share by Email\" href=\"mailto:?subject=Asian
+        Art Museum Object&amp;body=Artwork from Asian Art Museum: http://asianart.emuseum.com/view/objects/asitem/items$0040:17140\"><span
+        title=\"Share by email\" class=\"aa-icon aa-icon-mail\"></span></a><span class=\"permalink\"><input
+        value=\"http://asianart.emuseum.com/view/objects/asitem/items$0040:17140\"></input></span><a
+        class=\"permalink-trigger\"><span title=\"Permalink\" class=\"aa-icon aa-icon-link\"></span></a><a
+        target=\"_blank\" href=\"http://www.asianart.org/about/image-request\"><span
+        title=\"Image reproduction request\" class=\"aa-icon aa-icon-camera\"></span></a></div></div></div><!--
+        end row --></div><!-- end modal-body --></div><!-- end modal-content --></div><!--
+        end modal-dialog --></div><!-- end modal --></body><script type=\"text/javascript\">\n$(document).ready(function(){\n$('#as-item-tab-pills').find('font').contents().unwrap();\n$('#item-description').find('font').contents().unwrap();\n$('#item-info').find('font').contents().unwrap();\n});\n</script><!--<br/>PAGE
+        CONTENT<br/> WILL<br/> BE<br/> SITUATED HERE--></div><!--  Footer --><footer><div
+        class=\"footer-content\"><div class=\"footer-credit\">The presentation of
+        these collections records for public use is made possible through the generous
+        support of the Wallis Foundation.</div><img alt=\"Asian Art Museum Logo\"
+        src=\"/assets/42558097f36916cb/emuseum/components/images/footer_logo.png\"/><div
+        class=\"copyright\">Copyright © 2017 Asian Art Museum Chong-Moon Lee Center
+        for Asian Art and Culture</div></div></footer><script>\r\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\r\n
+        \ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\r\n
+        \ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\r\n
+        \ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\r\n\r\n
+        \ ga('create', 'UA-36218640-12', 'auto');\r\n  ga('send', 'pageview');\r\n\r\n</script>\r\n<script
+        type=\"text/javascript\">var $ = jQuery; Tapestry.DEBUG_ENABLED = true; var
+        selector = new Array();\nTapestry.onDOMLoaded(function() {\nTapestry.init({\n
+        \ \"formEventManager\" : [\n    {\n      \"formId\" : \"searchForm\",\n      \"validate\"
+        : {\n        \"submit\" : false,\n        \"blur\" : false\n      }\n    },\n
+        \   {\n      \"formId\" : \"viewForm\",\n      \"validate\" : {\n        \"submit\"
+        : false,\n        \"blur\" : false\n      }\n    }\n  ]\n});\n});\n</script></body></html>"
+  recorded_at: 2020-07-27 21:55:25 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

@@ -1,0 +1,1000 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.artic.edu/artworks/87531
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.71.1 r-curl/4.3 crul/0.9.4.91
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      content-type: text/html; charset=UTF-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      date: Mon, 27 Jul 2020 22:06:12 GMT
+      server: nginx/1.16.1
+      cache-control: no-cache, private
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-cache: Hit from cloudfront
+      via: 1.1 c9ce112dce78418fe2a7bbe639a34f78.cloudfront.net (CloudFront)
+      x-amz-cf-pop: HIO50-C2
+      x-amz-cf-id: HLOlU1DlebSDbvjKt-qoqH0mnXpy2DSnSKftfSqV9EmG0sCtkt2J6w==
+      age: '116'
+    body:
+      encoding: UTF-8
+      file: no
+      string: "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en\" class=\"no-js s-borderless-header
+        \  s-env-production p-artwork-show\">\n<head>\n  <meta charset=\"utf-8\">\n
+        \ <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0,
+        viewport-fit=cover\" />\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><script
+        type=\"text/javascript\">(window.NREUM||(NREUM={})).loader_config={licenseKey:\"64338d1b8c\",applicationID:\"62463744\"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function
+        r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var
+        i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if(\"function\"==typeof
+        __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return
+        r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return
+        o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e(\"handle\"),a=e(4),f=e(5),c=e(\"ee\").get(\"tracer\"),u=e(\"loader\"),s=NREUM;\"undefined\"==typeof
+        window.newrelic&&(newrelic=s);var p=[\"setPageViewName\",\"setCustomAttribute\",\"setErrorHandler\",\"finished\",\"addToTrace\",\"inlineHit\",\"addRelease\"],l=\"api-\",d=l+\"ixn-\";a(p,function(e,n){s[n]=i(l+n,!0,\"api\")}),s.addPageAction=i(l+\"addPageAction\",!0),s.setCurrentRouteName=i(l+\"routeName\",!0),n.exports=newrelic,s.interaction=function(){return(new
+        r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i=\"function\"==typeof
+        n;return o(d+\"tracer\",[u.now(),e,t],r),function(){if(c.emit((i?\"\":\"no-\")+\"fn-start\",[u.now(),r,i],t),i)try{return
+        n.apply(this,arguments)}catch(e){throw c.emit(\"fn-err\",[arguments,this,e],t),e}finally{c.emit(\"fn-end\",[u.now()],t)}}}};a(\"actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get\".split(\",\"),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){\"string\"==typeof
+        e&&(e=new Error(e)),o(\"err\",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function
+        r(e,n){var t=e.getEntries();t.forEach(function(e){\"first-paint\"===e.name?c(\"timing\",[\"fp\",Math.floor(e.startTime)]):\"first-contentful-paint\"===e.name&&c(\"timing\",[\"fcp\",Math.floor(e.startTime)])})}function
+        i(e,n){var t=e.getEntries();t.length>0&&c(\"lcp\",[t[t.length-1]])}function
+        o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c(\"timing\",[\"fi\",t,{type:e.type,fid:n}])}}if(!(\"init\"in
+        NREUM&&\"page_view_timing\"in NREUM.init&&\"enabled\"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var
+        a,f,c=e(\"handle\"),u=e(\"loader\"),s=NREUM.o.EV;if(\"PerformanceObserver\"in
+        window&&\"function\"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new
+        PerformanceObserver(i);try{a.observe({entryTypes:[\"paint\"]}),f.observe({entryTypes:[\"largest-contentful-paint\"]})}catch(p){}}if(\"addEventListener\"in
+        document){var l=!1,d=[\"click\",\"keydown\",\"mousedown\",\"pointerdown\",\"touchstart\"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function
+        r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var
+        t=o.split(\".\"),r=n.split(\".\"),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var
+        i=null,o=null,a=/Version\\/(\\S+)\\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf(\"Chrome\")===-1&&f.indexOf(\"Chromium\")===-1&&(i=\"Safari\",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function
+        r(e,n){var t=[],r=\"\",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return
+        t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function
+        r(e,n,t){n||(n=0),\"undefined\"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return
+        o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:\"undefined\"!=typeof
+        window.performance&&window.performance.timing&&\"undefined\"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function
+        r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function
+        t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var
+        p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function
+        m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function
+        v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||\"feature\",y[t]=n,n
+        in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return
+        b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var
+        f=\"nr@context\",c=e(\"gos\"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function
+        r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return
+        Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return
+        e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function
+        r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e(\"ee\").get(\"handle\");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function
+        r(e){var n=typeof e;return!e||\"object\"!==n&&\"function\"!==n?-1:e===window?0:a(e,o,function(){return
+        i++})}var i=1,o=\"nr@id\",a=e(\"gos\");n.exports=r},{}],loader:[function(e,n,t){function
+        r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName(\"script\")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return
+        s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c(\"mark\",[\"onload\",a()+E.offset],null,\"api\");var
+        t=d.createElement(\"script\");t.src=\"https://\"+e.agent,n.parentNode.insertBefore(t,n)}}function
+        i(){\"complete\"===d.readyState&&o()}function o(){c(\"mark\",[\"domContent\",a()+E.offset],null,\"api\")}function
+        a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new
+        Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e(\"handle\"),u=e(4),s=e(\"ee\"),p=e(3),l=window,d=l.document,m=\"addEventListener\",v=\"attachEvent\",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var
+        h=\"\"+location,y={beacon:\"bam.nr-data.net\",errorBeacon:\"bam.nr-data.net\",agent:\"js-agent.newrelic.com/nr-1169.min.js\"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m](\"DOMContentLoaded\",o,!1),l[m](\"load\",r,!1)):(d[v](\"onreadystatechange\",i),l[v](\"onload\",r)),c(\"mark\",[\"firstbyte\",f],null,\"api\");var
+        x=0,O=e(6)},{}],\"wrap-function\":[function(e,n,t){function r(e){return!(e&&e
+        instanceof Function&&e.apply&&!e[a])}var i=e(\"ee\"),o=e(5),a=\"nr@original\",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function
+        t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f=\"function\"==typeof
+        t?t(r,a):t||{}}catch(u){l([u,\"\",[r,a,i],f])}s(n+\"start\",[r,a,i],f);try{return
+        c=e.apply(a,r)}catch(p){throw s(n+\"err\",[r,a,p],f),p}finally{s(n+\"end\",[r,a,c],f)}}return
+        r(e)?e:(n||(n=\"\"),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i=\"\");var
+        a,f,c,u=\"-\"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function
+        s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function
+        p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return
+        t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return
+        e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return
+        n}function l(n){try{e.emit(\"internal-error\",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},[\"loader\"]);</script>\n
+        \ <meta name=\"format-detection\" content=\"telephone=no\">\n\n          <meta
+        property=\"twitter:card\" content=\"summary_large_image\" />\n      <meta
+        property=\"og:type\" content=\"article\" />\n       <title>A Lady | The Art
+        Institute of Chicago</title>\n<meta property=\"og:site_name\"  content=\"The
+        Art Institute of Chicago\" />\n<meta property=\"og:title\"      content=\"A
+        Lady | The Art Institute of Chicago\" />\n<meta name=\"twitter:title\"     content=\"A
+        Lady | The Art Institute of Chicago\" />\n<meta itemprop=\"name\"          content=\"A
+        Lady | The Art Institute of Chicago\" />\n        <meta name=\"description\"
+        \        content=\"Johann Friedrich August Tischbein, c. 1770\" />\n<meta
+        property=\"og:description\"  content=\"Johann Friedrich August Tischbein,
+        c. 1770\" />\n<meta name=\"twitter:description\" content=\"Johann Friedrich
+        August Tischbein, c. 1770\" />\n<meta itemprop=\"description\"     content=\"Johann
+        Friedrich August Tischbein, c. 1770\" />\n        <link rel=\"canonical\"
+        \   href=\"https://www.artic.edu/artworks/87531/a-lady\" />\n<meta property=\"og:url\"
+        \ content=\"https://www.artic.edu/artworks/87531/a-lady\" />\n<meta name=\"twitter:url\"
+        content=\"https://www.artic.edu/artworks/87531/a-lady\" />\n\n            <meta
+        property=\"og:image\"        content=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/1200,/0/default.jpg?w=1200&h=800&fit=crop\"
+        />\n    <meta property=\"og:image:width\"  content=\"1200\" />\n    <meta
+        property=\"og:image:height\" content=\"800\" />\n    <meta name=\"twitter:image\"
+        \      content=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/1200,/0/default.jpg?w=1200&h=800&fit=crop\"
+        />\n    <meta itemprop=\"image\"           content=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/1200,/0/default.jpg?w=1200&h=800&fit=crop\"
+        />\n     \n  <link rel=\"search\" type=\"application/opensearchdescription+xml\"
+        title=\"Art Institute of Chicago\" href=\"/opensearch.xml\">\n\n  <!-- Main
+        Favicon -->\n  <link rel=\"shortcut icon\" type=\"image/png\" href=\"/dist/images/favicon-16.png\">\n
+        \ <!-- Apple Touch Icons (ipad/iphone standard+retina) -->\n  <link rel=\"apple-touch-icon-precomposed\"
+        href=\"/dist/images/favicon-152.png\"> <!-- General use iOS/Android icon,
+        auto-downscaled by devices. -->\n  <link rel=\"apple-touch-icon-precomposed\"
+        type=\"image/png\" href=\"/dist/images/favicon-120.png\" sizes=\"120x120\">
+        <!-- iPhone retina touch icon -->\n  <link rel=\"apple-touch-icon-precomposed\"
+        type=\"image/png\" href=\"/dist/images/favicon-76.png\" sizes=\"76x76\"> <!--
+        iPad home screen icons -->\n\n  <!--[if lt IE 9]>\n  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js\"></script>\n
+        \ <![endif]-->\n\n  <meta name=\"csrf-token\" content=\"i2MoJcj7YO1A0fFmlnRTM3bfJo4vxLqu7lOnICij\">\n\n
+        \ <meta name=\"svg-sprite-src\" content=\"/dist/icons/icons-a919fd3765.svg\">\n\n
+        \ <script>!function(e){var t,s,i=window.A17||{},n=e.documentElement,l=window,a=e.getElementsByTagName(\"head\")[0];function
+        c(){if(/in/.test(e.readyState))setTimeout(c,9);else{var t=e.body,i=e.createElement(\"div\");i.className=\"svg-sprite\",i.innerHTML=s.responseText,t.insertBefore(i,t.childNodes[0])}}if(i.browserSpec=(e.querySelectorAll,\"addEventListener\"in
+        l&&l.history.pushState&&e.implementation.hasFeature(\"http://www.w3.org/TR/SVG11/feature#BasicStructure\",\"1.1\")?\"html5\":\"html4\"),i.objectFit=\"objectFit\"in
+        n.style,window.A17=i,n.className=n.className.replace(/\\bno-js\\b/,\" js \"+i.browserSpec+(i.objectFit?\"
+        objectFit\":\" no-objectFit\")),\"html4\"===i.browserSpec)(t=e.createElement(\"link\")).rel=\"stylesheet\",t.title=\"html4css\",t.href=\"/dist/styles/html4css.css\",a.appendChild(t),(t=e.createElement(\"script\")).src=\"//legacypicturefill.s3.amazonaws.com/legacypicturefill.min.js\",a.appendChild(t),function
+        t(){!e.readyState&&e.addEventListener&&(e.body?setTimeout(function(){e.readyState=\"complete\"},500):setTimeout(t,9))}(),function
+        t(){if(/in/.test(e.readyState))setTimeout(t,9);else for(var s=0;s<e.styleSheets.length;s++){var
+        i=e.styleSheets[s];\"html4css\"!==i.title&&(i.disabled=!0)}}();else{(t=e.createElement(\"script\")).src=\"//cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js\",a.appendChild(t),s=new
+        XMLHttpRequest;var r=e.querySelector('meta[name=\"svg-sprite-src\"]'),o=void
+        0!==r?r.content:\"/dist/icons/icons.svg\";s.open(\"GET\",o,!0),s.send(),s.onload=function(e){s.status>=200&&s.status<400&&c()}}}(document);</script>\n
+        \   <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cloud.typography.com/612324/7579192/css/fonts.css\"
+        />\n  <style>\n  @import  url(\"//hello.myfonts.net/count/3545d5\");\n  @font-face
+        {font-family: 'Sabon';src: url(/dist/fonts/3545D5_0_0.eot);src: url(/dist/fonts/3545D5_0_0.eot?#iefix)
+        format('embedded-opentype'),url(/dist/fonts/3545D5_0_0.woff2) format('woff2'),url(/dist/fonts/3545D5_0_0.woff)
+        format('woff'),url(/dist/fonts/3545D5_0_0.ttf) format('truetype');font-weight:normal;font-weight:400;font-style:normal;}\n
+        \ @font-face {font-family: 'Sabon';src: url(/dist/fonts/3545D5_1_0.eot);src:
+        url(/dist/fonts/3545D5_1_0.eot?#iefix) format('embedded-opentype'),url(/dist/fonts/3545D5_1_0.woff2)
+        format('woff2'),url(/dist/fonts/3545D5_1_0.woff) format('woff'),url(/dist/fonts/3545D5_1_0.ttf)
+        format('truetype');font-weight:normal;font-weight:400;font-style:italic;}\n
+        \ @font-face {font-family: 'Sabon';src: url(/dist/fonts/3545D5_2_0.eot);src:
+        url(/dist/fonts/3545D5_2_0.eot?#iefix) format('embedded-opentype'),url(/dist/fonts/3545D5_2_0.woff2)
+        format('woff2'),url(/dist/fonts/3545D5_2_0.woff) format('woff'),url(/dist/fonts/3545D5_2_0.ttf)
+        format('truetype');font-weight:normal;font-weight:500;font-style:normal;}\n
+        \ </style>\n  <link rel=\"stylesheet\" href=\"https://vjs.zencdn.net/7.1.0/video-js.css\"
+        />\n  <meta name=\"msvalidate.01\" content=\"1E22F0BBEF5CF0D71FF4C150D094A1CA\"
+        />\n  <link href=\"/dist/styles/app-517c33a458.css\" rel=\"stylesheet\" />\n
+        \       <link href=\"/dist/styles/print-ef1fe31eba.css\" rel=\"stylesheet\"
+        media=\"print\" />\n              <!-- Google Tag Manager -->\n        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+        \       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+        \       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n
+        \       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n
+        \       })(window,document,'script','dataLayer','GTM-MQBCFS');</script>\n
+        \       <!-- End Google Tag Manager -->\n        </head>\n\n<body>\n\n            <!--
+        Google Tag Manager (noscript) -->\n        <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-MQBCFS\"\n
+        \       height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n
+        \       <!-- End Google Tag Manager (noscript) -->\n    \n<div id=\"a17\">\n\n
+        \ <header class=\"g-header\">\n    <a href=\"#content\" class=\"skip-nav f-body\">Skip
+        to Content</a>\n        <div class=\"m-notification m-notification--header\"
+        data-behavior=\"notification\">\n      <div class=\"m-notification--header__inner\">\n
+        \       <p class=\"m-notification__text f-secondary\">\n          <svg class=\"icon--info\"
+        aria-hidden=\"true\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon--info\"></use></svg>
+        Reopening July 30 with new hours and free admission for IL residents July
+        30–Aug 3. <a href=\"https://www.artic.edu/visit\" target=\"_blank\">Learn
+        more</a>.  \n        </p>\n                  <button class=\"m-notification__close\"
+        data-notification-closer=\"\" data-expires=\"1440\"><svg class=\"icon--close\"
+        aria-title=\"Close message\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+        xlink:href=\"#icon--close\"></use></svg></button>\n              </div>\n
+        \   </div>\n        <div class=\"g-header__inner\">\n      <nav aria-label=\"primary\">\n
+        \               <a class=\"g-header__logo\" aria-label=\"Art Institute of
+        Chicago\" href=\"/\">\n          <svg aria-hidden=\"true\">\n            <use
+        xlink:href=\"#icon--logo--outline--80\" />\n            <use xlink:href=\"#icon--logo--outline--88\"
+        />\n            <use xlink:href=\"#icon--logo--outline--92\" />\n          </svg>\n
+        \       </a>\n                <div class=\"g-header__nav-primary\">\n          <h2
+        class=\"sr-only\" id=\"h-nav-primary-header\">Primary Navigation</h2>\n          <ul
+        class=\"f-main-nav\" aria-labelledby=\"h-nav-primary-header\">\n            <li
+        class='u-hide@small+'>\n              <a href=\"https://sales.artic.edu/admissions\"
+        data-gtm-event-category=\"top-nav\" data-gtm-event=\"buy-tickets\">Buy Tickets</a>\n
+        \           </li>\n            <li>\n              <a href=\"https://www.artic.edu/visit\"
+        data-gtm-event-category=\"top-nav\" data-gtm-event=\"visit\">Visit</a>\n            </li>\n
+        \           <li class=\"u-show@small+\">\n              <a href=\"https://www.artic.edu/exhibitions\"
+        data-gtm-event-category=\"top-nav\" data-gtm-event=\"exhibitions-and-events\">Exhibitions
+        &amp; Events</a>\n            </li>\n            <li class=\"u-show@small+
+        s-current\">\n              <a href=\"https://www.artic.edu/collection\" data-gtm-event-category=\"top-nav\"
+        data-gtm-event=\"collection\">The Collection</a>\n            </li>\n            <li
+        class=\"u-show@small+\"><button id=\"global-search-icon\" data-behavior=\"globalSearchOpen\"
+        aria-label=\"Search site\"><svg class=\"icon--search--24\" aria-hidden=\"true\"><use
+        xlink:href=\"#icon--search--24\" /></svg></button></li>\n          </ul>\n
+        \       </div>\n      </nav>\n      <nav class=\"g-header__nav-secondary\"
+        aria-label=\"secondary\">\n        <h2 class=\"sr-only\" id=\"h-nav-secondary-header\">Secondary
+        Navigation</h2>\n        <ul class=\"f-secondary\" aria-labelledby=\"h-nav-secondary-header\">\n
+        \         <li><a href=\"https://sales.artic.edu/admissions\" data-gtm-event-category=\"top-nav\"
+        data-gtm-event=\"buy-tickets\">Buy Tickets</a></li>\n          <li><a href=\"https://sales.artic.edu/memberships\"
+        data-gtm-event-category=\"top-nav\" data-gtm-event=\"become-a-member\">Become
+        a Member</a></li>\n          <li><a href=\"https://shop.artic.edu/\" target=\"_blank\"
+        data-gtm-event-category=\"top-nav\" data-gtm-event=\"shop\">Shop</a></li>\n
+        \       </ul>\n      </nav>\n            <button class=\"g-header__menu-link
+        f-secondary\" data-behavior=\"openNavMobile\" aria-label=\"Show menu\">Menu<svg
+        class=\"icon--menu--24\" aria-hidden=\"true\"><use xlink:href=\"#icon--menu--24\"
+        /></svg></button>\n  </div>\n</header>\n\n  <main id=\"content\">\n    \n
+        \   \n\n<article class=\"o-article\" data-behavior=\"addHistory\" data-add-url=\"https://www.artic.edu/artworks/addRecentlyViewed/87531/a-lady\"
+        itemscope itemtype=\"http://schema.org/CreativeWork\">\n\n  <meta itemprop=\"accessMode\"
+        content=\"visual\"/><meta itemprop=\"provider\" content=\"European Painting
+        and Sculpture\"/><meta itemprop=\"thumbnailUrl\" content=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/,150/0/default.jpg\"/><meta
+        itemprop=\"image\" content=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5\"/>\n\n
+        \ \n  <h1 class=\"sr-only\">A Lady</h1>\n\n  <header class=\"m-article-header
+        m-article-header--gallery \" data-behavior=\"headerGallery\">\n<div class=\"m-article-header__img\">\n
+        \     <div class=\"m-article-header__img-container\" data-gallery-hero>\n
+        \                 <img\n    alt=\"A work made of oil on canvas.\"\n    class=\"
+        \ \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAAFFRUVpaWlxcXF9fX2ZmZm9vb29vb3V1dXZ2dnt7e4mJiY2NjZWVlZaWlpubm52dnaSkpKmpqaysrLm5uQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAAIf8LSW1hZ2VNYWdpY2sHZ2FtbWE9MQAsAAAAAAQABQAABRHgghyNUAwEoBgBMzmJFD1QCAA7\"\n
+        \               srcset=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/843,/0/default.jpg
+        843w, https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/1686,/0/default.jpg
+        1686w\"\n        sizes=\"(min-width: 1640px) 843px, (min-width: 1200px) 843px,
+        (min-width: 900px) 843px, (min-width: 600px) 90.63vw,  90.63vw\"\n    width=\"1798\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/600,/0/default.jpg\"\n
+        \            data-gallery-fullscreen\n             \n>\n      </div>\n            <a
+        href=\"/image-licensing\" class=\"m-article-header__img-credit f-caption\"
+        aria-label=\"credit\" data-gallery-credit>\n            CC0 Public Domain
+        Designation\n        </a>\n          <h2 class=\"sr-only\" id=\"h-image-actions\">Image
+        actions</h2>\n      <ul class=\"m-article-header__img-actions\" aria-labelledby=\"h-image-actions\">\n
+        \               <li>\n            <button class=\"btn  btn--septenary btn--icon-sq\"
+        data-gallery-fullscreen aria-label=\"Open image full screen\">\n    <svg class=\"icon--zoom--24\"
+        aria-hidden=\"true\"><use xlink:href=\"#icon--zoom--24\" /></svg>    \n</button>\n
+        \       </li>\n        \n        \n        \n                <li>\n            <button
+        class=\"btn  btn--septenary btn--icon-sq\" data-gallery-download aria-label=\"Download
+        image\">\n    <svg class=\"icon--download--24\" aria-hidden=\"true\"><use
+        xlink:href=\"#icon--download--24\" /></svg>    \n</button>\n        </li>\n
+        \               <li>\n          <button class=\"btn  btn--septenary btn--icon-sq\"
+        data-behavior=\"sharePage\" data-gallery-share aria-label=\"Share page\">\n
+        \   <svg class=\"icon--share--24\" aria-hidden=\"true\"><use xlink:href=\"#icon--share--24\"
+        /></svg>    \n</button>\n        </li>\n      </ul>\n  </div>\n  <ul class=\"m-article-header__img-thumbs
+        s-single-img\" data-behavior=\"dragScroll\" data-gallery-thumbs>\n              <li>\n
+        \                   <button\n                            data-gallery-img-src=\"data:image/gif;base64,R0lGODlhBAAFAPQAAFFRUVpaWlxcXF9fX2ZmZm9vb29vb3V1dXZ2dnt7e4mJiY2NjZWVlZaWlpubm52dnaSkpKmpqaysrLm5uQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAAIf8LSW1hZ2VNYWdpY2sHZ2FtbWE9MQAsAAAAAAQABQAABRHgghyNUAwEoBgBMzmJFD1QCAA7\"\n
+        \                                       data-gallery-img-srcset=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/843,/0/default.jpg
+        843w, https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/1686,/0/default.jpg
+        1686w\"\n                                        data-gallery-img-width=\"1798\"\n
+        \                                       data-gallery-img-height=\"2250\"\n
+        \                                       data-gallery-img-credit=\"CC0 Public
+        Domain Designation\"\n                                        data-gallery-img-credit-url=\"/image-licensing\"\n
+        \                                       data-gallery-img-share-url=\"#\"\n
+        \                                                   data-gallery-img-download-url=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/!3000,3000/0/default.jpg\"\n
+        \                                       data-gallery-img-download-name=\"1961.1151
+        - A Lady.jpg\"\n                                        data-gallery-img-iiifId=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5\"\n
+        \                       data-gtm-event=\"\"\n            data-gtm-event-category=\"in-page\"\n
+        \           aria-label=\"show alternative image\"\n            disabled\n
+        \         >Show this image</button>\n          <img\n    alt=\"A work made
+        of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAAFFRUVpaWlxcXF9fX2ZmZm9vb29vb3V1dXZ2dnt7e4mJiY2NjZWVlZaWlpubm52dnaSkpKmpqaysrLm5uQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAAIf8LSW1hZ2VNYWdpY2sHZ2FtbWE9MQAsAAAAAAQABQAABRHgghyNUAwEoBgBMzmJFD1QCAA7\"\n
+        \               srcset=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/300,/0/default.jpg
+        300w, https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/600,/0/default.jpg
+        600w\"\n        sizes=\"300px\"\n    width=\"1798\"\n    height=\"2250\"\n
+        \       data-iiifId=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/37746f19-2b92-f486-c620-59ce209857f5/full/600,/0/default.jpg\"\n
+        \                \n>\n        </li>\n        </ul>\n\n</header>\n\n\n  <div
+        class=\"o-article__primary-actions o-article__primary-actions--inline-header
+        u-show@large+\" aria-label=\"Additional information\">\n    \n    <h2 class=\"title
+        f-module-title-1 u-show@large+\" aria-hidden=\"true\">Currently Off View</h2>\n\n
+        \           <ul class=\"list list--inline f-secondary\">\n                            <li><a
+        href=\"https://www.artic.edu/departments/PC-10/european-painting-and-sculpture\"
+        data-gtm-event=\"European Painting and Sculpture\" data-gtm-event-category=\"collection-nav\">European
+        Painting and Sculpture</a></li>\n                                </ul>\n      </div>\n\n
+        \ <div class=\"o-article__secondary-actions o-article__secondary-actions--inline-header
+        u-show@medium+\">\n      </div>\n\n  <div class=\"o-article__inline-header\">\n
+        \         <span class=\"title f-headline-editorial o-article__inline-header-title\"
+        aria-hidden=\"true\">A Lady</span>\n    \n          <h2 class=\"sr-only\">Date:</h2>\n
+        \     <p class=\"title f-secondary o-article__inline-header-display\">c. 1770</p>\n
+        \   \n          <h2 class=\"sr-only\">Artist:</h2>\n      <p class=\"title
+        f-secondary o-article__inline-header-display\">Johann Friedrich August Tischbein<br/>German,
+        1750-1812</p>\n      </div>\n\n  \n  \n  <div class=\"o-article__body o-article__body--no-description
+        o-blocks\">\n\n    <h2 class=\"sr-only\">About this artwork</h2>\n\n    <dl
+        class=\"deflist o-blocks__block u-hide@large+ sr-show@large+\" aria-owns=\"dl-artwork-details\">\n
+        \                                   <dt>\n                        <h2 class=\"f-module-title-1\">Currently
+        Off View</h2>\n                    </dt>\n                                            <dd>\n
+        \                           <span class=\"f-secondary\"><a href=\"https://www.artic.edu/departments/PC-10/european-painting-and-sculpture\"
+        data-gtm-event=\"European Painting and Sculpture\" data-gtm-event-category=\"collection-nav\">European
+        Painting and Sculpture</a></span>\n                        </dd>\n                                                    </dl>\n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \                               \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n                            <dl
+        class=\"deflist o-blocks__block \" id=\"dl-artwork-details\">\n                                    <dt>\n
+        \                       <h2 class=\"f-module-title-1\">Artist</h2>\n                    </dt>\n
+        \                                           <dd itemprop=\"creator\">\n                            <span
+        class=\"f-secondary\">\n                                                                                                            <a
+        href=\"https://www.artic.edu/artists/41524/johann-friedrich-august-tischbein\"
+        data-gtm-event=\"Johann Friedrich August Tischbein\" data-gtm-event-category=\"collection-nav\">Johann
+        Friedrich August Tischbein</a>\n                                                                                                                                    </span>\n
+        \                       </dd>\n                                                        <dt>\n
+        \                       <h2 class=\"f-module-title-1\">Title</h2>\n                    </dt>\n
+        \                                           <dd itemprop=\"name\">\n                            <span
+        class=\"f-secondary\">A Lady</span>\n                        </dd>\n                                                        <dt>\n
+        \                       <h2 class=\"f-module-title-1\">Origin</h2>\n                    </dt>\n
+        \                                           <dd itemprop=\"locationCreated\">\n
+        \                           <span class=\"f-secondary\">Germany</span>\n                        </dd>\n
+        \                                                       <dt>\n                        <h2
+        class=\"f-module-title-1\">Date</h2>\n                    </dt>\n                                            <dd
+        itemprop=\"dateCreated\">\n                            <span class=\"f-secondary\">\n
+        \                                                                                                           <a
+        href=\"https://www.artic.edu/collection?date-start=1765&date-end=1775\"> 1765–1775</a>\n
+        \                                                                                                                                   </span>\n
+        \                       </dd>\n                                                        <dt>\n
+        \                       <h2 class=\"f-module-title-1\">Medium</h2>\n                    </dt>\n
+        \                                           <dd itemprop=\"material\">\n                            <span
+        class=\"f-secondary\">Oil on canvas</span>\n                        </dd>\n
+        \                                                       <dt>\n                        <h2
+        class=\"f-module-title-1\">Dimensions</h2>\n                    </dt>\n                                            <dd>\n
+        \                           <span class=\"f-secondary\">61 x 50 cm (24 x 19
+        11/16 in.)</span>\n                        </dd>\n                                                        <dt>\n
+        \                       <h2 class=\"f-module-title-1\">Credit Line</h2>\n
+        \                   </dt>\n                                            <dd>\n
+        \                           <span class=\"f-secondary\">Gift of Mrs. L. E.
+        Block</span>\n                        </dd>\n                                                        <dt>\n
+        \                       <h2 class=\"f-module-title-1\">Reference Number</h2>\n
+        \                   </dt>\n                                            <dd>\n
+        \                           <span class=\"f-secondary\">1961.1151</span>\n
+        \                       </dd>\n                                                    </dl>\n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \                               \n                                            <h2
+        class=\"sr-only\">Extended information about this artwork</h2>\n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n                                \n
+        \           \n            \n            \n            \n                            <div
+        class=\"o-accordion o-blocks__block \" data-behavior=\"accordion\">\n        <h3><button
+        id=\"publication-history\" class=\"o-accordion__trigger f-module-title-2\"
+        tabindex=\"0\" data-gtm-event=\"artwork-open-drawer\" data-gtm-event-category=\"in-page\"
+        data-gtm-drawer=\"publication-history\">\n        Publication History\n        <span
+        class=\"o-accordion__trigger-icon\">\n            <svg class=\"icon--plus\"><use
+        xlink:href=\"#icon--plus\" /></svg>\n            <svg class=\"icon--minus\"><use
+        xlink:href=\"#icon--minus\" /></svg>\n        </span>\n    </button></h3>\n
+        \   <div id=\"panel_publication-history\" class=\"o-accordion__panel\" aria-labelledby=\"publication-history\"
+        aria-hidden=\"true\">\n        <div class=\"o-accordion__panel-content o-blocks\">\n
+        \           <p>Camille Mauclair and Jean Martin, Jean-Baptiste Greuze. Le
+        catalogue raisonné de l’œuvre peint et dessiné de Greuze (1905; repr., Paris:
+        G. Rapilly, 1908), p. 75, no. 1212.</p>\n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n                                </div>\n
+        \   </div>\n        <h3><button id=\"provenance\" class=\"o-accordion__trigger
+        f-module-title-2\" tabindex=\"0\" data-gtm-event=\"artwork-open-drawer\" data-gtm-event-category=\"in-page\"
+        data-gtm-drawer=\"provenance\">\n        Provenance\n        <span class=\"o-accordion__trigger-icon\">\n
+        \           <svg class=\"icon--plus\"><use xlink:href=\"#icon--plus\" /></svg>\n
+        \           <svg class=\"icon--minus\"><use xlink:href=\"#icon--minus\" /></svg>\n
+        \       </span>\n    </button></h3>\n    <div id=\"panel_provenance\" class=\"o-accordion__panel\"
+        aria-labelledby=\"provenance\" aria-hidden=\"true\">\n        <div class=\"o-accordion__panel-content
+        o-blocks\">\n            <p>Sir Robert Peel, 2nd Bt. (died 1850) [according
+        to annotated Peel Heirlooms sale catalogue in the Rijksbureau voor Kunsthistorische
+        Documentatie, The Hague, copy in curatorial file]; by descent in the Peel
+        family to Robert Peel, 4th Bt.; sold with the Peel Heirlooms, Robinson and
+        Fisher, London, May 11, 1900, no. 220, as Marie Antoinette, by Greuze, to
+        Charles Wertheimer for 1350 guineas [according to the annotated sale catalogue
+        cited above; price according to Mauclair and Martin 1905]; Charles Wertheimer,
+        London, 1900. Probably Rufus Daniel Isaacs, 1st Marquess of Reading, Viceroy
+        of India (died 1935), 1903 until 1936 [according to a letter of January 9,
+        1937, from C.N. Anderson to Mrs. L. E. Block in the Art Institute archives,
+        copy in curatorial file, stating that the painting was sold to R. C. Isaac,
+        Lord Reading [sic]]; Anderson Galleries, Chicago, 1936 [according to letter
+        cited above]; sold by Anderson Galleries to Mrs. Leopold E. Block (née Cora
+        Bloom), 1937, as by Greuze [according to letter cited above]; given by her
+        to the Art Institute of Chicago in 1961.</p>\n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n                                </div>\n
+        \   </div>\n    </div>\n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n                                \n
+        \           \n            \n            \n                            <span
+        class=\"hr\"></span>\n\n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n                                \n
+        \                                           <p class=\"f-caption\">Object
+        information is a work in progress and may be updated as new research findings
+        emerge. To help improve this record, please email <a data-behavior=\"maskEmail\"
+        data-maskEmail-user=\"collections\" data-maskEmail-domain=\"artic.edu\"></a>.
+        Information about image downloads and licensing is <a href=\"/image-licensing\">available
+        here</a>.</p>\n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n            \n            \n            \n            \n            \n
+        \           \n                        \n    <div>\n<h2 class=\"sr-only\" id=\"h-article-actionsm-article-actions--keyline-top\">Share</h2>\n<ul
+        class=\"m-article-actions m-article-actions--keyline-top\" aria-labelledby=\"h-article-actionsm-article-actions--keyline-top\">\n
+        \       <li class=\"m-article-actions__action\">\n        <button class=\"btn
+        \ btn--icon\" data-behavior=\"sharePage\" aria-label=\"Share page\">\n    <svg
+        class=\"icon--share--24\" aria-hidden=\"true\"><use xlink:href=\"#icon--share--24\"
+        /></svg>    \n</button>\n    </li>\n                <li class=\"m-article-actions__action
+        u-hide@small-\">\n        <button class=\"btn  btn--quaternary btn--icon\"
+        data-behavior=\"printPage\" aria-label=\"Print page\">\n    <svg class=\"icon--print--24\"
+        aria-hidden=\"true\"><use xlink:href=\"#icon--print--24\" /></svg>    \n</button>\n
+        \   </li>\n    </ul>\n</div>\n  </div>\n\n</article>\n\n<div id=\"exploreFurther\">\n
+        \   <div class=\"m-title-bar \">\n  <h2 class=\"title f-module-title-2\" id=\"h-explore-further\">Explore
+        Further</h2>\n  </div>\n\n    <nav class=\"m-links-bar\" data-behavior=\"linksBar\">\n
+        \   <ul class=\"m-links-bar__items-primary\" aria-labelledby=\"h-explore-further\"
+        data-links-bar-primary>\n                    \n                \n                \n\n
+        \               \n                                    <li class=\"m-links-bar__item
+        s-active\">\n                                    <a class=\"m-links-bar__item-trigger
+        f-link\" href=\"https://www.artic.edu/artworks/87531/a-lady?ef-most-similar_ids=most-similar\"
+        data-ajax-tab-target=\"exploreFurther\" aria-controls=\"explore-further-pinboard\"
+        aria-pressed=\"false\">\n                        Most Similar\n                    </a>\n
+        \               </li>\n                                \n                \n
+        \               \n\n                \n                                    <li
+        class=\"m-links-bar__item  \">\n                                    <a class=\"m-links-bar__item-trigger
+        f-link\" href=\"https://www.artic.edu/artworks/87531/a-lady?ef-classification_ids=oil+on+canvas\"
+        data-ajax-tab-target=\"exploreFurther\" aria-controls=\"explore-further-pinboard\"
+        aria-pressed=\"false\">\n                        Oil on canvas\n                    </a>\n
+        \               </li>\n                                \n                \n
+        \               \n\n                \n                                    <li
+        class=\"m-links-bar__item  \">\n                                    <a class=\"m-links-bar__item-trigger
+        f-link\" href=\"https://www.artic.edu/artworks/87531/a-lady?ef-artist_ids=Johann+Friedrich+August+Tischbein\"
+        data-ajax-tab-target=\"exploreFurther\" aria-controls=\"explore-further-pinboard\"
+        aria-pressed=\"false\">\n                        Johann Friedrich August Tischbein\n
+        \                   </a>\n                </li>\n                                \n
+        \               \n                \n\n                \n                                    <li
+        class=\"m-links-bar__item  \">\n                                    <a class=\"m-links-bar__item-trigger
+        f-link\" href=\"https://www.artic.edu/artworks/87531/a-lady?ef-date_ids=1765\"
+        data-ajax-tab-target=\"exploreFurther\" aria-controls=\"explore-further-pinboard\"
+        aria-pressed=\"false\">\n                        1700–1800\n                    </a>\n
+        \               </li>\n                                \n                \n
+        \               \n\n                \n                                    <li
+        class=\"m-links-bar__item  \">\n                                    <a class=\"m-links-bar__item-trigger
+        f-link\" href=\"https://www.artic.edu/artworks/87531/a-lady?ef-all_ids=1\"
+        data-ajax-tab-target=\"exploreFurther\" aria-controls=\"explore-further-pinboard\"
+        aria-pressed=\"false\">\n                        All Tags\n                    </a>\n
+        \               </li>\n                    \n        <li class=\"m-links-bar__item
+        m-links-bar__item--push m-links-bar__item--overflow\" data-links-bar-primary-overflow=\"\">\n
+        \         <div aria-label=\"More links\" class=\"dropdown dropdown--filter
+        dropdown--tabs f-link\" data-behavior=\"dropdown\" tabindex=\"0\">\n            <button
+        class=\"dropdown__trigger  f-link\">More<svg class=\"icon--arrow\"><use xlink:href=\"#icon--arrow\"></use></svg></button>\n
+        \             <h4 class=\"sr-only\" id=\"h-links-bar-more\">More options</h4>\n
+        \             <ul class=\"dropdown__list f-secondary\" aria-labelledby=\"h-links-bar-more\"
+        data-dropdown-list>\n                                                                                        <li
+        class=\"s-active\">\n                                                    <a
+        href=\"https://www.artic.edu/artworks/87531/a-lady?ef-most-similar_ids=most-similar\"
+        data-ajax-tab-target=\"exploreFurther\">\n                                Most
+        Similar\n                            </a>\n                        </li>\n
+        \                                                                                                           <li
+        class=\" \">\n                                                    <a href=\"https://www.artic.edu/artworks/87531/a-lady?ef-classification_ids=oil+on+canvas\"
+        data-ajax-tab-target=\"exploreFurther\">\n                                Oil
+        on canvas\n                            </a>\n                        </li>\n
+        \                                                                                                           <li
+        class=\" \">\n                                                    <a href=\"https://www.artic.edu/artworks/87531/a-lady?ef-artist_ids=Johann+Friedrich+August+Tischbein\"
+        data-ajax-tab-target=\"exploreFurther\">\n                                Johann
+        Friedrich August Tischbein\n                            </a>\n                        </li>\n
+        \                                                                                                           <li
+        class=\" \">\n                                                    <a href=\"https://www.artic.edu/artworks/87531/a-lady?ef-date_ids=1765\"
+        data-ajax-tab-target=\"exploreFurther\">\n                                1700–1800\n
+        \                           </a>\n                        </li>\n                                                                                                            <li
+        class=\" \">\n                                                    <a href=\"https://www.artic.edu/artworks/87531/a-lady?ef-all_ids=1\"
+        data-ajax-tab-target=\"exploreFurther\">\n                                All
+        Tags\n                            </a>\n                        </li>\n                                                </ul>\n
+        \         </div>\n        </li>\n    </ul>\n</nav>\n\n            <h3 class=\"sr-only\"
+        id=\"h-artworks-related-to-tag\">Artworks related to tag</h3>\n  <ul id=\"explore-further-pinboard\"
+        class=\"o-pinboard o-pinboard--2-col@small o-pinboard--3-col@medium o-pinboard--4-col@large
+        o-pinboard--4-col@xlarge\" data-behavior=\"pinboard\" data-pinboard-maintain-order=\"false\"
+        aria-labelledby=\"h-artworks-related-to-tag\">\n    <li class=\"m-listing
+        m-listing--variable-height o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/55621/the-church-of-santa-maria-della-salute-venice\"
+        class=\"m-listing__link\" itemprop=\"url\">\n        <span class=\"m-listing__img
+        m-listing__img--no-bg\">\n                            <img\n    alt=\"A work
+        made of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhCAAFAPUAAMDby8bh0Mji0cXj1sbi08zgzrvVyKe+tNvy3t/14dr15LzMvsPYzdXw5MPi17jGs8vZxs/Yxb7IupSPfYqPhp6kmZWYiZ2ahXdiS4mBaZWSeoeIdV1XSnBkUHt0X2NaSS0iH1RFM3h0X3V3ZHBjS1tKOH5tWWZaTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAIAAUAAAYlQEBAMCAUDAdEQrFgNBwPSEQyoVQsF0xGs+F0PB9QSDQilUynIAA7\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/9c8a7d84-450e-0504-00d4-491d93d9093e/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/9c8a7d84-450e-0504-00d4-491d93d9093e/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/9c8a7d84-450e-0504-00d4-491d93d9093e/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"3000\"\n
+        \   height=\"1979\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/9c8a7d84-450e-0504-00d4-491d93d9093e\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/9c8a7d84-450e-0504-00d4-491d93d9093e/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">The Church of Santa Maria della Salute, Venice, 1740/41</strong>\n
+        \           <br>\n            <span class=\"subtitle f-secondary\">Michele
+        Giovanni Marieschi</span>\n        </span>\n    </a>\n</li>\n                            <li
+        class=\"m-listing m-listing--variable-height o-pinboard__item\" itemscope
+        itemtype=\"http://schema.org/CreativeWork\">\n    <a href=\"https://www.artic.edu/artworks/57048/the-old-temple\"
+        class=\"m-listing__link\" itemprop=\"url\">\n        <span class=\"m-listing__img
+        m-listing__img--no-bg\">\n                            <img\n    alt=\"A work
+        made of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAACQdFUAwJDMlGScdFFZOSJyOhEQtGDwsHVtNQIhxWHVUMFE8KFhLPoBpToBeOmZLMjInHlZBLXNRM2FFKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBAIA1EYB5IoC9M4DxRJUwgAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/6308396a-35eb-07d6-ba30-ff52690f862e/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/6308396a-35eb-07d6-ba30-ff52690f862e/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/6308396a-35eb-07d6-ba30-ff52690f862e/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"1947\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/6308396a-35eb-07d6-ba30-ff52690f862e\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/6308396a-35eb-07d6-ba30-ff52690f862e/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">The Old Temple, 1787/88</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Hubert Robert</span>\n        </span>\n    </a>\n</li>\n
+        \                           <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/57049/the-obelisk\" class=\"m-listing__link\"
+        itemprop=\"url\">\n        <span class=\"m-listing__img m-listing__img--no-bg\">\n
+        \                           <img\n    alt=\"A work made of oil on canvas.\"\n
+        \   class=\"  \"\n            src=\"https://www.artic.edu/iiif/2/be7e89e2-7edb-a110-0866-88518304523a/full/25,/0/default.jpg\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/be7e89e2-7edb-a110-0866-88518304523a/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/be7e89e2-7edb-a110-0866-88518304523a/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/be7e89e2-7edb-a110-0866-88518304523a/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"2602\"\n
+        \   height=\"3000\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/be7e89e2-7edb-a110-0866-88518304523a\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/be7e89e2-7edb-a110-0866-88518304523a/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">The Obelisk, 1787/88</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Hubert Robert</span>\n        </span>\n    </a>\n</li>\n
+        \                           <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/57050/the-landing-place\" class=\"m-listing__link\"
+        itemprop=\"url\">\n        <span class=\"m-listing__img m-listing__img--no-bg\">\n
+        \                           <img\n    alt=\"A work made of oil on canvas.\"\n
+        \   class=\"  \"\n            src=\"https://www.artic.edu/iiif/2/74c67fb8-7e33-127d-b69a-3b6210f3843a/full/25,/0/default.jpg\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/74c67fb8-7e33-127d-b69a-3b6210f3843a/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/74c67fb8-7e33-127d-b69a-3b6210f3843a/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/74c67fb8-7e33-127d-b69a-3b6210f3843a/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"2611\"\n
+        \   height=\"3000\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/74c67fb8-7e33-127d-b69a-3b6210f3843a\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/74c67fb8-7e33-127d-b69a-3b6210f3843a/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">The Landing Place, 1787/88</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Hubert Robert</span>\n        </span>\n    </a>\n</li>\n
+        \                           <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/57051/the-fountains\" class=\"m-listing__link\"
+        itemprop=\"url\">\n        <span class=\"m-listing__img m-listing__img--no-bg\">\n
+        \                           <img\n    alt=\"Large painting of ancient arch
+        ruins, statues, humans are small in comparison\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAAHV5cmxpXlJIPF5ZTUs2JkMwHmNaS0xANE47K0g3KFJDMUY5LE45KFI+KmFRPUg6L1tAKnRYO1JBLTIlGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBAIA1EYB5IoC9M4DxRJUwgAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/ec8adfbf-c3c2-728d-fb79-8e65ee0ae8e2/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/ec8adfbf-c3c2-728d-fb79-8e65ee0ae8e2/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/ec8adfbf-c3c2-728d-fb79-8e65ee0ae8e2/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"1957\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/ec8adfbf-c3c2-728d-fb79-8e65ee0ae8e2\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/ec8adfbf-c3c2-728d-fb79-8e65ee0ae8e2/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">The Fountains, 1787/88</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Hubert Robert</span>\n        </span>\n    </a>\n</li>\n
+        \                           <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/57996/the-eruption-of-vesuvius\"
+        class=\"m-listing__link\" itemprop=\"url\">\n        <span class=\"m-listing__img
+        m-listing__img--no-bg\">\n                            <img\n    alt=\"A work
+        made of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhCwAFAPUAADQxLkk/L3BUK3pRKGBBKlVCLU5DMUY/MTc2NC4vMy4uLzYvLHpdL65sKIxbKWdQL0M+MzQ0Mzc4OD9APFhVQzs6NFNAL4FeL35SKUs7KV1NMTw9OTo9O05QR25uWXFwV0xLPmJELItTKWVAKFY7KTwwK0U/NVBHOUtFN1FOPVlWQklGOTouKkYxJlI2JmtDJ1s4Jk8zJUozJT0xJj0zJyYkIygmJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAUAAAYyQEBAMCAUDAdEQrFgNBwPSEQyoVQsF0xGs+F0PB9QSDQilUwnVEq1YrVcL1hMNqPVbEEAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/c088c250-3335-8ee8-6c59-2d0d3c2caa15/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/c088c250-3335-8ee8-6c59-2d0d3c2caa15/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/c088c250-3335-8ee8-6c59-2d0d3c2caa15/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"3000\"\n
+        \   height=\"1381\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/c088c250-3335-8ee8-6c59-2d0d3c2caa15\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/c088c250-3335-8ee8-6c59-2d0d3c2caa15/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">The Eruption of Vesuvius, 1771</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Pierre-Jacques Volaire</span>\n        </span>\n
+        \   </a>\n</li>\n                            <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/57652/queen-philippa-at-the-battle-of-neville-s-cross\"
+        class=\"m-listing__link\" itemprop=\"url\">\n        <span class=\"m-listing__img
+        m-listing__img--no-bg\">\n                            <img\n    alt=\"A work
+        made of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBwAFAPUAAB8fHx8fHyEhISEhIScnJy4uLjExMTMzMzQ0NDY2Njc3Nzg4ODs7Ozw8PD09PUBAQEFBQUVFRUVFRUZGRkZGRkdHR0lJSU1NTU9PT09PT1JSUlhYWFtbW15eXmVlZWlpaWxsbG5uboGBgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAAIf8LSW1hZ2VNYWdpY2sHZ2FtbWE9MQAsAAAAAAcABQAABiHAT+dSwWw4IpAFsnhQPKGMJNFwEAoGhCYyCQwAgoOCEQQAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/81b3c9b7-b428-eeea-949d-88e6422afd33/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/81b3c9b7-b428-eeea-949d-88e6422afd33/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/81b3c9b7-b428-eeea-949d-88e6422afd33/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"3000\"\n
+        \   height=\"2229\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/81b3c9b7-b428-eeea-949d-88e6422afd33\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/81b3c9b7-b428-eeea-949d-88e6422afd33/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">Queen Philippa at the Battle of Neville’s Cross, c. 1789</strong>\n
+        \           <br>\n            <span class=\"subtitle f-secondary\">Benjamin
+        West</span>\n        </span>\n    </a>\n</li>\n                            <li
+        class=\"m-listing m-listing--variable-height o-pinboard__item\" itemscope
+        itemtype=\"http://schema.org/CreativeWork\">\n    <a href=\"https://www.artic.edu/artworks/69003/self-portrait\"
+        class=\"m-listing__link\" itemprop=\"url\">\n        <span class=\"m-listing__img
+        m-listing__img--no-bg\">\n                            <img\n    alt=\"A work
+        made of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAADkoF2xfSXdrVGJSNSkaDpJ/bX9sU11HJhECAzssKltBKUsdBhMCBg0AAhIEBxsGCBcICxIGChMFCCgXEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBAIA1EYB5IoC9M4DxRJUwgAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/bff2bde1-2fc6-ccb3-0b7d-713b23cb9d6c/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/bff2bde1-2fc6-ccb3-0b7d-713b23cb9d6c/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/bff2bde1-2fc6-ccb3-0b7d-713b23cb9d6c/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"1783\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/bff2bde1-2fc6-ccb3-0b7d-713b23cb9d6c\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/bff2bde1-2fc6-ccb3-0b7d-713b23cb9d6c/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">Self-Portrait, c. 1725</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Nicolas de Largillière</span>\n        </span>\n
+        \   </a>\n</li>\n                            <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/70133/portrait-of-a-man-in-a-tricorn-hat\"
+        class=\"m-listing__link\" itemprop=\"url\">\n        <span class=\"m-listing__img
+        m-listing__img--no-bg\">\n                            <img\n    alt=\"A work
+        made of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAACIWGDEiHzAgHh0PEyEbIXBeWJV6bD47Pj0yMHpUS3RSRW5gSzwgGXBDOGdGOD8fECcPDV42LVw4KjcbFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBAIA1EYB5IoC9M4DxRJUwgAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/1a2b67ac-148a-3c3d-343a-47459c74151b/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/1a2b67ac-148a-3c3d-343a-47459c74151b/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/1a2b67ac-148a-3c3d-343a-47459c74151b/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"1881\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/1a2b67ac-148a-3c3d-343a-47459c74151b\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/1a2b67ac-148a-3c3d-343a-47459c74151b/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">Portrait of a Man in a Tricorn Hat, 1767</strong>\n            <br>\n
+        \           <span class=\"subtitle f-secondary\">John Russell</span>\n        </span>\n
+        \   </a>\n</li>\n                            <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/70134/mrs-freeman-flower\" class=\"m-listing__link\"
+        itemprop=\"url\">\n        <span class=\"m-listing__img m-listing__img--no-bg\">\n
+        \                           <img\n    alt=\"A work made of oil on canvas.\"\n
+        \   class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAADk0KmVRPFlLOz5BOjczJHhmWnlsW15RMlhBMMGvpY96bEcxIGxbUJGGdZ2Gem1LP4V4b5OLf5l1Zm5QPgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBAIA1EYB5IoC9M4DxRJUwgAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/5051578e-ec8b-0740-7cc9-9d1c6020eefe/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/5051578e-ec8b-0740-7cc9-9d1c6020eefe/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/5051578e-ec8b-0740-7cc9-9d1c6020eefe/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"1747\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/5051578e-ec8b-0740-7cc9-9d1c6020eefe\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/5051578e-ec8b-0740-7cc9-9d1c6020eefe/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">Mrs. Freeman Flower, 1747</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Joseph Highmore</span>\n        </span>\n    </a>\n</li>\n
+        \                           <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/70135/freeman-flower\" class=\"m-listing__link\"
+        itemprop=\"url\">\n        <span class=\"m-listing__img m-listing__img--no-bg\">\n
+        \                           <img\n    alt=\"A work made of oil on canvas.\"\n
+        \   class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAAC4iD29lUGxqWUhPPyIYCWxfR4BwVEA6JB0TCGBHLVIzGjAfDjwxI56MeEgyISweDzcpGqObiJ+Tg0QwHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBAIA1EYB5IoC9M4DxRJUwgAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/07ab9d17-cfd5-dbff-4042-ac010af3299c/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/07ab9d17-cfd5-dbff-4042-ac010af3299c/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/07ab9d17-cfd5-dbff-4042-ac010af3299c/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"1749\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/07ab9d17-cfd5-dbff-4042-ac010af3299c\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/07ab9d17-cfd5-dbff-4042-ac010af3299c/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">Freeman Flower, 1747</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">Joseph Highmore</span>\n        </span>\n    </a>\n</li>\n
+        \                           <li class=\"m-listing m-listing--variable-height
+        o-pinboard__item\" itemscope itemtype=\"http://schema.org/CreativeWork\">\n
+        \   <a href=\"https://www.artic.edu/artworks/69139/trepanning-a-recruit\"
+        class=\"m-listing__link\" itemprop=\"url\">\n        <span class=\"m-listing__img
+        m-listing__img--no-bg\">\n                            <img\n    alt=\"A work
+        made of oil on canvas.\"\n    class=\"  \"\n            src=\"data:image/gif;base64,R0lGODlhBAAFAPQAAHJsXXBqXUA/NicoI3JsXWBZTXZpWFFOQm5mVXJkTX9uVmZiU2xfSHBjSlBOQ01NRD88MV1TPzQxKDk2LgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBAIA1EYB5IoC9M4DxRJUwgAOw==\"\n
+        \               data-srcset=\"https://www.artic.edu/iiif/2/da2f5fdb-8145-e5ae-4e30-66a51cd26205/full/200,/0/default.jpg
+        200w, https://www.artic.edu/iiif/2/da2f5fdb-8145-e5ae-4e30-66a51cd26205/full/400,/0/default.jpg
+        400w, https://www.artic.edu/iiif/2/da2f5fdb-8145-e5ae-4e30-66a51cd26205/full/600,/0/default.jpg
+        600w\"\n        sizes=\"(min-width: 1640px) 336px, (min-width: 1200px) 20.31vw,
+        (min-width: 900px) 28.13vw, (min-width: 600px) 43.75vw,  90.63vw\"\n    width=\"1793\"\n
+        \   height=\"2250\"\n        data-iiifId=\"https://www.artic.edu/iiif/2/da2f5fdb-8145-e5ae-4e30-66a51cd26205\"\n
+        \               data-pin-media=\"https://www.artic.edu/iiif/2/da2f5fdb-8145-e5ae-4e30-66a51cd26205/full/600,/0/default.jpg\"\n
+        \                \n>\n                                    </span>\n        <span
+        class=\"m-listing__meta\">\n                        <strong class=\"title
+        f-list-1\">Trepanning a Recruit, c. 1790</strong>\n            <br>\n            <span
+        class=\"subtitle f-secondary\">George Morland</span>\n        </span>\n    </a>\n</li>\n</ul>\n
+        \   \n    \n    </div>\n\n\n<div class=\"o-injected-container\" data-behavior=\"injectContent\"
+        data-injectContent-url=\"https://www.artic.edu/artworks/recentlyViewed\" data-user-artwork-history></div>\n\n\n
+        \   <form class=\"m-aside-newsletter m-aside-newsletter--wide\" action=\"/subscribe\"
+        data-behavior=\"newsletter\" novalidate>\n    <fieldset>\n        <legend><h2
+        class=\"title f-list-3\">Sign up for our enewsletter to receive updates.</h2></legend>\n
+        \       <div class=\"m-aside-newsletter__field__wrapper\">\n            <span
+        class=\"m-aside-newsletter__field\">\n                <label for=\"email890\"
+        class=\"f-secondary\">Email address</label>\n                <input type=\"hidden\"
+        name=\"_token\" value=\"i2MoJcj7YO1A0fFmlnRTM3bfJo4vxLqu7lOnICij\">\n                <input
+        type=\"email\" name=\"email\" id=\"email890\" class=\"f-secondary\" placeholder=\"\">\n
+        \               <button type=\"submit\" class=\"f-buttons m-aside-newsletter__btn--submit\"
+        data-gtm-event-category=\"subscribe\" data-gtm-event=\"email\">Subscribe</button>\n
+        \           </span>\n\n            \n            \n            <div class=\"m-aside-newsletter__btn--list__wrapper\">\n
+        \               <button type=\"button\" class=\"f-buttons m-aside-newsletter__btn--list\">\n
+        \                   See all newsletters\n                    <svg class=\"icon--arrow\">\n
+        \                       <use xlink:href=\"#icon--arrow\"></use>\n                    </svg>\n
+        \               </button>\n            </div>\n\n            <div class=\"m-aside-newsletter__list-wrapper\"
+        aria-hidden=\"true\">\n                <div class=\"m-aside-newsletter__list\">\n
+        \                   \n                    <div class=\"m-aside-newsletter__list__left\">\n
+        \                       <ol class=\"m-fieldset__fields\">\n                          <li
+        class=\"m-fieldset__field o-blocks m-fieldset__field--group\">\n                                                        <span
+        class=\"checkbox s-disabled\">\n  <input type=\"checkbox\" value=\"OptEnews\"
+        id=\"subscriptions-OptEnews\" name=\"subscriptions[0]\" checked disabled>\n
+        \ <span class=\"f-secondary\">\n      <label for=\"subscriptions-OptEnews\"
+        class=\"label  \">\n    News and Exhibitions\n            </label>\n  </span>\n
+        \ </span>\n                                                                                      <span
+        class=\"checkbox\">\n  <input type=\"checkbox\" value=\"OptHumanResources\"
+        id=\"subscriptions-OptHumanResources\" name=\"subscriptions[1]\"  >\n  <span
+        class=\"f-secondary\">\n      <label for=\"subscriptions-OptHumanResources\"
+        class=\"label  \">\n    Career Opportunities\n            </label>\n  </span>\n
+        \ </span>\n                                                                                      <span
+        class=\"checkbox\">\n  <input type=\"checkbox\" value=\"OptEveningAssociates\"
+        id=\"subscriptions-OptEveningAssociates\" name=\"subscriptions[2]\"  >\n  <span
+        class=\"f-secondary\">\n      <label for=\"subscriptions-OptEveningAssociates\"
+        class=\"label  \">\n    Young Professionals\n            </label>\n  </span>\n
+        \ </span>\n                                                                                      <span
+        class=\"checkbox\">\n  <input type=\"checkbox\" value=\"OptFamilyPrograms\"
+        id=\"subscriptions-OptFamilyPrograms\" name=\"subscriptions[3]\"  >\n  <span
+        class=\"f-secondary\">\n      <label for=\"subscriptions-OptFamilyPrograms\"
+        class=\"label  \">\n    Families\n            </label>\n  </span>\n  </span>\n
+        \                                                                                 </li>\n
+        \                       </ol>\n                    </div>\n                    <div
+        class=\"m-aside-newsletter__list__right\">\n                        <ol class=\"m-fieldset__fields\">\n
+        \                         <li class=\"m-fieldset__field o-blocks m-fieldset__field--group\">\n
+        \                                                       <span class=\"checkbox\">\n
+        \ <input type=\"checkbox\" value=\"OptEvents\" id=\"subscriptions-OptEvents\"
+        name=\"subscriptions[4]\"  >\n  <span class=\"f-secondary\">\n      <label
+        for=\"subscriptions-OptEvents\" class=\"label  \">\n    Public Programs\n
+        \           </label>\n  </span>\n  </span>\n                                                                                      <span
+        class=\"checkbox\">\n  <input type=\"checkbox\" value=\"OptStudentTeacherPrograms\"
+        id=\"subscriptions-OptStudentTeacherPrograms\" name=\"subscriptions[5]\"  >\n
+        \ <span class=\"f-secondary\">\n      <label for=\"subscriptions-OptStudentTeacherPrograms\"
+        class=\"label  \">\n    Students and Teachers\n            </label>\n  </span>\n
+        \ </span>\n                                                                                      <span
+        class=\"checkbox\">\n  <input type=\"checkbox\" value=\"OptTeenPrograms\"
+        id=\"subscriptions-OptTeenPrograms\" name=\"subscriptions[6]\"  >\n  <span
+        class=\"f-secondary\">\n      <label for=\"subscriptions-OptTeenPrograms\"
+        class=\"label  \">\n    Teens\n            </label>\n  </span>\n  </span>\n
+        \                                                                                     <span
+        class=\"checkbox\">\n  <input type=\"checkbox\" value=\"OptAcademicEngagement\"
+        id=\"subscriptions-OptAcademicEngagement\" name=\"subscriptions[7]\"  >\n
+        \ <span class=\"f-secondary\">\n      <label for=\"subscriptions-OptAcademicEngagement\"
+        class=\"label  \">\n    Research, Publishing, and Conservation\n            </label>\n
+        \ </span>\n  </span>\n                                                                                  </li>\n
+        \                       </ol>\n                    </div>\n\n                </div>\n
+        \           </div>\n\n            \n                    </div>\n                \n
+        \   </fieldset>\n</form>\n  </main>\n\n  <footer id=\"footer\" class=\"g-footer\">\n
+        \ <a href=\"#a17\" class=\"g-footer__top-link arrow-link arrow-link--up f-small-caps\">\n
+        \   Back to top\n    <span>\n      <svg aria-hidden=\"true\" class=\"icon--arrow\"><use
+        xlink:href=\"#icon--arrow\" /></svg>\n    </span>\n  </a>\n\n  <div class=\"g-footer__inner\">\n
+        \   <h2 class=\"sr-only\" id=\"h-footer-grid\">Footer content</h2>\n    <ul
+        class=\"g-footer__grid\" aria-labelledby=\"h-footer-grid\">\n      <li>\n
+        \       <nav aria-label=\"primary\">\n          <h3 class=\"sr-only\" id=\"h-footer-nav-primary\">Primary
+        Navigation</h3>\n\n          <a class=\"g-footer__logo\" aria-label=\"Art
+        Institute of Chicago\" href=\"/\">\n            <svg aria-hidden=\"true\">\n
+        \             <use xlink:href=\"#icon--logo--outline--92\" />\n            </svg>\n
+        \         </a>\n\n          <ul class=\"g-footer__link-list\" aria-labelledby=\"h-footer-nav-primary\">\n
+        \           <li><a href=\"https://www.artic.edu/visit\">Visit</a></li>\n            <li><a
+        href=\"https://www.artic.edu/exhibitions\">Exhibitions and Events</a></li>\n
+        \           <li><a href=\"https://www.artic.edu/collection\">The Collection</a></li>\n
+        \         </ul>\n        </nav>\n      </li>\n\n      <li class=\"u-hide@small-\">\n
+        \       <a href=\"https://www.google.com/maps/place/The+Art+Institute+of+Chicago/@41.8795845,-87.625902,17z/data=!3m1!5s0x880e2ca148f260e3:0xd473c3802aaff420!4m5!3m4!1s0x880e2ca3e2d94695:0x4829f3cc9ca2d0de!8m2!3d41.8795847!4d-87.623713\"
+        target=\"_blank\" aria-label=\"Directions to the Art Institute of Chicago\">\n
+        \         <svg aria-hidden=\"true\" class=\"icon--footer_map_120x92\"><use
+        xlink:href=\"#icon--footer_map_120x92\" /></svg>\n        </a>\n\n        <h3
+        class=\"sr-only\" id=\"h-footer-nav-locations\">Locations</h3>\n        <ul
+        class=\"g-footer__link-list g-footer__link-list--spaced\" aria-labelledby=\"h-footer-nav-locations\">\n
+        \         <li>\n\n            <h4>Michigan Avenue Entrance</h4>\n            <a
+        href=\"https://www.google.com/maps/place/The+Art+Institute+of+Chicago/@41.8795845,-87.625902,17z/data=!3m1!5s0x880e2ca148f260e3:0xd473c3802aaff420!4m5!3m4!1s0x880e2ca3e2d94695:0x4829f3cc9ca2d0de!8m2!3d41.8795847!4d-87.623713\"
+        target=\"_blank\">111 South Michigan Avenue <br>Chicago, IL 60603</a>\n          </li>\n\n
+        \         <li>\n            <h4>Modern Wing Entrance</h4>\n            <a
+        href=\"https://www.google.com/maps/place/Modern+Wing+Entrance/@41.8797032,-87.6244036,17z/data=!3m1!5s0x880e2ca148f260e3:0xd473c3802aaff420!4m12!1m6!3m5!1s0x880e2ca3e2d94695:0x4829f3cc9ca2d0de!2sThe+Art+Institute+of+Chicago!8m2!3d41.8795847!4d-87.623713!3m4!1s0x880e2ca6cf1a0e41:0xa97b8d9d0c91fa6e!8m2!3d41.880725!4d-87.621932\"
+        target=\"_blank\">159 East Monroe Street <br>Chicago, IL 60603</a>\n          </li>\n
+        \       </ul>\n      </li>\n\n      <li class=\"u-hide@small-\">\n        <div
+        class=\"g-footer__grid__group\">\n          <h3 class=\"f-list-6\" id=\"h-footer-about-us\"><a
+        href=\"/about-us\">About us<svg aria-hidden=\"true\" class=\"icon--arrow\"><use
+        xlink:href=\"#icon--arrow\" /></svg></a></h3>\n\n          <ul class=\"g-footer__link-list\"
+        aria-labelledby=\"h-footer-about-us\">\n            <li><a href=\"/about-us/mission-and-history\">Mission
+        and History</a></li>\n            <li><a href=\"/about-us/leadership\">Leadership</a></li>\n
+        \           <li><a href=\"/about-us/financial-reporting\">Financial Reporting</a></li>\n
+        \                       <li><a href=\"/about-us/departments\">Departments</a></li>\n\n
+        \         </ul>\n        </div>\n\n        <div class=\"g-footer__grid__group\">\n
+        \         <h3 class=\"f-list-6\" id=\"h-footer-support-us\"><a href=\"/support-us\">Support
+        us</a></h3>\n\n          <ul class=\"g-footer__link-list\" aria-labelledby=\"h-footer-support-us\">\n
+        \           <li><a href=\"/support-us/membership\">Membership</a></li>\n            <li><a
+        href=\"/support-us/ways-to-give/annual-fund\">Annual Fund</a></li>\n            <li><a
+        href=\"/support-us/ways-to-give/planned-giving\">Planned Giving</a></li>\n
+        \           <li><a href=\"/support-us/ways-to-give/corporate-sponsorship\">Corporate
+        Sponsorship</a></li>\n          </ul>\n        </div>\n      </li>\n\n      <li>\n
+        \       <div class=\"g-footer__grid__group u-hide@small-\">\n          <h3
+        class=\"f-list-6\" id=\"h-footer-learn-with-us\"><a href=\"/learn-with-us\">Learn
+        with us<svg aria-hidden=\"true\" class=\"icon--arrow\"><use xlink:href=\"#icon--arrow\"
+        /></svg></a></h3>\n\n          <ul class=\"g-footer__link-list\" aria-labelledby=\"h-footer-learn-with-us\">\n
+        \           <li><a href=\"/learn-with-us/families\">Families</a></li>\n            <li><a
+        href=\"/learn-with-us/teens\">Teens</a></li>\n            <li><a href=\"/learn-with-us/educators\">Educators</a></li>\n
+        \           <li><a href=\"/learn-with-us/adults\">Adults</a></li>\n          </ul>\n
+        \       </div>\n\n        <div class=\"g-footer__grid__group\">\n          <h3
+        class=\"f-list-6\" id=\"h-footer-follow-us\">Follow us</h3>\n\n          <ul
+        class=\"g-footer__link-list\" aria-labelledby=\"h-footer-follow-us\">\n            <li><a
+        href=\"https://www.facebook.com/artic\" data-gtm-event=\"facebook\" data-gtm-event-category=\"follow\"
+        target=\"_blank\">Facebook</a></li>\n            <li><a href=\"https://twitter.com/artinstitutechi\"
+        data-gtm-event=\"twitter\" data-gtm-event-category=\"follow\" target=\"_blank\">Twitter</a></li>\n
+        \           <li><a href=\"https://www.instagram.com/artinstitutechi/\" data-gtm-event=\"instagram\"
+        data-gtm-event-category=\"follow\" target=\"_blank\">Instagram</a></li>\n
+        \           <li><a href=\"https://www.youtube.com/user/ArtInstituteChicago\"
+        data-gtm-event=\"youtube\" data-gtm-event-category=\"follow\" target=\"_blank\">YouTube</a></li>\n
+        \         </ul>\n        </div>\n      </li>\n    </ul>\n  </div>\n\n  <h2
+        class=\"sr-only\" id=\"h-mobile-footer-links\">Footer Links</h2>\n  <ul class=\"g-footer__legals
+        f-secondary\" aria-labelledby=\"h-mobile-footer-links\">\n    <li><a href=\"/press\">Press</a></li>\n
+        \   <li><a href=\"/employment\">Careers</a></li>\n    <li><a href=\"/contact\">Contact</a></li>\n
+        \   <li><a href=\"/venue-rental\">Venue Rental</a></li>\n    <li><a href=\"/image-licensing\">Image
+        Licensing</a></li>\n    <li><a href=\"https://www.saic.edu\">SAIC</a></li>\n
+        \   <li><a href=\"/terms\">Terms</a></li>\n  </ul>\n</footer>\n<a class=\"top-link\"
+        href=\"#a17\" aria-label=\"top of page\">\n  <svg class=\"icon--arrow\" aria-hidden=\"true\">\n
+        \   <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon--arrow\"
+        />\n  </svg>\n</a>\n\n  </div>\n\n<div id=\"mask\" class=\"g-mask\" data-behavior=\"mask\"></div>\n<div
+        class=\"m-calendar\" id=\"calendar\" data-behavior=\"calendar\">\n    <div
+        class=\"m-calendar__header\">\n        <button class=\"btn btn--sm btn--secondary
+        f-buttons s-active\" data-calendar-start>From</button>\n        <button class=\"btn
+        btn--sm btn--secondary f-buttons\" data-calendar-end>To</button>\n        <button
+        class=\"m-calendar__close\" data-calendar-close><svg class=\"icon--close\"
+        aria-label=\"Close date select\"><use xlink:href=\"#icon--close\" /></svg></button>\n
+        \   </div>\n    <div class=\"m-calendar__months\" data-calendar-months>\n
+        \       <div class=\"m-calendar__month\" style=\"display: none;\" data-calendar-month-template>\n
+        \           <b class=\"m-calendar__title f-caption\" data-calendar-title></b>\n
+        \           <table data-calendar-table>\n                <thead class=\"f-caption\">\n
+        \                 <tr>\n                    <th title=\"Sunday\">S</th>\n
+        \                   <th title=\"Monday\">M</th>\n                    <th title=\"Tuesday\">T</th>\n
+        \                   <th title=\"Wednesday\">W</th>\n                    <th
+        title=\"Thursday\">T</th>\n                    <th title=\"Friday\">F</th>\n
+        \                   <th title=\"Saturday\">S</th>\n                  </tr>\n
+        \               </thead>\n                <tbody class=\"f-secondary\">\n
+        \               </tbody>\n            </table>\n        </div>\n        <button
+        class=\"m-calendar__next\" data-calendar-next><svg aria-label=\"Next month\"
+        class=\"icon--arrow\"><use xlink:href=\"#icon--arrow\" /></svg></button>\n
+        \       <button class=\"m-calendar__prev\" data-calendar-prev><svg aria-label=\"Previous
+        month\" class=\"icon--arrow\"><use xlink:href=\"#icon--arrow\" /></svg></button>\n
+        \   </div>\n    <div class=\"m-calendar__footer\">\n        <button class=\"btn
+        btn--sm f-buttons\" data-calendar-done>Done</button>\n        <button class=\"btn
+        btn--sm btn--secondary f-buttons\" data-calendar-reset>Reset</button>\n    </div>\n</div>\n<div
+        class=\"o-fullscreen-image\" id=\"fullscreenImage\" data-behavior=\"imageZoomArea\">\n
+        \   <a class=\"o-fullscreen-image__info\">Learn more</a>\n    <img class=\"o-fullscreen-image__img\"
+        alt=\"\" src=\"data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=\">\n
+        \   <div class=\"o-fullscreen-image__osd\" id=\"openseadragon\"></div>\n    <h2
+        class=\"sr-only\" id=\"h-img_action\">Image actions</h2>\n    <ul class=\"o-fullscreen-image__img-actions\"
+        aria-labelledby=\"h-img_action\">\n      <li>\n        <button class=\"btn
+        \ btn--septenary btn--icon-sq\" id=\"osd_zoomInButton\" data-fullscreen-zoom-in
+        aria-label=\"Zoom in\">\n    <svg class=\"icon--zoom-in--24\" aria-hidden=\"true\"><use
+        xlink:href=\"#icon--zoom-in--24\" /></svg>    \n</button>\n      </li>\n      <li>\n
+        \       <button class=\"btn  btn--septenary btn--icon-sq\" id=\"osd_zoomOutButton\"
+        data-fullscreen-zoom-out aria-label=\"Zoom out\">\n    <svg class=\"icon--zoom-out--24\"
+        aria-hidden=\"true\"><use xlink:href=\"#icon--zoom-out--24\" /></svg>    \n</button>\n
+        \     </li>\n    </ul>\n    <button class=\"btn  btn--octonary btn--icon btn--icon-circle-48
+        o-fullscreen-image__close\" data-fullscreen-close aria-label=\"Close full
+        screen image viewer\">\n    <svg class=\"icon--close--24\" aria-hidden=\"true\"><use
+        xlink:href=\"#icon--close--24\" /></svg>    \n</button>\n</div>\n<div class=\"m-share-menu\"
+        id=\"shareMenu\" data-behavior=\"shareMenu\">\n  <h4 class=\"m-share-menu__title
+        f-module-title-2\" id=\"h-share-menu\">Share</h4>\n  <ul aria-labelledby=\"h-share-menu\">\n
+        \   <li><a href=\"#\" class=\"f-secondary\" data-shareMenu=\"facebook\" data-gtm-event-category=\"share\"
+        data-gtm-event=\"facebook\" aria-label=\"Share via Facebook\">Facebook</a></li>\n
+        \   <li><a href=\"#\" class=\"f-secondary\" data-shareMenu=\"twitter\" data-gtm-event-category=\"share\"
+        data-gtm-event=\"twitter\" aria-label=\"Share via Twitter\">Twitter</a></li>\n
+        \   <li><a href=\"#\" class=\"f-secondary\" data-shareMenu=\"pinterest\" data-gtm-event-category=\"share\"
+        data-gtm-event=\"pinterest\" aria-label=\"Share via Pinterest\">Pinterest</a></li>\n
+        \   <li><a href=\"#\" class=\"f-secondary\" data-shareMenu=\"email\" aria-label=\"Share
+        via Email\">Email</a></li>\n    <li><button class=\"f-secondary\" data-shareMenu=\"copy\"
+        aria-label=\"Copy link to page\">Copy link</button></li>\n  </ul>\n  <button
+        class=\"m-share-menu__close\" aria-label=\"Close share menu\"><svg class=\"icon--close\"
+        aria-hidden=\"true\"><use xlink:href=\"#icon--close\" /></svg></button>\n</div>\n<div
+        class=\"g-nav-mobile\" data-behavior=\"navMobile\" tabindex=\"0\">\n  <div
+        class=\"g-nav-mobile__inner\">\n    <div class=\"g-nav-mobile__container\">\n
+        \     <div class=\"g-header\">\n        <div class=\"g-header__inner\">\n
+        \           <a class=\"g-header__logo\" href=\"/\">\n              <svg aria-label=\"Art
+        Institute of Chicago\">\n                <use xlink:href=\"#icon--logo--80\"
+        />\n                <use xlink:href=\"#icon--logo--88\" />\n                <use
+        xlink:href=\"#icon--logo--92\" />\n              </svg>\n            </a>\n
+        \           <nav class=\"g-header__nav-primary\">\n              <h2 class=\"sr-only\"
+        id=\"h-nav-secondary\">Secondary Navigation</h2>\n              <ul class=\"f-secondary\"
+        aria-labelledby=\"h-nav-secondary\">\n                <li class='u-hide@small+'><a
+        href=\"https://sales.artic.edu/admissions\">Buy Tickets</a></li>\n                <li><a
+        href=\"https://www.artic.edu/visit\">Visit</a></li>\n              </ul>\n
+        \           </nav>\n          </div>\n        </div>\n\n      <div class=\"g-nav-mobile__search\"
+        data-behavior=\"mobileSearch\">\n        <form action=\"/search\" role=\"search\">\n
+        \         <input type=\"search\" id=\"mobile_search\" name=\"q\" placeholder=\"Search\"
+        autocomplete=\"off\" aria-label=\"Search the site\" />\n          <button
+        type=\"submit\" aria-label=\"Search\">\n            <svg aria-hidden=\"true\"
+        class=\"icon--search--24\"><use xlink:href=\"#icon--search--24\" /></svg>\n
+        \         </button>\n        </form>\n      </div>\n\n      <nav class=\"g-nav-mobile__nav-wrapper\">\n
+        \       <h2 class=\"sr-only\" id=\"h-nav-mobile\">Primary Navigation</h2>\n
+        \       <ul class=\"g-nav-mobile__nav\" aria-labelledby=\"h-nav-mobile\">\n
+        \         \n                      <li class=\"\">\n              <a href=\"https://www.artic.edu/visit\"
+        >\n                Visit\n\n                              </a>\n\n              \n
+        \                         </li>\n                      <li class=\"\">\n              <a
+        href=\"#\" data-nav-trigger>\n                Exhibition &amp; Events\n\n
+        \                                 <svg aria-hidden=\"true\" class=\"icon--arrow\"><use
+        xlink:href=\"#icon--arrow\" /></svg>\n                              </a>\n\n
+        \             \n                              <div class=\"g-nav-mobile__subnav\">\n
+        \                 <a href=\"#\" class=\"g-nav-mobile__back arrow-link arrow-link--back\"
+        data-nav-back>\n                    <svg aria-hidden=\"true\" class=\"icon--arrow\"><use
+        xlink:href=\"#icon--arrow\" /></svg>\n\n                    <h3 id=\"h-nav-mobile-sub-exhibition-amp-events\">Exhibition
+        &amp; Events</h3>\n                  </a>\n\n                  <ul aria-labelledby=\"h-nav-mobile-sub-exhibition-amp-events\">\n
+        \                                         <li class=\"\">\n                        <a
+        href=\"https://www.artic.edu/exhibitions\" >\n                          Exhibitions\n\n
+        \                                                 </a>\n\n                        \n
+        \                                             </li>\n                                          <li
+        class=\"\">\n                        <a href=\"https://www.artic.edu/events\"
+        >\n                          Events\n\n                                                  </a>\n\n
+        \                       \n                                              </li>\n
+        \                                     </ul>\n                </div>\n                          </li>\n
+        \                     <li class=\"\">\n              <a href=\"https://www.artic.edu/collection\"
+        data-nav-trigger>\n                The Collection\n\n                                  <svg
+        aria-hidden=\"true\" class=\"icon--arrow\"><use xlink:href=\"#icon--arrow\"
+        /></svg>\n                              </a>\n\n              \n                              <div
+        class=\"g-nav-mobile__subnav\">\n                  <a href=\"#\" class=\"g-nav-mobile__back
+        arrow-link arrow-link--back\" data-nav-back>\n                    <svg aria-hidden=\"true\"
+        class=\"icon--arrow\"><use xlink:href=\"#icon--arrow\" /></svg>\n\n                    <h3
+        id=\"h-nav-mobile-sub-the-collection\">The Collection</h3>\n                  </a>\n\n
+        \                 <ul aria-labelledby=\"h-nav-mobile-sub-the-collection\">\n
+        \                                         <li class=\"\">\n                        <a
+        href=\"https://www.artic.edu/collection\" >\n                          Artworks\n\n
+        \                                                 </a>\n\n                        \n
+        \                                             </li>\n                                          <li
+        class=\"\">\n                        <a href=\"https://www.artic.edu/articles_publications\"
+        >\n                          Writings\n\n                                                  </a>\n\n
+        \                       \n                                              </li>\n
+        \                                         <li class=\"\">\n                        <a
+        href=\"https://www.artic.edu/collection/research_resources\" >\n                          Resources\n\n
+        \                                                 </a>\n\n                        \n
+        \                                             </li>\n                                      </ul>\n
+        \               </div>\n                          </li>\n                      <li
+        class=\"\">\n              <a href=\"https://sales.artic.edu/admissions\"
+        >\n                Buy Tickets\n\n                              </a>\n\n              \n
+        \                         </li>\n                      <li class=\"\">\n              <a
+        href=\"https://sales.artic.edu/memberships\" >\n                Become A Member\n\n
+        \                             </a>\n\n              \n                          </li>\n
+        \                     <li class=\"\">\n              <a href=\"https://shop.artic.edu/\"
+        >\n                Shop\n\n                              </a>\n\n              \n
+        \                         </li>\n                      <li class=\"\">\n              <a
+        href=\"https://www.artic.edu/about-us\" >\n                About Us\n\n                              </a>\n\n
+        \             \n                          </li>\n                      <li
+        class=\"\">\n              <a href=\"learn-with-us\" >\n                Learn
+        With Us\n\n                              </a>\n\n              \n                          </li>\n
+        \                     <li class=\"\">\n              <a href=\"support-us\"
+        >\n                Support Us\n\n                              </a>\n\n              \n
+        \                         </li>\n                  </ul>\n\n        <div class=\"g-nav-mobile__nav-secondary\">\n
+        \         <h4 class=\"sr-only\" id=\"h-footer-nav-secondary\">Secondary Navigation</h4>\n
+        \         <ul class=\"g-nav-mobile__legals\" aria-labelledby=\"h-footer-nav-secondary\">\n
+        \           <li><a href=\"/press\">Press</a></li>\n            <li><a href=\"/employment\">Careers</a></li>\n
+        \           <li><a href=\"/contact\">Contact</a></li>\n            <li><a
+        href=\"/venue-rental\">Venue Rental</a></li>\n            <li><a href=\"/image-licensing\">Image
+        Licensing</a></li>\n            <li><a href=\"https://www.saic.edu\">SAIC</a></li>\n
+        \           <li><a href=\"/terms\">Terms</a></li>\n          </ul>\n\n          <h4
+        class=\"sr-only\" id=\"h-footer-nav-social\">Social links</h4>\n          <ul
+        class=\"g-nav-mobile__social\" aria-labelledby=\"h-footer-nav-social\">\n
+        \           <li><a href=\"https://www.facebook.com/artic\">Facebook</a></li>\n
+        \           <li><a href=\"https://twitter.com/artinstitutechi\">Twitter</a></li>\n
+        \           <li><a href=\"https://www.instagram.com/artinstitutechi/\">Instagram</a></li>\n
+        \           <li><a href=\"https://www.youtube.com/user/ArtInstituteChicago\">YouTube</a></li>\n
+        \         </ul>\n        </div>\n      </nav>\n\n      <button class=\"g-nav-mobile__close\"
+        data-behavior=\"closeNavMobile\" aria-label=\"Close menu\"><svg aria-hidden=\"true\"
+        class=\"icon--close--24\"><use xlink:href=\"#icon--close--24\" /></svg></button>\n
+        \   </div>\n  </div>\n</div>\n<div class=\"g-search\" data-behavior=\"globalSearch\"
+        data-autocomplete-url=\"https://www.artic.edu/search/autocomplete\" aria-modal=\"true\"
+        data-gtm-event-category=\"site search\" aria-label=\"Search\">\n    <div class=\"g-search__scroll\">\n
+        \       <div class=\"g-search__inner\" data-search-inner>\n            <form
+        action=\"/search\" class=\"g-search__form\" role=\"search\">\n                <input
+        type=\"search\" id=\"q\" name=\"q\" class=\"g-search__input\" placeholder=\"Search\"
+        autocomplete=\"off\" aria-label=\"Search the site\" />\n                <button
+        type=\"submit\" class=\"g-search__submit\">\n                    <svg aria-hidden=\"true\"
+        class=\"icon--search--24\"><use xlink:href=\"#icon--search--24\" /></svg>\n
+        \               </button>\n                <span class=\"g-search__loader\"></span>\n
+        \           </form>\n            <div class=\"g-search__suggested\">\n                <h2
+        class=\"g-search__suggested-title\" id=\"h-suggested-terms\">Suggested Terms</h2>\n
+        \               <ul aria-labelledby=\"h-suggested-terms\">\n                                                                        <li><a
+        href=\"https://www.artic.edu/visit-us-virtually\">Visit Us Virtually</a></li>\n
+        \                                                   <li><a href=\"https://www.artic.edu/articles\">Blog</a></li>\n
+        \                                                   <li><a href=\"/support-us/membership\">Membership</a></li>\n
+        \                                                   <li><a href=\"https://www.artic.edu/el-greco-online\">El
+        Greco</a></li>\n                                                    <li><a
+        href=\"/visit/frequently-asked-questions\">FAQs</a></li>\n                                                            </ul>\n
+        \           </div>\n            <button class=\"g-search__close\" data-behavior=\"globalSearchClose\"
+        aria-label=\"Close search\">\n                <svg aria-hidden=\"true\" class=\"icon--close--24\"><use
+        xlink:href=\"#icon--close--24\" /></svg>\n            </button>\n        </div>\n
+        \   </div>\n</div>\n<div id=\"modal\" class=\"g-modal\">\n    <div class=\"g-modal__content\"
+        data-modal-content>\n    </div>\n    <button class=\"g-modal__close\" data-behavior=\"closeModal\">\n
+        \       <svg aria-hidden=\"true\" class=\"icon--close\"><use xlink:href=\"#icon--close\"
+        /></svg>\n    </button>\n</div>\n<span class=\"g-ajax-loader\">\n  <svg class=\"g-ajax-loader__svg\"
+        viewBox=\"25 25 50 50\">\n    <circle cx=\"50\" cy=\"50\" r=\"20\" fill=\"none\"
+        stroke-width=\"2\" stroke-miterlimit=\"10\"/>\n  </svg>\n</span>\n\n<script
+        src=\"https://vjs.zencdn.net/7.1.0/video.min.js\"></script>\n<script src=\"/dist/scripts/app-6c17db92c5.js\"></script>\n<script
+        src=\"https://cdn.jsdelivr.net/npm/openseadragon@2.3/build/openseadragon/openseadragon.min.js\"
+        defer></script>\n<script src=\"https://www.google.com/recaptcha/api.js\"></script>\n<script
+        type=\"text/javascript\">window.NREUM||(NREUM={});NREUM.info={\"beacon\":\"bam.nr-data.net\",\"licenseKey\":\"64338d1b8c\",\"applicationID\":\"62463744\",\"transactionName\":\"YQFWZ0JWDUQCBRALX1hLdVBEXgxZTAcWFkdZFl9AHkQLWBQ=\",\"queueTime\":0,\"applicationTime\":1731,\"atts\":\"TUZVEQpMHko=\",\"errorBeacon\":\"bam.nr-data.net\",\"agent\":\"\"}</script></body>\n</html>\n"
+  recorded_at: 2020-07-27 22:08:08 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
