@@ -5,11 +5,11 @@ test_that("aam works", {
 
   vcr::use_cassette("aam", {
     aa <- aam(17150)
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   vcr::use_cassette("aam_many", {
     bb <- lapply(c(17150,17140), aam)
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(aa, "aam")
   expect_is(aa$title, "character")
