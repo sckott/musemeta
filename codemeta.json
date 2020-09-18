@@ -1,20 +1,22 @@
 {
-  "@context": ["http://purl.org/codemeta/2.0", "http://schema.org"],
+  "@context": [
+    "http://purl.org/codemeta/2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
   "identifier": "musemeta",
-  "description": "Scrape museum metadata. Includes many\n    different museums, including the MET, Getty Museum, and\n    more. New museums are added occassionally.",
-  "name": "musemeta: Client for Scraping Museum Metadata",
-  "codeRepository": "https://github.com/ropensci/musemeta",
-  "issueTracker": "http://www.github.com/ropensci/musemeta/issues",
+  "description": "Gather museum metadata. Includes many\n    different museums, including the Getty Museum, the\n    Asian Art Museum of San Francisco, Art Institute of Chicago,\n    Canadian Science & Technology Museum Corporation, and\n    Museum of Modern Art.",
+  "name": "musemeta: Gather Museum Metadata",
+  "codeRepository": "https://github.com/sckott/musemeta",
+  "issueTracker": "https://github.com/sckott/musemeta/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.6.9696",
+  "version": "0.1.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.4.3",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.4.3 Patched (2018-01-01 r74017)",
+  "runtimePlatform": "R version 4.0.2 Patched (2020-09-01 r79114)",
   "author": [
     {
       "@type": "Person",
@@ -23,12 +25,14 @@
       "email": "myrmecocystus@gmail.com"
     }
   ],
-  "maintainer": {
-    "@type": "Person",
-    "givenName": "Scott",
-    "familyName": "Chamberlain",
-    "email": "myrmecocystus@gmail.com"
-  },
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Scott",
+      "familyName": "Chamberlain",
+      "email": "myrmecocystus@gmail.com"
+    }
+  ],
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
@@ -37,9 +41,22 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=knitr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "rmarkdown",
+      "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
     },
     {
       "@type": "SoftwareApplication",
@@ -48,23 +65,36 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=testthat"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "vcr",
+      "name": "vcr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=vcr"
     }
   ],
   "softwareRequirements": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "httr",
-      "name": "httr",
-      "version": "1.0.0",
+      "identifier": "crul",
+      "name": "crul",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=crul"
     },
     {
       "@type": "SoftwareApplication",
@@ -73,20 +103,10 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "XML",
-      "name": "XML",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=jsonlite"
     },
     {
       "@type": "SoftwareApplication",
@@ -95,9 +115,10 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=xml2"
     },
     {
       "@type": "SoftwareApplication",
@@ -106,25 +127,31 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=tibble"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "ckanr",
       "name": "ckanr",
-      "version": "0.1.0",
+      "version": ">= 0.1.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=ckanr"
     }
   ],
-  "contIntegration": "https://travis-ci.org/ropensci/musemeta",
-  "releaseNotes": "https://github.com/ropensci/musemeta/blob/master/NEWS",
-  "readme": "https://github.com/ropensci/musemeta/blob/master/README.md",
-  "fileSize": "25.317KB"
+  "contIntegration": "https://codecov.io/gh/sckott/musemeta",
+  "releaseNotes": "https://github.com/sckott/musemeta/blob/master/NEWS.md",
+  "readme": "https://github.com/sckott/musemeta/blob/master/README.md",
+  "fileSize": "5687.706KB",
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {},
+  "keywords": ["rstats", "museum-metadata", "museum", "metadata", "r", "r-package"]
 }

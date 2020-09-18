@@ -3,8 +3,8 @@ musemeta
 
 
 
-[![R-check](https://github.com/ropensci/musemeta/workflows/R-check/badge.svg)](https://github.com/ropensci/musemeta/actions/)
-[![codecov](https://codecov.io/gh/ropensci/musemeta/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/musemeta)
+[![R-check](https://github.com/sckott/musemeta/workflows/R-check/badge.svg)](https://github.com/sckott/musemeta/actions/)
+[![codecov](https://codecov.io/gh/sckott/musemeta/branch/master/graph/badge.svg)](https://codecov.io/gh/sckott/musemeta)
 
 **R client for museum metadata**
 
@@ -15,20 +15,13 @@ Currently `musemeta` can get data from:
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
 * The [Asian Art Museum of San Francisco](http://www.asianart.org/) (see function `aam()`)
 
-Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
+Other sources of museum metadata will be added...check back later & see [issues](https://github.com/sckott/musemeta/issues).
 
 ## Install
 
 
 ```r
-install.packages("musemeta")
-```
-
-OR
-
-
-```r
-remotes::install_github("ropensci/musemeta")
+remotes::install_github("sckott/musemeta")
 ```
 
 
@@ -38,9 +31,10 @@ library("musemeta")
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropensci/musemeta/issues).
+* Please [report any issues or bugs](https://github.com/sckott/musemeta/issues).
 * License: MIT
 * Get citation information for `musemeta` in R doing `citation(package = 'musemeta')`
-* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
 
-[![ro_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
+## Code of Conduct
+
+Please note that the musemeta project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

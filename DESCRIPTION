@@ -10,8 +10,8 @@ Version: 0.1.0
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"))
 License: MIT + file LICENSE
-URL: https://docs.ropensci.org/musemeta, https://github.com/ropensci/musemeta
-BugReports: https://github.com/ropensci/musemeta/issues
+URL: https://github.com/sckott/musemeta
+BugReports: https://github.com/sckott/musemeta/issues
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 Encoding: UTF-8

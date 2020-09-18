@@ -17,7 +17,7 @@ Currently `musemeta` can get data from:
 * The [Getty Museum](http://www.getty.edu/) (see function `getty()`)
 * The [Art Institute of Chicago](http://www.artic.edu/) (see function `aic()`)
 
-Other sources of museum metadata will be added...check back later & see [issues](https://github.com/ropensci/musemeta/issues).
+Other sources of museum metadata will be added...check back later & see [issues](https://github.com/sckott/musemeta/issues).
 
 ## Install
 
@@ -30,7 +30,7 @@ OR
 
 
 ```r
-remotes::install_github("ropensci/musemeta")
+remotes::install_github("sckott/musemeta")
 ```
 
 
